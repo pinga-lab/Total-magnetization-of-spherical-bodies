@@ -661,7 +661,7 @@ FUNCTION {format.doi}
 { doi "doi" bibinfo.check
   duplicate$ empty$ 'skip$
     {
-      "\doi{" swap$ * "}" *
+        "doi:" swap$ * "" *
     }
   if$
 }

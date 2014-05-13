@@ -260,7 +260,17 @@ So, after obtaining an estimated parameter vector (Least Squares or Robust estim
 
 \subsection{Uncertainty of the estimated parameters}
 
-Total field anomaly measurements obtained in a geophysical survey are always affected by some noise. This noise is due to the wide range of experimental errors and inaccuracies that happens in a geophysical survey. Additionally, the noise makes impossible obtaining the same observed total field anomaly, even if all experimental conditions of the survey were exactly reproduced. 
+Total field anomaly measurements obtained in a geophysical survey are always affected by some noise. This noise is due to the wide range of experimental errors and inaccuracies that happens in a geophysical survey. Additionally, the noise makes impossible obtaining the same observed total field anomaly, even if all experimental conditions of the survey were exactly reproduced.
+
+\begin{equation}
+\hat{\mathbf{C}} = \sigma^{2} \: \left( \mathbf{A}^{\intercal} \mathbf{A} \right)^{-1}
+\label{eq:cov-h-hat}
+\end{equation}
+
+\begin{equation}
+\tilde{\mathbf{C}} = \sigma^{2} \: \left( \mathbf{A}^{\intercal} \mathbf{A} \right)^{-1}
+\label{eq:cov-h-hat}
+\end{equation}
 
 \section{Application to synthetic data}
 TEXT
@@ -337,7 +347,7 @@ TEXT
 \begin{center}
 \includegraphics[width=8.3cm]{Figures/Fig2.png}
 \end{center}
-\caption{Schematic representation of the vector $\vec{h}^{j}$ (Eq. \ref{eq:hj}) with elements $hx_{j}$, $hy_{j}$ and $hz_{j}$ described in Cartesian coordinates. This vector has a declination $D_{j}$ (positive from $x$ to $y$) and inclination $I_{j}$ (positive downward).}
+\caption{Schematic representation of the vector $\vec{h}^{j}$ (Eq. \ref{eq:hj}) with elements $hx_{j}$, $hy_{j}$ and $hz_{j}$ described in Cartesian coordinates. This vector has a declination $D_{j}$ (positive from $x$ to $y$) and inclination $I_{j}$ (positive downward), $j = 1, ..., L$.}
 \label{fig:spherical-coordinates}
 \end{figure}
 
