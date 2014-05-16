@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -11,6 +11,9 @@
 Aster, R.~C., Borchers, B., and Thurber, C.~H.: Parameter Estimation and
   Inverse Problems (International Geophysics), Academic Press, 2005.
 
+\bibitem[{Bard(1973)}]{bard1973}
+Bard, Y.: Nonlinear Parameter Estimation, Academic Press, 1973.
+
 \bibitem[{Blakely(1996)}]{blakely1996}
 Blakely, R.~J.: Potential Theory in Gravity and Magnetic Applications,
   Cambridge University Press, 1996.
@@ -18,6 +21,10 @@ Blakely, R.~J.: Potential Theory in Gravity and Magnetic Applications,
 \bibitem[{Langel and Hinze(1998)}]{langel-hinze1998}
 Langel, R.~A. and Hinze, W.~J.: The Magnetic Field of the Earth's Lithosphere:
   The Satellite Perspective, Cambridge University Press, 1998.
+
+\bibitem[{Menke(1989)}]{menke1989}
+Menke, W.: Geophysical Data Analysis: Discrete Inverse Theory (International
+  Geophysics), Academic Press, 1989.
 
 \bibitem[{Scales et~al.(1988)Scales, Gerztenkorn, and Treitel}]{scales_1988}
 Scales, J.~A., Gerztenkorn, A., and Treitel, S.: Fast Lp Solution of Large,
@@ -27,5 +34,9 @@ Scales, J.~A., Gerztenkorn, A., and Treitel, S.: Fast Lp Solution of Large,
 \bibitem[{Telford et~al.(1990)Telford, Geldart, and Sheriff}]{telford-etal1990}
 Telford, W.~M., Geldart, L.~P., and Sheriff, R.~E.: Applied Geophysics,
   Cambridge University Press, 1990.
+
+\bibitem[{Twomey(1977)}]{twomey1977}
+Twomey, S.: Introduction to the Mathematics of Inversion in Remote Sensing and
+  Indirect Measurements, Dover Publications, Inc., 1977.
 
 \end{thebibliography}

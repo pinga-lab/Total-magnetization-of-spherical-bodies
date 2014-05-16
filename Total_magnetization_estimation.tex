@@ -205,7 +205,7 @@ where $\vec{g}(\hat{\vec{h}})$ is the gradient vector, evaluated at $\hat{\vec{h
 \hat{\vec{h}} = (\mathbf{A}^{\intercal}\mathbf{A})^{-1} \mathbf{A}^{\intercal} \: \vec{\Delta T}^{o} \: .
 \label{eq:h_hat}
 \end{equation}
-In practice, instead of solving the Eq. (\ref{eq:h_hat}), the matrix $(\mathbf{A}^{\intercal} \mathbf{A})$ is not inverted and the estimate $\hat{\vec{h}}$ is obtained by solving the resulting linear system. By presuming the existence of $(\mathbf{A}^{\intercal} \mathbf{A})^{-1}$, Eq. (\ref{eq:goal-function-L2}) gives an estimate $\hat{\vec{h}}$ producing the predicted data $\vec{d}(\hat{\vec{h}})$ (Eq. \ref{eq:predicted-data-vector}) as near as possible from the observed data $\vec{\Delta T}^{o}$, in the Least-Squares sense.
+In practice, instead of solving the Eq. (\ref{eq:h_hat}), the matrix $(\mathbf{A}^{\intercal} \mathbf{A})$ is not inverted and the estimate $\hat{\vec{h}}$ is obtained by solving the resulting linear system. By presuming the existence of $(\mathbf{A}^{\intercal} \mathbf{A})^{-1}$, Eq. (\ref{eq:goal-function-L2}) gives an estimate $\hat{\vec{h}}$ producing the predicted data $\vec{d}(\hat{\vec{h}})$ (Eq. \ref{eq:predicted-data-vector}) as near as possible from the observed data $\vec{\Delta T}^{o}$, in the Least-Squares sense \citep{bard1973, twomey1977, menke1989, aster-etal2005}.
 
 The estimated parameter vector $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}) obtained by using Least Squares is very sensitive to outliers in the observed data. In some cases, if the outliers are not properly removed from the observed data, the estimated parameters can be seriously misleading. When working with field data, these outliers can be caused by, for example, interfering magnetic sources or cultural noise. In order to deal with this problem in an automatic manner, instead of using the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}), we can use a robust scheme for estimating the parameter vector $\tilde{\vec{h}}$ minimizing the goal function
 \begin{equation}
@@ -260,17 +260,33 @@ So, after obtaining an estimated parameter vector (Least Squares or Robust estim
 
 \subsection{Uncertainty of the estimated parameters}
 
-Total field anomaly measurements obtained in a geophysical survey are always affected by some noise. This noise is due to the wide range of experimental errors and inaccuracies that happens in a geophysical survey. Additionally, the noise makes impossible obtaining the same observed total field anomaly, even if all experimental conditions of the survey were exactly reproduced.
-
+Total field anomaly measurements obtained in a geophysical survey are always affected by some noise. This noise is due to the wide range of experimental errors and inaccuracies that happens in a geophysical survey. Additionally, the noise makes impossible obtaining the same observed total field anomaly, even if all experimental conditions of the survey were exactly reproduced. The noise in the observed data $\vec{\Delta T}^{o}$ affects the estimated parameter vector, independently of the used method. Therefore, it is necessary to quantify this effect by propagating the uncertainty from the observed data to the estimated parameter vector. Here, this error propagation is done by using the covariance matrix \citep{bard1973, aster-etal2005}. The covariance matrix $\hat{\mathbf{C}}$ of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}) is given as a function of the covariance matrix $\mathbf{D}$ of the observed data. By presuming that 
+the errors of all observed data ${\Delta T}^{o}_{i}$, $i = 1, ..., N$, are independent and of equal variance $\sigma^{2}$, we obtain $\mathbf{D} = \sigma^{2} \: \mathbf{I}$, where $\mathbf{I}$ is the $N \times N$ identity matrix. From this assumption, we obtain
 \begin{equation}
-\hat{\mathbf{C}} = \sigma^{2} \: \left( \mathbf{A}^{\intercal} \mathbf{A} \right)^{-1}
+\hat{\mathbf{C}} = \hat{\mathbf{H}} \: \mathbf{D} \: \hat{\mathbf{H}}^{\intercal} \: ,
 \label{eq:cov-h-hat}
 \end{equation}
-
+where
 \begin{equation}
-\tilde{\mathbf{C}} = \sigma^{2} \: \left( \mathbf{A}^{\intercal} \mathbf{A} \right)^{-1}
-\label{eq:cov-h-hat}
+\hat{\mathbf{H}} = \left( \mathbf{A}^{\intercal}\mathbf{A} \right)^{-1} \mathbf{A}^{\intercal} \: .
+\label{eq:H-h-hat}
 \end{equation}
+Similarly, the covariance matrix $\tilde{\mathbf{C}}$ of the Robust estimate $\tilde{\vec{h}}$ (Eq.(s) \ref{eq:iteration-L1} and \ref{eq:ri}) can be given by
+\begin{equation}
+\tilde{\mathbf{C}} = \tilde{\mathbf{H}} \: \mathbf{D} \: 
+\tilde{\mathbf{H}}^{\intercal} \: ,
+\label{eq:cov-h-tilde}
+\end{equation}
+where
+\begin{equation}
+\tilde{\mathbf{H}} = \left( \mathbf{A}^{\intercal} \mathbf{R}^{k} \mathbf{A} \right)^{-1}
+\mathbf{A}^{\intercal} \mathbf{R}^{k} \: ,
+\label{eq:H-h-tilde}
+\end{equation}
+being the matrix $\mathbf{R}^{k}$ (Eq.(s) \ref{eq:iteration-L1} and \ref{eq:ri}) the last one calculated in the iterative process for estimating $\tilde{\vec{h}}$ \citep{bard1973, aster-etal2005}.
+
+The diagonal of the matrices $\hat{\mathbf{C}}$ (Eq. \ref{eq:cov-h-hat}) and $\tilde{\mathbf{C}}$ (Eq. \ref{eq:cov-h-tilde}) contain the variances of the elements of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}) and Robust estimate $\tilde{\vec{h}}$ (Eq.(s) \ref{eq:iteration-L1} and \ref{eq:ri}), respectively. Let $\vec{v}$ be a $3L$-dimensional vector whose element $v_{j}$, $j = 1, ..., 3L$ represents the $j$th element of the diagonal of the covariance matrix $\hat{\mathbf{C}}$ (Eq. \ref{eq:cov-h-hat}) or $\tilde{\mathbf{C}}$ (Eq. \ref{eq:cov-h-tilde}). This vector can be represented by
+
 
 \section{Application to synthetic data}
 TEXT
