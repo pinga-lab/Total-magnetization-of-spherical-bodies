@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.3.19)  16 MAY 2014 18:04
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.17)  17 MAY 2014 19:58
 entering extended mode
 **Total_magnetization_estimation.tex
 
@@ -737,36 +737,34 @@ Package amsmath Warning: Foreign command \over;
 
 [2] [3]
 ("C:\Users\Vanderlei\Google Drive\Magnetization_estimation_spherical_bodies\Sub
-mitted\Total_magnetization_estimation.bbl")
-<Figures/Fig1.png, id=27, 241.8636pt x 241.8636pt>
+mitted\Total_magnetization_estimation.bbl" [4])
+<Figures/Fig1.png, id=30, 241.8636pt x 241.8636pt>
 File: Figures/Fig1.png Graphic file (type png)
  <use Figures/Fig1.png>
-Package pdftex.def Info: Figures/Fig1.png used on input line 355.
+Package pdftex.def Info: Figures/Fig1.png used on input line 421.
 (pdftex.def)             Requested size: 236.15796pt x 236.16112pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 357.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 423.
 
-<Figures/Fig2.png, id=29, 241.8636pt x 241.8636pt>
+<Figures/Fig2.png, id=32, 241.8636pt x 241.8636pt>
 File: Figures/Fig2.png Graphic file (type png)
  <use Figures/Fig2.png>
-Package pdftex.def Info: Figures/Fig2.png used on input line 364.
+Package pdftex.def Info: Figures/Fig2.png used on input line 430.
 (pdftex.def)             Requested size: 236.15796pt x 236.16112pt.
 
-[4 <C:/Users/Vanderlei/Google Drive/Magnetization_estimation_spherical_bodies/S
-ubmitted/Figures/Fig1.png>] [5
-
- <C:/Users/Vanderlei/Google Drive/Magnetization_estimation_spherical_bodies/Sub
-mitted/Figures/Fig2.png>]
+[5 <C:/Users/Vanderlei/Google Drive/Magnetization_estimation_spherical_bodies/S
+ubmitted/Figures/Fig1.png> <C:/Users/Vanderlei/Google Drive/Magnetization_estim
+ation_spherical_bodies/Submitted/Figures/Fig2.png>]
 ("C:\Users\Vanderlei\Google Drive\Magnetization_estimation_spherical_bodies\Sub
 mitted\Total_magnetization_estimation.aux") ) 
 Here is how much of TeX's memory you used:
- 4206 strings out of 493921
- 53121 string characters out of 3147270
- 126235 words of memory out of 3000000
- 7398 multiletter control sequences out of 15000+200000
+ 4217 strings out of 493921
+ 53258 string characters out of 3147269
+ 126353 words of memory out of 3000000
+ 7409 multiletter control sequences out of 15000+200000
  29338 words of font info for 70 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 35i,16n,34p,1010b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,16n,34p,1217b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts
 /enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
@@ -786,7 +784,7 @@ KTeX 2.9/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr
 8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Total_magnetization_estimation.pdf (5 pages, 423831 bytes).
+Output written on Total_magnetization_estimation.pdf (5 pages, 428403 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

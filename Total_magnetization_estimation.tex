@@ -256,7 +256,7 @@ D_{j} = \arctan \left( \dfrac{hy_{j}}{hx_{j}} \right) \quad ,
 I_{j} = \arctan \left( \dfrac{hz_{j}}{\sqrt{hx_{j}^{2} + hy_{j}^{2}}} \right) \quad .
 \label{eq:Ij}
 \end{equation}
-So, after obtaining an estimated parameter vector (Least Squares or Robust estimate), we use the Eq(s). (\ref{eq:Dj}) and (\ref{eq:Ij}) for calculating, respectively, the declinations $D_{j}$ and inclinations $I_{j}$, $j = 1, ..., L$, of the total magnetization vector of all spheres. For convenience, the symbol "$^\wedge$" is used to denote declinations $\hat{D}_{j}$ and inclinations $\hat{I}_{j}$, $j = 1, ..., L$, calculated by using the elements of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:goal-function-L2}). Similarly, the symbol "$^\sim$" denotes that the declinations $\tilde{D}_{j}$ and inclinations $\tilde{I}_{j}$, $j = 1, ..., L$, are calculated by using the elements of the Robust estimate $\tilde{\vec{h}}$ produced by the iterative process (Eq.(s) \ref{eq:iteration-L1} and \ref{eq:ri}).
+So, after obtaining an estimated parameter vector (Least Squares or Robust estimate), we use the Eq(s). (\ref{eq:Dj}) and (\ref{eq:Ij}) for calculating, respectively, the declinations $D_{j}$ and inclinations $I_{j}$, $j = 1, ..., L$, of the total magnetization vector of all spheres. For convenience, the symbol $^\wedge$ is used to denote declinations $\hat{D}_{j}$ and inclinations $\hat{I}_{j}$, $j = 1, ..., L$, calculated by using the elements of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:goal-function-L2}). Similarly, the symbol $^\sim$ denotes that the declinations $\tilde{D}_{j}$ and inclinations $\tilde{I}_{j}$, $j = 1, ..., L$, are calculated by using the elements of the Robust estimate $\tilde{\vec{h}}$ produced by the iterative process (Eqs. \ref{eq:iteration-L1} and \ref{eq:ri}).
 
 \subsection{Uncertainty of the estimated parameters}
 
@@ -271,7 +271,7 @@ where
 \hat{\mathbf{H}} = \left( \mathbf{A}^{\intercal}\mathbf{A} \right)^{-1} \mathbf{A}^{\intercal} \: .
 \label{eq:H-h-hat}
 \end{equation}
-Similarly, the covariance matrix $\tilde{\mathbf{C}}$ of the Robust estimate $\tilde{\vec{h}}$ (Eq.(s) \ref{eq:iteration-L1} and \ref{eq:ri}) can be given by
+Similarly, the covariance matrix $\tilde{\mathbf{C}}$ of the Robust estimate $\tilde{\vec{h}}$ (Eqs. \ref{eq:iteration-L1} and \ref{eq:ri}) can be given by
 \begin{equation}
 \tilde{\mathbf{C}} = \tilde{\mathbf{H}} \: \mathbf{D} \: 
 \tilde{\mathbf{H}}^{\intercal} \: ,
@@ -283,10 +283,76 @@ where
 \mathbf{A}^{\intercal} \mathbf{R}^{k} \: ,
 \label{eq:H-h-tilde}
 \end{equation}
-being the matrix $\mathbf{R}^{k}$ (Eq.(s) \ref{eq:iteration-L1} and \ref{eq:ri}) the last one calculated in the iterative process for estimating $\tilde{\vec{h}}$ \citep{bard1973, aster-etal2005}.
+being the matrix $\mathbf{R}^{k}$ (Eqs. \ref{eq:iteration-L1} and \ref{eq:ri}) the last one calculated in the iterative process for estimating $\tilde{\vec{h}}$ \citep{bard1973, aster-etal2005}.
 
-The diagonal of the matrices $\hat{\mathbf{C}}$ (Eq. \ref{eq:cov-h-hat}) and $\tilde{\mathbf{C}}$ (Eq. \ref{eq:cov-h-tilde}) contain the variances of the elements of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}) and Robust estimate $\tilde{\vec{h}}$ (Eq.(s) \ref{eq:iteration-L1} and \ref{eq:ri}), respectively. Let $\vec{v}$ be a $3L$-dimensional vector whose element $v_{j}$, $j = 1, ..., 3L$ represents the $j$th element of the diagonal of the covariance matrix $\hat{\mathbf{C}}$ (Eq. \ref{eq:cov-h-hat}) or $\tilde{\mathbf{C}}$ (Eq. \ref{eq:cov-h-tilde}). This vector can be represented by
+The diagonal of the matrices $\hat{\mathbf{C}}$ (Eq. \ref{eq:cov-h-hat}) and $\tilde{\mathbf{C}}$ (Eq. \ref{eq:cov-h-tilde}) contain the variances of the elements of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}) and Robust estimate $\tilde{\vec{h}}$ (Eqs. \ref{eq:iteration-L1} and \ref{eq:ri}), respectively. Let $\vec{v}$ be a $3L$-dimensional vector whose element $v_{j}$, $j = 1, ..., 3L$ represents the $j$th element of the diagonal of the covariance matrix $\hat{\mathbf{C}}$ (Eq. \ref{eq:cov-h-hat}) or $\tilde{\mathbf{C}}$ (Eq. \ref{eq:cov-h-tilde}). This vector can be represented by
+\begin{equation}
+\vec{v} = 
+\left[
+\begin{array}{cc}
+\vec{v}^{1} \\
+\vdots \\
+\vec{v}^{L}
+\end{array}
+\right]_{3L \times 1} \: ,
+\label{eq:v}
+\end{equation}
+where
+\begin{equation}
+\vec{v}^{j} = 
+\left[
+\begin{array}{cc}
+\left( \sigma x_{j} \right)^{2} \\
+\left( \sigma y_{j} \right)^{2} \\
+\left( \sigma z_{j} \right)^{2}
+\end{array}
+\right]_{3 \times 1} \: ,
+\label{eq:vj}
+\end{equation}
+being ${\sigma \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, the uncertainty of the component ${h \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, of the vector $\vec{h}^{j}$ (Eq. \ref{eq:hj}) forming the estimated parameter vector. For convenience, the symbol $^\wedge$ is used to denote uncertainties $\hat{\sigma \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, calculated by using the elements of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:goal-function-L2}). Similarly, the symbol $^\sim$ denotes that the uncertainties $\tilde{\sigma \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, are calculated by using the elements of the Robust estimate $\tilde{\vec{h}}$ produced by the iterative process (Eqs. \ref{eq:iteration-L1} and \ref{eq:ri}).
 
+In the previous section, for convenience, we describe the vectors $\vec{h}^{j}$, $j = 1, ..., L$ (Eq. \ref{eq:hj}), in terms of its intensity $Q_{j}$ (Eq. \ref{eq:Qj}), declination $D_{j}$ (Eq. \ref{eq:Dj}) and inclination $I_{j}$ (Eq. \ref{eq:Ij}), as shown in Fig. (\ref{fig:spherical-coordinates}). This quantities are described as functions of the components ${h \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, of the vector $\vec{h}^{j}$. Therefore, the uncertainty of the intensity $Q_{j}$, declination $D_{j}$ and inclination $I_{j}$ can be given as functions of the uncertainties ${\sigma \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$ shown in Eq. (\ref{eq:vj}). To do it, we presume that the components ${h \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, of the vector $\vec{h}^{j}$ (Eq. \ref{eq:hj}) are statistically independent and use the propagation of uncertainties \citep{fornasini2008}. From this assumption, the uncertainties $\sigma_{Qj}$, $\sigma_{Dj}$ and $\sigma_{Ij}$ of the intensity $Q_{j}$ (Eq. \ref{eq:Qj}), declination $D_{j}$ (Eq. \ref{eq:Dj}) and inclination $I_{j}$ (Eq. \ref{eq:Ij}), respectively, are given by
+\begin{equation}
+\sigma_{Qj} = \sqrt{\left( \frac{\partial Q_{j}}{\partial hx_{j}} \: \sigma x_{j} \right)^{2} +
+                    \left( \frac{\partial Q_{j}}{\partial hy_{j}} \: \sigma y_{j} \right)^{2} +
+                    \left( \frac{\partial Q_{j}}{\partial hz_{j}} \: \sigma z_{j} \right)^{2}} \: ,
+\label{eq:sigmaQj}
+\end{equation}
+\begin{equation}
+\sigma_{Dj} = \sqrt{\left( \frac{\partial D_{j}}{\partial hx_{j}} \: \sigma x_{j} \right)^{2} +
+                    \left( \frac{\partial D_{j}}{\partial hy_{j}} \: \sigma y_{j} \right)^{2}}
+\label{eq:sigmaDj}
+\end{equation}
+and
+\begin{equation}
+\sigma_{Ij} = \sqrt{\left( \frac{\partial I_{j}}{\partial hx_{j}} \: \sigma x_{j} \right)^{2} +
+                    \left( \frac{\partial I_{j}}{\partial hy_{j}} \: \sigma y_{j} \right)^{2} +
+                    \left( \frac{\partial I_{j}}{\partial hz_{j}} \: \sigma z_{j} \right)^{2}} \: .
+\label{eq:sigmaIj}
+\end{equation}
+The first-order derivatives shown in Eqs. (\ref{eq:sigmaQj}), (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}) are given by
+\begin{equation}
+\dfrac{\partial Q_{j}}{\partial h \alpha_{j}} = \dfrac{h \alpha_{j}}{Q_{j}} \: , \quad \alpha = x, y, z \: ,
+\label{eq:dQj-dhalphaj}
+\end{equation}
+\begin{equation}
+\frac{\partial D_{j}}{\partial hx_{j}} = \dfrac{- hy_{j}}{ \left( hx_{j} \right)^{2} + \left( hy_{j} \right)^{2}} \: ,
+\label{eq:dDj-dhxj}
+\end{equation}
+\begin{equation}
+\frac{\partial D_{j}}{\partial hy_{j}} = \dfrac{ hx_{j} }{ \left( hx_{j} \right)^{2} + \left( hy_{j} \right)^{2}} \: ,
+\label{eq:dDj-dhyj}
+\end{equation}
+\begin{equation}
+\frac{\partial I_{j}}{\partial h \alpha_{j}} = \dfrac{-h \alpha_{j} hz_{j}}{Q_{j}^{2} \sqrt{\left( hx_{j} \right)^{2} + \left( hy_{j} \right)^{2}}} \: , \quad \alpha = x, y \: ,
+\label{eq:dIj-dhalphaj}
+\end{equation}
+and
+\begin{equation}
+\frac{\partial I_{j}}{\partial hz_{j}} = \dfrac{ \sqrt{\left( hx_{j} \right)^{2} + \left( hy_{j} \right)^{2}} }{Q_{j}^{2}} \: .
+\label{eq:dIj-dhzj}
+\end{equation}
+For convenience, the symbol $^\wedge$ is used to denote the uncertainties $\hat{\sigma}_{Qj}$, $\hat{\sigma}_{Dj}$ and $\hat{\sigma}_{Ij}$, $j = 1, ..., L$, calculated with the Eqs. (\ref{eq:sigmaQj}), (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}), respectively, by using the elements of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:goal-function-L2}). Similarly, the symbol $^\sim$ denotes that the uncertainties $\tilde{\sigma}_{Qj}$, $\tilde{\sigma}_{Dj}$ and $\tilde{\sigma}_{Ij}$, $j = 1, ..., L$, are calculated with the Eqs. (\ref{eq:sigmaQj}), (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}), respectively, by using the elements of the Robust estimate $\tilde{\vec{h}}$ produced by the iterative process (Eqs. \ref{eq:iteration-L1} and \ref{eq:ri}).
 
 \section{Application to synthetic data}
 TEXT

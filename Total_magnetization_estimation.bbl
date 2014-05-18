@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -17,6 +17,10 @@ Bard, Y.: Nonlinear Parameter Estimation, Academic Press, 1973.
 \bibitem[{Blakely(1996)}]{blakely1996}
 Blakely, R.~J.: Potential Theory in Gravity and Magnetic Applications,
   Cambridge University Press, 1996.
+
+\bibitem[{Fornasini(2008)}]{fornasini2008}
+Fornasini, P.: The Uncertainty in Physical Measurements: An Introduction to
+  Data Analysis in the Physics Laboratory, Springer, 2008.
 
 \bibitem[{Langel and Hinze(1998)}]{langel-hinze1998}
 Langel, R.~A. and Hinze, W.~J.: The Magnetic Field of the Earth's Lithosphere:
