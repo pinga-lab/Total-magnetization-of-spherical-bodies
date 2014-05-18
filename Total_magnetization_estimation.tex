@@ -47,19 +47,19 @@ TEXT
 
 \subsection{Parameterization and Forward Problem}
 
-Let $\vec{\Delta T}^{o}$ be the observed data vector, whose $i$th element $\Delta T^{o}_{i}$, $i = 1, ..., N$, is the total field anomaly measured at the position $(x_{i}, y_{i}, z_{i})$ (black dots in Fig. \ref{fig:geometric-aspects}). In this Cartesian coordinate system, $x$ points to geographic North, $y$ points to East and $z$ points downward. In general, the total field anomaly is produced by a magnetized  susceptibility distribution which is anomalous with respect to the mean susceptibility of the crust. Mathematically, $\Delta T^{o}_{i}$ can be written as
+Let $\vec{\Delta T}^{o}$ be the observed data vector, whose $i$th element $\Delta T^{o}_{i}$, $i = 1, ..., N$, is the total field anomaly measured at the position $(x_{i}, y_{i}, z_{i})$ (black dots in Fig. \ref{fig:geometric-aspects}). In this Cartesian coordinate system, $x$ points to the geographic North, $y$ points to East and $z$ points downward. In general, the total field anomaly is produced by a magnetized  susceptibility distribution which is anomalous with respect to the mean susceptibility of the crust. Mathematically, $\Delta T^{o}_{i}$ can be written as
 \begin{equation}
 \Delta T^{o}_{i} = \Vert \vec{T}_i \Vert + \Vert \vec{F}_i \Vert \: ,
 \label{eq:tfanomaly-i}
 \end{equation}
-where $\Vert \Vert$ indicates the Euclidean norm, $\vec{F}_i$ is the Geomagnetic field vector and $\vec{T}_i$ is the Total Field, both at $(x_{i}, y_{i}, z_{i})$. The Total Field vector can be represented by the sum
+where $\Vert \Vert$ indicates the Euclidean norm, $\vec{F}_i$ is the Geomagnetic field vector and $\vec{T}_i$ is the Total Field vector, both at $(x_{i}, y_{i}, z_{i})$. The Total Field vector can be represented by the sum
 \begin{equation}
 \vec{T}_i = \vec{F}_i + \vec{B}_i \: ,
 \label{eq:tfvector-i}
 \end{equation}
 where $\vec{B}_i$ is the Total Magnetic Induction vector produced by all magnetic sources (magnetized anomalous susceptibility distribution) at the position $(x_{i}, y_{i}, z_{i})$ \citep{blakely1996, langel-hinze1998}.
 
-For local or regional scale magnetic studies, it is very common to consider that (i) the Geomagnetic Field $\vec{F}_i$ (Eq. \ref{eq:tfanomaly-i}) is a constant vector $\vec{F}_{0}$ throughout the study area and (ii) that $\Vert \vec{F}_{0} \Vert \gg \Vert \vec{B}_{i} \Vert$, $i = 1, ..., N$ \citep{telford-etal1990, blakely1996}. The second assumption is equivalent to say that the Total Magnetic Induction $\vec{B}_i$ (Eq. \ref{eq:tfanomaly-i}) is a small perturbation of the Geomagnetic field throughout the study area. These two assumptions make possible to approximate the Euclidean norm of the Total Field vector $\vec{T}_i$ (Eq. \ref{eq:tfanomaly-i}) by a first-order Taylor's expansion as follows
+For local or regional scale magnetic studies, it is very common to consider that (i) the Geomagnetic Field $\vec{F}_i$ (Eq. \ref{eq:tfanomaly-i}) is a constant vector $\vec{F}_{0}$ throughout the study area and (ii) that $\Vert \vec{F}_{0} \Vert \gg \Vert \vec{B}_{i} \Vert$, $i = 1, ..., N$ \citep{telford-etal1990, blakely1996}. The second assumption is equivalent to say that the Total Magnetic Induction $\vec{B}_i$ (Eq. \ref{eq:tfanomaly-i}) is a small perturbation of the Geomagnetic field $\vec{F}_i$ throughout the study area. These two assumptions make possible to approximate the Euclidean norm of the Total Field vector $\vec{T}_i$ (Eq. \ref{eq:tfanomaly-i}) by a first-order Taylor's expansion as follows
 \begin{equation}
 \begin{array}{cl}
 \Vert \vec{T}_{i} \Vert & 
@@ -74,7 +74,7 @@ where $^{\intercal}$ indicates transposition and
 \hat{\vec{F}} = \dfrac{\vec{F}_{0}}{\Vert \vec{F}_{0} \Vert}
 \label{eq:unit-vector}
 \end{equation}
-is a unit vector (with the same direction of the Geomagnetic field) representing the gradient of the function $\Vert \vec{T}_{i} \Vert$ with respect to the components of the vector $\vec{T}_{i}$ \citep{blakely1996}. By introducing this first-order Taylor's expansion into the total field magnetic anomaly (Eq. \ref{eq:tfanomaly-i}), we obtain an approximated total field anomaly given by
+is a unit vector (with the same direction of the Geomagnetic field $\vec{F}_i$) representing the gradient of the function $\Vert \vec{T}_{i} \Vert$ with respect to the components of the vector $\vec{T}_{i}$ \citep{blakely1996}. By introducing this first-order Taylor's expansion into the total field magnetic anomaly (Eq. \ref{eq:tfanomaly-i}), we obtain the well-known approximated total field anomaly given by
 \begin{equation}
 \Delta T_{i} \approx \hat{\vec{F}}^{\intercal}\vec{B}_{i} \: , \qquad i = 1, ..., N \: .
 \label{eq:approx-tfanomaly-i}
@@ -97,7 +97,7 @@ mz_{j}
 \right]_ {3 \times 1} \: .
 \label{eq:mag-vector-j}
 \end{equation}
-The magnetic induction $\vec{b}^{j}_{i}$ can be written as
+The magnetic induction $\vec{b}^{j}_{i}$ (Eq. \ref{eq:total-induction-i}) can be written as
 \begin{equation}
 \vec{b}^{j}_{i} = C_{m} \: \mathbf{M}_{i}^{j} \: 
                   \dfrac{4}{3} \pi R_{j}^{3} \:
@@ -109,15 +109,15 @@ where $C_{m}$ is a constant given by $\mu_{0} / {4 \pi}=10^{-7}$ $\frac{H}{m}$, 
 \mathbf{M}^{j}_{i} =
 \left[
 \begin{array}{ccc}
-\frac{\partial^{2}}{\partial x \partial x} \frac{1}{r_{j}} &
-\frac{\partial^{2}}{\partial x \partial y} \frac{1}{r_{j}} &
-\frac{\partial^{2}}{\partial x \partial z} \frac{1}{r_{j}} \\
-\frac{\partial^{2}}{\partial x \partial y} \frac{1}{r_{j}} &
-\frac{\partial^{2}}{\partial y \partial y} \frac{1}{r_{j}} &
-\frac{\partial^{2}}{\partial y \partial z} \frac{1}{r_{j}} \\
-\frac{\partial^{2}}{\partial x \partial z} \frac{1}{r_{j}} &
-\frac{\partial^{2}}{\partial y \partial z} \frac{1}{r_{j}} &
-\frac{\partial^{2}}{\partial z \partial z} \frac{1}{r_{j}}
+\left( \frac{\partial^{2}}{\partial x \partial x} \frac{1}{r_{j}} \right) &
+\left( \frac{\partial^{2}}{\partial x \partial y} \frac{1}{r_{j}} \right) &
+\left( \frac{\partial^{2}}{\partial x \partial z} \frac{1}{r_{j}} \right) \\
+\left( \frac{\partial^{2}}{\partial x \partial y} \frac{1}{r_{j}} \right) &
+\left( \frac{\partial^{2}}{\partial y \partial y} \frac{1}{r_{j}} \right) &
+\left( \frac{\partial^{2}}{\partial y \partial z} \frac{1}{r_{j}} \right) \\
+\left( \frac{\partial^{2}}{\partial x \partial z} \frac{1}{r_{j}} \right) &
+\left( \frac{\partial^{2}}{\partial y \partial z} \frac{1}{r_{j}} \right) &
+\left( \frac{\partial^{2}}{\partial z \partial z} \frac{1}{r_{j}} \right)
 \end{array}
 \right]_{3 \times 3} \: ,
 \label{eq:matrix-Mij}
@@ -130,7 +130,7 @@ whose elements are the second derivatives, evaluated at the position $(x_{i}, y_
 				(z - zc_{j})^{2}}}
 \label{eq:1/rj}
 \end{equation}
-with respect to the variables $x$, $y$ and $z$. \citet{blakely1996} gives an expression equivalent to Eq. (\ref{eq:j-induction-i}). By substituting the magnetic induction $\vec{b}^{j}_{i}$ (Eq. \ref{eq:j-induction-i}) into the Total Magnetic Induction vector (Eq. \ref{eq:total-induction-i}) and using the approximated total field anomaly (Eq. \ref{eq:approx-tfanomaly-i}) we may then obtain the total field anomaly predicted by the set of $L$ spheres at the position $(x_{i}, y_{i}, z_{i})$, $i = 1, ..., N$, as follows
+with respect to the variables $x$, $y$ and $z$. \citet{blakely1996} gives an expression equivalent to Eq. (\ref{eq:j-induction-i}). By substituting the magnetic induction $\vec{b}^{j}_{i}$ (Eq. \ref{eq:j-induction-i}) into the Total Magnetic Induction vector $\vec{B}_i$ (Eq. \ref{eq:total-induction-i}) and using the approximated total field anomaly (Eq. \ref{eq:approx-tfanomaly-i}) we may then obtain the total field anomaly $d_{i}(\vec{h})$ predicted by the set of $L$ spheres at the position $(x_{i}, y_{i}, z_{i})$, $i = 1, ..., N$, as follows
 \begin{equation}
 \begin{array}{cl}
 d_{i}(\vec{h}) & 
@@ -174,7 +174,7 @@ Finally, let $\vec{d}(\vec{h})$ be the predicted data vector, whose $i$th elemen
 \vec{d}(\vec{h}) = \mathbf{A} \: \vec{h} \: ,
 \label{eq:predicted-data-vector}
 \end{equation}
-where $\mathbf{A}$ is an $N \times 3L$ matrix given by
+where $\mathbf{A}$ is a $N \times 3L$ matrix given by
 \begin{equation}
 \mathbf{A} =
 \left[
@@ -186,28 +186,28 @@ where $\mathbf{A}$ is an $N \times 3L$ matrix given by
 \right]_{N \times 3L} \: ,
 \label{eq:sensibility-matrix}
 \end{equation}
-being $\vec{a}_{i}$, $i = 1, ..., N$, defined in Eq. (\ref{eq:ai}) and $\vec{h}$ shown in Eq. \ref{eq:h}.
+being $\vec{a}_{i}$, $i = 1, ..., N$, defined in Eq. (\ref{eq:ai}) and $\vec{h}$ shown in Eq. (\ref{eq:h}).
 
 \subsection{Inverse Problem}
 
-Equation (\ref{eq:predicted-data-vector}) shows that the predicted data vector depends on the parameter vector $\vec{h}$ (Eq. \ref{eq:h}), which is formed by all vectors $\vec{h}^{j}$, $j = 1, ..., L$, (Eq. \ref{eq:hj}). Note that $\vec{h}^{j}$ (Eq. \ref{eq:hj}) has the same direction as the magnetization vector $\vec{m}^{j}$ of the $j$th sphere, $j = 1, ..., L$ (Eq. \ref{eq:mag-vector-j}). Consequently, the predicted data vector $\vec{d}(\vec{h})$ depends on the magnetization direction of all $L$ spheres. Hence, by presuming that the magnetic sources producing the observed data $\vec{\Delta T}^{o}$ can be represented by a set of $L$ uniformly magnetized spheres, we can calculate the magnetization direction of all $L$ spheres by estimating the parameter vector $\hat{\vec{h}}$ that minimizes the goal function
+Equation (\ref{eq:predicted-data-vector}) shows that the predicted data vector $\vec{d}(\vec{h})$ depends on the parameter vector $\vec{h}$ (Eq. \ref{eq:h}), which is formed by all vectors $\vec{h}^{j}$, $j = 1, ..., L$, (Eq. \ref{eq:hj}). Note that $\vec{h}^{j}$ (Eq. \ref{eq:hj}) has the same direction as the magnetization vector $\vec{m}^{j}$ of the $j$th sphere, $j = 1, ..., L$ (Eq. \ref{eq:mag-vector-j}). Consequently, the predicted data vector $\vec{d}(\vec{h})$ depends on the magnetization direction of all $L$ spheres. Hence, by presuming that the magnetic sources producing the observed data $\vec{\Delta T}^{o}$ can be represented by a set of $L$ uniformly magnetized spheres, we can calculate the magnetization direction of all $L$ spheres. This can be done by estimating the parameter vector $\hat{\vec{h}}$ that minimizes the goal function
 \begin{equation}
 \Psi(\vec{h}) = \frac{1}{N}[\vec{\Delta T}^{o} - \vec{d}(\vec{h})]^{\intercal}[\vec{\Delta T}^{o} - \vec{d}(\vec{h})] \: .
 \label{eq:goal-function-L2}
 \end{equation}
 The parameter vector $\hat{\vec{h}}$ minimizing the goal function (Eq. \ref{eq:goal-function-L2}) satisfies the following condition
 \begin{equation}
-\vec{g}(\hat{\vec{h}}) = \vec{0}
+\vec{g}(\hat{\vec{h}}) = \vec{0} \: ,
 \label{eq:null-gradient-L2}
 \end{equation}
-where $\vec{g}(\hat{\vec{h}})$ is the gradient vector, evaluated at $\hat{\vec{h}}$, of the goal function $\Psi(\vec{h})$ (Eq. \ref{eq:goal-function-L2}) and $\vec{0}$ is a vector with null elements. Equation (\ref{eq:null-gradient-L2}) leads to the Least-Squares estimate $\hat{\vec{h}}$ of the parameter vector $\vec{h}$ (Eq. \ref{eq:h})
+where $\vec{g}(\hat{\vec{h}})$ is the gradient vector, evaluated at $\hat{\vec{h}}$, of the goal function $\Psi(\vec{h})$ (Eq. \ref{eq:goal-function-L2}) and $\vec{0}$ is a vector with null elements. The parameter vector $\hat{\vec{h}}$ satisfying the equation (\ref{eq:null-gradient-L2}) is the Least-Squares estimate of the parameter vector $\vec{h}$ (Eq. \ref{eq:h}) and is given by
 \begin{equation}
 \hat{\vec{h}} = (\mathbf{A}^{\intercal}\mathbf{A})^{-1} \mathbf{A}^{\intercal} \: \vec{\Delta T}^{o} \: .
 \label{eq:h_hat}
 \end{equation}
 In practice, instead of solving the Eq. (\ref{eq:h_hat}), the matrix $(\mathbf{A}^{\intercal} \mathbf{A})$ is not inverted and the estimate $\hat{\vec{h}}$ is obtained by solving the resulting linear system. By presuming the existence of $(\mathbf{A}^{\intercal} \mathbf{A})^{-1}$, Eq. (\ref{eq:goal-function-L2}) gives an estimate $\hat{\vec{h}}$ producing the predicted data $\vec{d}(\hat{\vec{h}})$ (Eq. \ref{eq:predicted-data-vector}) as near as possible from the observed data $\vec{\Delta T}^{o}$, in the Least-Squares sense \citep{bard1973, twomey1977, menke1989, aster-etal2005}.
 
-The estimated parameter vector $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}) obtained by using Least Squares is very sensitive to outliers in the observed data. In some cases, if the outliers are not properly removed from the observed data, the estimated parameters can be seriously misleading. When working with field data, these outliers can be caused by, for example, interfering magnetic sources or cultural noise. In order to deal with this problem in an automatic manner, instead of using the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}), we can use a robust scheme for estimating the parameter vector $\tilde{\vec{h}}$ minimizing the goal function
+The Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}) is very sensitive to outliers in the observed data. In some cases, if the outliers are not properly removed from the observed data, the estimated parameters can be seriously misleading. When working with field data, these outliers can be caused by, for example, interfering magnetic sources or cultural noise. In order to deal with this problem in an automatic manner, instead of using the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}), we can use a robust scheme for estimating the parameter vector $\tilde{\vec{h}}$ minimizing the goal function
 \begin{equation}
 \Gamma(\vec{h}) = \frac{1}{N} \sum_{i = 1}^{N} 
 \vert \Delta T^{o}_{i} - d_{i}(\vec{h}) \vert \: .
@@ -215,10 +215,10 @@ The estimated parameter vector $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}) obtained by 
 \end{equation}
 Similarly to the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}), the vector $\tilde{\vec{h}}$ minimizing the goal function $\Gamma(\vec{h})$ (Eq. \ref{eq:goal-function-L1}) satisfies the condition
 \begin{equation}
-\vec{q}(\tilde{\vec{h}}) = \vec{0}
+\vec{q}(\tilde{\vec{h}}) = \vec{0} \: ,
 \label{eq:null-gradient-L1}
 \end{equation}
-where $\vec{q}(\tilde{\vec{h}})$ is the gradient vector, evaluated at $\tilde{\vec{h}}$, of the goal function $\Gamma(\vec{h})$ (Eq. \ref{eq:goal-function-L1}) and $\vec{0}$ is a vector with null elements. Different from Eq. (\ref{eq:null-gradient-L2}), Eq. (\ref{eq:goal-function-L1}) leads to a system of non-linear equations for obtaining the vector $\tilde{\vec{h}}$ (Robust estimate) minimizing the goal function $\Gamma(\vec{h})$ (Eq. \ref{eq:goal-function-L1}). While the Least Squares estimate $\hat{\vec{h}}$ is directly obtained by solving the Eq. (\ref{eq:h_hat}), the Robust estimate $\tilde{\vec{h}}$ is obtained iteratively by solving, at each iteration, the linear system
+where $\vec{q}(\tilde{\vec{h}})$ is the gradient vector, evaluated at $\tilde{\vec{h}}$, of the goal function $\Gamma(\vec{h})$ (Eq. \ref{eq:goal-function-L1}) and $\vec{0}$ is a vector with null elements. Different from Eq. (\ref{eq:null-gradient-L2}), Eq. (\ref{eq:null-gradient-L1}) leads to a system of non-linear equations for obtaining the vector $\tilde{\vec{h}}$ (Robust estimate) minimizing the goal function $\Gamma(\vec{h})$ (Eq. \ref{eq:goal-function-L1}). While the Least Squares estimate $\hat{\vec{h}}$ is directly obtained by solving the Eq. (\ref{eq:h_hat}), the Robust estimate $\tilde{\vec{h}}$ is obtained iteratively by solving, at each iteration $k$, the linear system
 \begin{equation}
 \left( \mathbf{A}^{\intercal} \mathbf{R}^{k} \mathbf{A} \right) \vec{h}^{k+1} =
 \mathbf{A}^{\intercal} \mathbf{R}^{k} \vec{\Delta T}^{o} \: ,
@@ -229,9 +229,9 @@ where $\mathbf{R}^{k}$ is a diagonal $N \times N$ matrix whose $i$th element $r_
 r_{i}^{k} = \dfrac{1}{\vert \Delta T^{o}_{i} - d_{i}(\vec{h}^{k}) + \epsilon \vert} \: ,
 \label{eq:ri}
 \end{equation}
-being $\epsilon$ a small positive number used for dealing with singularities when $\Delta T^{o}_{i} = d_{i}(\vec{h}^{k})$. This iterative process begins with $\vec{h}^{0} = \hat{\vec{h}}$, being $\hat{\vec{h}}$ the Least Squares estimate (Eq. \ref{eq:h_hat}). By using the initial approximation $\vec{h}^{0}$, we calculate the matrix $\mathbf{R}^{0}$ and solve the linear system given by Eq. (\ref{eq:iteration-L1}) for obtaining the estimate $\vec{h}^{1}$. This procedure is repeated for obtaining the estimate $\vec{h}^{2}$ and so on. After some iterations, this iterative procedure converges to an approximation of the Robust estimate $\tilde{\vec{h}}$ minimizing the goal function $\Gamma(\vec{h})$ (Eq. \ref{eq:goal-function-L1}). This algorithm is named Iteratively Reweighted Least Squares \citep{scales_1988, aster-etal2005}.
+being $\epsilon$ a small positive number used for dealing with singularities when $\Delta T^{o}_{i} = d_{i}(\vec{h}^{k})$. This iterative process begins with $\vec{h}^{0} = \hat{\vec{h}}$, being $\hat{\vec{h}}$ the Least Squares estimate (Eq. \ref{eq:h_hat}), and $\mathbf{R}^{0} = \mathbf{I}$, where $\mathbf{I}$ is the $3L \times 3L$ identity matrix. By using the initial approximation $\vec{h}^{0}$ and the matrix $\mathbf{R}^{0}$, we solve the linear system given by Eq. (\ref{eq:iteration-L1}) for obtaining the estimate $\vec{h}^{1}$. By using the vector $\vec{h}^{1}$ and the diagonal matrix $\mathbf{R}^{1}$, whose $i$th element $r_{i}$, $i = 1, ..., 3L$, is calculated with the Eq. (\ref{eq:ri}), this procedure is repeated for obtaining the estimate $\vec{h}^{2}$ and so on. After some iterations, this iterative procedure converges to an approximation of the Robust estimate $\tilde{\vec{h}}$ minimizing the goal function $\Gamma(\vec{h})$ (Eq. \ref{eq:goal-function-L1}). This algorithm is named Iteratively Reweighted Least Squares \citep{scales_1988, aster-etal2005}.
 
-Both $\hat{\vec{h}}$ (Least Squares estimate) and $\tilde{\vec{h}}$ (Robust estimate) are estimates of the parameter vector $\vec{h}$ (Eq. \ref{eq:h}). The parameter vector is represented in Cartesian coordinates as a function of the elements $h\alpha_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, of the vectors $\vec{h}^{j}$ (Eq. \ref{eq:hj}), which in turn are functions of the elements $m\alpha_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, of the magnetization vector $\vec{m}^{j}$ (Eq. \ref{eq:mag-vector-j}). However, the magnetization vector is commonly represented in terms of its intensity, declination and inclination. Therefore, for convenience, we will represent the vector $\hat{\vec{h}}^{j}$ (Eq. \ref{eq:hj}) in spherical coordinates as follows
+Both $\hat{\vec{h}}$ (Least Squares estimate) and $\tilde{\vec{h}}$ (Robust estimate) are estimates of the parameter vector $\vec{h}$ (Eq. \ref{eq:h}). The parameter vector is represented in Cartesian coordinates as a function of the elements $h\alpha_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, of the vectors $\vec{h}^{j}$ (Eq. \ref{eq:hj}), which in turn are functions of the elements $m\alpha_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, of the magnetization vector $\vec{m}^{j}$ (Eq. \ref{eq:mag-vector-j}). However, the magnetization vector is commonly represented in terms of its intensity, declination and inclination. Therefore, for convenience, we will represent the vector $\vec{h}^{j}$ (Eq. \ref{eq:hj}) in spherical coordinates as follows
 \begin{equation}
 \vec{h}^{j} = Q_{j} \:
 \left[
@@ -243,7 +243,7 @@ Both $\hat{\vec{h}}$ (Least Squares estimate) and $\tilde{\vec{h}}$ (Robust esti
 \right]_{3 \times 1} \: ,
 \label{eq:hj-spheric}
 \end{equation}
-where the intensity $Q_{j}$, declination $D_{j}$ and inclination $I_{j}$ are given as functions of the elements $h\alpha_{j}$, $\alpha = x, y, z$ (Fig. \ref{fig:spherical-coordinates}), by
+where the intensity $Q_{j}$, declination $D_{j}$ and inclination $I_{j}$ are given as functions of the elements $h\alpha_{j}$, $\alpha = x, y, z$ (Fig. \ref{fig:spherical-coordinates}), of $\vec{h}^{j}$ by
 \begin{equation}
 Q_{j} = \sqrt{hx_{j}^{2} + hy_{j}^{2} + hz_{j}^{2}} \quad ,
 \label{eq:Qj}
@@ -256,12 +256,12 @@ D_{j} = \arctan \left( \dfrac{hy_{j}}{hx_{j}} \right) \quad ,
 I_{j} = \arctan \left( \dfrac{hz_{j}}{\sqrt{hx_{j}^{2} + hy_{j}^{2}}} \right) \quad .
 \label{eq:Ij}
 \end{equation}
-So, after obtaining an estimated parameter vector (Least Squares or Robust estimate), we use the Eq(s). (\ref{eq:Dj}) and (\ref{eq:Ij}) for calculating, respectively, the declinations $D_{j}$ and inclinations $I_{j}$, $j = 1, ..., L$, of the total magnetization vector of all spheres. For convenience, the symbol $^\wedge$ is used to denote declinations $\hat{D}_{j}$ and inclinations $\hat{I}_{j}$, $j = 1, ..., L$, calculated by using the elements of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:goal-function-L2}). Similarly, the symbol $^\sim$ denotes that the declinations $\tilde{D}_{j}$ and inclinations $\tilde{I}_{j}$, $j = 1, ..., L$, are calculated by using the elements of the Robust estimate $\tilde{\vec{h}}$ produced by the iterative process (Eqs. \ref{eq:iteration-L1} and \ref{eq:ri}).
+So, after obtaining an estimated parameter vector (Least Squares or Robust estimate), we use the Eq(s). (\ref{eq:Dj}) and (\ref{eq:Ij}) for calculating, respectively, the declinations $D_{j}$ and inclinations $I_{j}$, $j = 1, ..., L$, of the total magnetization vector of all spheres. For convenience, the symbol $^\wedge$ is used to denote declinations $\hat{D}_{j}$ and inclinations $\hat{I}_{j}$, $j = 1, ..., L$, calculated by using the elements of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:goal-function-L2}). Similarly, the symbol $^\sim$ denotes that the declinations $\tilde{D}_{j}$ and inclinations $\tilde{I}_{j}$, $j = 1, ..., L$, are calculated by using the elements of the Robust estimate $\tilde{\vec{h}}$ produced by the Iteratively Reweighted Least Squares algorithm (Eqs. \ref{eq:iteration-L1} and \ref{eq:ri}).
 
 \subsection{Uncertainty of the estimated parameters}
 
 Total field anomaly measurements obtained in a geophysical survey are always affected by some noise. This noise is due to the wide range of experimental errors and inaccuracies that happens in a geophysical survey. Additionally, the noise makes impossible obtaining the same observed total field anomaly, even if all experimental conditions of the survey were exactly reproduced. The noise in the observed data $\vec{\Delta T}^{o}$ affects the estimated parameter vector, independently of the used method. Therefore, it is necessary to quantify this effect by propagating the uncertainty from the observed data to the estimated parameter vector. Here, this error propagation is done by using the covariance matrix \citep{bard1973, aster-etal2005}. The covariance matrix $\hat{\mathbf{C}}$ of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}) is given as a function of the covariance matrix $\mathbf{D}$ of the observed data. By presuming that 
-the errors of all observed data ${\Delta T}^{o}_{i}$, $i = 1, ..., N$, are independent and of equal variance $\sigma^{2}$, we obtain $\mathbf{D} = \sigma^{2} \: \mathbf{I}$, where $\mathbf{I}$ is the $N \times N$ identity matrix. From this assumption, we obtain
+the errors of all observed data ${\Delta T}^{o}_{i}$, $i = 1, ..., N$, are independent and of equal variance $\sigma^{2}$, we obtain $\mathbf{D} = \sigma^{2} \: \mathbf{I}$, where $\mathbf{I}$ is the $N \times N$ identity matrix. The covariance matrix $\hat{\mathbf{C}}$ is given by
 \begin{equation}
 \hat{\mathbf{C}} = \hat{\mathbf{H}} \: \mathbf{D} \: \hat{\mathbf{H}}^{\intercal} \: ,
 \label{eq:cov-h-hat}
@@ -285,7 +285,7 @@ where
 \end{equation}
 being the matrix $\mathbf{R}^{k}$ (Eqs. \ref{eq:iteration-L1} and \ref{eq:ri}) the last one calculated in the iterative process for estimating $\tilde{\vec{h}}$ \citep{bard1973, aster-etal2005}.
 
-The diagonal of the matrices $\hat{\mathbf{C}}$ (Eq. \ref{eq:cov-h-hat}) and $\tilde{\mathbf{C}}$ (Eq. \ref{eq:cov-h-tilde}) contain the variances of the elements of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}) and Robust estimate $\tilde{\vec{h}}$ (Eqs. \ref{eq:iteration-L1} and \ref{eq:ri}), respectively. Let $\vec{v}$ be a $3L$-dimensional vector whose element $v_{j}$, $j = 1, ..., 3L$ represents the $j$th element of the diagonal of the covariance matrix $\hat{\mathbf{C}}$ (Eq. \ref{eq:cov-h-hat}) or $\tilde{\mathbf{C}}$ (Eq. \ref{eq:cov-h-tilde}). This vector can be represented by
+The diagonal of the matrices $\hat{\mathbf{C}}$ (Eq. \ref{eq:cov-h-hat}) and $\tilde{\mathbf{C}}$ (Eq. \ref{eq:cov-h-tilde}) contains the variances of the elements of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}) and Robust estimate $\tilde{\vec{h}}$ (Eqs. \ref{eq:iteration-L1} and \ref{eq:ri}), respectively. Let $\vec{v}$ be a $3L$-dimensional vector whose element $v_{j}$, $j = 1, ..., 3L$, represents the $j$th element of the diagonal of the covariance matrix $\hat{\mathbf{C}}$ (Eq. \ref{eq:cov-h-hat}) or $\tilde{\mathbf{C}}$ (Eq. \ref{eq:cov-h-tilde}). This vector can be represented by
 \begin{equation}
 \vec{v} = 
 \left[
@@ -309,9 +309,9 @@ where
 \right]_{3 \times 1} \: ,
 \label{eq:vj}
 \end{equation}
-being ${\sigma \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, the uncertainty of the component ${h \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, of the vector $\vec{h}^{j}$ (Eq. \ref{eq:hj}) forming the estimated parameter vector. For convenience, the symbol $^\wedge$ is used to denote uncertainties $\hat{\sigma \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, calculated by using the elements of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:goal-function-L2}). Similarly, the symbol $^\sim$ denotes that the uncertainties $\tilde{\sigma \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, are calculated by using the elements of the Robust estimate $\tilde{\vec{h}}$ produced by the iterative process (Eqs. \ref{eq:iteration-L1} and \ref{eq:ri}).
+being ${\sigma \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, the uncertainty of the component ${h \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, of the vector $\vec{h}^{j}$ (Eq. \ref{eq:hj}) forming the estimated parameter vector. For convenience, the symbol $^\wedge$ is used to denote uncertainties $\hat{\sigma \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, calculated by using the elements of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}). Similarly, the symbol $^\sim$ denotes that the uncertainties $\tilde{\sigma \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, are calculated by using the elements of the Robust estimate $\tilde{\vec{h}}$ produced by the Iteratively Reweighted Least Squares algorithm (Eqs. \ref{eq:iteration-L1} and \ref{eq:ri}).
 
-In the previous section, for convenience, we describe the vectors $\vec{h}^{j}$, $j = 1, ..., L$ (Eq. \ref{eq:hj}), in terms of its intensity $Q_{j}$ (Eq. \ref{eq:Qj}), declination $D_{j}$ (Eq. \ref{eq:Dj}) and inclination $I_{j}$ (Eq. \ref{eq:Ij}), as shown in Fig. (\ref{fig:spherical-coordinates}). This quantities are described as functions of the components ${h \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, of the vector $\vec{h}^{j}$. Therefore, the uncertainty of the intensity $Q_{j}$, declination $D_{j}$ and inclination $I_{j}$ can be given as functions of the uncertainties ${\sigma \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$ shown in Eq. (\ref{eq:vj}). To do it, we presume that the components ${h \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, of the vector $\vec{h}^{j}$ (Eq. \ref{eq:hj}) are statistically independent and use the propagation of uncertainties \citep{fornasini2008}. From this assumption, the uncertainties $\sigma_{Qj}$, $\sigma_{Dj}$ and $\sigma_{Ij}$ of the intensity $Q_{j}$ (Eq. \ref{eq:Qj}), declination $D_{j}$ (Eq. \ref{eq:Dj}) and inclination $I_{j}$ (Eq. \ref{eq:Ij}), respectively, are given by
+In the previous section, for convenience, we describe the vectors $\vec{h}^{j}$, $j = 1, ..., L$ (Eq. \ref{eq:hj}), in terms of its intensity $Q_{j}$ (Eq. \ref{eq:Qj}), declination $D_{j}$ (Eq. \ref{eq:Dj}) and inclination $I_{j}$ (Eq. \ref{eq:Ij}), as shown in Fig. (\ref{fig:spherical-coordinates}). These quantities are described as functions of the components ${h \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, of the vector $\vec{h}^{j}$. Therefore, the uncertainty of the intensity $Q_{j}$, declination $D_{j}$ and inclination $I_{j}$ can be given as functions of the uncertainties ${\sigma \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$ shown in Eq. (\ref{eq:vj}). To do it, we presume that the components ${h \alpha}_{j}$, $\alpha = x, y, z$, $j = 1, ..., L$, of the vector $\vec{h}^{j}$ (Eq. \ref{eq:hj}) are statistically independent and use the propagation of uncertainties \citep{fornasini2008}. From this assumption, the uncertainties $\sigma_{Qj}$, $\sigma_{Dj}$ and $\sigma_{Ij}$ of the intensity $Q_{j}$ (Eq. \ref{eq:Qj}), declination $D_{j}$ (Eq. \ref{eq:Dj}) and inclination $I_{j}$ (Eq. \ref{eq:Ij}), respectively, are given by
 \begin{equation}
 \sigma_{Qj} = \sqrt{\left( \frac{\partial Q_{j}}{\partial hx_{j}} \: \sigma x_{j} \right)^{2} +
                     \left( \frac{\partial Q_{j}}{\partial hy_{j}} \: \sigma y_{j} \right)^{2} +
@@ -352,7 +352,7 @@ and
 \frac{\partial I_{j}}{\partial hz_{j}} = \dfrac{ \sqrt{\left( hx_{j} \right)^{2} + \left( hy_{j} \right)^{2}} }{Q_{j}^{2}} \: .
 \label{eq:dIj-dhzj}
 \end{equation}
-For convenience, the symbol $^\wedge$ is used to denote the uncertainties $\hat{\sigma}_{Qj}$, $\hat{\sigma}_{Dj}$ and $\hat{\sigma}_{Ij}$, $j = 1, ..., L$, calculated with the Eqs. (\ref{eq:sigmaQj}), (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}), respectively, by using the elements of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:goal-function-L2}). Similarly, the symbol $^\sim$ denotes that the uncertainties $\tilde{\sigma}_{Qj}$, $\tilde{\sigma}_{Dj}$ and $\tilde{\sigma}_{Ij}$, $j = 1, ..., L$, are calculated with the Eqs. (\ref{eq:sigmaQj}), (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}), respectively, by using the elements of the Robust estimate $\tilde{\vec{h}}$ produced by the iterative process (Eqs. \ref{eq:iteration-L1} and \ref{eq:ri}).
+For convenience, the symbol $^\wedge$ is used to denote the uncertainties $\hat{\sigma}_{Qj}$, $\hat{\sigma}_{Dj}$ and $\hat{\sigma}_{Ij}$, $j = 1, ..., L$, calculated with the Eqs. (\ref{eq:sigmaQj}), (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}), respectively, by using the elements of the Least Squares estimate $\hat{\vec{h}}$ (Eq. \ref{eq:h_hat}). Similarly, the symbol $^\sim$ denotes that the uncertainties $\tilde{\sigma}_{Qj}$, $\tilde{\sigma}_{Dj}$ and $\tilde{\sigma}_{Ij}$, $j = 1, ..., L$, are calculated with the Eqs. (\ref{eq:sigmaQj}), (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}), respectively, by using the elements of the Robust estimate $\tilde{\vec{h}}$ produced by the the Iteratively Reweighted Least Squares algorithm (Eqs. \ref{eq:iteration-L1} and \ref{eq:ri}).
 
 \section{Application to synthetic data}
 TEXT
@@ -420,7 +420,7 @@ TEXT
 \begin{center}
 \includegraphics[width=8.3cm]{Figures/Fig1.png}
 \end{center}
-\caption{Schematic representation of $L = 2$ spheres uniformly magnetized at the subsurface. These spheres have radii $R_{j}$ (dashed straight lines), constant magnetization vectors $\vec{m}^{j}$ and centres (grey dots) at $(xc_{j}, yc_{j}, zc_{j})$, $j = 1, ..., L$. The total field anomaly produced by these spheres can be observed at the points $(x_{i}, y_{i}, z_{i})$, $i = 1, ..., N$ (black dots). In this Cartesian coordinate system, $x$ points to the geographic North, $y$ points to East and $z$ points downward.}
+\caption{Schematic representation of $L = 2$ spheres uniformly magnetized at the subsurface. These spheres have radii $R_{j}$ (dashed straight lines), constant magnetization vectors $\vec{m}^{j}$ and centres (grey dots) at $(xc_{j}, yc_{j}, zc_{j})$, $j = 1, ..., L$. The magnetic effect produced by these spheres can be observed at the points $(x_{i}, y_{i}, z_{i})$, $i = 1, ..., N$ (black dots). In this Cartesian coordinate system, $x$ points to the geographic North, $y$ points to East and $z$ points downward.}
 \label{fig:geometric-aspects}
 \end{figure}
 
