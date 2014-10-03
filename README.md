@@ -1,11 +1,9 @@
-#Estimation of the total magnetization direction of approximately spherical
-bodies
+#Estimation of the total magnetization direction of approximately spherical bodies
 
-Authors:
-* [Oliveira Jr., V. C.](http://fatiando.org/people/oliveira-jr/)<sup>1</sup>, 
-* Sales, D. P.
-* [Barbosa, V. C. F.](http://lattes.cnpq.br/0391036221142471)<sup>1</sup>,
-* [Uieda, L.](http://www.leouieda.com/)<sup>12</sup>
+[Vanderlei C. Oliveira Jr.](http://fatiando.org/people/oliveira-jr/)<sup>1</sup>, 
+Sales, D. P., 
+[Valeria C. F. Barbosa](http://lattes.cnpq.br/0391036221142471)<sup>1</sup>,
+[Leonardo Uieda](http://www.leouieda.com/)<sup>12</sup>
 
 <sup>1</sup>[*Observatório Nacional*](http://www.on.br/) ; <sup>2</sup>
 [*Universidade do Estado do Rio de Janeiro*](http://www.uerj.br/)
@@ -27,8 +25,8 @@ Province (GAP), Brazil, show the good performance of our method in estimating
 geological meaningful magnetization directions. The results obtained for a 
 region of the GAP, near from the alkaline complex of Diorama, suggest the 
 presence of non-outcropping sources marked by strong remanent magnetization 
-with inclination and declination close to -70.35^{o} and -19.81^{o}, respectively. 
-This estimated magnetization direction leads to predominantly positive 
+with inclination and declination close to -70.35<sup>o</sup> and -19.81<sup>o</sup>, 
+respectively. This estimated magnetization direction leads to predominantly positive 
 reduced-to-the-pole anomalies, even for other region of the GAP, in the 
 alkaline complex of Montes Claros de Goiás. These results show that the 
 non-outcropping sources near from the alkaline complex of Diorama have almost 
