@@ -1,8 +1,8 @@
 #Estimation of the total magnetization direction of approximately spherical bodies
 
 [Vanderlei C. Oliveira Jr.](http://fatiando.org/people/oliveira-jr/)<sup>1</sup>, 
-Sales, D. P., 
-[Valeria C. F. Barbosa](http://lattes.cnpq.br/0391036221142471)<sup>1</sup>,
+Daiana P. Sales<sup>1</sup>, 
+[Valéria C. F. Barbosa](http://lattes.cnpq.br/0391036221142471)<sup>1</sup>,
 [Leonardo Uieda](http://www.leouieda.com/)<sup>12</sup>
 
 <sup>1</sup>[*Observatório Nacional*](http://www.on.br/) ; <sup>2</sup>
