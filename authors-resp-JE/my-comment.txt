@@ -1,0 +1,9 @@
+We would like to thank Referee J. Ebbing for his constructive comments. Below we present our comments on his recommendations.
+
+\noindent{\bf General comments}
+
+Referee's comment: {\it "First, the magnetization direction of the spherical body is inverted and afterwards the magnetization of the prism to study the error introduced by a non-spherical geometry. But at the same time the inclination and declination are changed, so that no direct comparison with the inversion for the spherical body is possible. I would suggest inverting first for the same parameters, but by only changing geometry and in the second step changing inclination and declination more drastically compared to the applied inducing field. If the method is supposed to be able to resolve remanent magnetization, it would be interesting to see how the method performs for anomalies with reversed magnetization."}
+
+We agree with you. Thank you very much. To adress this recommendation, we applied our method to estimate the magnetization direction of two synthetic bodies. The first one is a sphere with radius $R = 2000 \, m$ and the second synthetic body is a cube with length side $R = 2000 \, m$. The centers of these two synthetic bodies are located at the same Cartesian coordinates $x_{0} = 0 \, m$, $y_{0} = 0 \, m$ and $z_{0} = 2000 \, m$. They also have the same magnetization vector with inclination $-9.5^{\circ}$, declination $-167^{\circ}$ and intensity $3.5 \, A/m$. The simulated geomagnetic field has inclination $9.5^{\circ}$ and declination $13^{\circ}$. Note that the synthetic bodies have reversed magnetization. The total-field anomaly produced by these bodies were calculated on the same regular grid with constant vertical coordinate $z = -150 \, m$. These data were corrupted with a pseudo-random Gaussian noise of null mean and standard deviation $5 \, nT$. 
+
+\noindent{\bf Specific comments}

@@ -1,0 +1,538 @@
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2013.11.13)  22 OCT 2014 23:33
+entering extended mode
+ %&-line parsing enabled.
+**/tmp/899096651/npg-2014-69.tex
+(/tmp/899096651/npg-2014-69.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german-x-2008-06-18, ngerman-x-2008-06-18, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, la
+tin, mongolian, mongolian2a, bokmal, nynorsk, polish, portuguese, romanian, rus
+sian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turkish, ukenglis
+h, ukrainian, uppersorbian, welsh, loaded.
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2008/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 90.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2008/07/16 v0.04k Graphics/color for pdfTeX
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2008/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+))
+(/usr/local/texlive/2008/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number
+ (JPG)
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/t1enc.sty
+Package: t1enc 1994/06/01 Standard LaTeX package
+) (./comext.sty
+Package: comext 2008/05/18 v1.0 (DS)
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2007/10/30 8.1 (PWD)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 602.
+\c@NAT@ctr=\count88
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
+)) (./url.sty
+\Urlmuskip=\muskip10
+Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
+)
+(./pdfscreen_comments_new.sty
+
+LaTeX Warning: You have requested package `pdfscreen_comments_new',
+               but the package provides `pdfscreen'.
+
+Package: pdfscreen 2000/07/07 v.1.5 screen PDF design (CVR)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2005/08/06 v4.2 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count89
+\calc@Bcount=\count90
+\calc@Adimen=\dimen105
+\calc@Bdimen=\dimen106
+\calc@Askip=\skip45
+\calc@Bskip=\skip46
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count91
+\calc@Cskip=\skip47
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+\c@panel=\count92
+\c@driver=\count93
+\c@scheme=\count94
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2008/08/14 v6.78f Hypertext links for LaTeX
+
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2007/12/12 v1.6 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2007/09/09 v1.3 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2006/08/21 v0.3 Provides ifxetex conditional
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2008/08/01 v1.3 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2008/08/01 xcolor patch
+))
+\@linkdim=\dimen107
+\Hy@linkcounter=\count95
+\Hy@pagecounter=\count96
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2008/08/14 v6.78f Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/local/texlive/2008/texmf/tex/latex/config/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2007/10/18 v3.0 Keyval support for LaTeX options (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 2876.
+Package hyperref Info: Link nesting OFF on input line 2881.
+Package hyperref Info: Hyper index ON on input line 2884.
+Package hyperref Info: Plain pages OFF on input line 2891.
+Package hyperref Info: Backreferencing OFF on input line 2896.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3086.
+LaTeX Info: Redefining \url on input line 3272.
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2007/12/12 v0.3 LuaTeX support for pdfTeX utility functions
+ (HO)
+Package pdftexcmds Info: LuaTeX not detected on input line 139.
+)))
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2007/09/29 v1.3 Key value parser with default handler suppor
+t (HO)
+)
+\Fld@menulength=\count97
+\Field@Width=\dimen108
+\Fld@charsize=\dimen109
+\Field@toks=\toks16
+Package hyperref Info: Hyper figures OFF on input line 4189.
+Package hyperref Info: Link nesting OFF on input line 4194.
+Package hyperref Info: Hyper index ON on input line 4197.
+Package hyperref Info: backreferencing OFF on input line 4204.
+Package hyperref Info: Link coloring OFF on input line 4209.
+Package hyperref Info: Link coloring with OCG OFF on input line 4214.
+Package hyperref Info: PDF/A mode OFF on input line 4219.
+
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count98
+\c@Item=\count99
+\c@Hfootnote=\count100
+)
+*hyperref using driver hpdftex*
+(/usr/local/texlive/2008/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2008/08/14 v6.78f Hyperref driver for pdfTeX
+\Fld@listcount=\count101
+)
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 337.
+
+
+Package hyperref Warning: Values of option `pdfpagemode':
+(hyperref)                * `UseNone'
+(hyperref)                * `UseOutlines'
+(hyperref)                * `UseThumbs'
+(hyperref)                * `FullScreen'
+(hyperref)                * `UseOC' (PDF 1.5)
+(hyperref)                * `UseAttachments' (PDF 1.6)
+(hyperref)                * An empty value disables the option.
+(hyperref)                Unknown value `none' on input line 337.
+
+Package hyperref Info: Option `colorlinks' set `true' on input line 337.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 337.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 337.
+Package hyperref Info: Option `pdffitwindow' set `true' on input line 337.
+Package hyperref Info: Option `pdfcenterwindow' set `true' on input line 337.
+Package hyperref Info: Option `pdfwindowui' set `true' on input line 337.
+
+Package hyperref Warning: Option `backref' has already been used,
+(hyperref)                setting the option has no effect on input line 337.
+
+Include comment 'screen' Excluding comment 'print'
+Package pdfscreen Info: Default options loaded on input line 362.
+Package pdfscreen Info: No color scheme specified 
+(pdfscreen)             default color scheme loaded on input line 439.
+\@PDFbox=\box26
+\shadowsize=\dimen110
+\do@PDFBox=\toks17
+\panelwidth=\skip48
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen111
+)
+\pmbraise@=\dimen112
+)
+\buttonwidth=\dimen113
+\smallbuttonwidth=\dimen114
+\@PDFspaceleft=\dimen115
+\@Leftmargin=\dimen116
+\@Rightmargin=\dimen117
+\@Topmargin=\dimen118
+\@Bottommargin=\dimen119
+\Textmarginright=\dimen120
+\Textmarginleft=\dimen121
+\Textmargintop=\dimen122
+\Textmarginbottom=\dimen123
+\marginright=\dimen124
+\marginleft=\dimen125
+\margintop=\dimen126
+\marginbottom=\dimen127
+\panelheight=\dimen128
+\LLX=\dimen129
+\LLY=\dimen130
+\URX=\dimen131
+\URY=\dimen132
+\calfactor=\dimen133
+\overlayheight=\dimen134
+\overlaywidth=\dimen135
+\c@panel@section=\count102
+\c@slide=\count103
+\c@slideoverlay=\count104
+\c@overlay=\count105
+)
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 66.
+
+
+Package hyperref Warning: Option `pagecolor' is not available anymore.
+
+Package pdfscreen Info: right panel options loaded on input line 67.
+Package pdfscreen Info: LLX=0.0pt
+(pdfscreen)             LLY=0.0pt
+(pdfscreen)             URX=472.31592pt
+(pdfscreen)             URY=452.39864pt
+(pdfscreen)             panelwidth=142.26378pt
+(pdfscreen)             overlaywidth=472.31592pt
+(pdfscreen)             textwidth=415.41043pt
+(pdfscreen)             textheight=398.33844pt
+(pdfscreen)             paperwidth=614.5797pt
+(pdfscreen)             paperheight=452.39864pt
+(pdfscreen)             calfactor=0.0pt
+(pdfscreen)             Panel=2 on input line 67.
+Package color Info: Redefining color panelbackground on input line 71.
+Package color Info: Redefining color buttonbackground on input line 72.
+Package color Info: Redefining color buttonshadow on input line 73.
+Package color Info: Redefining color section0 on input line 78.
+Package color Info: Redefining color section1 on input line 79.
+Package color Info: Redefining color section2 on input line 80.
+Package color Info: Redefining color section3 on input line 81.
+Package color Info: Redefining color section4 on input line 82.
+(/tmp/899096651//npg-2014-69.aux)
+\openout1 = `npg-2014-69.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 103.
+
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 103.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/supp-pdf.tex
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count106
+\scratchdimen=\dimen136
+\scratchbox=\box27
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen137
+\MPnumerator=\count110
+\everyMPtoPDFconversion=\toks20
+)
+Package hyperref Info: Link coloring ON on input line 103.
+ (/usr/local/texlive/2008/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count111
+)
+LaTeX Info: Redefining \ref on input line 103.
+LaTeX Info: Redefining \pageref on input line 103.
+
+(/tmp/899096651//npg-2014-69.out) (/tmp/899096651//npg-2014-69.out)
+\@outlinefile=\write4
+\openout4 = `npg-2014-69.out'.
+
+\AtBeginShipoutBox=\box28
+LaTeX Font Info:    Try loading font information for T1+phv on input line 105.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 107.
+
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
+)
+
+pdfTeX warning: /usr/local/texlive/2008/bin/x86_64-linux/pdflatex (file ./NPGD_
+Logo.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.4> al
+lowed
+<NPGD_Logo.pdf, id=7, 183.96027pt x 49.05627pt>
+File: NPGD_Logo.pdf Graphic file (type pdf)
+ <use NPGD_Logo.pdf>
+Overfull \hbox (19.92029pt too wide) in paragraph at lines 108--108
+[][] 
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 109.
+LaTeX Font Info:    Font shape `T1/phv/bx/sl' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 109.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 110.
+
+Package pdfscreen Warning: No overlay specified
+(pdfscreen)                output will have only background color on input line
+ 118.
+
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 118.
+
+</var/www/tex_templates/includes/CreativeCommons_Attribution_License.png, id=14
+, 200.75pt x 70.2625pt>
+File: /var/www/tex_templates/includes/CreativeCommons_Attribution_License.png G
+raphic file (type png)
+
+<use /var/www/tex_templates/includes/CreativeCommons_Attribution_License.png>
+[1{/usr/local/texlive/2008/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+ </var/www/tex_templates/includes/CreativeCommons_Attribution_License.png (PNG 
+copy)> <./NPGD_Logo.pdf>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 119.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 119.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+AED: lastpage setting LastPage
+
+Package pdfscreen Warning: No overlay specified
+(pdfscreen)                output will have only background color on input line
+ 130.
+
+File: /var/www/tex_templates/includes/CreativeCommons_Attribution_License.png G
+raphic file (type png)
+<use /var/www/tex_templates/includes/CreativeCommons_Attribution_License.png>
+[2] (/tmp/899096651//npg-2014-69.aux) ) 
+Here is how much of TeX's memory you used:
+ 5740 strings out of 493886
+ 82406 string characters out of 1151119
+ 145753 words of memory out of 3000000
+ 8893 multiletter control sequences out of 10000+50000
+ 37227 words of font info for 53 fonts, out of 3000000 for 5000
+ 714 hyphenation exceptions out of 8191
+ 47i,17n,37p,1079b,339s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2008/texmf-dist/font
+s/enc/dvips/base/8r.enc}</usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky
+/cm/cmmi10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr10
+.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr8.pfb></usr/
+local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy10.pfb></usr/local/tex
+live/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy8.pfb></usr/local/texlive/2008/
+texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2008/texmf-d
+ist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2008/texmf-dist/fo
+nts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2008/texmf-dist/fonts/typ
+e1/urw/helvetic/uhvro8a.pfb>
+Output written on /tmp/899096651//npg-2014-69.pdf (2 pages, 91669 bytes).
+PDF statistics:
+ 79 PDF objects out of 1000 (max. 8388607)
+ 3 named destinations out of 1000 (max. 131072)
+ 27 words of extra memory for PDF output out of 10000 (max. 10000000)
+

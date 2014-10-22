@@ -1,0 +1,130 @@
+% Comment Template NPGD
+% (C) Copernicus GmbH
+% Version 1.0, 2014/01/13
+
+\documentclass[11pt]{article}
+
+\usepackage{ifthen}
+\usepackage{times}
+\usepackage[pdftex]{graphicx}
+\usepackage[pdftex]{color}
+\usepackage{amssymb}
+\usepackage{lastpage}
+\usepackage{t1enc}
+\usepackage{comext}
+
+\sloppy
+
+\newboolean{print}
+\setboolean{print}{false}
+
+% The following dimensions only affect the print layout
+% and are adopted to the screen layout defined by pdfscreen
+% (screensize, margins and panelwidth). footskip according
+% to pdfscreen_comments, alter only both.
+
+\paperheight=15.9cm
+\paperwidth=16.6cm
+\topmargin=-1.84cm % =7mm-1in
+\oddsidemargin=-1.54cm % =1cm-1in
+\evensidemargin=-1.54cm % =1cm-1in
+\textheight=14.0cm % =15.9cm-7mm-7mm-5mm
+\textwidth=14.6cm % =21.6cm-5cm-10mm-10mm
+\headheight=0pt
+\headsep=0pt
+\footskip=5mm % see pdfscreen_comments
+
+\def\firstpage{1}
+\setcounter{page}{\firstpage}
+\renewcommand{\thepage}{C\arabic{page}}
+
+\def\firstpageofpaper{1465}
+
+\renewcommand\today{\number\day~\ifcase\month\or January\or February\or March\or April\or
+   May\or June\or July\or August\or September\or October\or November\or December\fi~\number\year}
+
+\let\bf\bfseries % redefine \bf, which is recommended in tex_instructions.htm
+\let\it\slshape  % redefine \it, which is recommended in tex_instructions.htm
+
+\IfFileExists{url.sty}{\RequirePackage{url}\urlstyle{same}}
+
+\def\npgdlogo{%
+   \parbox[t]{45.5mm}{\vskip-2.5mm\includegraphics[height=14mm]{NPGD_Logo.pdf}\\[-2.1mm] \null\hfill}}
+\def\npgdref{\fontencoding{T1}\fontfamily{phv}\fontseries{m}\fontshape{n}\fontsize{8}{11}\selectfont
+Nonlin. Processes Geophys. Discuss., 1,
+   C\firstpage--\pageref*{LastPage}, \number\year} % npgd reference
+\def\npgdurl{www.nonlin-processes-geophys-discuss.net/1/C\firstpage/\number\year} % npgd url
+\def\thetitle{{\slshape Interactive comment on}
+  ``Estimation of the total magnetization direction of approximately spherical bodies'' {\slshape by} V. C. Oliveira Jr. et al.}
+
+\ifthenelse{\boolean{print}}
+   {\usepackage[print]{pdfscreen_comments_new}}
+   {\usepackage[screen,rightpanel]{pdfscreen_comments_new}
+
+\hypersetup{bookmarksopen=false,citecolor=black,filecolor=black,linkcolor=black,menucolor=black,pagecolor=black,urlcolor=black}
+
+\panelwidth=5cm} \margins{10mm}{10mm}{7mm}{7mm}
+\screensize{15.9cm}{21.6cm}%{6.25in}{8.5in}
+\def\panelfont{\scriptsize}
+\definecolor{backgroundcolor}{rgb}{1.,1.,1.}%{gray}{1.}
+\definecolor{journalname}{rgb}{0.10,0.28,0.60}
+\definecolor{panelbackground}{rgb}{0.94,0.95,0.95}
+\definecolor{buttonbackground}{rgb}{0.99,0.75,0.00}
+\definecolor{buttonshadow}{rgb}{0.99,0.75,0.00}
+\definecolor{paneltext}{rgb}{0.10,0.28,0.60}
+\definecolor{buttontext}{rgb}{0.10,0.28,0.60}
+\ifthenelse{\boolean{print}}{}{\backgroundcolor{backgroundcolor}}
+
+\definecolor{section0}{rgb}{0.,0.,0.} % black
+\definecolor{section1}{rgb}{0.,0.,0.} % black
+\definecolor{section2}{rgb}{0.,0.,0.} % black
+\definecolor{section3}{rgb}{0.,0.,0.} % black
+\definecolor{section4}{rgb}{0.,0.,0.} % black
+
+\def\panel{\colorbox{panelbackground}
+   {\begin{minipage}[t][\paperheight][t]{\panelwidth}
+   \null\vspace*{7mm}\fontfamily{\sfdefault}\fontseries{m}\fontshape{n}\selectfont
+   \centering\parbox[t]{0.8\panelwidth}{\centering\color{paneltext}{{\Large\bfseries{\hypersetup{urlcolor=journalname}\href{http://www.nonlin-processes-geophys-discuss.net}{NPGD}}}\\[2mm]
+   {\small 1, C\firstpage--\pageref*{LastPage}, \number\year}\\[1.1mm]
+   \rule{0.8\panelwidth}{1.1pt}\\[3mm]
+   Interactive\\Comment}}\\
+   \null\vfill
+   \Acrobatmenu{FullScreen}{\addButton{0.75\panelwidth}{\color{buttontext}Full Screen / Esc}}\\[3mm]
+   \centering\addButton{0.75\panelwidth}{\href{http://www.nonlin-processes-geophys-discuss.net/1/C\firstpage/\number\year/npgd-1-C\firstpage-\number\year-print.pdf}{\hfill\color{buttontext}Printer-friendly Version\hfill}}\\[3mm]
+   \centering\addButton{0.75\panelwidth}{\href{http://www.nonlin-processes-geophys-discuss.net/1/1465/2014/npgd-1-1465-2014-discussion.html}{\hfill\color{buttontext}Interactive Discussion\hfill}}\\[3mm]
+   \centering\addButton{0.75\panelwidth}{\href{http://www.nonlin-processes-geophys-discuss.net/1/1465/2014/npgd-1-1465-2014.pdf}{\hfill\color{buttontext}Discussion Paper\hfill}}\\[4mm]
+   \href{http://creativecommons.org/licenses/by/3.0/}{\includegraphics[width=1.7cm]{/var/www/tex_templates/includes/CreativeCommons_Attribution_License.png}}\\[4mm]
+   \null
+   \end{minipage}}}
+
+\setlength{\parskip}{2mm}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\sffamily
+\noindent\parbox[t]{9.9cm}{\npgdref\\\npgdurl/\\
+\copyright\ Author(s) \number\year. This work is distributed under\\the Creative Commons Attribute 3.0 License.}
+\hfill\npgdlogo\\[20mm]
+{\raggedright\LARGE\bfseries\thetitle\\[5mm]}
+{\raggedright\bfseries V. C. Oliveira Jr. et al.\\[3mm]}
+{\raggedright\small vandscoelho@gmail.com\\[3mm]}
+{\raggedright\small Received and published: \today\\[7mm]}
+We would like to thank Referee J. Ebbing for his constructive comments. Below we present our comments on his recommendations.
+
+\noindent{\bf General comments}
+
+Referee's comment: {\it "First, the magnetization direction of the spherical body is inverted and afterwards the magnetization of the prism to study the error introduced by a non-spherical geometry. But at the same time the inclination and declination are changed, so that no direct comparison with the inversion for the spherical body is possible. I would suggest inverting first for the same parameters, but by only changing geometry and in the second step changing inclination and declination more drastically compared to the applied inducing field. If the method is supposed to be able to resolve remanent magnetization, it would be interesting to see how the method performs for anomalies with reversed magnetization."}
+
+We agree with you. Thank you very much. To adress this recommendation, we applied our method to estimate the magnetization direction of two synthetic bodies. The first one is a sphere with radius $R = 2000 \, m$ and the second synthetic body is a cube with length side $R = 2000 \, m$. The centers of these two synthetic bodies are located at the same Cartesian coordinates $x_{0} = 0 \, m$, $y_{0} = 0 \, m$ and $z_{0} = 2000 \, m$. They also have the same magnetization vector with inclination $-9.5^{\circ}$, declination $-167^{\circ}$ and intensity $3.5 \, A/m$. The simulated geomagnetic field has inclination $9.5^{\circ}$ and declination $13^{\circ}$. Note that the synthetic bodies have reversed magnetization. The total-field anomaly produced by these bodies were calculated on the same regular grid with constant vertical coordinate $z = -150 \, m$. These data were corrupted with a pseudo-random Gaussian noise of null mean and standard deviation $5 \, nT$. 
+
+\noindent{\bf Specific comments}
+
+
+\bigskip\footnoterule
+
+{\small Interactive comment on Nonlin. Processes Geophys. Discuss., 1, 1465, 2014.}
+
+
+
+\end{document}
