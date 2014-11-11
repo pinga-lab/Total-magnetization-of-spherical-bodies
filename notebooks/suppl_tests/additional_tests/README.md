@@ -8,9 +8,9 @@ direction. Finally, we show the performance of our method in
 estimating the magnetization direction of synthetic models similar to that
 ones presented by Lelièvre and Oldenburg (2009) and Ellis, Wet and Macleod (2012).
 The results with the least-squares approach can be seen
-[here](http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/simple_tests/synthetic_tests-L2.ipynb)
+[here](http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/additional_tests/simple_tests/synthetic_tests-L2.ipynb)
 . The results with the robust approach can be seen
-[here](http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/simple_tests/synthetic_tests-L1.ipynb)
+[here](http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/additional_tests/simple_tests/synthetic_tests-L1.ipynb)
 .
 
 ##References
