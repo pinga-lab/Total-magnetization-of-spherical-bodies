@@ -14,4 +14,6 @@ noise-corrupted total-field anomaly is produced by an spherical
 body and use a structural index equal to 3. The obtained results
 can be seen [here](http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb). 
 This numerical test shows the robustness of our method when applied 
-to estimate the magnetization direction of a complex source.
+to estimate the magnetization direction of a complex source. We
+also illustrate the use of the reduction to the pole to verify the 
+quality of the estimated magnetization direction.
