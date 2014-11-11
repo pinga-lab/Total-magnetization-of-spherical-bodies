@@ -15,10 +15,10 @@ The results with the least-squares approach can be seen
 
 ##References
 
-Ellis, R. G., B. Wet and I. N. Macleod, 2012, Inversion of magnetic data from 
-remanent and induced sources: 22nd International geophysical conferenceand 
-exhibition, ASEG, Expanded Abrastracts, 1-4.
-
 Lelièvre, P. G. and D. Oldenburg, 2009, A 3D total magnetization inversion 
 applicable when significant, complicated remanence is present. Geophysics,
 74(3), L21–L30, doi: 10.1190/1.3103249
+
+Ellis, R. G., B. Wet and I. N. Macleod, 2012, Inversion of magnetic data from 
+remanent and induced sources: 22nd International geophysical conferenceand 
+exhibition, ASEG, Expanded Abrastracts, 1-4.
