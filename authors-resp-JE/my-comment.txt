@@ -4,30 +4,66 @@ We would like to thank Referee J. Ebbing for his constructive comments. Below we
 
 \noindent{\bf General comments}
 
-\underline{Referee's comment}: {\it "First, the magnetization direction of the spherical body is inverted and afterwards the magnetization of the prism to study the error introduced by a non-spherical geometry. But at the same time the inclination and declination are changed, so that no direct comparison with the inversion for the spherical body is possible. I would suggest inverting first for the same parameters, but by only changing geometry and in the second step changing inclination and declination more drastically compared to the applied inducing field. If the method is supposed to be able to resolve remanent magnetization, it would be interesting to see how the method performs for anomalies with reversed magnetization."}
+\underline{Referee's comment}: {\it "First, the magnetization direction of the spherical body is inverted and afterwards the 
+magnetization of the prism to study the error introduced by a non-spherical geometry. But at the same time the inclination and 
+declination are changed, so that no direct comparison with the inversion for the spherical body is possible. I would suggest 
+inverting first for the same parameters, but by only changing geometry and in the second step changing inclination and 
+declination more drastically compared to the applied inducing field. If the method is supposed to be able to resolve 
+remanent magnetization, it would be interesting to see how the method performs for anomalies with reversed magnetization."}
 
-Thank you very much. To adress this recommendation, we have applied our method to estimate the magnetization direction of two synthetic bodies with the same magnetization and different geometries. The first one is a sphere with radius $R = 2000 \, m$ and the second synthetic body is a cube with length side $R = 2000 \, m$. The centers of these two synthetic bodies are located at the same Cartesian coordinates $x_{0} = 0 \, m$, $y_{0} = 0 \, m$ and $z_{0} = 2000 \, m$. They also have the same magnetization vector with inclination $-9.5^{\circ}$, declination $-167^{\circ}$ and intensity $3.5 \, A/m$. The simulated geomagnetic field has inclination $9.5^{\circ}$ and declination $13^{\circ}$. Note that the synthetic bodies have reversed magnetization. The total-field anomaly produced by these bodies were calculated on the same regular grid with constant vertical coordinate $z = -150 \, m$. These data were corrupted with a pseudo-random Gaussian noise of null mean and standard deviation $5 \, nT$.
+Thank you very much. To adress this recommendation, we have applied our method to estimate 
+the magnetization direction of two synthetic bodies with the same magnetization and different 
+geometries. The first one is a sphere with radius $R = 2000 \, m$ and the second synthetic 
+body is a cube with length side $R = 2000 \, m$. The centers of these two synthetic bodies 
+are located at the same Cartesian coordinates $x_{0} = 0 \, m$, $y_{0} = 0 \, m$ and $z_{0} = 2000 \, m$. 
+They also have the same magnetization vector with inclination $-9.5^{\circ}$, declination $-167^{\circ}$ 
+and intensity $3.5 \, A/m$. The simulated geomagnetic field has inclination $9.5^{\circ}$ and 
+declination $13^{\circ}$. Note that the synthetic bodies have reversed magnetization. 
+The total-field anomaly produced by these bodies were calculated on the same regular 
+grid with constant vertical coordinate $z = -150 \, m$. These data were corrupted with 
+a pseudo-random Gaussian noise of null mean and standard deviation $5 \, nT$.
 
-We obtained the estimated inclinations $\hat{I} = -9.49770^{\circ} \pm 0.00036^{\circ}$ and $\tilde{I} = -9.50764^{\circ} \pm 0.01022^{\circ}$ and declinations $\hat{D} = -167.01021^{\circ} \pm 0.00069^{\circ}$ and $\tilde{D} =
--166.98518^{\circ} \pm 0.07527^{\circ}$ for the synthetic sphere. For the synthetic cube, we obtained the estimated inclinations $\hat{I} = -9.58948^{\circ} \pm 0.00026^{\circ}$ and $\tilde{I} = -8.86599^{\circ} \pm 0.00876^{\circ}$ and declinations $\hat{D} = -164.57023^{\circ} \pm 0.00049^{\circ}$ and $\tilde{D} =
+By applying our method to the magnetic data produced by the synthetic sphere, we obtained 
+the estimated inclinations $\hat{I} = -9.49770^{\circ} \pm 0.00036^{\circ}$ and 
+$\tilde{I} = -9.50764^{\circ} \pm 0.01022^{\circ}$ and declinations 
+$\hat{D} = -167.01021^{\circ} \pm 0.00069^{\circ}$ and $\tilde{D} =
+-166.98518^{\circ} \pm 0.07527^{\circ}$. In the case of the synthetic data produced by 
+the cube, we obtained the estimated inclinations $\hat{I} = -9.58948^{\circ} \pm 0.00026^{\circ}$ 
+and $\tilde{I} = -8.86599^{\circ} \pm 0.00876^{\circ}$ and declinations 
+$\hat{D} = -164.57023^{\circ} \pm 0.00049^{\circ}$ and $\tilde{D} =
 -167.34047^{\circ} \pm 0.01028^{\circ}$. The caret ($^{\wedge}$) and tilde
-($^{\sim}$) denote the results computed by using, respectively, the least-squares and robust estimates. These results show the good performance of our method in retrieving the true magnetization direction of the sphere and the cube. The direct comparison between these results shows the robustness of our method in estimating the magnetization of a non-spherical source. The numerical code used to produce these results can be found \href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{here}}.
+($^{\sim}$) denote the results computed by using, respectively, the least-squares and 
+robust estimates. These results show the good performance of our method in retrieving the 
+true magnetization direction of the sphere and the cube. The direct comparison between these 
+results shows the robustness of our method in estimating the magnetization of a non-spherical 
+source. The numerical code used to produce these results can be found 
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{here}}.
 
-In this test, we calculated the noise-corrupted total-field anomalies near from the sources. In this case, the total-field anomaly produced by the cube is very different from that one produced by the sphere and exhibit non-dipolar features. As shown in the section 3.3 (Robustness against non-spherical sources) of the manuscript, these non-dipolar features are attenuated if the data are calculated far from the sources and this attenuation is more noticeable for sources presenting symmetry around three orthogonal axis (like the cube presented here). In the section 3.3 of the manuscript, we present the effects of these two factors (distance between data and source and symmetry of the source) on the results obtained by applying our method to 33 different synthetic-data sets.
+In this test, we calculated the noise-corrupted total-field anomalies close to the sources. 
+In this case, the total-field anomaly produced by the cube exhibits non-dipolar features being 
+very different from the one produced by the sphere. As shown in the section 3.3 (Robustness 
+against non-spherical sources) of our manuscript, these non-dipolar features are attenuated 
+if the data are calculated or measured far from the sources and this attenuation is more 
+noticeable if the sources possess symmetry around three orthogonal axis (like the cube 
+presented here). In the section 3.3 of our manuscript, we present the effects of these 
+two factors: (1) the distance between the data (the magnetometer) and the source and (2) 
+the symmetry of the source. These effects are analyzed by applying our method to 33 different 
+synthetic-data sets.
 
-\underline{Referee's comment}: {\it "All the inversions presented consider that the location of the source body is known."}
+\underline{Referee's comment}: {\it "All the inversions presented consider that the location 
+of the source body is known."}
 
-The section 3.4 (Robustness against errors in the centre location) of the manuscript
+The section 3.4 (Robustness against errors in the centre location) in our manuscript
 shows how the errors in the coordinates of the centre of the source affect the results
-obtained with our method. In this section, we show the results obtained by presuming
-different (wrong) locations of the centre of the simulated spherical source along three
+obtained with our method. In this section, we show the results obtained by wrongly assuming
+different locations of the centre of the simulated spherical source along three
 orthogonal straight lines which are parallel to the x, y and z axis and cross the centre
 of the true source. Along each line, we applied our method by considering that the
 centre of the source is erroneously located at 21 regularly spaced points, totalling 63
 inversions obtained with the least-squares approach and 63 inversion obtained with the
 robust approach. The results obtained in all these 126 inversions are shown in Fig. 7.
 According to these results, our method is more sensitive to uncertainties in the prior
-information about location of the centre of the source along the horizontal directions
-than in the vertical direction.
+information about the horizontal coordinates of the centre of the source along the 
+horizontal directions than about the depth of the centre of the source.
 
 \noindent{\bf Specific comments}
