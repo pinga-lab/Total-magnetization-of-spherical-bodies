@@ -128,3 +128,30 @@ to the pole to verify the quality of the estimated magnetization direction.
 The reduction to the pole calculated with the magnetization direction
 obtained by our method leads to a predominantly positive field, which
 is very close to the true pole field.
+
+We have also run several additional tests showing the application of our method 
+to estimate the magnetization direction of different synthetic sources with 
+known centres and estimated centres (via Euler Deconvolution). 
+The results obtained with the least-squares approach can be found
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{here}}
+and the results obtained with the robust approach can be found
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{here}}.
+One of these tests show the influence of a superposed constant-regional field (50 nT)
+on the estimated magnetization direction. The superposed constant-regional
+field does not lead to wrong estimates of the centres of the sources by Euler Deconvolution 
+because, in this case, this technique estimates a non-null level base. On the other
+hand, this regional-constant field misleads the magnetization direction obtained
+by our method. To overcome this problem, a regional-residual separation should be
+previously done. Finally, these additional tests also show the performance 
+of our method in estimating the magnetization direction of synthetic models 
+similar to that ones presented by Lelièvre and Oldenburg (2009) and Ellis, Wet and Macleod (2012).
+
+\underline{References}
+
+Lelièvre, P. G. and D. Oldenburg, 2009, A 3D total magnetization inversion 
+applicable when significant, complicated remanence is present. Geophysics,
+74(3), L21–L30, doi: 10.1190/1.3103249
+
+Ellis, R. G., B. Wet and I. N. Macleod, 2012, Inversion of magnetic data from 
+remanent and induced sources: 22nd International geophysical conferenceand 
+exhibition, ASEG, Expanded Abrastracts, 1-4.
