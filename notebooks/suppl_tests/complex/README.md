@@ -1,8 +1,8 @@
 #Complex test
 
 This numerical test show the application of our method to estimate
-the magnetization direction of a synthetic intrusion formed by a
-sill which is fed by a vertical pipe. This synthetic source crosses
+the magnetization direction of a synthetic igneous intrusion formed by a
+sill which is fed by a vertical pipe. This synthetic source is emplaced in
 weakly-magnetized sediments which are placed over a magnetized 
 basement. Our method is applied to the noise-corrupted total-field 
 anomaly produced by the intrusion + basement on a regular grid 

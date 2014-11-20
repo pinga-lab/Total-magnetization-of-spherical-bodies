@@ -82,3 +82,49 @@ direction of 3D sources can also be difficult if the total-field anomaly display
 strongly non-dipolar features, as illustrated by the Figures 5a-c of our manuscript. 
 In these examples, even if the interpreter knew the centre of the source, the estimation 
 of the magnetization direction by using forward modelling would be very difficult.
+
+\underline{Referee's comment}: {\it "More interesting would be an example, where 
+a regional field superposes the local anomaly or to some degree two anomalies 
+overlap. Euler Deconvolution will provide results in both cases, but with less 
+confidence in the horizontal position, which will affect the magnetization
+directions."}
+
+Thank you for this very good suggestion. We follow this suggestion by applying
+our method to estimate the magnetization direction of a synthetic igneous 
+intrusion formed by a sill which is fed by a vertical pipe. The numerical 
+code used to produce this test can be found
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}}.
+The simulated geomagnetic field has inclination $-39.8^{\circ}$ 
+and declination $-22.5^{\circ}$. The synthetic intrusion has a
+reversed magnetization with inclination $I = 140.2^{\circ}$ and
+declination $D = 157.5^{\circ}$. This intrusion
+is emplaced in weakly-magnetized sediments that are 
+placed over a basement which is magnetized by induction. In this example, the 
+total-field anomaly 
+predicted by the intrusion overlaps the one produced by the
+basement. Our method is applied to the noise-corrupted total-field 
+anomaly produced by the intrusion + basement on a regular grid 
+with constant vertical coordinate. The position of the synthetic 
+intrusion is estimated by Euler Deconvolution. The synthetic 
+intrusion is not an ideal source and then does not have a 
+characteristic structural index. In this case, we presume that the 
+noise-corrupted total-field anomaly is produced by an spherical 
+body and use a structural index equal to 3. As shown
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}},
+the estimated location obtained by Euler Deconvolution is placed outside
+the synthetic intrusion. Even using this poor estimation of the location
+of the source, our method obtained the estimated inclinations 
+$\hat{I} = 142.36274^{\circ} \pm 0.00035^{\circ}$ 
+and $\tilde{I} = 138.00578^{\circ} \pm 0.00946^{\circ}$ and declinations 
+$\hat{D} = 168.58910^{\circ} \pm 0.00061^{\circ}$ and $\tilde{D} =
+167.04275^{\circ} \pm 0.02352^{\circ}$. The caret ($^{\wedge}$) and tilde
+($^{\sim}$) denote the results computed by using, respectively, the least-squares and 
+robust estimates.
+This numerical test shows 
+the robustness of our method when applied to retrieve the magnetization 
+direction of a complex source whose centre is poorly estimated by Euler
+Deconvolution. We also illustrate the use of the reduction 
+to the pole to verify the quality of the estimated magnetization direction.
+The reduction to the pole calculated with the magnetization direction
+obtained by our method leads to a predominantly positive field, which
+is very close to the true pole field.
