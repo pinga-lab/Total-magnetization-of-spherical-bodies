@@ -66,4 +66,19 @@ According to these results, our method is more sensitive to uncertainties in the
 information about the horizontal coordinates of the centre of the source along the 
 horizontal directions than about the depth of the centre of the source.
 
-\noindent{\bf Specific comments}
+\underline{Referee's comment}: {\it "If the position of the source is known for example 
+from Euler Deconvolution, the estimate of the inclination and declination is almost trivial 
+even by forward modelling."}
+
+We disagree with you. The estimation of the magnetization direction of a 3D source may be 
+a difficult task, especially if it is done by forward modelling. The estimation of the 
+magnetization direction of a 3D source might be easy if the source is symmetrical, with 
+known shape and if there is no interfering anomalies. This is shown in the section 3.1 
+(Validation test) of our manuscript. As shown in the section 3.2 (Robustness against 
+interfering anomalies) of our manuscript, the presence of interfering anomalies can 
+mislead the estimation of the magnetization direction even if the magnetic data are 
+produced by simple sources with known centres. The estimation of the magnetization 
+direction of 3D sources can also be difficult if the total-field anomaly displays 
+strongly non-dipolar features, as illustrated by the Figures 5a-c of our manuscript. 
+In these examples, even if the interpreter knew the centre of the source, the estimation 
+of the magnetization direction by using forward modelling would be very difficult.
