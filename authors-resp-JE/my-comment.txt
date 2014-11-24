@@ -74,10 +74,10 @@ We disagree with you. The estimation of the magnetization direction of a 3D sour
 a difficult task, especially if it is done by forward modelling. The estimation of the 
 magnetization direction of a 3D source might be easy if the source is symmetrical, with 
 known shape and if there is no interfering anomalies. This is shown in the section 3.1 
-(Validation test) of our manuscript. As shown in the section 3.2 (Robustness against 
-interfering anomalies) of our manuscript, the presence of interfering anomalies can 
-mislead the estimation of the magnetization direction even if the magnetic data are 
-produced by simple sources with known centres. The estimation of the magnetization 
+(Validation test) of our manuscript. On the other hand, as shown in the section 3.2 
+(Robustness against interfering anomalies) of our manuscript, the presence of interfering 
+anomalies can mislead the estimation of the magnetization direction even if the magnetic 
+data are produced by simple sources with known centres. The estimation of the magnetization 
 direction of 3D sources can also be difficult if the total-field anomaly displays 
 strongly non-dipolar features, as illustrated by the Figures 5a-c of our manuscript. 
 In these examples, even if the interpreter knew the centre of the source, the estimation 
@@ -96,7 +96,7 @@ code used to produce this test can be found
 \href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}}.
 The simulated geomagnetic field has inclination $-39.8^{\circ}$ 
 and declination $-22.5^{\circ}$. The synthetic intrusion has a
-reversed magnetization with inclination $I = 140.2^{\circ}$ and
+reversed magnetization with inclination $I = 39.8^{\circ}$ and
 declination $D = 157.5^{\circ}$. This intrusion
 is emplaced in weakly-magnetized sediments that are 
 placed over a basement which is magnetized by induction. In this example, the 
@@ -114,10 +114,10 @@ body and use a structural index equal to 3. As shown
 the estimated location obtained by Euler Deconvolution is placed outside
 the synthetic intrusion. Even using this poor estimation of the location
 of the source, our method obtained the estimated inclinations 
-$\hat{I} = 142.36274^{\circ} \pm 0.00035^{\circ}$ 
-and $\tilde{I} = 138.00578^{\circ} \pm 0.00946^{\circ}$ and declinations 
-$\hat{D} = 168.58910^{\circ} \pm 0.00061^{\circ}$ and $\tilde{D} =
-167.04275^{\circ} \pm 0.02352^{\circ}$. The caret ($^{\wedge}$) and tilde
+$\hat{I} = 36.80938^{\circ} \pm 0.00035^{\circ}$ 
+and $\tilde{I} = 39.29138^{\circ} \pm 0.04604^{\circ}$ and declinations 
+$\hat{D} = 168.03264^{\circ} \pm 0.00059^{\circ}$ and $\tilde{D} =
+164.48038^{\circ} \pm 0.03872^{\circ}$. The caret ($^{\wedge}$) and tilde
 ($^{\sim}$) denote the results computed by using, respectively, the least-squares and 
 robust estimates.
 This numerical test shows 
@@ -155,3 +155,36 @@ applicable when significant, complicated remanence is present. Geophysics,
 Ellis, R. G., B. Wet and I. N. Macleod, 2012, Inversion of magnetic data from 
 remanent and induced sources: 22nd International geophysical conferenceand 
 exhibition, ASEG, Expanded Abrastracts, 1-4.
+
+\noindent{\bf Specific comments}
+
+\underline{Referee's comment}: {\it "Page 2 Sentence starting Line 19: These results 
+show that the non-outcropping sources near from the alkaline complex of Diorama have 
+almost the same magnetization direction of that as the ones in the alkaline complex 
+of Montes Claros de Goiás, strongly suggesting that these sources have been emplaced 
+in the crust almost within the same geological time interval."}
+
+Thank you. We have modified the manuscript.
+
+\underline{Referee's comment}: {\it "Line 26: mineral and petroleum exploration"}
+
+Thank you. We have modified the manuscript.
+
+\underline{Referee's comment}: {\it "Page 3 Line 4 Rephrase as: of the most important 
+data acquisition techniques due to the ability to cover large areas in a relative short 
+period of time"}
+
+Thank you. We have rephrased the manuscript.
+
+\underline{Referee's comment}: {\it "Line 23: Delete this sentence: The total-field 
+anomaly represents the Euclidean norm of the magnetic induction produced by the magnetic 
+sources in the subsurface. Repetition from before."}
+
+Thank you. We have removed this sentence.
+
+\underline{Referee's comment}: {\it "Paragraph starting in Line 28: This you can delete as 
+it is not relevant here."}
+
+We disagree with you. In our opinion, this paragraph is relevant to stress the
+importance of the magnetization direction for other magnetic interpretation 
+techniques.
