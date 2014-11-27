@@ -12,7 +12,7 @@ intrusion is not an ideal source and then does not have a
 characteristic structural index. In this case, we presume that the 
 noise-corrupted total-field anomaly is produced by an spherical 
 body and use a structural index equal to 3. The obtained results
-can be seen [here](http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb). 
+can be seen [here](http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/complex/complex_test.ipynb). 
 This numerical test shows the robustness of our method when applied 
 to estimate the magnetization direction of a complex source. We
 also illustrate the use of the reduction to the pole to verify the 
