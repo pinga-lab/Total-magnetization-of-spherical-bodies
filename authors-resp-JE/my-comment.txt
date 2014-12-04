@@ -118,10 +118,10 @@ body and use a structural index equal to 3. As shown
 the estimated location of the body obtained by Euler Deconvolution is placed outside
 the synthetic intrusion. Even using this poor estimation of the location
 of the source, our method obtained the estimated inclinations 
-$\hat{I} = 36.80938^{\circ} \pm 0.00035^{\circ}$ 
-and $\tilde{I} = 39.29138^{\circ} \pm 0.04604^{\circ}$ and declinations 
-$\hat{D} = 168.03264^{\circ} \pm 0.00059^{\circ}$ and $\tilde{D} =
-164.48038^{\circ} \pm 0.03872^{\circ}$. The caret ($^{\wedge}$) and tilde
+$\hat{I} = 37.50377^{\circ} \pm 0.00035^{\circ}$ 
+and $\tilde{I} = 40.25973^{\circ} \pm 0.04392^{\circ}$ and declinations 
+$\hat{D} = 167.61518^{\circ} \pm 0.00060^{\circ}$ and $\tilde{D} =
+164.58968^{\circ} \pm 0.09092^{\circ}$. The caret ($^{\wedge}$) and tilde
 ($^{\sim}$) denote the results computed by using, respectively, the least-squares and 
 robust estimates.
 This numerical test shows 
