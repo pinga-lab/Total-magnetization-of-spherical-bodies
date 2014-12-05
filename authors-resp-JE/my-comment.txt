@@ -43,7 +43,7 @@ robust estimates. These results show the good performance of our method in retri
 true magnetization direction of the sphere and the cube. The direct comparison between these 
 results shows the robustness of our method in estimating the magnetization of a non-spherical 
 source. The numerical code used to produce these results can be found 
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{here}}.
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{here}}.
 
 In this test, we calculated the noise-corrupted total-field anomalies close to the sources. 
 In this case, the total-field anomaly produced by the cube exhibits non-dipolar features being 
@@ -115,7 +115,7 @@ Thank you for this very good suggestion. We follow this suggestion by applying
 our method to estimate the magnetization direction of a synthetic igneous 
 intrusion formed by a sill which is fed by a vertical pipe. The numerical 
 code used to produce this test can be found
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}}.
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}}.
 The simulated geomagnetic field has inclination $-39.8^{\circ}$ 
 and declination $-22.5^{\circ}$. The synthetic intrusion has a
 reversed magnetization with inclination $I = 39.8^{\circ}$ and
@@ -132,7 +132,7 @@ intrusion is not an ideal source and then does not have a
 characteristic structural index. In this case, we presume that the 
 noise-corrupted total-field anomaly is produced by an spherical 
 body and use a structural index equal to 3. As shown
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}},
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}},
 the estimated location of the body obtained by Euler Deconvolution is placed outside
 the synthetic intrusion. Even using this poor estimation of the location
 of the source, our method obtained the estimated inclinations 
@@ -149,15 +149,15 @@ Deconvolution. We also illustrate the use of the reduction
 to the pole to verify the quality of the estimated magnetization direction.
 The reduction to the pole calculated with the magnetization direction
 obtained by our method leads to a predominantly positive field, which
-is very close to the true pole field (see \href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}}).
+is very close to the true pole field (see \href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}}).
 
 We have also run several additional tests showing the application of our method 
 to estimate the magnetization direction of different synthetic sources with 
 known and estimated centres (by using Euler Deconvolution). 
 The results obtained with the least-squares approach can be found
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{here}}
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{here}}
 and the results obtained with the robust approach can be found
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{here}}.
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{here}}.
 One of these tests show the influence of a superposed constant-regional field (50 nT)
 on the estimated magnetization direction. The superposed constant-regional
 field does not lead to wrong estimates of the centres of the sources by Euler Deconvolution 
