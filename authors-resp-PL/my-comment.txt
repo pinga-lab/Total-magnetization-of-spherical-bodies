@@ -1,8 +1,7 @@
 Reply to P. Lelièvre's Comment on "Estimation of the total magnetization direction of approximately spherical bodies"
-
 \noindent{\bf General comments}
 
-
+\bigskip
 
 \underline{Referee's comment}: {\it "The forward problem described 
 is essentially identical to a mesh-based discretization but with 
@@ -14,14 +13,14 @@ and Ellis et al. (2012)."}
 \bigskip
 
 We fully disagree with your comment that the forward problem in 
-our method is \textcolor{red}{essentially} identical to the one 
+our method is \textcolor{red}{essentially identical} to the one 
 adopted by Lelièvre and Oldenburg (2009). 
 
 
 The interpretation model 
 adopted by Lelièvre and Oldenburg (2009) consists of an 
 $m_{x} \times m_{y} \times m_{z}$ grid of 3D juxtaposed prisms in 
-the horizontal and vertical directions (\textcolor{red}{Figure 1a ???}). 
+the horizontal and vertical directions. 
 Hence, in the 
 Lelièvre and Oldenburg (2009) the associated forward model 
 (their equation 10) requires computing the $N$ by $3M$ full 
@@ -53,32 +52,15 @@ parameters than data observations)."}
 We agree that Lelièvre and Oldenburg’s (2009) method solves an 
 underdetermined inverse problem while our method solves an 
 overdetermined problem. However, this characteristic is not the 
-unique difference between these approaches. \textcolor{red}{Table ???} 
+unique difference between these approaches. Figure 1 
 presents a list of the characteristics found in Lelièvre and 
 Oldenburg’ (2009) method in comparison with those found in our 
-method in this manuscript. By analyzing the Table below, we can 
+method in this manuscript. By analyzing the Figure 1, we can 
 easily conclude that these methods are substantially different. 
 We highlighted (in green) the only two characteristics of these 
 methods that are equal.
 
-
-
-\textcolor{red}{Table ???}
-
-\begin{table}[h]
-\caption{captioncaptioncaptioncaptioncaptioncaption}
-\vskip4mm
-\centering
-\begin{tabular}{p{5cm} | c | c}
- & {\bf Lelièvre and Oldenburg's (2009) method} & {\bf Our method} \\
-\hline Interpretation model consists of a  user-specified 
-grid of $M$ juxtaposed prisms in the horizontal and vertical 
-directions & Yes & No \\
-\hline Interpretation model consists of a  user-specified set of a 
-few dipoles & No & Yes \\
-\end{tabular}
-\end{table}
-
+\bigskip
 
 {\bf Computational efficiency}
 
@@ -125,7 +107,7 @@ These authors are using strong constraints because they are trying
 to retrieve both the shapes and the magnetization directions of the 
 sources at each small volume (prism) of the 
 $m_{x} \times m_{y} \times  m_{z}$ grid of 3D juxtaposed prisms in 
-the horizontal and vertical directions (\textcolor{red}{Figure 1a ????}).
+the horizontal and vertical directions.
 
 Lelièvre and Oldenburg (2009) deal with a high degree of nonuniqueness 
 (an ill-posed inverse problem).  To transform this ill-posed inverse 
@@ -279,12 +261,12 @@ by inverting the upward-continued anomalies (e.g., Fig. 5d–i)
 the 11 simulated non-spherical sources}. \textcolor{red}{Besides, 
 in this review we simulated other examples of non-spherical 
 sources} (the results
-can be found 
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{here}},
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}},
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{here}},
+can be found at
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{link 1}},
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{link 2}},
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{link 3}},
 and
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{here}}
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{link 4}}
 ). Among these additional tests, we not only illustrate the application of
 our method to interpret simple sources, but also show the performance 
 of our method in estimating the magnetization direction of synthetic models 
@@ -334,12 +316,12 @@ and $z$-coordinates of the centre of the source (Figure 7) and
 evaluating the sensitive to uncertainties in the a priori 
 information about the horizontal coordinates of the centre 
 of the non-spherical sources} (the results
-can be found 
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{here}},
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}},
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{here}},
+can be found at 
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{link 1}},
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{link 2}},
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{link 3}},
 and
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{here}}
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{link 4}}
 ). 
 
 Finally, we stress that, in our method, the prior information and the 
@@ -394,27 +376,29 @@ that confirm or deny a given hypothesis cannot be confirmed
 by other scientists. In our manuscript, the premises, the prior 
 information and the variables used for simulating our tests 
 are explicitly present in the text. Besides, we have already 
-made 
-\href{http://fatiando.readthedocs.org/en/v0.3/api/gravmag.magdir.html#module-fatiando.gravmag.magdir}{\textcolor{blue}{available}} 
+made available (see this
+\href{http://fatiando.readthedocs.org/en/v0.3/api/gravmag.magdir.html#module-fatiando.gravmag.magdir}{\textcolor{blue}{link}}) 
 the code of our program to be used by other 
 scientists. Our method is part of the open-source Python 
 toolkit for geophysical modeling and inversion called
-\href{http://fatiando.org/}{\textcolor{blue}{Fatiando a Terra}},
+\href{http://fatiando.org/}{\textcolor{blue}{Fatiando a Terra}}.
 
-
+\bigskip
 
 \underline{References}
 
-
+\bigskip
 
 Silva, J. B. C. and V. C. F. Barbosa, 2003, 3D Euler deconvolution: 
 Theoretical basis for automatically selecting good solutions. Geophysics,
 68(6), 1962–1968, doi: 10.1190/1.1635050
 
-Lelièvre, P. G. and D. Oldenburg, 2009, A 3D total magnetization inversion 
+Lelièvre, P. G. and D. W. Oldenburg, 2009, A 3D total magnetization inversion 
 applicable when significant, complicated remanence is present. Geophysics,
 74(3), L21–L30, doi: 10.1190/1.3103249
 
 Ellis, R. G., B. Wet and I. N. Macleod, 2012, Inversion of magnetic data from 
-remanent and induced sources: 22nd International geophysical conferenceand 
-exhibition, ASEG, Expanded Abrastracts, 1-4.
+remanent and induced sources: 22nd International geophysical conference and 
+exhibition, ASEG, Expanded Abstracts, 1-4.
+
+\bigskip
