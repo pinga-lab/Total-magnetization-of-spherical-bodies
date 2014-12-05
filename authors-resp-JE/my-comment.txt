@@ -55,10 +55,10 @@ of the source body is known."}
 
 The section 3.4 (Robustness against errors in the centre location) in our manuscript
 shows how the errors in the coordinates of the centre of the source affect the results
-obtained with our method. In this section, we show the results obtained by wrongly assuming
+obtained with our method. In this section, we wrongly assume
 different locations of the centre of the simulated spherical source along three
-orthogonal straight lines which are parallel to the x, y and z axis and cross the centre
-of the true source. Along each line, we applied our method by considering that the
+orthogonal straight lines which are parallel to the x, y and z axis and cross the true centre
+of the source. Along each line, we applied our method by considering that the
 centre of the source is erroneously located at 21 regularly spaced points, totalling 63
 inversions obtained with the least-squares approach and 63 inversion obtained with the
 robust approach. The results obtained in all these 126 inversions are shown in Fig. 7.
@@ -70,8 +70,8 @@ horizontal directions than about the depth of the centre of the source.
 from Euler Deconvolution, the estimate of the inclination and declination is almost trivial 
 even by forward modelling."}
 
-We disagree with you. The estimation of the magnetization direction of a 3D source may be 
-a difficult task, especially if it is done by forward modelling. The estimation of the 
+Not truly. The estimation of the magnetization direction of a 3D source may be 
+a difficult task, especially if it is done by interactive forward modelling. The estimation of the 
 magnetization direction of a 3D source might be easy if the source is symmetrical, with 
 known shape and if there is no interfering anomalies. This is shown in the section 3.1 
 (Validation test) of our manuscript. On the other hand, as shown in the section 3.2 
@@ -81,7 +81,11 @@ data are produced by simple sources with known centres. The estimation of the ma
 direction of 3D sources can also be difficult if the total-field anomaly displays 
 strongly non-dipolar features, as illustrated by the Figures 5a-c of our manuscript. 
 In these examples, even if the interpreter knew the centre of the source, the estimation 
-of the magnetization direction by using forward modelling would be very difficult.
+of the magnetization direction by using interactive forward modelling would be a very 
+difficult task involving an exhaustive and time-consuming trial-and-error 
+procedure to yield an acceptable data fitting.  On the other hand, any 
+inversion method  has the advantage, compared with forward modelling, of 
+automatically fitting observations.
 
 \underline{Referee's comment}: {\it "More interesting would be an example, where 
 a regional field superposes the local anomaly or to some degree two anomalies 
@@ -98,12 +102,12 @@ The simulated geomagnetic field has inclination $-39.8^{\circ}$
 and declination $-22.5^{\circ}$. The synthetic intrusion has a
 reversed magnetization with inclination $I = 39.8^{\circ}$ and
 declination $D = 157.5^{\circ}$. This intrusion
-is emplaced in weakly-magnetized sediments that are 
-placed over a basement which is magnetized by induction. In this example, the 
+is emplaced in weakly magnetized sediments that are 
+overlaying a basement which is magnetized by induction. In this example, the 
 total-field anomaly 
 predicted by the intrusion overlaps the one produced by the
 basement. Our method is applied to the noise-corrupted total-field 
-anomaly produced by the intrusion + basement on a regular grid 
+anomaly produced by both the intrusion and the basement on a regular grid 
 with constant vertical coordinate. The position of the synthetic 
 intrusion is estimated by Euler Deconvolution. The synthetic 
 intrusion is not an ideal source and then does not have a 
@@ -111,13 +115,13 @@ characteristic structural index. In this case, we presume that the
 noise-corrupted total-field anomaly is produced by an spherical 
 body and use a structural index equal to 3. As shown
 \href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}},
-the estimated location obtained by Euler Deconvolution is placed outside
+the estimated location of the body obtained by Euler Deconvolution is placed outside
 the synthetic intrusion. Even using this poor estimation of the location
 of the source, our method obtained the estimated inclinations 
-$\hat{I} = 36.80938^{\circ} \pm 0.00035^{\circ}$ 
-and $\tilde{I} = 39.29138^{\circ} \pm 0.04604^{\circ}$ and declinations 
-$\hat{D} = 168.03264^{\circ} \pm 0.00059^{\circ}$ and $\tilde{D} =
-164.48038^{\circ} \pm 0.03872^{\circ}$. The caret ($^{\wedge}$) and tilde
+$\hat{I} = 37.50377^{\circ} \pm 0.00035^{\circ}$ 
+and $\tilde{I} = 40.25973^{\circ} \pm 0.04392^{\circ}$ and declinations 
+$\hat{D} = 167.61518^{\circ} \pm 0.00060^{\circ}$ and $\tilde{D} =
+164.58968^{\circ} \pm 0.09092^{\circ}$. The caret ($^{\wedge}$) and tilde
 ($^{\sim}$) denote the results computed by using, respectively, the least-squares and 
 robust estimates.
 This numerical test shows 
@@ -127,11 +131,11 @@ Deconvolution. We also illustrate the use of the reduction
 to the pole to verify the quality of the estimated magnetization direction.
 The reduction to the pole calculated with the magnetization direction
 obtained by our method leads to a predominantly positive field, which
-is very close to the true pole field.
+is very close to the true pole field (see \href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}},).
 
 We have also run several additional tests showing the application of our method 
 to estimate the magnetization direction of different synthetic sources with 
-known centres and estimated centres (via Euler Deconvolution). 
+known and estimated centres (by using Euler Deconvolution). 
 The results obtained with the least-squares approach can be found
 \href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{here}}
 and the results obtained with the robust approach can be found
@@ -139,7 +143,7 @@ and the results obtained with the robust approach can be found
 One of these tests show the influence of a superposed constant-regional field (50 nT)
 on the estimated magnetization direction. The superposed constant-regional
 field does not lead to wrong estimates of the centres of the sources by Euler Deconvolution 
-because, in this case, this technique estimates a non-null level base. On the other
+because, in this case, this technique estimates a non-null base level. On the other
 hand, this regional-constant field misleads the magnetization direction obtained
 by our method. To overcome this problem, a regional-residual separation should be
 previously done. Finally, these additional tests also show the performance 
@@ -186,5 +190,5 @@ Thank you. We have removed this sentence.
 it is not relevant here."}
 
 We disagree with you. In our opinion, this paragraph is relevant to stress the
-importance of the magnetization direction for other magnetic interpretation 
-techniques.
+importance of the magnetization direction in other magnetic interpretation 
+techniques (for example, the reduction to the pole).

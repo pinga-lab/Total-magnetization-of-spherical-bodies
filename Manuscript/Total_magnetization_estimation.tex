@@ -97,52 +97,40 @@ anomalies, the geophysicist can characterize the magnetic sources in
 subsurface and then better defining exploration targets
 \citep{telford-etal1990,blakely1996}.
 
-Several techniques for interpreting total-field anomalies have been developed
-since the 20th century. Among these techniques are the reduction to pole
-(RTP), pseudogravity transformation and analytic signal. The RTP allows
-transforming the total-field anomaly measured everywhere into that one that
-would be measured if both the magnetization of the source and the geomagnetic
-field were vertical \citep{baranov1957,baranov-naudy1964,silva1986}. This
-transformation reduces the negative lobe of the total-field anomaly and
-places the positive values over the magnetic source, like in gravity
-anomalies. However, this technique only works if the magnetization (remanent
-plus induced) direction of the source is known. The pseudogravity
-transformation uses the Poisson relation for converting an observed
-total-field anomaly into the gravity anomaly that would be produced by
-a~source whose density is proportional to the magnetization intensity of the
-magnetic source \citep{baranov1957}. This transformation also reduces the
-obliquity of the total-field anomaly and requires the knowledge of the
-magnetization direction of the source. The analytic signal is a~complex
-quantity that has been largely used for determining the geological contacts
-of the magnetic sources. The analytic signal amplitude (ASA) has a~great
-importance in interpreting total-field anomalies produced by 2-D
-magnetization distributions. In this case, the ASA does not depend on the
-source's magnetization direction \citep{nabighian1972,nabighian1974}. In
-contrast, in the case of 3-D magnetization distributions, the ASA depends on
-the source's magnetization direction \citep{nabighian1984,li2006}.
+Several widely used techniques for interpreting total-field 
+anomalies require the correct knowledge of the magnetization 
+direction of the sources. Among these techniques we emphasize 
+the reduction to pole \citep{baranov1957,baranov-naudy1964,silva1986}, 
+the pseudogravity transformation \citep{baranov1957} and the amplitude 
+of the analytic signal \citep{nabighian1972,nabighian1974, 
+nabighian1984,li2006}. Besides, several widely used magnetic inversion 
+methods for estimating the distribution of the magnetization-intensity 
+contrasts in the subsurface also require the knowledge of the correct 
+magnetization direction \citep{li-oldenburg1996, pilkington1997,
+portniaguine-zhdanov1999, portniaguine-zhdanov2002, barbosa-silva2006}.
 
-Hence, the magnetization direction of the sources is a~very important
-parameter for interpreting total-field anomalies. Due to this remarkable
-importance, several methods for determining the magnetization direction of
+Due to the great importance of the magnetization direction of the 
+sources in interpreting total-field anomalies, several methods for 
+determining the magnetization direction of
 the sources have been developed. These methods can be divided into two
 groups. The first one comprises methods that do not impose strong constraints
 on the shape of the sources. \citet{fedi-etal1994}, for example, accomplished
 successive RTP's in the wavenumber domain by using different tentative
 magnetization directions. Among this set of RTP anomalies, these authors
 choose that one whose amplitude of the negative part is minimum. Since this
-method uses a~wavenumber approach, it requires that the total-field anomaly
-be regularly spaced in a~horizontal grid with constant height to achieve the
+method uses a wavenumber approach, it requires that the total-field anomaly
+be regularly spaced in a horizontal grid with constant height to achieve the
 computational efficiency of the FFT. Besides, it is known that the RTP in the
 wavenumber domain is unstable at low latitudes and cannot be applied for
 interpreting total-field anomalies produced by magnetic sources having
 different magnetization directions. \citet{medeiros-silva1995} used the
 source moments up to second order derived from the multipole expansion of the
 magnetic potential for estimating the magnetization direction and the spatial
-orientation of a~magnetic source. Although this method does not strongly
+orientation of a magnetic source. Although this method does not strongly
 constraint the source's shape, it presumes that the magnetic source has three
 orthogonal planes of symmetry intersecting each other at the centre of the
 source. It is also presumed that the source is far from the observation
-points. \citet{phillips2005} proposed a~method based on the numerical
+points. \citet{phillips2005} proposed a method based on the numerical
 evaluation of the integrals developed by \citet{helbig1963} for estimating
 the magnetization direction and the location of multiple magnetic sources
 from their first-order magnetic moments. This author stresses that the method
@@ -155,26 +143,26 @@ distribution. \citet{dannemiller-li2006} extended the method proposed by
 \citet{roest-pilkington1993}, who tackled total-field anomalies produced by
 generalized 2-D sources, to estimate the magnetization direction of 3-D
 sources by using the correlation between the vertical gradient and the total
-gradient of the RTP anomaly obtained through a~set of trial directions. These
+gradient of the RTP anomaly obtained through a set of trial directions. These
 authors stressed that the method assumes that the total-field anomaly is
-produced by a~set of 3-D causative bodies with the same magnetization
+produced by a set of 3-D causative bodies with the same magnetization
 direction and not by multiple sources with different magnetization
-directions. A~similar method was proposed by \citet{gerovska-etal2009} based
+directions. A similar method was proposed by \citet{gerovska-etal2009} based
 on the comparison between the RTP anomaly and the total magnitude anomaly.
-\citet{lelievre-oldenburg2009} developed a~very flexible method for
+\citet{lelievre-oldenburg2009} developed a very flexible method for
 estimating the magnetization vector distribution in complex geological
-scenarios. This method discretizes the subsurface of the Earth into a~grid of
+scenarios. This method discretizes the subsurface of the Earth into a grid of
 3-D prisms and estimates the three components (in Cartesian or spherical
 coordinates) of the magnetization vector of each cell by imposing strong
 constraints on the solution to deal with the nonuniqueness. Recently,
-\citet{ellis-etal2012} presented a~similar method to interpret magnetic data
+\citet{ellis-etal2012} presented a similar method to interpret magnetic data
 in mineral exploration surveys.
 
 The second group of methods to estimate the magnetization direction of
 the sources assumes the knowledge of the shape of the source. The
-methods belonging to this group have led to a~few published
+methods belonging to this group have led to a few published
 papers. \citet{bhattacharyya1966}, for example, proposed an iterative
-method for determining the magnetization of a~uniformly magnetized
+method for determining the magnetization of a uniformly magnetized
 rectangular prism. The performance of this method is highly dependent
 on the correct position of the centre and on the determination of the
 major and minor axes of the body. \citet{emilia-massey1974} developed
@@ -183,35 +171,35 @@ distribution of seamounts. This method approximates the seamounts by
 vertically juxtaposed right prisms having polygonal horizontal cross
 sections, which have the same magnetization direction and different
 magnetization intensities. \citet{parker-etal1987} also developed
-a~method for estimating the magnetization direction of seamounts. This
+a method for estimating the magnetization direction of seamounts. This
 method was formulated as an optimization problem, named seminorm
-minimization, to allow estimating a~magnetization distribution that is
+minimization, to allow estimating a magnetization distribution that is
 as close as possible to the uniform distribution. However, in
-practical applications, this constraint may yield a~poor data
+practical applications, this constraint may yield a poor data
 fit. Finally, \citet{kubota-uchiyama2005} discretized the seamount
-volume as a~grid of juxtaposed right rectangular prisms and estimated
+volume as a grid of juxtaposed right rectangular prisms and estimated
 the Cartesian components of the magnetization vector of each prism.
 
-In this work, we present a~computationally efficient method for inverting the
+In this work, we present a computationally efficient method for inverting the
 total-field anomaly produced by multiple sources with approximately spherical
 shape to estimate their magnetization directions. We assume sources with
 known centre, which can be provided by Euler deconvolution, for example. The
 proposed method is part of the group of methods imposing assumptions about
 the shape of the magnetic sources. It can be applied for interpreting
 multiple sources with different magnetization directions. It does not require
-the use of regularly spaced data on a~horizontal grid and contains
+the use of regularly spaced data on a horizontal grid and contains
 flexibility to be implemented in two different numerical approaches. The
-first one minimizes an L2-norm, resulting in a~linear inverse problem to
-obtain a~least-squares estimate. The second approach comprises the iterative
-minimization of an L1-norm, resulting in a~non-linear inverse problem to
-obtain a~robust estimate. Applications to synthetic data show the robustness
+first one minimizes an L2-norm, resulting in a linear inverse problem to
+obtain a least-squares estimate. The second approach comprises the iterative
+minimization of an L1-norm, resulting in a non-linear inverse problem to
+obtain a robust estimate. Applications to synthetic data show the robustness
 of our method against interfering anomalies and errors in the location of the
 sources' centre. Additionally, we show how the upward continuation can be
 used to make possible the application of our method to interpret
 non-spherical sources. Applications to field data over the Goi\'{a}s Alkaline
 Province (GAP), Brazil, show the good performance of the proposed method in
 estimating geological meaningful magnetization directions. The obtained
-results over a~region of the GAP, near from the alkaline complex of Diorama,
+results over a region of the GAP, near from the alkaline complex of Diorama,
 suggest the presence of non-outcropping sources with strong remanent
 magnetization, corroborating previous works. The estimated inclinations and
 declinations are close to $-70.35${\degree} and $-19.81${\degree},
@@ -226,7 +214,7 @@ element $\Delta T^\mathrm{o}_{i}$, $i = 1, \ldots, N$, is the total-field
 anomaly measured at the position ($x_{i}$, $y_{i}$, $z_{i}$) (black dots in
 Fig.~\ref{fig:geometric-aspects}). In this Cartesian coordinate system, $x$
 points to the geographic north, $y$ points to east and $z$ points downward.
-In general, the total-field anomaly is produced by a~magnetized
+In general, the total-field anomaly is produced by a magnetized
 susceptibility distribution which is anomalous with respect to the mean
 susceptibility of the crust. Mathematically, $\Delta T^\mathrm{o}_{i}$ can be
 written as
@@ -250,14 +238,14 @@ position ($x_{i}$, $y_{i}$, $z_{i}$) \citep{blakely1996,langel-hinze1998}.
 
 For local or regional scale magnetic studies, it is very common to consider
 that (i) the geomagnetic field $\vec{F}_i$ (Eq.~\ref{eq:tfanomaly-i}) is
-a~constant vector $\vec{F}_{0}$ throughout the study area and (ii) that
+a constant vector $\vec{F}_{0}$ throughout the study area and (ii) that
 $\Vert \vec{F}_{0} \Vert\,\gg\, \Vert \vec{B}_{i} \Vert$, $i = 1, \ldots, N$
 \citep{telford-etal1990,blakely1996}. The second assumption is equivalent to
 say that the total magnetic induction $\vec{B}_i$ (Eq.~\ref{eq:tfanomaly-i})
-is a~small perturbation of the geomagnetic field $\vec{F}_i$ throughout the
+is a small perturbation of the geomagnetic field $\vec{F}_i$ throughout the
 study area. These two assumptions make possible to approximate the Euclidean
 norm of the total-field vector $\vec{T}_i$ (Eq.~\ref{eq:tfanomaly-i}) by
-a~first-order Taylor's expansion as follows
+a first-order Taylor's expansion as follows
 \begin{align}
 \begin{aligned}
 \Vert \vec{T}_{i} \Vert & \approx\, \Vert \vec{F}_{0} + \vec{B}_{i} \Vert \\
@@ -271,7 +259,7 @@ where the superscript $\mathrm{T}$ indicates transposition and
 \hat{\vec{F}} = \frac{\vec{F}_{0}}{\Vert \vec{F}_{0} \Vert}
 \label{eq:unit-vector}
 \end{align}
-is a~unit vector (with the same direction of the geomagnetic field
+is a unit vector (with the same direction of the geomagnetic field
 $\vec{F}_i$) representing the gradient of the function $\Vert
 \vec{T}_{i} \Vert$ with respect to the components of the vector
 $\vec{T}_{i}$ \citep{blakely1996}. By introducing this first-order
@@ -284,7 +272,7 @@ total-field anomaly given by
 \label{eq:approx-tfanomaly-i}
 \end{align}
 
-Let's consider that the magnetic sources can be represented by a~set
+Let's consider that the magnetic sources can be represented by a set
 of $L$ uniformly magnetized spheres. In this case, the total magnetic
 induction $\vec{B}_i$ is given by
 \begin{align}
@@ -317,7 +305,7 @@ be written as
                   \vec{m}^{j} ,
 \label{eq:j-induction-i}
 \end{align}
-where $C_{m}$ is a~constant given by $\mu_{0}/{4 \pi}=10^{-7}$ $H/m$,
+where $C_{m}$ is a constant given by $\mu_{0}/{4 \pi}=10^{-7}$ $H/m$,
 $\mu_{0}$ is the vacuum permeability and $\mathbf{M}_{i}^{j}$ is the
 matrix
 \begin{align}
@@ -416,7 +404,7 @@ notation as
 \end{align}
 where $\vec{d}(\vec{h})$ is the $N$-dimensional predicted data vector, whose
 $i$th element is $d_{i}(\vec{h})$ (Eq.~\ref{eq:aiTh}), and $\mathbf{A}$ is
-a~$N \times 3L$ matrix that can be partitioned as
+a $N \times 3L$ matrix that can be partitioned as
 \begin{align}
  &
 \mathbf{A} =
@@ -438,13 +426,13 @@ defined in Eq. (\ref{eq:ai}).
 \subsection{Inverse problem}
 
 We assume that the magnetic sources giving rise to the observed data
-$\vec{\Delta T}^\mathrm{o}$ can be approximated by a~set of $L$ uniformly
+$\vec{\Delta T}^\mathrm{o}$ can be approximated by a set of $L$ uniformly
 magnetized spheres with known coordinates $(xc_{j}, yc_{j}, zc_{j})$, $j = 1,
 \ldots, L$, of their centres. We also assume that the direction of the
 constant geomagnetic field $\vec{F}_{0}$ (Eq.~\ref{eq:unit-vector}) is known.
-Under these hypotheses, we formulate a~linear inverse problem of estimating
+Under these hypotheses, we formulate a linear inverse problem of estimating
 the parameter vector $\vec{h}$ (Eq.~\ref{eq:h}) from $\vec{\Delta
-T}^\mathrm{o}$. The problem of estimating a~parameter vector $\vec{h}$
+T}^\mathrm{o}$. The problem of estimating a parameter vector $\vec{h}$
 (Eq.~\ref{eq:h}) containing the magnetization vectors $\vec{m}^{j}$
 (Eq.~\ref{eq:mag-vector-j}), $j = 1, \ldots, L$, of the $L$ spheres can be
 done by minimizing the goal function
@@ -472,7 +460,7 @@ sensitive to outliers in the observed data. In some cases, if the outliers
 are not properly removed from the observed data, the estimated parameters can
 be seriously misleading. When working with field data, the outliers can be
 caused by interfering magnetic sources or cultural noise, for example. To
-counteract this problem automatically, we can use a~robust scheme for
+counteract this problem automatically, we can use a robust scheme for
 minimizing the goal function
 \begin{align}
  &
@@ -482,7 +470,7 @@ minimizing the goal function
 \end{align}
 Different from Eq. (\ref{eq:goal-function-L2}), the parameter vector
 $\vec{h}$ minimizing the Eq. (\ref{eq:goal-function-L1}) cannot be
-obtained by solving a~linear system. One practical way is the
+obtained by solving a linear system. One practical way is the
 Iteratively Reweighted Least Squares algorithm \citep{scales_1988,aster-etal2005}. In this algorithm, at each iteration $k$, the
 following linear system is solved:
 \begin{align}
@@ -491,14 +479,14 @@ following linear system is solved:
 \mathbf{A}^{\mathrm{T}} \mathbf{R}^{k} \vec{\Delta T}^\mathrm{o} ,
 \label{eq:iteration-L1}
 \end{align}
-where $\mathbf{R}^{k}$ is a~diagonal $N \times N$ matrix whose $i$th
+where $\mathbf{R}^{k}$ is a diagonal $N \times N$ matrix whose $i$th
 element $r_{i}^{k}$, $i = 1, \ldots, N$, is given by
 \begin{align}
  &
 r_{i}^{k} = \frac{1}{\left\vert \Delta T^\mathrm{o}_{i} - d_{i}\left(\tilde{\vec{h}}^{k}\right) + \epsilon \right\vert} ,
 \label{eq:ri}
 \end{align}
-being $\epsilon$ a~small positive number used to prevent singularities. This
+being $\epsilon$ a small positive number used to prevent singularities. This
 iterative process begins (iteration $k = 0$) with the least-squares estimate
 $\tilde{\vec{h}}^{0} = \hat{\vec{h}}$ (Eq.~\ref{eq:h_hat}). With this initial
 approximation $\tilde{\vec{h}}^{0}$, we calculate the matrix $\mathbf{R}^{0}$
@@ -514,7 +502,7 @@ function $\Gamma(\vec{h})$ (Eq.~\ref{eq:goal-function-L1}).
 
 Both $\hat{\vec{h}}$ (least-squares estimate) and $\tilde{\vec{h}}$ (robust
 estimate) are estimates of the parameter vector $\vec{h}$ (Eq.~\ref{eq:h}),
-which is represented as a~function of the vectors $\vec{h}^{j}$, $j = 1,
+which is represented as a function of the vectors $\vec{h}^{j}$, $j = 1,
 \ldots, L$ (Eq.~\ref{eq:hj}) and the magnetization vectors $\vec{m}^{j}$, $j
 = 1, \ldots, L$ (Eq.~\ref{eq:mag-vector-j}). The magnetization vectors are
 represented in Cartesian coordinates, however they are commonly represented
@@ -559,17 +547,17 @@ L$, are equal to that ones of the magnetization vectors $\vec{m}^{j}$, $j =
 estimate $\hat{\vec{h}}$ or the robust estimate $\tilde{\vec{h}}$, we
 calculate the declinations $\hat{D}_{j}$ or $\tilde{D}_{j}$ (Eq.~\ref{eq:Dj})
 and inclinations $\hat{I}_{j}$ or $\tilde{I}_{j}$ (Eq.~\ref{eq:Ij}), $j = 1,
-\ldots, L$, of the total magnetization vector of all spheres. We use a~caret
-($^\wedge$) and a~tilde ($^\sim$) to distinguish estimates of the
+\ldots, L$, of the total magnetization vector of all spheres. We use a caret
+($^\wedge$) and a tilde ($^\sim$) to distinguish estimates of the
 declinations and inclinations which are computed by using, respectively, the
 least-square estimate $\hat{\vec{h}}$ and the robust estimate
 $\tilde{\vec{h}}$.
 
 \subsection{Uncertainty of the estimated parameters}
 
-In a~magnetic survey, the measurements are always affected by noise due to
+In a magnetic survey, the measurements are always affected by noise due to
 the wide range of experimental errors and inaccuracies that happens in
-a~geophysical survey. The noise in the observed data $\vec{\Delta
+a geophysical survey. The noise in the observed data $\vec{\Delta
 T}^\mathrm{o}$ affects the estimated parameter vector, independently of the
 used method. To quantify this effect on the estimated parameters, we can use
 the propagation of covariance \citep{bard1973,aster-etal2005}. By presuming
@@ -614,7 +602,7 @@ The diagonal of the parameter covariance matrices $\hat{\mathbf{C}}$
 (Eq.~\ref{eq:cov-h-hat}) and $\tilde{\mathbf{C}}$ (Eq.~\ref{eq:cov-h-tilde})
 contains the variances of the elements of the estimates $\hat{\vec{h}}$
 (Eq.~\ref{eq:h_hat}) and $\tilde{\vec{h}}$ (Eqs.~\ref{eq:iteration-L1} and
-\ref{eq:ri}), respectively. Let $\vec{v}$ be a~$3L$-dimensional vector whose
+\ref{eq:ri}), respectively. Let $\vec{v}$ be a $3L$-dimensional vector whose
 element $v_{j}$, $j = 1, \ldots, 3L$, represents the $j$th element of the
 diagonal of the covariance matrix $\hat{\mathbf{C}}$ (Eq.~\ref{eq:cov-h-hat})
 or $\tilde{\mathbf{C}}$ (Eq.~\ref{eq:cov-h-tilde}). This vector can be
@@ -700,7 +688,7 @@ and
 \frac{\partial I_{j}}{\partial hz_{j}} = \frac{\sqrt{(hx_{j} )^{2} + (hy_{j} )^{2}}} {Q_{j}^{2}} .
 \label{eq:dIj-dhzj}
 \end{align}
-We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to distinguish
+We use a caret ($^{\wedge}$) and a tilde ($^{\sim}$) to distinguish
 the uncertainties ($\hat{\sigma}$ and $\tilde{\sigma}$) computed by
 using, respectively, the least-squares $\hat{\vec{h}}$ and the robust
 $\tilde{\vec{h}}$ estimates.
@@ -711,23 +699,23 @@ $\tilde{\vec{h}}$ estimates.
 
 Figure~\ref{fig:synt1-data}a~shows the synthetic noise-corrupted total-field
 anomaly produced by two uniformly magnetized bodies embedded in nonmagnetic
-host rocks. The first one is a~sphere with radius 1000\,\unit{m}, centre at
+host rocks. The first one is a sphere with radius 1000\,\unit{m}, centre at
 $xc = 3000$\,\unit{m}, $yc = 3000$\,\unit{m}, $zc = 1000$\,\unit{m} and
 magnetization vector with intensity $6$\,\unit{A\,m^{-1}}, declination
 $10${\degree} and inclination $20${\degree}. The second synthetic body is
-a~rectangular prism with horizontal and vertical dimensions equal to
+a rectangular prism with horizontal and vertical dimensions equal to
 1000\,\unit{m}, depth of the top at 200\,\unit{m}, centre at $xc =
 7000$\,\unit{m}, $yc = 7000$\,\unit{m}, $zc = 700$\,\unit{m} and
 magnetization vector with intensity $6$\,\unit{A\,m^{-1}}, declination
-$40${\degree} and inclination $30${\degree}. We simulated a~constant
+$40${\degree} and inclination $30${\degree}. We simulated a constant
 geomagnetic field $\vec{F}^\mathrm{o}$ (Eq.~\ref{eq:total-field-app}) with
 declination $15${\degree} and inclination $10${\degree}. The total field
-anomaly produced by these synthetic bodies (indicated by A~and B in
+anomaly produced by these synthetic bodies (indicated by A and B in
 Fig.~\ref{eq:total-field-app}) was calculated at $N = 10\,000$ irregularly
 spaced points $(x_{i}, y_{i}, z_{i})$, $i = 1, \ldots, N$, on the plane with
 constant vertical coordinate $z=-150$\,\unit{m}, extending from 0 to
-10\,000\,\unit{m} in both $x$ and $y$~directions. The pseudorandom Gaussian
-noise added has a~zero mean and a~standard deviation of 5\,nT.
+10\,000\,\unit{m} in both $x$ and $y$ directions. The pseudorandom Gaussian
+noise added has a zero mean and a standard deviation of 5\,nT.
 
 By assigning the correct positions of the centres of the simulated bodies, we
 invert the noise-corrupted total-field anomaly (Fig.~\ref{fig:synt1-data}a)
@@ -743,10 +731,10 @@ able to retrieve the magnetization directions of the true sources by using
 either the least-squares or robust estimate. Even in the case of the prism
 that violates the premise assumed by our method that the bodies can be
 approximated by spheres, the estimates are very close to the true ones with
-a~small uncertainties. We can attribute this good performance of our method
+a small uncertainties. We can attribute this good performance of our method
 to three factors: (i) the absence of interfering signals produced, for
-example, by multiple magnetic sources, (ii) the simulated prism is a~cube
-that seems a~sphere-like body; and (iii) the use of the correct locations of
+example, by multiple magnetic sources, (ii) the simulated prism is a cube
+that seems a sphere-like body; and (iii) the use of the correct locations of
 the centres of the simulated bodies. The following tests will show how these
 factors affect the results obtained by using the least-squares and robust
 estimates.
@@ -754,7 +742,7 @@ estimates.
 \subsection{Robustness against interfering anomalies}
 
 Figure~\ref{fig:synt1-data}b shows the noise-corrupted total-field
-anomaly shown in Fig.~\ref{fig:synt1-data}a~contaminated with
+anomaly shown in Fig.~\ref{fig:synt1-data}a contaminated with
 interfering anomalies. These interfering anomalies are characterized
 by mid-wavelength components which mostly affect the positive signals
 of the original total-field anomaly (Fig.~\ref{fig:synt1-data}a),
@@ -764,7 +752,7 @@ premise assumed by our method that the total-field anomalies are
 caused by dipolar bodies (spheres). Although these interfering
 anomalies are different from random Gaussian noise or outliers marked
 as spurious errors dominated by short-wavelength spectral contents,
-they can also be seen as a~data noise.
+they can also be seen as a data noise.
 
 We repeated the numerical test presented in the previous section (Sect.~3.1),
 but using the contaminated total-field anomaly shown in
@@ -783,9 +771,9 @@ estimate is more sensitive to interfering anomalies than the robust estimate.
 \subsection{Robustness against non-spherical sources}
 
 In the previous subsections, we applied our method to estimate the
-magnetization direction of a~rectangular prism whose total-field anomaly is
+magnetization direction of a rectangular prism whose total-field anomaly is
 indicated by B in Fig.~\ref{fig:synt1-data}. This total-field anomaly is
-similar to one that would be produced by a~sphere. Two factors contribute to
+similar to one that would be produced by a sphere. Two factors contribute to
 this: (i) the prism has all edges equal to $1000$\,\unit{m} and (ii) the
 distance between its top depth and the plane surface on which the data were
 calculated is $350$\,\unit{m}. In this subsection, we analyse the effect of
@@ -807,8 +795,8 @@ total-field anomalies produced by all prisms on horizontal planes with
 constant $z$ equal to $0.0$, $-0.3$ and $-0.6$ (dashed lines in
 Fig.~\ref{fig:robust-shape-methodology}b), resulting in $33$ synthetic data
 sets. All data are calculated at $N = 3000$ points irregularly spaced over an
-area extending from $-5$ to $5$ along the $x$ and $y$~directions. The
-pseudo-random Gaussian noise added has a~zero mean and a~standard deviation
+area extending from $-5$ to $5$ along the $x$ and $y$ directions. The
+pseudo-random Gaussian noise added has a zero mean and a standard deviation
 of $5$ nT. The simulated constant geomagnetic field $\vec{F}_{0}$
 (Eq.~\ref{eq:total-field-app}) has declination $-15${\degree} and inclination
 $-10${\degree}.
@@ -819,13 +807,13 @@ produced by spherical bodies (dipolar sources) and exhibit strongly
 non-dipolar features. These non-dipolar features are attenuated if the
 data are calculated far from the sources
 (Fig.~\ref{fig:robust-shape-data}g--i), showing the well known
-property that the magnetic field produced by a~non-dipolar source
-tends to the field produced by a~dipolar source at great
+property that the magnetic field produced by a non-dipolar source
+tends to the field produced by a dipolar source at great
 distances. This attenuation is more noticeable for sources presenting
 symmetry around three orthogonal axis. This higher attenuation for
 symmetrical sources can be seen by comparing
 Fig.~\ref{fig:robust-shape-data}b, e and h, which show anomalies
-produced by a~cube with $Lx=Ly=Lz=1.0$, with
+produced by a cube with $Lx=Ly=Lz=1.0$, with
 Fig.~\ref{fig:robust-shape-data}a, c, d, f, g and i, which show
 anomalies produced by other rectangular prisms. For example, on the
 plane $z=-0.3$, the total-field anomaly produced by the cube
