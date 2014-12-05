@@ -2,12 +2,16 @@ Reply to P. Lelièvre's Comment on "Estimation of the total magnetization direct
 
 \noindent{\bf General comments}
 
+
+
 \underline{Referee's comment}: {\it "The forward problem described 
 is essentially identical to a mesh-based discretization but with 
 the space-filling mesh cells (prisms, tetrahedra, etc) replaced 
 with spherical (dipole) sources. Hence, the methods presented are 
 essentially identical to those used by Lelievre and Oldenburg (2009) 
 and Ellis et al. (2012)."}
+
+
 
 We fully disagree with your comment that the forward problem in 
 our method is \textcolor{red}{essentially} identical to the one 
@@ -17,14 +21,15 @@ adopted by Lelièvre and Oldenburg (2009).
 The interpretation model 
 adopted by Lelièvre and Oldenburg (2009) consists of an 
 $m_{x} \times m_{y} \times m_{z}$ grid of 3D juxtaposed prisms in 
-the horizontal and vertical directions (Figure 1a). Hence, in the 
+the horizontal and vertical directions (\textcolor{red}{Figure 1a ???}). 
+Hence, in the 
 Lelièvre and Oldenburg (2009) the associated forward model 
 (their equation 10) requires computing the $N$ by $3M$ full 
 sensitivity matrix being $N$ the number of data and $M$ the number 
 of prisms of the interpretation model. A large data set combined 
 with the discretization of the Earth’s subsurface into a fine grid 
 of prisms results in a large-scale 3D forward model. Notice that 
-in our method we do not discretize the earth’s subsurface into an 
+in our method we {\bf do not} discretize the earth’s subsurface into an 
 $m_{x} \times m_{y} \times m_{z}$ grid of 3D juxtaposed dipoles in 
 the horizontal and vertical directions.  Hence, our interpretation 
 model does not consist of a 3D, equally spaced array of dipoles.
@@ -36,16 +41,29 @@ deals with a small-scale forward model being completely different
 from the one adopted by Lelièvre and Oldenburg (2009).
 
 
+
+\underline{Referee's comment}: {\it "The difference is that where Lelièvre, 
+Ellis et al. develop methods to solve an underdetermined inverse problem (many 
+more mesh cells than data observations), the authors of this manuscript only 
+consider the solution of a simpler overdetermined problem (far fewer source 
+parameters than data observations)."}
+
+
+
 We agree that Lelièvre and Oldenburg’ (2009) method solves an 
 underdetermined inverse problem while our method solves an 
 overdetermined problem. However, this characteristic is not the 
-unique difference between these approaches. Table \ref{differences} 
+unique difference between these approaches. \textcolor{red}{Table ???} 
 presents a list of the characteristics found in Lelièvre and 
 Oldenburg’ (2009) method in comparison with those found in our 
 method in this manuscript. By analyzing the Table below, we can 
 easily conclude that these methods are substantially different. 
 We highlighted (in green) the only two characteristics of these 
 methods that are equal.
+
+
+
+\textcolor{red}{Table ???}
 
 \begin{table}[h]
 \caption{captioncaptioncaptioncaptioncaptioncaption}
@@ -62,7 +80,57 @@ few dipoles & No & Yes \\
 \end{table}
 
 
+{\bf Computational efficiency}
+
+
+Lelièvre and Oldenburg’s (2009) methods requires a costly computational 
+effort (a large amount of memory storage and processing time). This 
+disadvantage requires computational strategies to handle with a 
+large-scale 3D inversion which were not mentioned by Lelièvre and 
+Oldenburg (2009). The price paid for estimating the 3D magnetization 
+vector distribution through the solution of a constrained nonlinear 
+optimization problem is the disadvantage of dealing with intractable 
+large-scale 3-D inversion. Hence, the computational inefficiency 
+is one of the disadvantages of Lelièvre and Oldenburg’s (2009) methods.
+
+Our method estimates a single magnetization vector per magnetic anomaly 
+through the solution of a linear inverse problem or a nonlinear inverse 
+problem.  Our method requires neither high-speed computers nor efficient 
+computational strategies. The practical implementation of our method is 
+very simple and its application is extremely fast. Hence, the major 
+advantage of our method is its computational efficiency that allows a 
+rapid estimation of the magnetization direction (inclination and 
+declination) per magnetic anomaly. One might think that our method 
+requires a signal separation to isolate the effect of a single 
+well-defined peak per anomaly. This is not true.  Our method requires 
+only that each magnetic anomaly be identified by the interpreter. Thus, 
+we can estimate the magnetization vectors of multiple sources by 
+inverting a large magnetic data set; however each one estimate will 
+be associated to a single magnetic anomaly previously identified by 
+the interpreter.
+
+
+{\bf Ill-posed vs. well-posed inverse problems}
+
+
+We recall that the nonuniqueness of the geophysical problem is caused 
+by the insufficient information in the geophysical data. Particularly, 
+the main ambiguity in geophysical interpretation is the one involving 
+the physical property and the volume of the source. There is NO WAY to 
+estimate both at the same time just from the data. As a result, if 
+details about the source shape are required by the interpreter, the 
+introduction of a large amount of strong constraints is mandatory. 
+This is the case of the Lelièvre and Oldenburg’s (2009) method. 
+These authors are using strong constraints because they are trying 
+to retrieve both the shapes and the magnetization directions of the 
+sources at each small volume (prism) of the 
+$m_{x} \times m_{y} \times  m_{z}$ grid of 3D juxtaposed prisms in 
+the horizontal and vertical directions (\textcolor{red}{Figure 1a ????}).
+
+
 \underline{References}
+
+
 
 Lelièvre, P. G. and D. Oldenburg, 2009, A 3D total magnetization inversion 
 applicable when significant, complicated remanence is present. Geophysics,
@@ -71,11 +139,3 @@ applicable when significant, complicated remanence is present. Geophysics,
 Ellis, R. G., B. Wet and I. N. Macleod, 2012, Inversion of magnetic data from 
 remanent and induced sources: 22nd International geophysical conferenceand 
 exhibition, ASEG, Expanded Abrastracts, 1-4.
-
-\noindent{\bf Specific comments}
-
-\underline{Referee's comment}: {\it "Page 2 Sentence starting Line 19: These results 
-show that the non-outcropping sources near from the alkaline complex of Diorama have 
-almost the same magnetization direction of that as the ones in the alkaline complex 
-of Montes Claros de Goiás, strongly suggesting that these sources have been emplaced 
-in the crust almost within the same geological time interval."}
