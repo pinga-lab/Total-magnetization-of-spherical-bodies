@@ -2,7 +2,11 @@ Reply to J. Ebbing's Comment on "Estimation of the total magnetization direction
 
 We would like to thank Referee J. Ebbing for his constructive comments. Below we present our comments on his recommendations.
 
+\bigskip
+
 \noindent{\bf General comments}
+
+\bigskip
 
 \underline{Referee's comment}: {\it "First, the magnetization direction of the spherical body is inverted and afterwards the 
 magnetization of the prism to study the error introduced by a non-spherical geometry. But at the same time the inclination and 
@@ -10,6 +14,8 @@ declination are changed, so that no direct comparison with the inversion for the
 inverting first for the same parameters, but by only changing geometry and in the second step changing inclination and 
 declination more drastically compared to the applied inducing field. If the method is supposed to be able to resolve 
 remanent magnetization, it would be interesting to see how the method performs for anomalies with reversed magnetization."}
+
+\bigskip
 
 Thank you very much. To adress this recommendation, we have applied our method to estimate 
 the magnetization direction of two synthetic bodies with the same magnetization and different 
@@ -50,8 +56,12 @@ two factors: (1) the distance between the data (the magnetometer) and the source
 the symmetry of the source. These effects are analyzed by applying our method to 33 different 
 synthetic-data sets.
 
+\bigskip
+
 \underline{Referee's comment}: {\it "All the inversions presented consider that the location 
 of the source body is known."}
+
+\bigskip
 
 The section 3.4 (Robustness against errors in the centre location) in our manuscript
 shows how the errors in the coordinates of the centre of the source affect the results
@@ -66,9 +76,13 @@ According to these results, our method is more sensitive to uncertainties in the
 information about the horizontal coordinates of the centre of the source along the 
 horizontal directions than about the depth of the centre of the source.
 
+\bigskip
+
 \underline{Referee's comment}: {\it "If the position of the source is known for example 
 from Euler Deconvolution, the estimate of the inclination and declination is almost trivial 
 even by forward modelling."}
+
+\bigskip
 
 Not truly. The estimation of the magnetization direction of a 3D source may be 
 a difficult task, especially if it is done by interactive forward modelling. The estimation of the 
@@ -87,11 +101,15 @@ procedure to yield an acceptable data fitting.  On the other hand, any
 inversion method  has the advantage, compared with forward modelling, of 
 automatically fitting observations.
 
+\bigskip
+
 \underline{Referee's comment}: {\it "More interesting would be an example, where 
 a regional field superposes the local anomaly or to some degree two anomalies 
 overlap. Euler Deconvolution will provide results in both cases, but with less 
 confidence in the horizontal position, which will affect the magnetization
 directions."}
+
+\bigskip
 
 Thank you for this very good suggestion. We follow this suggestion by applying
 our method to estimate the magnetization direction of a synthetic igneous 
@@ -131,7 +149,7 @@ Deconvolution. We also illustrate the use of the reduction
 to the pole to verify the quality of the estimated magnetization direction.
 The reduction to the pole calculated with the magnetization direction
 obtained by our method leads to a predominantly positive field, which
-is very close to the true pole field (see \href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}},).
+is very close to the true pole field (see \href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}}).
 
 We have also run several additional tests showing the application of our method 
 to estimate the magnetization direction of different synthetic sources with 
@@ -150,7 +168,11 @@ previously done. Finally, these additional tests also show the performance
 of our method in estimating the magnetization direction of synthetic models 
 similar to that ones presented by Lelièvre and Oldenburg (2009) and Ellis, Wet and Macleod (2012).
 
+\bigskip
+
 \underline{References}
+
+\bigskip
 
 Lelièvre, P. G. and D. Oldenburg, 2009, A 3D total magnetization inversion 
 applicable when significant, complicated remanence is present. Geophysics,
@@ -160,7 +182,11 @@ Ellis, R. G., B. Wet and I. N. Macleod, 2012, Inversion of magnetic data from
 remanent and induced sources: 22nd International geophysical conferenceand 
 exhibition, ASEG, Expanded Abrastracts, 1-4.
 
+\bigskip
+
 \noindent{\bf Specific comments}
+
+\bigskip
 
 \underline{Referee's comment}: {\it "Page 2 Sentence starting Line 19: These results 
 show that the non-outcropping sources near from the alkaline complex of Diorama have 
@@ -168,27 +194,45 @@ almost the same magnetization direction of that as the ones in the alkaline comp
 of Montes Claros de Goiás, strongly suggesting that these sources have been emplaced 
 in the crust almost within the same geological time interval."}
 
+\bigskip
+
 Thank you. We have modified the manuscript.
+
+\bigskip
 
 \underline{Referee's comment}: {\it "Line 26: mineral and petroleum exploration"}
 
+\bigskip
+
 Thank you. We have modified the manuscript.
+
+\bigskip
 
 \underline{Referee's comment}: {\it "Page 3 Line 4 Rephrase as: of the most important 
 data acquisition techniques due to the ability to cover large areas in a relative short 
 period of time"}
 
+\bigskip
+
 Thank you. We have rephrased the manuscript.
+
+\bigskip
 
 \underline{Referee's comment}: {\it "Line 23: Delete this sentence: The total-field 
 anomaly represents the Euclidean norm of the magnetic induction produced by the magnetic 
 sources in the subsurface. Repetition from before."}
 
+\bigskip
+
 Thank you. We have removed this sentence.
+
+\bigskip
 
 \underline{Referee's comment}: {\it "Paragraph starting in Line 28: This you can delete as 
 it is not relevant here."}
 
-We disagree with you. In our opinion, this paragraph is relevant to stress the
-importance of the magnetization direction in other magnetic interpretation 
-techniques (for example, the reduction to the pole).
+\bigskip
+
+We agree with you. We have rewritten this paragraph. Thank you.
+
+\bigskip

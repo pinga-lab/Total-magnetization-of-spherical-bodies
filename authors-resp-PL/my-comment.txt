@@ -1,0 +1,404 @@
+Reply to P. Lelièvre's Comment on "Estimation of the total magnetization direction of approximately spherical bodies"
+\noindent{\bf General comments}
+
+\bigskip
+
+\underline{Referee's comment}: {\it "The forward problem described 
+is essentially identical to a mesh-based discretization but with 
+the space-filling mesh cells (prisms, tetrahedra, etc) replaced 
+with spherical (dipole) sources. Hence, the methods presented are 
+essentially identical to those used by Lelievre and Oldenburg (2009) 
+and Ellis et al. (2012)."}
+
+\bigskip
+
+We fully disagree with your comment that the forward problem in 
+our method is \textcolor{red}{essentially identical} to the one 
+adopted by Lelièvre and Oldenburg (2009). 
+
+
+The interpretation model 
+adopted by Lelièvre and Oldenburg (2009) consists of an 
+$m_{x} \times m_{y} \times m_{z}$ grid of 3D juxtaposed prisms in 
+the horizontal and vertical directions. 
+Hence, in the 
+Lelièvre and Oldenburg (2009) the associated forward model 
+(their equation 10) requires computing the $N$ by $3M$ full 
+sensitivity matrix being $N$ the number of data and $M$ the number 
+of prisms of the interpretation model. A large data set combined 
+with the discretization of the Earth’s subsurface into a fine grid 
+of prisms results in a large-scale 3D forward model. Notice that 
+in our method we {\bf do not} discretize the earth’s subsurface into an 
+$m_{x} \times m_{y} \times m_{z}$ grid of 3D juxtaposed dipoles in 
+the horizontal and vertical directions.  Hence, our interpretation 
+model does not consist of a 3D, equally spaced array of dipoles.
+Rather, the forward problem adopted by our method consists of a 
+set of $L$ dipoles (Figure 1 of our manuscript). Hence, in our method 
+the associated forward model (our equation 16) requires computing 
+the $N$ by $3L$ sensitivity matrix where $L <<<<< M$. Thus, our method 
+deals with a small-scale forward model being completely different 
+from the one adopted by Lelièvre and Oldenburg (2009).
+
+\bigskip
+
+\underline{Referee's comment}: {\it "The difference is that where Lelièvre, 
+Ellis et al. develop methods to solve an underdetermined inverse problem (many 
+more mesh cells than data observations), the authors of this manuscript only 
+consider the solution of a simpler overdetermined problem (far fewer source 
+parameters than data observations)."}
+
+\bigskip
+
+We agree that Lelièvre and Oldenburg’s (2009) method solves an 
+underdetermined inverse problem while our method solves an 
+overdetermined problem. However, this characteristic is not the 
+unique difference between these approaches. Figure 1 
+presents a list of the characteristics found in Lelièvre and 
+Oldenburg’ (2009) method in comparison with those found in our 
+method in this manuscript. By analyzing the Figure 1, we can 
+easily conclude that these methods are substantially different. 
+We highlighted (in green) the only two characteristics of these 
+methods that are equal.
+
+\bigskip
+
+{\bf Computational efficiency}
+
+
+Lelièvre and Oldenburg’s (2009) methods requires a costly computational 
+effort (a large amount of memory storage and processing time). This 
+disadvantage requires computational strategies to handle with a 
+large-scale 3D inversion which were not mentioned by Lelièvre and 
+Oldenburg (2009). The price paid for estimating the 3D magnetization 
+vector distribution through the solution of a constrained nonlinear 
+optimization problem is the disadvantage of dealing with intractable 
+large-scale 3-D inversion. Hence, the computational inefficiency 
+is one of the disadvantages of Lelièvre and Oldenburg’s (2009) methods.
+
+Our method estimates a single magnetization vector per magnetic anomaly 
+through the solution of a linear inverse problem or a nonlinear inverse 
+problem.  Our method requires neither high-speed computers nor efficient 
+computational strategies. The practical implementation of our method is 
+very simple and its application is extremely fast. Hence, the major 
+advantage of our method is its computational efficiency that allows a 
+rapid estimation of the magnetization direction (inclination and 
+declination) per magnetic anomaly. One might think that our method 
+requires a signal separation to isolate the effect of a single 
+well-defined peak per anomaly. This is not true.  Our method requires 
+only that each magnetic anomaly be identified by the interpreter. Thus, 
+we can estimate the magnetization vectors of multiple sources by 
+inverting a large magnetic data set; however each one estimate will 
+be associated to a single magnetic anomaly previously identified by 
+the interpreter.
+
+
+{\bf Ill-posed vs. well-posed inverse problems}
+
+
+We recall that the nonuniqueness of the geophysical problem is caused 
+by the insufficient information in the geophysical data. Particularly, 
+the main ambiguity in geophysical interpretation is the one involving 
+the physical property and the volume of the source. There is NO WAY to 
+estimate both at the same time just from the data. As a result, if 
+details about the source shape are required by the interpreter, the 
+introduction of a large amount of strong constraints is mandatory. 
+This is the case of the Lelièvre and Oldenburg’s (2009) method. 
+These authors are using strong constraints because they are trying 
+to retrieve both the shapes and the magnetization directions of the 
+sources at each small volume (prism) of the 
+$m_{x} \times m_{y} \times  m_{z}$ grid of 3D juxtaposed prisms in 
+the horizontal and vertical directions.
+
+Lelièvre and Oldenburg (2009) deal with a high degree of nonuniqueness 
+(an ill-posed inverse problem).  To transform this ill-posed inverse 
+problem into a well-posed one, Lelièvre and Oldenburg (2009) use 
+supplementary information (constraints).  This means that Lelièvre 
+and Oldenburg’s (2009) methods requires {\bf a plethora of inversion 
+control variables}. Explicitly, in their equations 19, 22 and 26,
+there are two inversion control variables ($\beta$ and $\gamma$) and
+six vectors of reference models ($\mathbf{p}_{ref}$, $\mathbf{t}_{ref}$,
+$\mathbf{s}_{ref}$, $\mathbf{a}_{ref}$, $\mathbf{\theta}_{ref}$,
+and $\mathbf{\phi}_{ref}$). Besides, their equations 22 and 26 require 
+much more inversion control variables, which are associated with the 
+regularization functions $\mathbf{W}_{p}$, $\mathbf{W}_{s}$,
+$\mathbf{W}_{t}$, $\mathbf{W}_{a}$, $\mathbf{W}_{\theta}$, and
+$\mathbf{W}_{\phi}$. These regularization functions are equivalent 
+to the regularization function ${\mathbf{W}_{m}$ and the 
+depth weighting function in Li and Oldenburg, 1996. The inversion 
+control variables associated with the regularization functions and 
+the depth weighting function were omitted in the Lelièvre and 
+Oldenburg (2009). {\bf The definition of an overabundance of inversion 
+control variables is not a trivial task}.  Hence, this is one of 
+the disadvantages of this method.
+
+Our method in this manuscript reduces the demand of information of 
+the magnetic sources. By assuming a spherical source, our method 
+estimates a single magnetization vector per magnetic anomaly. 
+As a result, the ambiguity involving the physical property (the 
+magnetization vector, i.e., the magnetization intensity, 
+inclination and declination) and volume is not 
+present because we assume a spherical source. Hence, we propose 
+in this manuscript a well-posed inverse problem of estimating a 
+single magnetization direction per anomaly by using the assumption 
+that the magnetic source is a sphere. Hence, our method does not 
+require constraints and the inversion control variables.
+
+Conceptually, Lelièvre and Oldenburg’s (2009) method seems a 
+flexible method because it estimates a 3D magnetization vector 
+distribution of the entire subsurface region containing the 
+anomalous source. However, it does not mean that it is feasible. 
+A concrete example of its unfeasibility is the real application 
+presented in Lelièvre and Oldenburg's (2009) method. This 
+inversion does not provide the magnetization direction of the 
+sources.
+
+\bigskip
+
+\underline{Referee's comment}: {\it "The same overdetermined 
+problem can be solved by the methods of Lelievre, Ellis et al.."}
+
+\bigskip
+
+We fully disagree with your comment. In Lelièvre and Oldenburg (2009), 
+the 3D magnetization vector distribution is estimated by solving a 
+large-scale 3D constrained nonlinear inversion (their Equations 21-22 
+and 25-26) that involves the number of data $N$ and the number of 
+prisms $M$ of the interpretation model multiplied by three (i.e, $3M$ 
+their equation 7). Indeed, if  $N < 3M$, the Lelièvre and Oldenburg’s 
+(2009) method can be formulated as an overdetermined problem. However, 
+we stress that usually we deal with a massive magnetic data set. Hence, 
+$N$ can be smaller than $3M$, however $N$ will not be much smaller 
+than $3M$.
+
+\bigskip
+
+\underline{Referee's comment}: {\it "As such, there is little new material 
+here and I don’t see what value this paper adds to the scientific community"}
+
+\bigskip
+
+We fully disagree with you. We presented a NEW and VERY FAST total-field 
+anomaly inversion to estimate the magnetization direction of multiple 
+sources. The main advantages of our method are: 1) the simplicity in 
+implementation, 2) the low computational effort and 3) the extremely 
+rapid estimation of the magnetization direction (inclination and 
+declination) per magnetic anomaly. 
+
+We formulate a well-posed magnetic inversion by assuming spherical 
+shapes for the sources. One might think that it could be a severe 
+restriction in applying our method. However, we take advantage of 
+the upward continuation of the total-field anomaly to make possible 
+the application of our method to interpret non-spherical sources. 
+We illustrate the robustness of our method against non-spherical 
+sources by inverting non-dipolar total-field anomalies. We show 
+that the upward continuation is useful for overcoming the 
+difficulties in the interpretation of strongly non-dipolar 
+total-field anomalies (see subsection 3.3 Robustness against 
+non-spherical sources). Our method requires the $x$-, $y$- 
+and $z$-coordinates of the centre of the magnetic source. We 
+show that the estimate of the magnetic direction (declination 
+and inclination) is less sensitive to a wrong choice for the 
+depth of the centre of the source than the horizontal coordinates 
+of the centre of the source. Hence, a wrong choice of the depth 
+of the centre of the source can be assumed by our method. 
+However, we cannot assume a wrong choice of the horizontal 
+coordinates of the centre of the source; otherwise our method 
+estimates an incorrect magnetization direction of the source.
+
+\bigskip
+
+\underline{Referee's comment}: {\it "The authors’ suggestion of 
+upward continuation to aid the applicability of their methods is 
+not particularly insightful: the response of nondipole sources 
+look more and more like dipole responses as the data measurement 
+level is moved further from the sources (this is a well known 
+phenomenon)."}
+
+\bigskip
+
+{\bf We neither suggest nor claim that the use of upward continuation 
+in our manuscript is insightful. We explicitly apply the upward 
+continuation because this is well-known phenomenon}, i.e., {\it the greater 
+the distance between the sources and the data, the greater the 
+attenuation of the non-dipolar features}. This emphasized sentence 
+in italic is {\bf explicitly stated in our manuscript (see page 20)}. 
+Our synthetic and real tests show how the upward continuation can be 
+used to make possible the application of our method to interpret 
+non-spherical sources.
+
+\bigskip
+
+\underline{Referee's comment}: {\it "There is a tremendous amount of 
+prior knowledge required about the sources to use these  methods, 
+despite the authors claiming the opposite in their conclusion: 
+one must assume the sources are somewhat spherical, and one must 
+have a reliable estimate of the number of sources and their locations 
+(lateral and depth)."}
+
+\bigskip
+
+We fully disagree with you. You are confusing {\underline {\it assumed 
+premise}} and {\underline {\it prior information}}. Let us clarify these 
+topics.
+
+{\bf THE ASSUMED PREMISE IN OUR METHOD} - We {\underline assumed a 
+magnetized spherical source} giving rise to dipolar anomalies. 
+Notice that {\bf IT DOES NOT MEAN THAT THE SOURCE MUST BE A SPHERE}. 
+We show the feasibility of applying the upward continuation to 
+interpret non-spherical sources by using synthetic tests. We 
+{\bf SIMULATED 11 PRISMATIC SOURCES} with different side lengths 
+$Lx$, $Ly$ and $Lz$ (Figure 4 in our manuscript displays three prisms) 
+giving rise to non-dipolar total field anomalies. Figure 5 (in our 
+manuscript) displays the total field anomalies produced by three 
+prismatic sources at the plane $z = 0$ unit (Fig 5a-c) and the 
+upward-continued anomalies at $z = -0.3$ unit (Fig 5 d-f) and at 
+$z = -0.6$ unit (Fig 5 g-i). By inverting the upward-continued 
+anomalies (e.g., Fig. 5d–i), the least-squares estimates are 
+approximately similar to the robust estimates (Fig. 6c–f). Hence, 
+Figure 6c-f shows that the estimated declination and declination 
+by inverting the upward-continued anomalies (e.g., Fig. 5d–i) 
+{\bf are in close agreement with true magnetization direction of 
+the 11 simulated non-spherical sources}. \textcolor{red}{Besides, 
+in this review we simulated other examples of non-spherical 
+sources} (the results
+can be found at
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{link 1}},
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{link 2}},
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{link 3}},
+and
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{link 4}}
+). Among these additional tests, we not only illustrate the application of
+our method to interpret simple sources, but also show the performance 
+of our method in estimating the magnetization direction of synthetic models 
+similar to that ones presented by Lelièvre and Oldenburg (2009) and 
+Ellis, Wet and Macleod (2012).
+
+{\bf THE PRIOR INFORMATION REQUIRED BY OUR METHOD} – Our method requires the 
+$x$-, $y$- and $z$-coordinates of the centre of the magnetic source. We 
+investigate the sensitivity of our method to uncertainties in the a priori 
+information (i.e., location of the centre of the magnetic source). 
+Figure 7 in our manuscript shows that the wrong choice of the $x$ and $y$ 
+coordinates of the centre of the source leads to poor estimates of the 
+magnetization direction (declinations and inclinations in Fig. 7a–d) 
+when compared with the true magnetization vector (continuous black 
+lines in Fig. 7). On the other hand, the estimated declinations and 
+inclinations are less sensitive to the wrong choice of the $z$ coordinate 
+of the centre of the source (Fig. 7e and f). Figure 7 {\bf SHOWS 126 (one 
+hundred and twenty six)} inversions by presuming different positions of
+$x$-, $y$- and $z$-coordinates of the centre of the source. These results 
+show that our method is more sensitive to errors in the assumed horizontal 
+coordinates of the centre of the source ($x$- and $y$-coordinates) than 
+in the assumed the depth ($z$-coordinate) of centre of the source. Hence, 
+the wrong choice of the depth of the centre of the source does not prevent 
+the correct estimation of the magnetization direction (declination and 
+inclination). Rather, the wrong choice of the horizontal coordinates of 
+the centre of the source prevents the correct estimation of the magnetic 
+direction.
+
+In our manuscript, we stated that we use the Euler deconvolution to 
+estimate $x$-, $y$- and $z$-coordinates of the centre of the 
+magnetic source. We explicitly stated “{\it One might think that the 
+high sensitivity of our method to uncertainties in the horizontal 
+coordinates of the centres of the sources is a drawback. This is 
+not true because these coordinates are generally well estimated by 
+the Euler deconvolution}”. The horizontal position estimates by 
+Euler deconvolution is unique and stable (Silva and Barbosa, 2003) 
+even in the presence of noise and wrong structural index. Hence, 
+{\bf the horizontal coordinates are well estimated by the Euler 
+deconvolution}. Of course, if the bodies yield strong-interfering 
+anomalies the Euler deconvolution fails in estimating the $x$- 
+and $y$-coordinates of the bodies and thus the magnetization 
+direction will be wrongly estimated by our method. In our 
+manuscript, {\bf we present 126 (one hundred and twenty six)} 
+inversions by presuming different positions of $x$-, $y$- 
+and $z$-coordinates of the centre of the source (Figure 7) and 
+\textcolor{red}{in this review we simulated other examples 
+evaluating the sensitive to uncertainties in the a priori 
+information about the horizontal coordinates of the centre 
+of the non-spherical sources} (the results
+can be found at 
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{link 1}},
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{link 2}},
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{link 3}},
+and
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/authors-resp-JE/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{link 4}}
+). 
+
+Finally, we stress that, in our method, the prior information and the 
+assumed premises are EXPLICITLY stated. They are not hidden in the 
+constraints (e.g., regularizing functions and depth weighting function). 
+Besides, the solution sensitivity to uncertainties in defining the 
+prior information and the assumed premises are widely tested by using 
+synthetic tests. Hence, the advantages and restrictions of our method 
+were analysed in our manuscript.
+
+\bigskip
+
+\underline{Referee's comment}: {\it "As such, I don’t see these 
+methods being widely applicable."}
+
+\bigskip
+
+We fully disagree with you. We presented a {\bf very fast} and 
+well-posed magnetic inversion to estimate the magnetization 
+direction of multiple sources. Our method deals with a 
+{\bf very small} optimization problem that leads to fast 
+inversion times and low memory usage, making viable the 
+inversion of large data sets {\bf without needing 
+supercomputers} or {\bf data compression algorithms}. We are 
+solving a well-posed inverse problem of estimating a single 
+magnetization direction per anomaly by using the assumption 
+that the magnetic source is a sphere. Hence, {\bf our method 
+does not require a large amount of constraints and their 
+inversion control variables}.
+
+Our method, {\bf as all methods}, presents {\bf advantages 
+and restrictions}. The advantages and restrictions make a 
+given method more suitable to be used under a given available 
+amount of a priori geological information about the sources. 
+{\bf There is no universal inversion method applicable to all 
+geological settings}. Rather, an inversion method can be 
+applied only to a specific geological setting because of the 
+inevitable bias imposed either by the stabilizing constraints 
+or by the assumed premise. Moreover, the {\bf practical 
+applicability of a method also depends on its computational 
+feasibility}. An intractable large-scale 3D inversion 
+usually requires: 1) large amount of constraints, 2) 
+large amount of inversion control variables, 3) 
+supercomputers or clusters of computers and 4) data 
+compression algorithms. Finally, {\bf the practical 
+applicability of a method also depends on its reproducibility}. 
+The reproducibility is one of the main principles of the 
+scientific method. All the specific variables of the synthetic 
+and real tests must be present in the text, so that the work 
+is reproducible. Without reproducibility, experimental trials 
+that confirm or deny a given hypothesis cannot be confirmed 
+by other scientists. In our manuscript, the premises, the prior 
+information and the variables used for simulating our tests 
+are explicitly present in the text. Besides, we have already 
+made available (see this
+\href{http://fatiando.readthedocs.org/en/v0.3/api/gravmag.magdir.html#module-fatiando.gravmag.magdir}{\textcolor{blue}{link}}) 
+the code of our program to be used by other 
+scientists. Our method is part of the open-source Python 
+toolkit for geophysical modeling and inversion called
+\href{http://fatiando.org/}{\textcolor{blue}{Fatiando a Terra}}.
+
+\bigskip
+
+\underline{References}
+
+\bigskip
+
+Silva, J. B. C. and V. C. F. Barbosa, 2003, 3D Euler deconvolution: 
+Theoretical basis for automatically selecting good solutions. Geophysics,
+68(6), 1962–1968, doi: 10.1190/1.1635050
+
+Lelièvre, P. G. and D. W. Oldenburg, 2009, A 3D total magnetization inversion 
+applicable when significant, complicated remanence is present. Geophysics,
+74(3), L21–L30, doi: 10.1190/1.3103249
+
+Ellis, R. G., B. Wet and I. N. Macleod, 2012, Inversion of magnetic data from 
+remanent and induced sources: 22nd International geophysical conference and 
+exhibition, ASEG, Expanded Abstracts, 1-4.
+
+\bigskip
