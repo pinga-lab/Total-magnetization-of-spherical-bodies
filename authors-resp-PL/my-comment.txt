@@ -1,0 +1,81 @@
+Reply to P. Lelièvre's Comment on "Estimation of the total magnetization direction of approximately spherical bodies"
+
+\noindent{\bf General comments}
+
+\underline{Referee's comment}: {\it "The forward problem described 
+is essentially identical to a mesh-based discretization but with 
+the space-filling mesh cells (prisms, tetrahedra, etc) replaced 
+with spherical (dipole) sources. Hence, the methods presented are 
+essentially identical to those used by Lelievre and Oldenburg (2009) 
+and Ellis et al. (2012)."}
+
+We fully disagree with your comment that the forward problem in 
+our method is \textcolor{red}{essentially} identical to the one 
+adopted by Lelièvre and Oldenburg (2009). 
+
+
+The interpretation model 
+adopted by Lelièvre and Oldenburg (2009) consists of an 
+$m_{x} \times m_{y} \times m_{z}$ grid of 3D juxtaposed prisms in 
+the horizontal and vertical directions (Figure 1a). Hence, in the 
+Lelièvre and Oldenburg (2009) the associated forward model 
+(their equation 10) requires computing the $N$ by $3M$ full 
+sensitivity matrix being $N$ the number of data and $M$ the number 
+of prisms of the interpretation model. A large data set combined 
+with the discretization of the Earth’s subsurface into a fine grid 
+of prisms results in a large-scale 3D forward model. Notice that 
+in our method we do not discretize the earth’s subsurface into an 
+$m_{x} \times m_{y} \times m_{z}$ grid of 3D juxtaposed dipoles in 
+the horizontal and vertical directions.  Hence, our interpretation 
+model does not consist of a 3D, equally spaced array of dipoles.
+Rather, the forward problem adopted by our method consists of a 
+set of $L$ dipoles (Figure 1 of our manuscript). Hence, in our method 
+the associated forward model (our equation 16) requires computing 
+the $N$ by $3L$ sensitivity matrix where $L <<<<< M$. Thus, our method 
+deals with a small-scale forward model being completely different 
+from the one adopted by Lelièvre and Oldenburg (2009).
+
+
+We agree that Lelièvre and Oldenburg’ (2009) method solves an 
+underdetermined inverse problem while our method solves an 
+overdetermined problem. However, this characteristic is not the 
+unique difference between these approaches. Table \ref{differences} 
+presents a list of the characteristics found in Lelièvre and 
+Oldenburg’ (2009) method in comparison with those found in our 
+method in this manuscript. By analyzing the Table below, we can 
+easily conclude that these methods are substantially different. 
+We highlighted (in green) the only two characteristics of these 
+methods that are equal.
+
+\begin{table}[h]
+\caption{captioncaptioncaptioncaptioncaptioncaption}
+\vskip4mm
+\centering
+\begin{tabular}{p{5cm} | c | c}
+ & {\bf Lelièvre and Oldenburg' (2009) method} & {\bf Our method} \\
+\hline Interpretation model consists of a  user-specified 
+grid of $M$ juxtaposed prisms in the horizontal and vertical 
+directions & Yes & No \\
+\hline Interpretation model consists of a  user-specified set of a 
+few dipoles & No & Yes \\
+\end{tabular}
+\end{table}
+
+
+\underline{References}
+
+Lelièvre, P. G. and D. Oldenburg, 2009, A 3D total magnetization inversion 
+applicable when significant, complicated remanence is present. Geophysics,
+74(3), L21–L30, doi: 10.1190/1.3103249
+
+Ellis, R. G., B. Wet and I. N. Macleod, 2012, Inversion of magnetic data from 
+remanent and induced sources: 22nd International geophysical conferenceand 
+exhibition, ASEG, Expanded Abrastracts, 1-4.
+
+\noindent{\bf Specific comments}
+
+\underline{Referee's comment}: {\it "Page 2 Sentence starting Line 19: These results 
+show that the non-outcropping sources near from the alkaline complex of Diorama have 
+almost the same magnetization direction of that as the ones in the alkaline complex 
+of Montes Claros de Goiás, strongly suggesting that these sources have been emplaced 
+in the crust almost within the same geological time interval."}
