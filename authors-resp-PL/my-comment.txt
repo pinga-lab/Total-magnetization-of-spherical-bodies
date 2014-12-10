@@ -21,7 +21,7 @@ adopted by Lelièvre and Oldenburg (2009).
 The interpretation model 
 adopted by Lelièvre and Oldenburg (2009) consists of an 
 $m_{x} \times m_{y} \times m_{z}$ grid of 3D juxtaposed prisms in 
-the horizontal and vertical directions. 
+the horizontal and vertical directions (Figure 1). 
 Hence, in the 
 Lelièvre and Oldenburg (2009) the associated forward model 
 (their equation 10) requires computing the $N$ by $3M$ full 
@@ -34,7 +34,7 @@ $m_{x} \times m_{y} \times m_{z}$ grid of 3D juxtaposed dipoles in
 the horizontal and vertical directions.  Hence, our interpretation 
 model does not consist of a 3D, equally spaced array of dipoles.
 Rather, the forward problem adopted by our method consists of a 
-set of $L$ dipoles (Figure 1 of our manuscript). Hence, in our method 
+set of $L$ dipoles (Figure 2). Hence, in our method 
 the associated forward model (our equation 16) requires computing 
 the $N$ by $3L$ sensitivity matrix where $L <<<<< M$. Thus, our method 
 deals with a small-scale forward model being completely different 
@@ -53,10 +53,10 @@ parameters than data observations)."}
 We agree that Lelièvre and Oldenburg’s (2009) method solves an 
 underdetermined inverse problem while our method solves an 
 overdetermined problem. However, this characteristic is not the 
-unique difference between these approaches. Figure 1 
+unique difference between these approaches. Figure 3 
 presents a list of the characteristics found in Lelièvre and 
 Oldenburg’ (2009) method in comparison with those found in our 
-method in this manuscript. By analyzing the Figure 1, we can 
+method in this manuscript. By analyzing the Figure 3, we can 
 easily conclude that these methods are substantially different. 
 We highlighted (in green) the only two characteristics of these 
 methods that are equal.
@@ -108,7 +108,7 @@ These authors are using strong constraints because they are trying
 to retrieve both the shapes and the magnetization directions of the 
 sources at each small volume (prism) of the 
 $m_{x} \times m_{y} \times  m_{z}$ grid of 3D juxtaposed prisms in 
-the horizontal and vertical directions.
+the horizontal and vertical directions (Figure 1).
 
 Lelièvre and Oldenburg (2009) deal with a high degree of nonuniqueness 
 (an ill-posed inverse problem).  To transform this ill-posed inverse 
