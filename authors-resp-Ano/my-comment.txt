@@ -1,6 +1,16 @@
 Reply to Anonymous Referee's Comment on "Estimation of the total magnetization direction of approximately spherical bodies"
 
-We would like to thank the Anonymous Referee for his constructive comments. Below we present our comments on his recommendations.
+We would like to thank the Anonymous Referee for his/her constructive comments.
+Below we present our comments and responses to the Referees recommendations.
+
+We have performed several new tests on synthetic data in response to the
+comments by all referees.
+We hope they will answer all of the points raised by the Referee.
+The results, figures, and source code for these tests are available online
+through the code hosting website Github at
+\href{https://github.com/birocoles/Total-magnetization-of-spherical-bodies}{\textcolor{blue}{github.com/birocoles/Total-magnetization-of-spherical-bodies}}.
+Links to each specific synthetic test are provided in the relevant comments
+below.
 
 \bigskip
 
@@ -8,123 +18,137 @@ We would like to thank the Anonymous Referee for his constructive comments. Belo
 
 \bigskip
 
-\underline{Referee's comment}: {\it "In addition, I appreciate 
+\underline{Referee's comment}: {\it "In addition, I appreciate
 what is, to my knowledge, a rather comprehensive literature
 review."}
 
 \bigskip
 
-Thank you. However, in this new version of the manuscript we have 
-reduced the literature review following the suggestion raised  by 
-one of the reviewers. 
+Thank you for your kind words.
+However, in the revised version of the manuscript we have
+reduced the literature review following the suggestion raised  by
+one of the reviewers.
 
 \bigskip
 
 \underline{Referee's comment}: {\it "The use of Euler Deconvolution
-to compute the center of the sources, however, I believe is a 
-dubious method given the extension of the method to non-spherical 
-sources. Their comments regarding the usefulness of the technique 
+to compute the center of the sources, however, I believe is a
+dubious method given the extension of the method to non-spherical
+sources. Their comments regarding the usefulness of the technique
 to horizontal location is appreciated, but the example only
-shows the technique applied to spherical bodies. I’d like an 
+shows the technique applied to spherical bodies. I’d like an
 example of an off-center prism."}
 
 \bigskip
 
-Thank you very much. To adress this suggestion, we have proceeded
-in the same way as described in the response to the Referee J. Ebbing. 
-We have applied
-our method to estimate the magnetization direction of a synthetic igneous 
-intrusion formed by a sill which is fed by a vertical pipe. The numerical 
-code used to produce this test can be found
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}}.
-The simulated geomagnetic field has inclination $-39.8^{\circ}$ 
+That is a very good suggestion, thank you.
+This same concern was expressed by another referee (J. Ebbing).
+To address this suggestion,
+we have made a new test on synthetic data
+in which we applied our method to
+data generated form a model of a weekly magnetized sedimentary basin and
+an igneous intrusion formed by a sill which is fed by a vertical pipe.
+The results, figures, and numerical code
+used to produce these results can be found
+online in the IPython notebook (an interactive writing and programing
+environment)
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{complex\_test.ipynb}}.
+
+
+The simulated geomagnetic field has inclination $-39.8^{\circ}$
 and declination $-22.5^{\circ}$. The synthetic intrusion has a
 reversed magnetization with inclination $I = 39.8^{\circ}$ and
 declination $D = 157.5^{\circ}$. This intrusion
-is emplaced in weakly magnetized sediments that are 
-overlaying a basement which is magnetized by induction. In this example, the 
-total-field anomaly 
+is embedded in weakly magnetized sediments that are
+overlaying a basement which is magnetized by induction. In this example, the
+total-field anomaly
 predicted by the intrusion overlaps the one produced by the
-basement. Our method is applied to the noise-corrupted total-field 
-anomaly produced by both the intrusion and the basement on a regular grid 
-with constant vertical coordinate. The position of the synthetic 
-intrusion is estimated by Euler Deconvolution. The synthetic 
-intrusion is not an ideal source and then does not have a 
-characteristic structural index. In this case, we presume that the 
-noise-corrupted total-field anomaly is produced by an spherical 
-body and use a structural index equal to 3. As shown
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}},
-the estimated location of the body obtained by Euler Deconvolution is placed outside
-the synthetic intrusion. Even using this poor estimation of the location
-of the source, our method obtained the estimated inclinations 
-$\hat{I} = 37.50377^{\circ} \pm 0.00035^{\circ}$ 
-and $\tilde{I} = 40.25973^{\circ} \pm 0.04392^{\circ}$ and declinations 
+basement. Our method is applied to the noise-corrupted total-field
+anomaly produced by both the intrusion and the basement on a regular grid
+with constant vertical coordinate. The position of the synthetic
+intrusion is estimated by Euler Deconvolution. The synthetic
+intrusion is not an ideal source and then does not have a
+characteristic structural index. In this case, we presume that the
+noise-corrupted total-field anomaly is produced by an spherical
+body and use a structural index equal to 3.
+The estimated location of the body obtained by Euler Deconvolution is placed outside
+the synthetic intrusion.
+This is an extreme case of an ``off center prism'', as suggested by the
+referee.
+
+Even using this poor estimate of the location
+of the source, our method estimated inclinations
+$\hat{I} = 37.50377^{\circ} \pm 0.00035^{\circ}$
+and $\tilde{I} = 40.25973^{\circ} \pm 0.04392^{\circ}$ and declinations
 $\hat{D} = 167.61518^{\circ} \pm 0.00060^{\circ}$ and $\tilde{D} =
 164.58968^{\circ} \pm 0.09092^{\circ}$. The caret ($^{\wedge}$) and tilde
-($^{\sim}$) denote the results computed by using, respectively, the least-squares and 
+($^{\sim}$) denote the results computed by using, respectively, the least-squares and
 robust estimates.
-This numerical test shows 
-the robustness of our method when applied to retrieve the magnetization 
+This numerical test shows
+the robustness of our method when applied to retrieve the magnetization
 direction of a complex source whose centre is poorly estimated by Euler
-Deconvolution. We also illustrate the use of the reduction 
+Deconvolution. We also illustrate the use of the reduction
 to the pole to verify the quality of the estimated magnetization direction.
 The reduction to the pole calculated with the magnetization direction
 obtained by our method leads to a predominantly positive field, which
-is very close to the true pole field (see \href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{here}}).
+is very close to the true pole field.
 
-We have also run several additional tests showing the application of our method 
-to estimate the magnetization direction of different synthetic sources with 
-known and estimated centres (by using Euler Deconvolution). 
-The results obtained with the least-squares approach can be found
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{here}}
-and the results obtained with the robust approach can be found
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{here}}.
+We have also run several additional tests showing the application of our method
+to estimate the magnetization direction of different synthetic sources with
+known and estimated centres (by using Euler Deconvolution).
+The figures, results, and source code of the additional tests
+obtained with the least-squares approach can be found
+in the IPython notebook
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{synthetic\_tests-L2.ipynb}}
+and the results obtained with the robust approach can be found in
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{synthetic\_tests-L1.ipynb}}.
 One of these tests show the influence of a superposed constant-regional field (50 nT)
-on the estimated magnetization direction. The superposed constant-regional
-field does not lead to wrong estimates of the centres of the sources by Euler Deconvolution 
+on the estimated magnetization direction. The regional
+field does not lead to wrong estimates of the centres of the sources by Euler Deconvolution
 because, in this case, this technique estimates a non-null base level. On the other
 hand, this regional-constant field misleads the magnetization direction obtained
 by our method. To overcome this problem, a regional-residual separation should be
-previously done. Finally, these additional tests also show the performance 
-of our method in estimating the magnetization direction of synthetic models 
-similar to that ones presented by Lelièvre and Oldenburg (2009) and Ellis, Wet and Macleod (2012).
+done prior to estimation. Finally, these additional tests also show the performance
+of our method in estimating the magnetization direction of synthetic models
+similar to the ones presented by Lelièvre and Oldenburg (2009) and Ellis, Wet and Macleod (2012).
 
 \bigskip
 
-\underline{Referee's comment}: {\it "It’s fine to show the L2 results, 
+\underline{Referee's comment}: {\it "It’s fine to show the L2 results,
 but I’m not sure when one would not use the L1 in field data."}
 
 \bigskip
 
-The numerical results shown in our manuscript suggest the use of
-the L1 norm to interpret both interfering magnetic anomalies 
-(section 3.2 - Robustness against interfering anomalies) and 
-non-dipolar total-field anomalies (section 3.3 
-- Robustness against non-spherical sources). On the other 
-hand, the results shown in section 3.4 (Robustness against 
-errors in the centre location) suggest that the L2-norm approach
-is slightly better than the L1-norm approach if there are errors 
-in the vertical position of the centre of the source (Figures
-7e and 7f of our manuscript). The presence of errors in the 
-horizontal position of the source misleads the results 
-obtained with both L1- and L2-approaches. In our opinion,
+We agree, thank you for your comment. In our opinion,
 the L1-norm approach should be used to interpret field
-data. We have stressed this aspect in the text of our 
+data. We have stressed this aspect in the text of our
 manuscript.
+
+The numerical results shown in our manuscript suggest the use of
+the L1 norm to interpret both interfering magnetic anomalies
+(section 3.2 - Robustness against interfering anomalies) and
+non-dipolar total-field anomalies (section 3.3
+- Robustness against non-spherical sources). On the other
+hand, the results shown in section 3.4 (Robustness against
+errors in the centre location) suggest that the L2-norm approach
+is slightly better than the L1-norm approach if there are errors
+in the vertical position of the centre of the source (Figures
+7e and 7f of our manuscript). The presence of errors in the
+horizontal position of the source misleads the results
+obtained with both L1- and L2-approaches.
 
 \bigskip
 
-\underline{Referee's comment}: {\it "If there is room, I’d like to 
+\underline{Referee's comment}: {\it "If there is room, I’d like to
 see the total field data in the field example reduced to pole
 as well, just for comparison."}
 
 \bigskip
 
-Sorry, but we are not sure if we have understood the goal of this 
-comment, because Figure 10 of our manuscript shows the comparison 
-between the reduced to pole anomalies obtained with L1- and L2-norm
-appraches on a region of the Goiás Alkaline Province, Brazil. So, 
-we have already shown your request. 
+Sorry, we are not sure we understand this comment.
+Figure 10 of our manuscript shows the field data reduced to the pole
+using both the L1- and L2-norm solutions.
+Is this what you mean?
 
 \bigskip
 
@@ -132,12 +156,12 @@ we have already shown your request.
 
 \bigskip
 
-Lelièvre, P. G. and D. Oldenburg, 2009, A 3D total magnetization inversion 
+Lelièvre, P. G. and D. Oldenburg, 2009, A 3D total magnetization inversion
 applicable when significant, complicated remanence is present. Geophysics,
 74(3), L21–L30, doi: 10.1190/1.3103249
 
-Ellis, R. G., B. Wet and I. N. Macleod, 2012, Inversion of magnetic data from 
-remanent and induced sources: 22nd International geophysical conferenceand 
+Ellis, R. G., B. Wet and I. N. Macleod, 2012, Inversion of magnetic data from
+remanent and induced sources: 22nd International geophysical conferenceand
 exhibition, ASEG, Expanded Abrastracts, 1-4.
 
 \bigskip
