@@ -33,7 +33,7 @@ The results, figures, and numerical code
 used to produce these results can be found
 online in the IPython notebook (an interactive writing and programing
 environment)
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{synthetic_tests_sphere_prism.ipynb}}.
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{synthetic\_tests\_sphere\_prism.ipynb}}.
 
 The sphere has a radius $R = 2000 \, m$ and
 the cube has a side length $R = 2000 \, m$.
@@ -146,7 +146,7 @@ generating a regional anomaly.
 The results, figures, and numerical code
 used to produce these results can be found
 online in the IPython notebook
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{complex_test.ipynb}}.
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{complex\_test.ipynb}}.
 The simulated geomagnetic field has inclination $-39.8^{\circ}$
 and declination $-22.5^{\circ}$. The synthetic intrusion has a
 reversed magnetization with inclination $I = 39.8^{\circ}$ and
@@ -185,9 +185,9 @@ known and estimated centres (by using Euler Deconvolution).
 The figures, results, and source code of the additional tests
 obtained with the least-squares approach can be found
 in the IPython notebook
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{synthetic_tests-L2.ipynb}}
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{synthetic\_tests-L2.ipynb}}
 and the results obtained with the robust approach can be found in
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{synthetic_tests-L1.ipynb}}.
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{synthetic\_tests-L1.ipynb}}.
 One of these tests show the influence of a superposed constant-regional field (50 nT)
 on the estimated magnetization direction. The regional
 field does not lead to wrong estimates of the centres of the sources by Euler Deconvolution
