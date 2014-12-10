@@ -14,7 +14,9 @@ review."}
 
 \bigskip
 
-\textcolor{red}{????????}
+Thank you. However, in this new version of the manuscript we have 
+reduced the literature review following the suggestion raised  by 
+one of the reviewers. 
 
 \bigskip
 
@@ -95,9 +97,9 @@ but I’m not sure when one would not use the L1 in field data."}
 \bigskip
 
 The numerical results shown in our manuscript suggest the use of
-the L1 norm in the presence of interfering magnetic anomalies 
-(section 3.2 - Robustness against interfering anomalies) and
-in dealing with non-dipolar total-field anomalies (section 3.3 
+the L1 norm to interpret both interfering magnetic anomalies 
+(section 3.2 - Robustness against interfering anomalies) and 
+non-dipolar total-field anomalies (section 3.3 
 - Robustness against non-spherical sources). On the other 
 hand, the results shown in section 3.4 (Robustness against 
 errors in the centre location) suggest that the L2-norm approach
@@ -107,7 +109,8 @@ in the vertical position of the centre of the source (Figures
 horizontal position of the source misleads the results 
 obtained with both L1- and L2-approaches. In our opinion,
 the L1-norm approach should be used to interpret field
-data.
+data. We have stressed this aspect in the text of our 
+manuscript.
 
 \bigskip
 
@@ -117,9 +120,11 @@ as well, just for comparison."}
 
 \bigskip
 
-Figure 10 of our manuscript shows the comparison between the
-reduced to pole anomalies obtained with L1- and L2-norm
-appraches on a region of the Goiás Alkaline Province, Brazil. 
+Sorry, but we are not sure if we have understood the goal of this 
+comment, because Figure 10 of our manuscript shows the comparison 
+between the reduced to pole anomalies obtained with L1- and L2-norm
+appraches on a region of the Goiás Alkaline Province, Brazil. So, 
+we have already shown your request. 
 
 \bigskip
 
