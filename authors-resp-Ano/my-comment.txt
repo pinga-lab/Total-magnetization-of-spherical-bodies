@@ -3,8 +3,9 @@ Reply to Anonymous Referee's Comment on "Estimation of the total magnetization d
 We would like to thank the Anonymous Referee for his/her constructive comments.
 Below we present our comments and responses to the Referees recommendations.
 
-We have performed several new tests on synthetic data that we hope will answer
-all of the points raised by the Referee.
+We have performed several new tests on synthetic data in response to the
+comments by all referees.
+We hope they will answer all of the points raised by the Referee.
 The results, figures, and source code for these tests are available online
 through the code hosting website Github at
 \href{https://github.com/birocoles/Total-magnetization-of-spherical-bodies}{\textcolor{blue}{github.com/birocoles/Total-magnetization-of-spherical-bodies}}.
@@ -95,19 +96,21 @@ is very close to the true pole field.
 We have also run several additional tests showing the application of our method
 to estimate the magnetization direction of different synthetic sources with
 known and estimated centres (by using Euler Deconvolution).
-The results obtained with the least-squares approach can be found
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{here}}
-and the results obtained with the robust approach can be found
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{here}}.
+The figures, results, and source code of the additional tests
+obtained with the least-squares approach can be found
+in the IPython notebook
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{synthetic\_tests-L2.ipynb}}
+and the results obtained with the robust approach can be found in
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{synthetic\_tests-L1.ipynb}}.
 One of these tests show the influence of a superposed constant-regional field (50 nT)
-on the estimated magnetization direction. The superposed constant-regional
+on the estimated magnetization direction. The regional
 field does not lead to wrong estimates of the centres of the sources by Euler Deconvolution
 because, in this case, this technique estimates a non-null base level. On the other
 hand, this regional-constant field misleads the magnetization direction obtained
 by our method. To overcome this problem, a regional-residual separation should be
-previously done. Finally, these additional tests also show the performance
+done prior to estimation. Finally, these additional tests also show the performance
 of our method in estimating the magnetization direction of synthetic models
-similar to that ones presented by Lelièvre and Oldenburg (2009) and Ellis, Wet and Macleod (2012).
+similar to the ones presented by Lelièvre and Oldenburg (2009) and Ellis, Wet and Macleod (2012).
 
 \bigskip
 
@@ -115,6 +118,11 @@ similar to that ones presented by Lelièvre and Oldenburg (2009) and Ellis, Wet 
 but I’m not sure when one would not use the L1 in field data."}
 
 \bigskip
+
+We agree, thank you for your comment. In our opinion,
+the L1-norm approach should be used to interpret field
+data. We have stressed this aspect in the text of our
+manuscript.
 
 The numerical results shown in our manuscript suggest the use of
 the L1 norm to interpret both interfering magnetic anomalies
@@ -127,10 +135,7 @@ is slightly better than the L1-norm approach if there are errors
 in the vertical position of the centre of the source (Figures
 7e and 7f of our manuscript). The presence of errors in the
 horizontal position of the source misleads the results
-obtained with both L1- and L2-approaches. In our opinion,
-the L1-norm approach should be used to interpret field
-data. We have stressed this aspect in the text of our
-manuscript.
+obtained with both L1- and L2-approaches.
 
 \bigskip
 
@@ -140,11 +145,10 @@ as well, just for comparison."}
 
 \bigskip
 
-Sorry, but we are not sure if we have understood the goal of this
-comment, because Figure 10 of our manuscript shows the comparison
-between the reduced to pole anomalies obtained with L1- and L2-norm
-appraches on a region of the Goiás Alkaline Province, Brazil. So,
-we have already shown your request.
+Sorry, we are not sure we understand this comment.
+Figure 10 of our manuscript shows the field data reduced to the pole
+using both the L1- and L2-norm solutions.
+Is this what you mean?
 
 \bigskip
 
