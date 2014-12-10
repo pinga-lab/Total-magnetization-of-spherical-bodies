@@ -242,8 +242,8 @@ We fully disagree with you. You are confusing {\bf ASSUMED PREMISE}
 and {\bf PRIOR INFORMATION}. Let us clarify 
 these topics.
 
-{\bf THE ASSUMED PREMISE IN OUR METHOD} - We {\underline assumed a 
-magnetized spherical source} giving rise to dipolar anomalies. 
+{\bf THE ASSUMED PREMISE IN OUR METHOD} - We assumed a 
+magnetized spherical source giving rise to dipolar anomalies. 
 Notice that {\bf it does not mean that the source must be a sphere}. 
 We show the feasibility of applying the upward continuation to 
 interpret non-spherical sources by using synthetic tests. We 
