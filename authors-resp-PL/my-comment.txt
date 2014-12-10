@@ -1,4 +1,5 @@
 Reply to P. Lelièvre's Comment on "Estimation of the total magnetization direction of approximately spherical bodies"
+
 \noindent{\bf General comments}
 
 \bigskip
@@ -177,7 +178,7 @@ here and I don’t see what value this paper adds to the scientific community"}
 
 \bigskip
 
-We fully disagree with you. We presented a NEW and VERY FAST total-field 
+We fully disagree with you. We presented a {\bf new} and {\bf very fast} total-field 
 anomaly inversion to estimate the magnetization direction of multiple 
 sources. The main advantages of our method are: 1) the simplicity in 
 implementation, 2) the low computational effort and 3) the extremely 
@@ -237,16 +238,16 @@ have a reliable estimate of the number of sources and their locations
 
 \bigskip
 
-We fully disagree with you. You are confusing {\underline {\it assumed 
-premise}} and {\underline {\it prior information}}. Let us clarify these 
-topics.
+We fully disagree with you. You are confusing {\bf ASSUMED PREMISE} 
+and {\bf PRIOR INFORMATION}. Let us clarify 
+these topics.
 
 {\bf THE ASSUMED PREMISE IN OUR METHOD} - We {\underline assumed a 
 magnetized spherical source} giving rise to dipolar anomalies. 
-Notice that {\bf IT DOES NOT MEAN THAT THE SOURCE MUST BE A SPHERE}. 
+Notice that {\bf it does not mean that the source must be a sphere}. 
 We show the feasibility of applying the upward continuation to 
 interpret non-spherical sources by using synthetic tests. We 
-{\bf SIMULATED 11 PRISMATIC SOURCES} with different side lengths 
+{\bf simulated 11 prismatic sources} with different side lengths 
 $Lx$, $Ly$ and $Lz$ (Figure 4 in our manuscript displays three prisms) 
 giving rise to non-dipolar total field anomalies. Figure 5 (in our 
 manuscript) displays the total field anomalies produced by three 
@@ -283,7 +284,7 @@ magnetization direction (declinations and inclinations in Fig. 7a–d)
 when compared with the true magnetization vector (continuous black 
 lines in Fig. 7). On the other hand, the estimated declinations and 
 inclinations are less sensitive to the wrong choice of the $z$ coordinate 
-of the centre of the source (Fig. 7e and f). Figure 7 {\bf SHOWS 126 (one 
+of the centre of the source (Fig. 7e and f). Figure 7 {\bf shows 126 (one 
 hundred and twenty six)} inversions by presuming different positions of
 $x$-, $y$- and $z$-coordinates of the centre of the source. These results 
 show that our method is more sensitive to errors in the assumed horizontal 
@@ -325,7 +326,7 @@ and
 ). 
 
 Finally, we stress that, in our method, the prior information and the 
-assumed premises are EXPLICITLY stated. They are not hidden in the 
+assumed premises are {\bf explicitly} stated. They are not hidden in the 
 constraints (e.g., regularizing functions and depth weighting function). 
 Besides, the solution sensitivity to uncertainties in defining the 
 prior information and the assumed premises are widely tested by using 
