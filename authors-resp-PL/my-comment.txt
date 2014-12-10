@@ -1,4 +1,5 @@
 Reply to P. Lelièvre's Comment on "Estimation of the total magnetization direction of approximately spherical bodies"
+
 \noindent{\bf General comments}
 
 \bigskip
@@ -20,7 +21,7 @@ adopted by Lelièvre and Oldenburg (2009).
 The interpretation model 
 adopted by Lelièvre and Oldenburg (2009) consists of an 
 $m_{x} \times m_{y} \times m_{z}$ grid of 3D juxtaposed prisms in 
-the horizontal and vertical directions. 
+the horizontal and vertical directions (Figure 1). 
 Hence, in the 
 Lelièvre and Oldenburg (2009) the associated forward model 
 (their equation 10) requires computing the $N$ by $3M$ full 
@@ -33,7 +34,7 @@ $m_{x} \times m_{y} \times m_{z}$ grid of 3D juxtaposed dipoles in
 the horizontal and vertical directions.  Hence, our interpretation 
 model does not consist of a 3D, equally spaced array of dipoles.
 Rather, the forward problem adopted by our method consists of a 
-set of $L$ dipoles (Figure 1 of our manuscript). Hence, in our method 
+set of $L$ dipoles (Figure 2). Hence, in our method 
 the associated forward model (our equation 16) requires computing 
 the $N$ by $3L$ sensitivity matrix where $L <<<<< M$. Thus, our method 
 deals with a small-scale forward model being completely different 
@@ -52,10 +53,10 @@ parameters than data observations)."}
 We agree that Lelièvre and Oldenburg’s (2009) method solves an 
 underdetermined inverse problem while our method solves an 
 overdetermined problem. However, this characteristic is not the 
-unique difference between these approaches. Figure 1 
+unique difference between these approaches. Figure 3 
 presents a list of the characteristics found in Lelièvre and 
 Oldenburg’ (2009) method in comparison with those found in our 
-method in this manuscript. By analyzing the Figure 1, we can 
+method in this manuscript. By analyzing the Figure 3, we can 
 easily conclude that these methods are substantially different. 
 We highlighted (in green) the only two characteristics of these 
 methods that are equal.
@@ -107,7 +108,7 @@ These authors are using strong constraints because they are trying
 to retrieve both the shapes and the magnetization directions of the 
 sources at each small volume (prism) of the 
 $m_{x} \times m_{y} \times  m_{z}$ grid of 3D juxtaposed prisms in 
-the horizontal and vertical directions.
+the horizontal and vertical directions (Figure 1).
 
 Lelièvre and Oldenburg (2009) deal with a high degree of nonuniqueness 
 (an ill-posed inverse problem).  To transform this ill-posed inverse 
@@ -177,7 +178,7 @@ here and I don’t see what value this paper adds to the scientific community"}
 
 \bigskip
 
-We fully disagree with you. We presented a NEW and VERY FAST total-field 
+We fully disagree with you. We presented a {\bf new} and {\bf very fast} total-field 
 anomaly inversion to estimate the magnetization direction of multiple 
 sources. The main advantages of our method are: 1) the simplicity in 
 implementation, 2) the low computational effort and 3) the extremely 
@@ -237,16 +238,16 @@ have a reliable estimate of the number of sources and their locations
 
 \bigskip
 
-We fully disagree with you. You are confusing {\underline {\it assumed 
-premise}} and {\underline {\it prior information}}. Let us clarify these 
-topics.
+We fully disagree with you. You are confusing {\bf ASSUMED PREMISE} 
+and {\bf PRIOR INFORMATION}. Let us clarify 
+these topics.
 
-{\bf THE ASSUMED PREMISE IN OUR METHOD} - We {\underline assumed a 
-magnetized spherical source} giving rise to dipolar anomalies. 
-Notice that {\bf IT DOES NOT MEAN THAT THE SOURCE MUST BE A SPHERE}. 
+{\bf THE ASSUMED PREMISE IN OUR METHOD} - We assumed a 
+magnetized spherical source giving rise to dipolar anomalies. 
+Notice that {\bf it does not mean that the source must be a sphere}. 
 We show the feasibility of applying the upward continuation to 
 interpret non-spherical sources by using synthetic tests. We 
-{\bf SIMULATED 11 PRISMATIC SOURCES} with different side lengths 
+{\bf simulated 11 prismatic sources} with different side lengths 
 $Lx$, $Ly$ and $Lz$ (Figure 4 in our manuscript displays three prisms) 
 giving rise to non-dipolar total field anomalies. Figure 5 (in our 
 manuscript) displays the total field anomalies produced by three 
@@ -283,7 +284,7 @@ magnetization direction (declinations and inclinations in Fig. 7a–d)
 when compared with the true magnetization vector (continuous black 
 lines in Fig. 7). On the other hand, the estimated declinations and 
 inclinations are less sensitive to the wrong choice of the $z$ coordinate 
-of the centre of the source (Fig. 7e and f). Figure 7 {\bf SHOWS 126 (one 
+of the centre of the source (Fig. 7e and f). Figure 7 {\bf shows 126 (one 
 hundred and twenty six)} inversions by presuming different positions of
 $x$-, $y$- and $z$-coordinates of the centre of the source. These results 
 show that our method is more sensitive to errors in the assumed horizontal 
@@ -325,7 +326,7 @@ and
 ). 
 
 Finally, we stress that, in our method, the prior information and the 
-assumed premises are EXPLICITLY stated. They are not hidden in the 
+assumed premises are {\bf explicitly} stated. They are not hidden in the 
 constraints (e.g., regularizing functions and depth weighting function). 
 Besides, the solution sensitivity to uncertainties in defining the 
 prior information and the assumed premises are widely tested by using 
