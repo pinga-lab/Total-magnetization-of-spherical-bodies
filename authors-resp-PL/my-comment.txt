@@ -1,5 +1,15 @@
 Reply to P. Lelièvre's Comment on "Estimation of the total magnetization direction of approximately spherical bodies"
 
+We would like to thank Referee P. Lelièvre for his review.
+Below we present our comments and responses to his recommendations.
+We have performed several new tests on synthetic data that we hope will 
+clarify several points raised by the Referee.
+The results, figures, and source code for these tests are available online
+through the code hosting website Github at
+\href{https://github.com/birocoles/Total-magnetization-of-spherical-bodies}{\textcolor{blue}{github.com/birocoles/Total-magnetization-of-spherical-bodies}}.
+Links to each specific synthetic test are provided in the relevant comments
+below.
+
 \noindent{\bf General comments}
 
 \bigskip
@@ -261,14 +271,16 @@ by inverting the upward-continued anomalies (e.g., Fig. 5d–i)
 {\bf are in close agreement with true magnetization direction of 
 the 11 simulated non-spherical sources}. \textcolor{red}{Besides, 
 in this review we simulated other examples of non-spherical 
-sources} (the results
-can be found at
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{link 1}},
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{link 2}},
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{link 3}},
+sources}. The results, figures, and numerical codes
+used to produce these results can be found
+online in the IPython notebooks (an interactive writing and programing
+environment)
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{synthetic\_tests\_sphere\_prism.ipynb}},
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{complex\_test.ipynb}},
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{synthetic\_tests-L2.ipynb}},
 and
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{link 4}}
-). Among these additional tests, we not only illustrate the application of
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{synthetic\_tests-L1.ipynb}}. 
+Among these additional tests, we not only illustrate the application of
 our method to interpret simple sources, but also show the performance 
 of our method in estimating the magnetization direction of synthetic models 
 similar to that ones presented by Lelièvre and Oldenburg (2009) and 
@@ -316,14 +328,15 @@ and $z$-coordinates of the centre of the source (Figure 7) and
 \textcolor{red}{in this review we simulated other examples 
 evaluating the sensitive to uncertainties in the a priori 
 information about the horizontal coordinates of the centre 
-of the non-spherical sources} (the results
-can be found at 
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{link 1}},
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{link 2}},
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{link 3}},
+of the non-spherical sources}. The results, figures, and numerical codes
+used to produce these results can be found
+online in the IPython notebooks (an interactive writing and programing
+environment)
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/comparison_sphere_cube/synthetic_tests_sphere_prism.ipynb}{\textcolor{blue}{synthetic\_tests\_sphere\_prism.ipynb}},
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/complex/complex_test.ipynb}{\textcolor{blue}{complex\_test.ipynb}},
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L2.ipynb}{\textcolor{blue}{synthetic\_tests-L2.ipynb}},
 and
-\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{link 4}}
-). 
+\href{http://nbviewer.ipython.org/github/birocoles/Total-magnetization-of-spherical-bodies/blob/master/notebooks/suppl_tests/additional_tests/synthetic_tests-L1.ipynb}{\textcolor{blue}{synthetic\_tests-L1.ipynb}}.
 
 Finally, we stress that, in our method, the prior information and the 
 assumed premises are {\bf explicitly} stated. They are not hidden in the 
@@ -377,12 +390,12 @@ that confirm or deny a given hypothesis cannot be confirmed
 by other scientists. In our manuscript, the premises, the prior 
 information and the variables used for simulating our tests 
 are explicitly present in the text. Besides, we have already 
-made available (see this
-\href{http://fatiando.readthedocs.org/en/v0.3/api/gravmag.magdir.html#module-fatiando.gravmag.magdir}{\textcolor{blue}{link}}) 
-the code of our program to be used by other 
-scientists. Our method is part of the open-source Python 
-toolkit for geophysical modeling and inversion called
-\href{http://fatiando.org/}{\textcolor{blue}{Fatiando a Terra}}.
+made available the code of our program to be used by other 
+scientists at 
+\href{http://fatiando.readthedocs.org/en/v0.3/api/gravmag.magdir.html#module-fatiando.gravmag.magdir}{\textcolor{blue}{http://fatiando.readthedocs.org/en/v0.3/api/gravmag.magdir.html#module-fatiando.gravmag.magdir}}.
+Our method is part of the open-source Python 
+toolkit for geophysical modeling and inversion called {\bf Fatiando a Terra}
+(\href{http://fatiando.org/}{\textcolor{blue}{http://fatiando.org/}}).
 
 \bigskip
 
