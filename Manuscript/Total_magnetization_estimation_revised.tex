@@ -34,7 +34,8 @@
 \begin{abstract}
   We have developed a~fast total-field anomaly inversion to estimate
   the magnetization direction of multiple sources with approximately
-  spherical shape and known centres. Our method can be applied to
+  spherical shape and known centres. Our method is an overdetermined
+  inverse problem that can be applied to
   interpret multiple sources with different magnetization
   directions. It neither requires the prior computation of any
   transformation like reduction to the pole nor the use of regularly
@@ -215,9 +216,9 @@ element $\Delta T^\mathrm{o}_{i}$, $i = 1, \ldots, N$, is the total-field
 anomaly measured at the position ($x_{i}$, $y_{i}$, $z_{i}$) (black dots in
 Fig.~\ref{fig:geometric-aspects}). In this Cartesian coordinate system, $x$
 points to the geographic north, $y$ points to east and $z$ points downward.
-In general, the total-field anomaly is produced by a magnetized
-susceptibility distribution which is anomalous with respect to the mean
-susceptibility of the crust. Mathematically, $\Delta T^\mathrm{o}_{i}$ can be
+In general, the total-field anomaly is produced by a distribution of 
+magnetization which is anomalous with respect to the mean induced magnetization
+of the crust. Mathematically, $\Delta T^\mathrm{o}_{i}$ can be
 written as
 \begin{align}
  &
@@ -405,7 +406,7 @@ notation as
 \end{align}
 where $\vec{d}(\vec{h})$ is the $N$-dimensional predicted data vector, whose
 $i$th element is $d_{i}(\vec{h})$ (Eq.~\ref{eq:aiTh}), and $\mathbf{A}$ is
-a $N \times 3L$ matrix that can be partitioned as
+a $N \times 3L$ matrix $\left(N > 3L\right)$ that can be partitioned as
 \begin{align}
  &
 \mathbf{A} =
@@ -431,7 +432,8 @@ $\vec{\Delta T}^\mathrm{o}$ can be approximated by a set of $L$ uniformly
 magnetized spheres with known coordinates $(xc_{j}, yc_{j}, zc_{j})$, $j = 1,
 \ldots, L$, of their centres. We also assume that the direction of the
 constant geomagnetic field $\vec{F}_{0}$ (Eq.~\ref{eq:unit-vector}) is known.
-Under these hypotheses, we formulate a linear inverse problem of estimating
+Under these hypotheses, we formulate an overdetermined linear inverse problem 
+of estimating
 the parameter vector $\vec{h}$ (Eq.~\ref{eq:h}) from $\vec{\Delta
 T}^\mathrm{o}$. The problem of estimating a parameter vector $\vec{h}$
 (Eq.~\ref{eq:h}) containing the magnetization vectors $\vec{m}^{j}$
@@ -502,8 +504,9 @@ estimate and is an approximation of the parameter vector minimizing the
 function $\Gamma(\vec{h})$ (Eq.~\ref{eq:goal-function-L1}).
 
 Both $\hat{\vec{h}}$ (least-squares estimate) and $\tilde{\vec{h}}$ (robust
-estimate) are estimates of the parameter vector $\vec{h}$ (Eq.~\ref{eq:h}),
-which is represented as a function of the vectors $\vec{h}^{j}$, $j = 1,
+estimate) are estimates of the Cartesian coordinates of the parameter vector 
+$\vec{h}$ (Eq.~\ref{eq:h}),
+which is represented in as a function of the vectors $\vec{h}^{j}$, $j = 1,
 \ldots, L$ (Eq.~\ref{eq:hj}) and the magnetization vectors $\vec{m}^{j}$, $j
 = 1, \ldots, L$ (Eq.~\ref{eq:mag-vector-j}). The magnetization vectors are
 represented in Cartesian coordinates, however they are commonly represented
