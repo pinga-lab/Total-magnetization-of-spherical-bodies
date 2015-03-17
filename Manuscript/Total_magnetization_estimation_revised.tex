@@ -422,9 +422,6 @@ a $N \times 3L$ matrix $\left(N > 3L\right)$ that can be partitioned as
 being $\vec{a}_{i}$, $i = 1, \ldots, N$, the $3L$-dimensional vector
 defined in Eq. (\ref{eq:ai}).
 
-
-
-
 \subsection{Inverse problem}
 
 We assume that the magnetic sources giving rise to the observed data
@@ -751,7 +748,10 @@ interfering anomalies. These interfering anomalies are characterized
 by mid-wavelength components which mostly affect the positive signals
 of the original total-field anomaly (Fig.~\ref{fig:synt1-data}a),
 resulting in non-dipolar total-field anomalies
-(Fig.~\ref{fig:synt1-data}b). Notice that this test violates the
+(Fig.~\ref{fig:synt1-data}b). The interfering anomalies reach
+approximately $33 \%$ of the positive amplitude of the original
+total-field anomaly shown in Fig.~\ref{fig:synt1-data}a. 
+Notice that this test violates the
 premise assumed by our method that the total-field anomalies are
 caused by dipolar bodies (spheres). Although these interfering
 anomalies are different from random Gaussian noise or outliers marked
@@ -907,11 +907,37 @@ method as prior information to form the matrix given in Eq.
 
 \subsection{Complex tests}
 
-We applied our method to estimate the magnetization direction
-of synthetic sources simulating two different complex scenarios. 
-The first one simulates two significantly overlapping total-field 
-anomalies produced by two uniformly magnetized sources. The first
-source 
+In this section, we present the performance of our method in recovering
+the magnetization direction of synthetic sources simulating complex 
+geological scenarios.
+
+\subsubsection{Significantly overlapping anomalies}
+
+Figure XXX shows the synthetic noise-corrupted total-field
+anomaly produced by two uniformly magnetized bodies embedded in 
+nonmagnetic host rocks. Both sources are rectangular prisms with 
+horizontal dimensions equal to 80\,\unit{m} and 20\,\unit{m} along
+the $x$ and $y$ directions, respectively, vertical dimension
+equal to 70\,\unit{m} and depth of the top at $z = 10$\,\unit{m}.
+One source has its centre at $xc = 0$\,\unit{m}, $yc = -30$\,\unit{m}
+and $zc = 45$\,\unit{m} while the other one has its centre shifted
+60\,\unit{m} in the positive $y$ direction (Fig. XXX). Both sources
+have a Koenigsberger ratio equal to $3$ and the same induced 
+magnetization with intensity $3$\,\unit{A\,m^{-1}}, declination 
+$0${\degree} and inclination $-30${\degree}. The remanent 
+magnetization of the sources has the same inclination equal to 
+$0${\degree}, but different declinations equal to $30${\degree}
+(eastern source) and $-30${\degree} (western source). The total field
+anomaly produced by these synthetic bodies was calculated at $N = 2\,601$
+regularly spaced points $(x_{i}, y_{i}, z_{i})$, $i = 1, \ldots, N$, on 
+the plane with constant vertical coordinate $z=-10$\,\unit{m}, extending 
+from -200 to 200\,\unit{m} in both $x$ and $y$ directions. The 
+pseudorandom Gaussian noise added has a zero mean and a standard deviation 
+equal to $2\,\%$ of the peak-to-peak amplitude of the noise-free total-field
+anomaly.
+
+
+
 
 \section{Application to field data}
 
