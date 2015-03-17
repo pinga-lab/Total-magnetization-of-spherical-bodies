@@ -3,7 +3,8 @@
 # Tex files 
 .aux
 .bbl
-.synctex
+.synctex.gz
 .txt
 .blg
+.log
 
