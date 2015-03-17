@@ -58,7 +58,7 @@
   reduced-to-the-pole anomalies, even for other region of the GAP, in
   the alkaline complex of Montes Claros de Goi\'{a}s. These results show 
   that the non-outcropping sources near from the alkaline complex of 
-  Diorama have almost the same magnetization direction of that as the 
+  Diorama have almost the same magnetization direction of that
   ones in the alkaline complex of Montes Claros de Goi\'{a}s, strongly 
   suggesting that these sources have been emplaced in the crust almost 
   within the same geological time interval.
@@ -506,10 +506,10 @@ function $\Gamma(\vec{h})$ (Eq.~\ref{eq:goal-function-L1}).
 Both $\hat{\vec{h}}$ (least-squares estimate) and $\tilde{\vec{h}}$ (robust
 estimate) are estimates of the Cartesian coordinates of the parameter vector 
 $\vec{h}$ (Eq.~\ref{eq:h}),
-which is represented in as a function of the vectors $\vec{h}^{j}$, $j = 1,
+which is represented as a function of the vectors $\vec{h}^{j}$, $j = 1,
 \ldots, L$ (Eq.~\ref{eq:hj}) and the magnetization vectors $\vec{m}^{j}$, $j
-= 1, \ldots, L$ (Eq.~\ref{eq:mag-vector-j}). The magnetization vectors are
-represented in Cartesian coordinates, however they are commonly represented
+= 1, \ldots, L$ (Eq.~\ref{eq:mag-vector-j}). However, magnetization vectors
+are commonly represented
 in terms of its intensity, declination and inclination. Therefore, for
 convenience, we will represent the vectors $\vec{h}^{j}$ (Eq.~\ref{eq:hj}) in
 spherical coordinates as follows
@@ -543,12 +543,12 @@ and
 I_{j} = \arctan \left(\frac{hz_{j}}{\sqrt{hx_{j}^{2} + hy_{j}^{2}}} \right).
 \label{eq:Ij}
 \end{align}
-
 Note that, according to Eq. (\ref{eq:hj}), the declinations $D_{j}$
 (Eq.~\ref{eq:Dj}) and inclinations $I_{j}$ (Eq.~\ref{eq:Ij}), $j = 1, \ldots,
 L$, are equal to that ones of the magnetization vectors $\vec{m}^{j}$, $j =
 1, \ldots, L$ (Eq.~\ref{eq:mag-vector-j}). After obtaining the least-squares
-estimate $\hat{\vec{h}}$ or the robust estimate $\tilde{\vec{h}}$, we
+estimate $\hat{\vec{h}}$ or the robust estimate $\tilde{\vec{h}}$ in Cartesian
+coordinates, we
 calculate the declinations $\hat{D}_{j}$ or $\tilde{D}_{j}$ (Eq.~\ref{eq:Dj})
 and inclinations $\hat{I}_{j}$ or $\tilde{I}_{j}$ (Eq.~\ref{eq:Ij}), $j = 1,
 \ldots, L$, of the total magnetization vector of all spheres. We use a caret
@@ -904,6 +904,14 @@ the depth estimates may fail. This characteristic makes Euler deconvolution
 a~suitable technique for providing the centre of the source to be used by our
 method as prior information to form the matrix given in Eq.
 (\ref{eq:sensibility-matrix}).
+
+\subsection{Complex tests}
+
+We applied our method to estimate the magnetization direction
+of synthetic sources simulating two different complex scenarios. 
+The first one simulates two significantly overlapping total-field 
+anomalies produced by two uniformly magnetized sources. The first
+source 
 
 \section{Application to field data}
 
