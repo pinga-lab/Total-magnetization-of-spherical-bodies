@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.3.19)  17 MAR 2015 17:36
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.3.19)  18 MAR 2015 19:03
 entering extended mode
 **Total_magnetization_estimation_revised.tex
 
@@ -722,7 +722,25 @@ LaTeX Font Info:    Try loading font information for OT1+phv on input line 65.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
+
+Package natbib Warning: Citation `blakely1996' on page 1 undefined on input lin
+e 74.
+
+
+Package natbib Warning: Citation `nabighian-etal2005' on page 1 undefined on in
+put line 74.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package natbib Warning: Citation `telford-etal1990' on page 1 undefined on inpu
+t line 99.
+
+
+Package natbib Warning: Citation `blakely1996' on page 1 undefined on input lin
+e 99.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -736,292 +754,1143 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
 ]
+
+Package natbib Warning: Citation `baranov1957' on page 2 undefined on input lin
+e 104.
+
+
+Package natbib Warning: Citation `baranov-naudy1964' on page 2 undefined on inp
+ut line 104.
+
+
+Package natbib Warning: Citation `silva1986' on page 2 undefined on input line 
+104.
+
+
+Package natbib Warning: Citation `baranov1957' on page 2 undefined on input lin
+e 105.
+
+
+Package natbib Warning: Citation `nabighian1972' on page 2 undefined on input l
+ine 107.
+
+
+Package natbib Warning: Citation `nabighian1974' on page 2 undefined on input l
+ine 107.
+
+
+Package natbib Warning: Citation `nabighian1984' on page 2 undefined on input l
+ine 107.
+
+
+Package natbib Warning: Citation `li2006' on page 2 undefined on input line 107
+.
+
+
+Package natbib Warning: Citation `li-oldenburg1996' on page 2 undefined on inpu
+t line 111.
+
+
+Package natbib Warning: Citation `pilkington1997' on page 2 undefined on input 
+line 111.
+
+
+Package natbib Warning: Citation `portniaguine-zhdanov1999' on page 2 undefined
+ on input line 111.
+
+
+Package natbib Warning: Citation `portniaguine-zhdanov2002' on page 2 undefined
+ on input line 111.
+
+
+Package natbib Warning: Citation `barbosa-silva2006' on page 2 undefined on inp
+ut line 111.
+
+
+Package natbib Warning: Citation `fedi-etal1994' on page 2 undefined on input l
+ine 118.
+
+
+Package natbib Warning: Citation `medeiros-silva1995' on page 2 undefined on in
+put line 127.
+
+
+Package natbib Warning: Citation `phillips2005' on page 2 undefined on input li
+ne 134.
+
+
+Package natbib Warning: Citation `helbig1963' on page 2 undefined on input line
+ 135.
+
+
+Package natbib Warning: Citation `phillips2005' on page 2 undefined on input li
+ne 137.
+
+
+Package natbib Warning: Citation `tontini-pedersen2008' on page 2 undefined on 
+input line 141.
+
+
+Package natbib Warning: Citation `dannemiller-li2006' on page 2 undefined on in
+put line 144.
+
+
+Package natbib Warning: Citation `roest-pilkington1993' on page 2 undefined on 
+input line 145.
+
+
+Package natbib Warning: Citation `gerovska-etal2009' on page 2 undefined on inp
+ut line 152.
+
+
+Package natbib Warning: Citation `lelievre-oldenburg2009' on page 2 undefined o
+n input line 154.
+
+
+Package natbib Warning: Citation `ellis-etal2012' on page 2 undefined on input 
+line 160.
+
+
+Package natbib Warning: Citation `bhattacharyya1966' on page 2 undefined on inp
+ut line 166.
+
+
+Package natbib Warning: Citation `emilia-massey1974' on page 2 undefined on inp
+ut line 170.
+
+
+Package natbib Warning: Citation `parker-etal1987' on page 2 undefined on input
+ line 175.
+
+
+Package natbib Warning: Citation `kubota-uchiyama2005' on page 2 undefined on i
+nput line 181.
+
+
 Underfull \hbox (badness 1533) in paragraph at lines 185--209
 []\OT1/ptm/m/n/10 In this work, we present a com-pu-ta-tion-ally ef-fi-cient
  []
 
 [2]
 
+Package natbib Warning: Citation `blakely1996' on page 3 undefined on input lin
+e 239.
+
+
+Package natbib Warning: Citation `langel-hinze1998' on page 3 undefined on inpu
+t line 239.
+
+
+Package natbib Warning: Citation `telford-etal1990' on page 3 undefined on inpu
+t line 245.
+
+
+Package natbib Warning: Citation `blakely1996' on page 3 undefined on input lin
+e 245.
+
+
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 263.
+
+
+Package natbib Warning: Citation `blakely1996' on page 3 undefined on input lin
+e 267.
 
 [3]
 Underfull \hbox (badness 1394) in paragraph at lines 427--439
 \OT1/ptm/m/n/10 ob-served data $[][]$ can be ap-prox-i-mated by a set of
  []
 
-[4] [5] [6] [7]
-Underfull \hbox (badness 1038) in paragraph at lines 982--998
-\OT1/ptm/m/n/10 (Oliveira Jr. et al., 2013) to con-tinue the anomaly up-
- []
+
+Package natbib Warning: Citation `bard1973' on page 4 undefined on input line 4
+56.
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 982--998
-$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 00013$$[]$ \OT1/ptm/m/n/10 
-and $[]\OML/cmm/m/it/10 I \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 7
-1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 41751[] \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 0
-\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 00182$$[]$ \OT1/ptm/m/n/10 and de-cli-na-
- []
-
-[8]
-(C:\Users\Vanderlei\Documents\Total-magnetization-of-spherical-bodies\Manuscrip
-t\Total_magnetization_estimation_revised.bbl
-Underfull \hbox (badness 1997) in paragraph at lines 11--14
-[]\OT1/ptm/m/n/9 Almeida, F. F. M.: Rela[][]oes tect[]onicas das rochas al-cali
--nas
- []
-
-[9]
-Underfull \hbox (badness 2359) in paragraph at lines 54--56
-[]\OT1/ptm/m/n/9 Dannemiller, N. and Li, Y.: A new method for de-ter-mi-na-
- []
+Package natbib Warning: Citation `twomey1977' on page 4 undefined on input line
+ 456.
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 54--56
-\OT1/ptm/m/n/9 tion of mag-ne-ti-za-tion di-rec-tion, Geo-physics, 71, L69--L73
-,
- []
+Package natbib Warning: Citation `menke1989' on page 4 undefined on input line 
+456.
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 58--61
-[]\OT1/ptm/m/n/9 Dutra, A. C. and Marangoni, Y. R.: Grav-ity and mag-netic
- []
+Package natbib Warning: Citation `aster-etal2005' on page 4 undefined on input 
+line 456.
 
 
-Underfull \hbox (badness 5161) in paragraph at lines 75--77
-\OT1/ptm/m/n/9 formly mag-ne-tized seamounts, Geo-physics, 39, 223--231,
- []
+Package natbib Warning: Citation `scales_1988' on page 4 undefined on input lin
+e 474.
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 90--95
-[]\OT1/ptm/m/n/9 Gerovska, D., Ara[]uzo-Bravo, M. J., and Stavrev, P.: Es-ti-ma
-t-
- []
+Package natbib Warning: Citation `aster-etal2005' on page 4 undefined on input 
+line 474.
+
+[4]
+
+Package natbib Warning: Citation `bard1973' on page 5 undefined on input line 5
+64.
+
+
+Package natbib Warning: Citation `aster-etal2005' on page 5 undefined on input 
+line 564.
+
+
+Package natbib Warning: Citation `bard1973' on page 5 undefined on input line 6
+00.
+
+
+Package natbib Warning: Citation `aster-etal2005' on page 5 undefined on input 
+line 600.
+
+
+Package natbib Warning: Citation `fornasini2008' on page 5 undefined on input l
+ine 642.
+
+
+Underfull \vbox (badness 4832) has occurred while \output is active []
+
+ [5]
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package natbib Warning: Citation `thompson1982' on page 7 undefined on input li
+ne 858.
+
+
+Package natbib Warning: Citation `reid-etal1990' on page 7 undefined on input l
+ine 858.
+
+
+Package natbib Warning: Citation `reid-etal2014' on page 7 undefined on input l
+ine 860.
+
+
+Package natbib Warning: Citation `uieda-etal2014' on page 7 undefined on input 
+line 860.
+
+
+Package natbib Warning: Citation `silva-barbosa2003' on page 7 undefined on inp
+ut line 901.
+
+
+Package natbib Warning: Citation `melo-etal2013' on page 7 undefined on input l
+ine 901.
+
+[7]
+
+Package natbib Warning: Citation `lelievre-oldenburg2009' on page 8 undefined o
+n input line 941.
+
+
+Package natbib Warning: Citation `almeida1983' on page 8 undefined on input lin
+e 990.
+
+
+Package natbib Warning: Citation `sgarbi2002' on page 8 undefined on input line
+ 992.
+
+
+Package natbib Warning: Citation `junqueira-brod2002' on page 8 undefined on in
+put line 998.
+
+
+Package natbib Warning: Citation `junqueira-brod2002' on page 8 undefined on in
+put line 1004.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 109--113
-\OT1/ptm/m/n/9 tion-ships with ex-am-ples from the Goi[]as al-ka-line province,
 
- []
-
-
-Underfull \hbox (badness 1303) in paragraph at lines 137--140
-[]\OT1/ptm/m/n/9 Marangoni, Y. R. and Man-to-vani, M. S.: Geo-phys-i-cal sig-na
--
- []
+Package natbib Warning: Citation `almeida1983' on page 8 undefined on input lin
+e 1008.
 
 
-Underfull \hbox (badness 5696) in paragraph at lines 137--140
-\OT1/ptm/m/n/9 Jour-nal of South Amer-i-can Earth Sci-ences, 41, 83--98,
- []
+Package natbib Warning: Citation `junqueira-brod2005' on page 8 undefined on in
+put line 1008.
 
 
-Underfull \hbox (badness 2961) in paragraph at lines 168--171
-[]\OT1/ptm/m/n/9 Nabighian, M.: To-ward a three-dimensional au-to-matic in-ter-
-
- []
+Package natbib Warning: Citation `carlson-etal2007' on page 8 undefined on inpu
+t line 1008.
 
 
-Underfull \hbox (badness 5578) in paragraph at lines 168--171
-\OT1/ptm/m/n/9 pre-ta-tion of po-ten-tial field data via gen-er-al-ized Hilbert
-
- []
+Package natbib Warning: Citation `marangoni-mantovani2013' on page 8 undefined 
+on input line 1008.
 
 
-Underfull \hbox (badness 8019) in paragraph at lines 181--183
-[]\OT1/ptm/m/n/9 Oliveira Jr., V. C., Bar-bosa, V. C. F., and Uieda, L.:
- []
+Package natbib Warning: Citation `dutra-marangoni2009' on page 8 undefined on i
+nput line 1024.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--183
-\OT1/ptm/m/n/9 Poly-no-mial equiv-a-lent layer, Geo-physics, 78, G1--G13,
- []
+Package natbib Warning: Citation `dutra-etal2012' on page 8 undefined on input 
+line 1024.
+
+
+Package natbib Warning: Citation `marangoni-mantovani2013' on page 8 undefined 
+on input line 1024.
+
+
+Package natbib Warning: Citation `oliveirajr-etal2013' on page 8 undefined on i
+nput line 1031.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
-Underfull \hbox (badness 1742) in paragraph at lines 228--231
-[]\OT1/ptm/m/n/9 Sgarbi, P. B. A. and Gas-par, J. C.: Geo-chem-istry of Santo
- []
+ [8]
+
+LaTeX Warning: Reference `fig:TFA-Diorama-RTP' on page 9 undefined on input lin
+e 1045.
 
 
-Underfull \hbox (badness 1117) in paragraph at lines 228--231
-\OT1/ptm/m/n/9 Amer-i-can Earth Sci-ences, 14, 889--901, doi:10.1016/S0895-
- []
+LaTeX Warning: Reference `fig:TFA-MCG-RTP' on page 9 undefined on input line 10
+54.
 
-)
+No file Total_magnetization_estimation_revised.bbl.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1106.
- <Figures/npgd-2014-0069-f01.png, id=48, 241.8636pt x 241.8636pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1150.
+<Figures/npgd-2014-0069-f01.png, id=42, 241.8636pt x 241.8636pt>
 File: Figures/npgd-2014-0069-f01.png Graphic file (type png)
 
 <use Figures/npgd-2014-0069-f01.png>
-Package pdftex.def Info: Figures/npgd-2014-0069-f01.png used on input line 1159
+Package pdftex.def Info: Figures/npgd-2014-0069-f01.png used on input line 1261
 .
 (pdftex.def)             Requested size: 256.0748pt x 256.0937pt.
 
-Overfull \hbox (14.22638pt too wide) in paragraph at lines 1159--1168
+Overfull \hbox (14.22638pt too wide) in paragraph at lines 1261--1270
  [][] 
  []
 
-<Figures/npgd-2014-0069-f02.png, id=50, 241.8636pt x 241.8636pt>
+<Figures/npgd-2014-0069-f02.png, id=44, 241.8636pt x 241.8636pt>
 File: Figures/npgd-2014-0069-f02.png Graphic file (type png)
 
 <use Figures/npgd-2014-0069-f02.png>
-Package pdftex.def Info: Figures/npgd-2014-0069-f02.png used on input line 1173
+Package pdftex.def Info: Figures/npgd-2014-0069-f02.png used on input line 1275
 .
 (pdftex.def)             Requested size: 227.62204pt x 227.62491pt.
 
-<Figures/npgd-2014-0069-f03.pdf, id=51, 397.485pt x 628.74902pt>
+<Figures/npgd-2014-0069-f03.pdf, id=45, 397.485pt x 628.74902pt>
 File: Figures/npgd-2014-0069-f03.pdf Graphic file (type pdf)
 
 <use Figures/npgd-2014-0069-f03.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f03.pdf used on input line 1183
+Package pdftex.def Info: Figures/npgd-2014-0069-f03.pdf used on input line 1285
 .
 (pdftex.def)             Requested size: 142.26378pt x 225.0351pt.
 
-<Figures/npgd-2014-0069-f04.png, id=52, 241.8636pt x 355.68884pt>
+<Figures/npgd-2014-0069-f04.png, id=46, 241.8636pt x 355.68884pt>
 File: Figures/npgd-2014-0069-f04.png Graphic file (type png)
 
 <use Figures/npgd-2014-0069-f04.png>
-Package pdftex.def Info: Figures/npgd-2014-0069-f04.png used on input line 1195
+Package pdftex.def Info: Figures/npgd-2014-0069-f04.png used on input line 1297
 .
 (pdftex.def)             Requested size: 193.47873pt x 284.53517pt.
 
-<Figures/npgd-2014-0069-f05.pdf, id=53, 1011.78pt x 865.43326pt>
+<Figures/npgd-2014-0069-f05.pdf, id=47, 1011.78pt x 865.43326pt>
 File: Figures/npgd-2014-0069-f05.pdf Graphic file (type pdf)
 
 <use Figures/npgd-2014-0069-f05.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f05.pdf used on input line 1212
+Package pdftex.def Info: Figures/npgd-2014-0069-f05.pdf used on input line 1314
 .
 (pdftex.def)             Requested size: 312.9803pt x 267.7137pt.
 
-<Figures/npgd-2014-0069-f06.pdf, id=54, 578.16pt x 720.89326pt>
+<Figures/npgd-2014-0069-f06.pdf, id=48, 578.16pt x 720.89326pt>
 File: Figures/npgd-2014-0069-f06.pdf Graphic file (type pdf)
 
 <use Figures/npgd-2014-0069-f06.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f06.pdf used on input line 1233
+Package pdftex.def Info: Figures/npgd-2014-0069-f06.pdf used on input line 1333
 .
 (pdftex.def)             Requested size: 227.62204pt x 283.80922pt.
 
-<Figures/npgd-2014-0069-f07.pdf, id=55, 578.16pt x 720.89326pt>
+<Figures/npgd-2014-0069-f07.pdf, id=49, 578.16pt x 720.89326pt>
 File: Figures/npgd-2014-0069-f07.pdf Graphic file (type pdf)
 
 <use Figures/npgd-2014-0069-f07.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f07.pdf used on input line 1252
+Package pdftex.def Info: Figures/npgd-2014-0069-f07.pdf used on input line 1352
 .
 (pdftex.def)             Requested size: 199.16928pt x 248.33444pt.
 
-<Figures/npgd-2014-0069-f08.png, id=56, 1091.63835pt x 846.5226pt>
+<Figures/npgd-2014-0069-f08.png, id=50, 803.0pt x 559.08875pt>
 File: Figures/npgd-2014-0069-f08.png Graphic file (type png)
 
 <use Figures/npgd-2014-0069-f08.png>
-Package pdftex.def Info: Figures/npgd-2014-0069-f08.png used on input line 1273
+Package pdftex.def Info: Figures/npgd-2014-0069-f08.png used on input line 1373
 .
-(pdftex.def)             Requested size: 341.43306pt x 264.77016pt.
+(pdftex.def)             Requested size: 341.43306pt x 237.72473pt.
 
-<Figures/npgd-2014-0069-f09.pdf, id=57, 551.41885pt x 374.31308pt>
+<Figures/npgd-2014-0069-f09.pdf, id=51, 542.80385pt x 448.67644pt>
 File: Figures/npgd-2014-0069-f09.pdf Graphic file (type pdf)
 
 <use Figures/npgd-2014-0069-f09.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f09.pdf used on input line 1291
+Package pdftex.def Info: Figures/npgd-2014-0069-f09.pdf used on input line 1386
 .
-(pdftex.def)             Requested size: 341.43306pt x 231.7747pt.
+(pdftex.def)             Requested size: 341.43306pt x 282.22949pt.
 
-<Figures/npgd-2014-0069-f10.pdf, id=58, 511.94586pt x 706.80057pt>
-File: Figures/npgd-2014-0069-f10.pdf Graphic file (type pdf)
+<Figures/npgd-2014-0069-f10.png, id=52, 803.0pt x 157.58875pt>
+File: Figures/npgd-2014-0069-f10.png Graphic file (type png)
 
-<use Figures/npgd-2014-0069-f10.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f10.pdf used on input line 1302
+<use Figures/npgd-2014-0069-f10.png>
+Package pdftex.def Info: Figures/npgd-2014-0069-f10.png used on input line 1396
 .
-(pdftex.def)             Requested size: 199.16928pt x 274.97165pt.
+(pdftex.def)             Requested size: 341.43306pt x 67.00677pt.
 
-<Figures/npgd-2014-0069-f11.pdf, id=59, 551.41885pt x 323.34192pt>
-File: Figures/npgd-2014-0069-f11.pdf Graphic file (type pdf)
+<Figures/npgd-2014-0069-f11.png, id=53, 803.0pt x 458.71375pt>
+File: Figures/npgd-2014-0069-f11.png Graphic file (type png)
 
-<use Figures/npgd-2014-0069-f11.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f11.pdf used on input line 1317
+<use Figures/npgd-2014-0069-f11.png>
+Package pdftex.def Info: Figures/npgd-2014-0069-f11.png used on input line 1406
 .
-(pdftex.def)             Requested size: 341.43306pt x 200.21335pt.
+(pdftex.def)             Requested size: 341.43306pt x 195.04526pt.
 
-<Figures/npgd-2014-0069-f12.pdf, id=60, 542.62563pt x 683.62175pt>
+<Figures/npgd-2014-0069-f12.pdf, id=54, 539.68674pt x 465.30104pt>
 File: Figures/npgd-2014-0069-f12.pdf Graphic file (type pdf)
 
 <use Figures/npgd-2014-0069-f12.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f12.pdf used on input line 1331
+Package pdftex.def Info: Figures/npgd-2014-0069-f12.pdf used on input line 1415
+.
+(pdftex.def)             Requested size: 341.43306pt x 294.38368pt.
+
+<Figures/npgd-2014-0069-f13.png, id=55, 1091.63835pt x 846.5226pt>
+File: Figures/npgd-2014-0069-f13.png Graphic file (type png)
+
+<use Figures/npgd-2014-0069-f13.png>
+Package pdftex.def Info: Figures/npgd-2014-0069-f13.png used on input line 1425
+.
+(pdftex.def)             Requested size: 341.43306pt x 264.77016pt.
+
+<Figures/npgd-2014-0069-f14.pdf, id=56, 551.41885pt x 374.31308pt>
+File: Figures/npgd-2014-0069-f14.pdf Graphic file (type pdf)
+
+<use Figures/npgd-2014-0069-f14.pdf>
+Package pdftex.def Info: Figures/npgd-2014-0069-f14.pdf used on input line 1440
+.
+(pdftex.def)             Requested size: 341.43306pt x 231.7747pt.
+
+
+! LaTeX Error: Too many unprocessed floats.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1452 \begin{figure}[t]
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\@oxfloat ...fltovf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1452 \begin{figure}[t]
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \color@vbox 
+l.1452 \begin{figure}[t]
+                        
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+<Figures/npgd-2014-0069-f15.pdf, id=57, 511.94586pt x 706.80057pt>
+File: Figures/npgd-2014-0069-f15.pdf Graphic file (type pdf)
+
+<use Figures/npgd-2014-0069-f15.pdf>
+Package pdftex.def Info: Figures/npgd-2014-0069-f15.pdf used on input line 1453
+.
+(pdftex.def)             Requested size: 199.16928pt x 274.97165pt.
+
+! Undefined control sequence.
+\@largefloatcheck ->\ifdim \ht \@currbox 
+                                         >\textheight \@tempdima -\textheigh...
+l.1465 \end{figure}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   >
+l.1465 \end{figure}
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \@currbox 
+                     
+l.1465 \end{figure}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@xnext has an extra }.
+<inserted text> 
+                \par 
+l.1465 \end{figure}
+                   
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@currbox \@currlist \ifnum \count \@currbox >\z@ \advance \@pageht \@pagedp \E
+TC.
+! Paragraph ended before \@xnext was complete.
+<to be read again> 
+                   \par 
+l.1465 \end{figure}
+                   
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra \else.
+\end@float ...pdima \penalty \@floatpenalty \else 
+                                                  \vadjust {\penalty -\@Miv ...
+l.1465 \end{figure}
+                   
+I'm ignoring this; it doesn't match any \if.
+
+! You can't use `\vadjust' in vertical mode.
+\end@float ...nalty \@floatpenalty \else \vadjust 
+                                                  {\penalty -\@Miv \vbox {}\...
+l.1465 \end{figure}
+                   
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Argument of \@xnext has an extra }.
+<inserted text> 
+                \par 
+l.1465 \end{figure}
+                   
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@currbox \@currlist \ifnum \count \@currbox >\z@ \advance \@pageht \@pagedp \E
+TC.
+! Paragraph ended before \@xnext was complete.
+<to be read again> 
+                   \par 
+l.1465 \end{figure}
+                   
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Too many unprocessed floats.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1468 \begin{figure*}[t]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\@oxfloat ...fltovf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1468 \begin{figure*}[t]
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \color@vbox 
+l.1468 \begin{figure*}[t]
+                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+<Figures/npgd-2014-0069-f16.pdf, id=58, 551.41885pt x 323.34192pt>
+File: Figures/npgd-2014-0069-f16.pdf Graphic file (type pdf)
+
+<use Figures/npgd-2014-0069-f16.pdf>
+Package pdftex.def Info: Figures/npgd-2014-0069-f16.pdf used on input line 1469
+.
+(pdftex.def)             Requested size: 341.43306pt x 200.21335pt.
+
+! Undefined control sequence.
+\@largefloatcheck ->\ifdim \ht \@currbox 
+                                         >\textheight \@tempdima -\textheigh...
+l.1480 \end{figure*}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   >
+l.1480 \end{figure*}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\end@dblfloat ...floatcheck \global \dp \@currbox 
+                                                  1sp \expandafter \@gobble ...
+l.1480 \end{figure*}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   s
+l.1480 \end{figure*}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@largefloatcheck ->\ifdim \ht \@currbox 
+                                         >\textheight \@tempdima -\textheigh...
+l.1480 \end{figure*}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   >
+l.1480 \end{figure*}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \@currbox 
+                     
+l.1480 \end{figure*}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \@elt 
+l.1480 \end{figure*}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   \@elt 
+l.1480 \end{figure*}
+                    
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \@elt 
+l.1480 \end{figure*}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! LaTeX Error: This may be a LaTeX bug.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1480 \end{figure*}
+                    
+Call for help
+
+! Undefined control sequence.
+\@addmarginpar ...advance \@tempdima \ht \@marbox 
+                                                  \ifdim \@tempdima >\z@ \@l...
+l.1480 \end{figure*}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Bad register code (-43065403).
+\@addmarginpar ...e \space moved}\else \@tempdima 
+                                                  \z@ \fi \global \@mparbott...
+l.1480 \end{figure*}
+                    
+A register number must be between 0 and 32767.
+I changed this one to zero.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \global 
+l.1480 \end{figure*}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \global 
+l.1480 \end{figure*}
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Undefined control sequence.
+\@addmarginpar ...vance \@mparbottom \dp \@marbox 
+                                                  \global \advance \@mparbot...
+l.1480 \end{figure*}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \global 
+l.1480 \end{figure*}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@addmarginpar ...dvance \@tempdima -\ht \@marbox 
+                                                  \global \setbox \@marbox \...
+l.1480 \end{figure*}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \global 
+l.1480 \end{figure*}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@addmarginpar ...marbox \global \setbox \@marbox 
+                                                  \vbox {\vskip \@tempdima \...
+l.1480 \end{figure*}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1480 \end{figure*}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@addmarginpar ...\vskip \@tempdima \box \@marbox 
+                                                  }\global \ht \@marbox \z@ ...
+l.1480 \end{figure*}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.1480 \end{figure*}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@addmarginpar ... \@marbox }\global \ht \@marbox 
+                                                  \z@ \global \dp \@marbox \...
+l.1480 \end{figure*}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \global 
+l.1480 \end{figure*}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \global 
+l.1480 \end{figure*}
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Undefined control sequence.
+\@addmarginpar ...marbox \z@ \global \dp \@marbox 
+                                                  \z@ \kern -\@pagedp \noint...
+l.1480 \end{figure*}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \kern 
+l.1480 \end{figure*}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \kern 
+l.1480 \end{figure*}
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Undefined control sequence.
+\@addmarginpar ...arginparwidth \fi \box \@marbox 
+                                                  \hss }\nointerlineskip \hb...
+l.1480 \end{figure*}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \hss 
+l.1480 \end{figure*}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! LaTeX Error: Too many unprocessed floats.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1482 \begin{figure}[t]
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\@oxfloat ...fltovf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1482 \begin{figure}[t]
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \color@vbox 
+l.1482 \begin{figure}[t]
+                        
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+<Figures/npgd-2014-0069-f17.pdf, id=59, 542.62563pt x 683.62175pt>
+File: Figures/npgd-2014-0069-f17.pdf Graphic file (type pdf)
+
+<use Figures/npgd-2014-0069-f17.pdf>
+Package pdftex.def Info: Figures/npgd-2014-0069-f17.pdf used on input line 1483
 .
 (pdftex.def)             Requested size: 227.62204pt x 286.77495pt.
- [11] [12 <C:/Users/Vanderlei/Documents/Total-magnetization-of-spherical-bodies
-/Manuscript/Figures/npgd-2014-0069-f01.png> <C:/Users/Vanderlei/Documents/Total
--magnetization-of-spherical-bodies/Manuscript/Figures/npgd-2014-0069-f02.png> <
-C:/Users/Vanderlei/Documents/Total-magnetization-of-spherical-bodies/Manuscript
-/Figures/npgd-2014-0069-f03.pdf>] [13
+
+! Undefined control sequence.
+\@largefloatcheck ->\ifdim \ht \@currbox 
+                                         >\textheight \@tempdima -\textheigh...
+l.1495 \end{figure}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   >
+l.1495 \end{figure}
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \@currbox 
+                     
+l.1495 \end{figure}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@xnext has an extra }.
+<inserted text> 
+                \par 
+l.1495 \end{figure}
+                   
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@currbox \@currlist \ifnum \count \@currbox >\z@ \advance \@pageht \@pagedp \E
+TC.
+! Paragraph ended before \@xnext was complete.
+<to be read again> 
+                   \par 
+l.1495 \end{figure}
+                   
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra \else.
+\end@float ...pdima \penalty \@floatpenalty \else 
+                                                  \vadjust {\penalty -\@Miv ...
+l.1495 \end{figure}
+                   
+I'm ignoring this; it doesn't match any \if.
+
+! You can't use `\vadjust' in vertical mode.
+\end@float ...nalty \@floatpenalty \else \vadjust 
+                                                  {\penalty -\@Miv \vbox {}\...
+l.1495 \end{figure}
+                   
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Argument of \@xnext has an extra }.
+<inserted text> 
+                \par 
+l.1495 \end{figure}
+                   
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@currbox \@currlist \ifnum \count \@currbox >\z@ \advance \@pageht \@pagedp \E
+TC.
+! Paragraph ended before \@xnext was complete.
+<to be read again> 
+                   \par 
+l.1495 \end{figure}
+                   
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[9 <C:/Users/Vanderlei/Documents/Total-magnetization-of-spherical-bodies/Manusc
+ript/Figures/npgd-2014-0069-f16.pdf>]
+
+! LaTeX Error: Float(s) lost.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1497 \end{document}
+                     
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[10] [11 <C:/Users/Vanderlei/Documents/Total-magnetization-of-spherical-bodies/
+Manuscript/Figures/npgd-2014-0069-f01.png> <C:/Users/Vanderlei/Documents/Total-
+magnetization-of-spherical-bodies/Manuscript/Figures/npgd-2014-0069-f02.png> <C
+:/Users/Vanderlei/Documents/Total-magnetization-of-spherical-bodies/Manuscript/
+Figures/npgd-2014-0069-f03.pdf>] [12
 
  <C:/Users/Vanderlei/Documents/Total-magnetization-of-spherical-bodies/Manuscri
-pt/Figures/npgd-2014-0069-f04.png>] [14 <C:/Users/Vanderlei/Documents/Total-mag
-netization-of-spherical-bodies/Manuscript/Figures/npgd-2014-0069-f05.pdf>] [15 
-<C:/Users/Vanderlei/Documents/Total-magnetization-of-spherical-bodies/Manuscrip
-t/Figures/npgd-2014-0069-f06.pdf> <C:/Users/Vanderlei/Documents/Total-magnetiza
-tion-of-spherical-bodies/Manuscript/Figures/npgd-2014-0069-f07.pdf
+pt/Figures/npgd-2014-0069-f04.png>]
+[13 <C:/Users/Vanderlei/Documents/Total-magnetization-of-spherical-bodies/Manus
+cript/Figures/npgd-2014-0069-f05.pdf>] [14 <C:/Users/Vanderlei/Documents/Total-
+magnetization-of-spherical-bodies/Manuscript/Figures/npgd-2014-0069-f06.pdf> <C
+:/Users/Vanderlei/Documents/Total-magnetization-of-spherical-bodies/Manuscript/
+Figures/npgd-2014-0069-f07.pdf
 
 pdfTeX warning: pdflatex (file C:/Users/Vanderlei/Documents/Total-magnetization
 -of-spherical-bodies/Manuscript/Figures/npgd-2014-0069-f07.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] [16 <C:/Users/Vanderlei/Documents/Total-magnetization-of-spherical-bodies/Ma
-nuscript/Figures/npgd-2014-0069-f08.png> <C:/Users/Vanderlei/Documents/Total-ma
-gnetization-of-spherical-bodies/Manuscript/Figures/npgd-2014-0069-f09.pdf>]
-[17
+>] [15 <C:/Users/Vanderlei/Documents/Total-magnetization-of-spherical-bodies/Ma
+nuscript/Figures/npgd-2014-0069-f08.png (PNG copy)> <C:/Users/Vanderlei/Documen
+ts/Total-magnetization-of-spherical-bodies/Manuscript/Figures/npgd-2014-0069-f0
+9.pdf>] [16 <C:/Users/Vanderlei/Documents/Total-magnetization-of-spherical-bodi
+es/Manuscript/Figures/npgd-2014-0069-f10.png (PNG copy)> <C:/Users/Vanderlei/Do
+cuments/Total-magnetization-of-spherical-bodies/Manuscript/Figures/npgd-2014-00
+69-f11.png (PNG copy)>] [17 <C:/Users/Vanderlei/Documents/Total-magnetization-o
+f-spherical-bodies/Manuscript/Figures/npgd-2014-0069-f12.pdf>] [18 <C:/Users/Va
+nderlei/Documents/Total-magnetization-of-spherical-bodies/Manuscript/Figures/np
+gd-2014-0069-f13.png> <C:/Users/Vanderlei/Documents/Total-magnetization-of-sphe
+rical-bodies/Manuscript/Figures/npgd-2014-0069-f14.pdf>]
+
+Package natbib Warning: There were undefined citations.
 
 
-
- <C:/Users/Vanderlei/Documents/Total-magnetization-of-spherical-bodies/Manuscri
-pt/Figures/npgd-2014-0069-f10.pdf>] [18 <C:/Users/Vanderlei/Documents/Total-mag
-netization-of-spherical-bodies/Manuscript/Figures/npgd-2014-0069-f11.pdf>]
-[19
-
-
- <C:/Users/Vanderlei/Documents/Total-magnetization-of-spherical-bodies/Manuscri
-pt/Figures/npgd-2014-0069-f12.pdf>]
 (C:\Users\Vanderlei\Documents\Total-magnetization-of-spherical-bodies\Manuscrip
-t\Total_magnetization_estimation_revised.aux) ) 
+t\Total_magnetization_estimation_revised.aux)
+
+LaTeX Warning: There were undefined references.
+
+ )
+(\end occurred when \iftrue on line 1495 was incomplete)
+(\end occurred when \ifnum on line 1495 was incomplete)
+(\end occurred when \ifnum on line 1495 was incomplete)
+(\end occurred when \ifnum on line 1495 was incomplete)
+(\end occurred when \iftrue on line 1495 was incomplete)
+(\end occurred when \ifnum on line 1495 was incomplete)
+(\end occurred when \ifnum on line 1495 was incomplete)
+(\end occurred when \iffalse on line 1495 was incomplete)
+(\end occurred when \iftrue on line 1465 was incomplete)
+(\end occurred when \ifnum on line 1465 was incomplete)
+(\end occurred when \ifnum on line 1465 was incomplete)
+(\end occurred when \ifnum on line 1465 was incomplete)
+(\end occurred when \iftrue on line 1465 was incomplete)
+(\end occurred when \ifnum on line 1465 was incomplete)
+(\end occurred when \ifnum on line 1465 was incomplete)
+(\end occurred when \iffalse on line 1465 was incomplete) 
 Here is how much of TeX's memory you used:
- 4328 strings out of 493921
- 56102 string characters out of 3147270
- 140474 words of memory out of 3000000
- 7510 multiletter control sequences out of 15000+200000
+ 4354 strings out of 493921
+ 56803 string characters out of 3147270
+ 154129 words of memory out of 3000000
+ 7533 multiletter control sequences out of 15000+200000
  29338 words of font info for 70 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 35i,21n,34p,338b,369s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fon
-ts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cmextra/cmmib9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/h
-elvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Total_magnetization_estimation_revised.pdf (19 pages, 3523727
+ 35i,21n,34p,338b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKT
+eX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
+5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
+/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Total_magnetization_estimation_revised.pdf (18 pages, 3790240
  bytes).
 PDF statistics:
- 1312 PDF objects out of 1440 (max. 8388607)
+ 1904 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
