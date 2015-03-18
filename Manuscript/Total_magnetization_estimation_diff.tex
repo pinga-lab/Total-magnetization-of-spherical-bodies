@@ -1,7 +1,7 @@
 %% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL Total_magnetization_estimation.tex           Tue Dec  9 21:46:14 2014
-%DIF ADD Total_magnetization_estimation_revised.tex   Wed Mar 18 22:55:35 2015
+%DIF ADD Total_magnetization_estimation_revised.tex   Wed Mar 18 23:21:14 2015
 
 \documentclass[journal abbreviation, npg]{copernicus}
 %DIF < 
@@ -1177,7 +1177,9 @@ inversion and would need some a~priori information.
 \bibliographystyle{copernicus}
 \bibliography{bib-file}
 
-\begin{table}[t]
+\DIFaddbegin \clearpage
+
+\DIFaddend \begin{table}[t]
 \caption{Test with the synthetic data (Fig.~\ref{fig:synt1-data}a) produced
 by a~sphere and a~rectangular prism. Comparison between the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
@@ -1186,20 +1188,44 @@ using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree ({\degree}). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
 distinguish the quantities computed by using, respectively, the least-squares
 $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}
-\begin{tabular}{crr}
-\tophline
-&Sphere &Prism \\
+\DIFdelbeginFL %DIFDELCMD < \begin{tabular}{crr}
+%DIFDELCMD < %%%
+\DIFdelendFL %DIF > \begin{tabular}{crr}
+%DIF > \tophline
+%DIF > &Sphere &Prism \\
+%DIF > \middlehline
+%DIF > $D$ &$-10.00000$ &$-40.00000$ \\
+%DIF > $\hat{D}$ &$-10.07141$ &$-40.63733$ \\
+%DIF > $\hat{\sigma}_\mathrm{D}$ &$0.00000$ &$0.00113$  \\
+%DIF > $\tilde{D}$ &$-10.03229$ &$-40.24585$ \\
+%DIF > $\tilde{\sigma}_\mathrm{D}$ &$0.00130$ &$0.03601$ \\
+%DIF > $I$ &$-20.00000$ &$30.00000$ \\
+%DIF > $\hat{I}$ &$-19.99437$ &$31.04075$  \\
+%DIF > $\hat{\sigma}_\mathrm{I}$ &$0.00000$ &$0.00068$  \\
+%DIF > $\tilde{I}$ &$-20.01263$ &$30.60551$ \\
+%DIF > $\tilde{\sigma}_\mathrm{I}$ &$0.00042$ &$0.02047$ \\
+\DIFaddbeginFL \begin{tabular}{crcrc}
+\DIFaddendFL \tophline
+&Sphere & \DIFdelbeginFL \DIFdelFL{Prism }\DIFdelendFL \DIFaddbeginFL &\DIFaddFL{Prism }& \DIFaddendFL \\
 \middlehline
-$D$ &$-10.00000$ &$-40.00000$ \\
-$\hat{D}$ &$-10.07141$ &$-40.63733$ \\
-$\hat{\sigma}_\mathrm{D}$ &$0.00000$ &$0.00113$  \\
-$\tilde{D}$ &$-10.03229$ &$-40.24585$ \\
-$\tilde{\sigma}_\mathrm{D}$ &$0.00130$ &$0.03601$ \\
-$I$ &$-20.00000$ &$30.00000$ \\
-$\hat{I}$ &$-19.99437$ &$31.04075$  \\
-$\hat{\sigma}_\mathrm{I}$ &$0.00000$ &$0.00068$  \\
-$\tilde{I}$ &$-20.01263$ &$30.60551$ \\
-$\tilde{\sigma}_\mathrm{I}$ &$0.00042$ &$0.02047$ \\
+$D$ &$-10.00000$ & \DIFaddbeginFL \DIFaddFL{-- }&\DIFaddendFL $-40.00000$ \DIFaddbeginFL & \DIFaddFL{-- }\DIFaddendFL \\
+$\hat{D}$ &$-10.07141$ &\DIFdelbeginFL \DIFdelFL{$-40.63733$ }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{$\hat{\sigma}_\mathrm{D}$ }%DIFDELCMD < &%%%
+\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL $0.00000$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL &\DIFaddbeginFL \DIFaddFL{$-40.63733$ }&\DIFaddFL{(}\DIFaddendFL $0.00113$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL \\
+$\tilde{D}$ &$-10.03229$ &\DIFdelbeginFL \DIFdelFL{$-40.24585$ }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{$\tilde{\sigma}_\mathrm{D}$ }%DIFDELCMD < &%%%
+\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL $0.00130$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL &\DIFaddbeginFL \DIFaddFL{$-40.24585$ }&\DIFaddFL{(}\DIFaddendFL $0.03601$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL \\
+$I$ &$-20.00000$ & \DIFaddbeginFL \DIFaddFL{-- }&\DIFaddendFL $30.00000$ \DIFaddbeginFL & \DIFaddFL{-- }\DIFaddendFL \\
+$\hat{I}$ &$-19.99437$ &\DIFdelbeginFL \DIFdelFL{$31.04075$  }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{$\hat{\sigma}_\mathrm{I}$ }%DIFDELCMD < &%%%
+\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL $0.00000$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL &\DIFaddbeginFL \DIFaddFL{$31.04075$ }&\DIFaddFL{(}\DIFaddendFL $0.00068$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL \\
+$\tilde{I}$ &$-20.01263$ &\DIFdelbeginFL \DIFdelFL{$30.60551$ }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{$\tilde{\sigma}_\mathrm{I}$ }%DIFDELCMD < &%%%
+\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL $0.00042$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL &\DIFaddbeginFL \DIFaddFL{$30.60551$ }&\DIFaddFL{(}\DIFaddendFL $0.02047$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL \\
 \bottomhline
 \end{tabular}
 \label{tab:synt1-without-inter-anomaly}

@@ -1139,6 +1139,8 @@ inversion and would need some a~priori information.
 \bibliographystyle{copernicus}
 \bibliography{bib-file}
 
+\clearpage
+
 \begin{table}[t]
 \caption{Test with the synthetic data (Fig.~\ref{fig:synt1-data}a) produced
 by a~sphere and a~rectangular prism. Comparison between the estimated and
@@ -1148,20 +1150,30 @@ using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree ({\degree}). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
 distinguish the quantities computed by using, respectively, the least-squares
 $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}
-\begin{tabular}{crr}
+%\begin{tabular}{crr}
+%\tophline
+%&Sphere &Prism \\
+%\middlehline
+%$D$ &$-10.00000$ &$-40.00000$ \\
+%$\hat{D}$ &$-10.07141$ &$-40.63733$ \\
+%$\hat{\sigma}_\mathrm{D}$ &$0.00000$ &$0.00113$  \\
+%$\tilde{D}$ &$-10.03229$ &$-40.24585$ \\
+%$\tilde{\sigma}_\mathrm{D}$ &$0.00130$ &$0.03601$ \\
+%$I$ &$-20.00000$ &$30.00000$ \\
+%$\hat{I}$ &$-19.99437$ &$31.04075$  \\
+%$\hat{\sigma}_\mathrm{I}$ &$0.00000$ &$0.00068$  \\
+%$\tilde{I}$ &$-20.01263$ &$30.60551$ \\
+%$\tilde{\sigma}_\mathrm{I}$ &$0.00042$ &$0.02047$ \\
+\begin{tabular}{crcrc}
 \tophline
-&Sphere &Prism \\
+&Sphere & &Prism & \\
 \middlehline
-$D$ &$-10.00000$ &$-40.00000$ \\
-$\hat{D}$ &$-10.07141$ &$-40.63733$ \\
-$\hat{\sigma}_\mathrm{D}$ &$0.00000$ &$0.00113$  \\
-$\tilde{D}$ &$-10.03229$ &$-40.24585$ \\
-$\tilde{\sigma}_\mathrm{D}$ &$0.00130$ &$0.03601$ \\
-$I$ &$-20.00000$ &$30.00000$ \\
-$\hat{I}$ &$-19.99437$ &$31.04075$  \\
-$\hat{\sigma}_\mathrm{I}$ &$0.00000$ &$0.00068$  \\
-$\tilde{I}$ &$-20.01263$ &$30.60551$ \\
-$\tilde{\sigma}_\mathrm{I}$ &$0.00042$ &$0.02047$ \\
+$D$ &$-10.00000$ & -- &$-40.00000$ & -- \\
+$\hat{D}$ &$-10.07141$ &($0.00000$) &$-40.63733$ &($0.00113$) \\
+$\tilde{D}$ &$-10.03229$ &($0.00130$) &$-40.24585$ &($0.03601$) \\
+$I$ &$-20.00000$ & -- &$30.00000$ & -- \\
+$\hat{I}$ &$-19.99437$ &($0.00000$) &$31.04075$ &($0.00068$) \\
+$\tilde{I}$ &$-20.01263$ &($0.00042$) &$30.60551$ &($0.02047$) \\
 \bottomhline
 \end{tabular}
 \label{tab:synt1-without-inter-anomaly}
