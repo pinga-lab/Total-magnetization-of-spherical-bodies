@@ -1,0 +1,265 @@
+\begin{thebibliography}{51}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{\tt #1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Almeida(1983)}]{almeida1983}
+Almeida, F. F.~M.: Relações tectônicas das rochas alcalinas mesozóicas da
+  região meridional da plataforma sul-americana, Revista Brasileira de
+  Geociências, 13, 139--158, 1983.
+
+\bibitem[{Aster et~al.(2005)Aster, Borchers, and Thurber}]{aster-etal2005}
+Aster, R.~C., Borchers, B., and Thurber, C.~H.: Parameter Estimation and
+  Inverse Problems (International Geophysics), Academic Press, 2005.
+
+\bibitem[{Baranov(1957)}]{baranov1957}
+Baranov, V.: A new method for interpretation of aeromagnetic maps:
+  Pseudo-gravimetric anomalies, Geophysics, 22, 359--382,
+  doi:10.1190/1.1438369, 1957.
+
+\bibitem[{Baranov and Naudy(1964)}]{baranov-naudy1964}
+Baranov, V. and Naudy, H.: Numerical calculation of the formula of reduction to
+  the magnetic pole, Geophysics, 29, 67--79, doi:10.1190/1.1439334, 1964.
+
+\bibitem[{Barbosa and Silva(2006)}]{barbosa-silva2006}
+Barbosa, V. C.~F. and Silva, J. B.~C.: Interactive 2D magnetic inversion: A
+  tool for aiding forward modeling and testing geologic hypotheses, Geophysics,
+  71, L43--L50, doi:10.1190/1.2258093, 2006.
+
+\bibitem[{Bard(1973)}]{bard1973}
+Bard, Y.: Nonlinear Parameter Estimation, Academic Press, 1973.
+
+\bibitem[{Bhattacharyya(1966)}]{bhattacharyya1966}
+Bhattacharyya, B.~K.: A method for computing the total magnetization vector and
+  the dimensions of a rectangular block-shaped body from magnetic anomalies,
+  Geophysics, 31, 74--96, doi:10.1190/1.1439765, 1966.
+
+\bibitem[{Blakely(1996)}]{blakely1996}
+Blakely, R.~J.: Potential Theory in Gravity and Magnetic Applications,
+  Cambridge University Press, 1996.
+
+\bibitem[{Carlson et~al.(2007)Carlson, Araujo, Junqueira-Brod, Gaspar, Brod,
+  Petrinovic, Hollanda, Pimentel, and Sichel}]{carlson-etal2007}
+Carlson, R.~W., Araujo, A. L.~N., Junqueira-Brod, T.~C., Gaspar, J.~C., Brod,
+  J.~A., Petrinovic, I.~A., Hollanda, M. H.~B., Pimentel, M.~M., and Sichel,
+  S.: Chemical and isotopic relationships between peridotite xenoliths and
+  mafic–ultrapotassic rocks from Southern Brazil, Chemical Geology, 242, 415
+  -- 434, doi:10.1016/j.chemgeo.2007.04.009, 2007.
+
+\bibitem[{Dannemiller and Li(2006)}]{dannemiller-li2006}
+Dannemiller, N. and Li, Y.: A new method for determination of magnetization
+  direction, Geophysics, 71, L69--L73, doi:10.1190/1.2356116, 2006.
+
+\bibitem[{Dutra and Marangoni(2009)}]{dutra-marangoni2009}
+Dutra, A.~C. and Marangoni, Y.~R.: Gravity and magnetic 3D inversion of Morro
+  do Engenho complex, Central Brazil, Journal of South American Earth Sciences,
+  28, 193 -- 203, doi:10.1016/j.jsames.2009.02.006, 2009.
+
+\bibitem[{Dutra et~al.(2012)Dutra, Marangoni, and
+  Junqueira-Brod}]{dutra-etal2012}
+Dutra, A.~C., Marangoni, Y.~R., and Junqueira-Brod, T.~C.: Investigation of the
+  Goiás Alkaline Province, Central Brazil: Application of gravity and magnetic
+  methods, Journal of South American Earth Sciences, 33, 43 -- 55,
+  doi:10.1016/j.jsames.2011.06.004, 2012.
+
+\bibitem[{Ellis et~al.(2012)Ellis, de~Wet, and Macleod}]{ellis-etal2012}
+Ellis, R.~G., de~Wet, B., and Macleod, I.~N.: Inversion of magnetic data for
+  remanent and induced sources, ASEG Extended Abstracts, pp. 1--4,
+  doi:10.1071/ASEG2012ab117, 2012.
+
+\bibitem[{Emilia and Massey(1974)}]{emilia-massey1974}
+Emilia, D. and Massey, R.: Magnetization estimation for nonuniformly magnetized
+  seamounts, Geophysics, 39, 223--231, doi:10.1190/1.1440423, 1974.
+
+\bibitem[{Fedi et~al.(1994)Fedi, Florio, and Rapolla}]{fedi-etal1994}
+Fedi, M., Florio, G., and Rapolla, A.: A method to estimate the total
+  magnetization direction from a distortion analysis of magnetic anomalies1,
+  Geophysical Prospecting, 42, 261--274,
+  doi:10.1111/j.1365-2478.1994.tb00209.x, 1994.
+
+\bibitem[{Fornasini(2008)}]{fornasini2008}
+Fornasini, P.: The Uncertainty in Physical Measurements: An Introduction to
+  Data Analysis in the Physics Laboratory, Springer, 2008.
+
+\bibitem[{Gerovska et~al.(2009)Gerovska, Araúzo-Bravo, and
+  Stavrev}]{gerovska-etal2009}
+Gerovska, D., Araúzo-Bravo, M.~J., and Stavrev, P.: Estimating the
+  magnetization direction of sources from southeast Bulgaria through
+  correlation between reduced-to-the-pole and total magnitude anomalies,
+  Geophysical Prospecting, 57, 491--505, doi:10.1111/j.1365-2478.2008.00761.x,
+  2009.
+
+\bibitem[{Helbig(1963)}]{helbig1963}
+Helbig, K.: Some integrals of magnetic anomalies and their relation to the
+  parameters of the disturbing body, Zeitschrift für Geophysik, 29, 83–96,
+  1963.
+
+\bibitem[{Junqueira-Brod et~al.(2002)Junqueira-Brod, Roig, Gaspar, Brod, and
+  Meneses}]{junqueira-brod2002}
+Junqueira-Brod, T.~C., Roig, H.~L., Gaspar, J.~C., Brod, J.~A., and Meneses,
+  P.~R.: A Província Alcalina de Goiás e a extensão do seu vulcanismo
+  kamafugítico, Revista Brasileira de Geociências, 32, 559--566, 2002.
+
+\bibitem[{Junqueira-Brod et~al.(2005)Junqueira-Brod, Gaspar, Brod, and
+  Kafino}]{junqueira-brod2005}
+Junqueira-Brod, T.~C., Gaspar, J.~C., Brod, J.~A., and Kafino, C.~V.:
+  Kamafugitic diatremes: their textures and field relationships with examples
+  from the Goiás alkaline province, Brazil, Journal of South American Earth
+  Sciences, 18, 337--353, doi:10.1016/j.jsames.2004.11.002, 2005.
+
+\bibitem[{Kubota and Uchiyama(2005)}]{kubota-uchiyama2005}
+Kubota, R. and Uchiyama, A.: Three-dimensional magnetization vector inversion
+  of a seamount, Earth, Planets and Space, 57, 691--699,
+  doi:10.1186/BF03351849, 2005.
+
+\bibitem[{Langel and Hinze(1998)}]{langel-hinze1998}
+Langel, R.~A. and Hinze, W.~J.: The Magnetic Field of the Earth's Lithosphere:
+  The Satellite Perspective, Cambridge University Press, 1998.
+
+\bibitem[{Lelièvre and Oldenburg(2009)}]{lelievre-oldenburg2009}
+Lelièvre, P.~G. and Oldenburg, D.~W.: A 3D total magnetization inversion
+  applicable when significant, complicated remanence is present, Geophysics,
+  74, L21--L30, doi:10.1190/1.3103249, 2009.
+
+\bibitem[{Li(2006)}]{li2006}
+Li, X.: Understanding 3D analytic signal amplitude, Geophysics, 71, L13--L16,
+  doi:10.1190/1.2184367, 2006.
+
+\bibitem[{Li and Oldenburg(1996)}]{li-oldenburg1996}
+Li, Y. and Oldenburg, D.~W.: 3-D inversion of magnetic data, Geophysics, 61,
+  394--408, doi:10.1190/1.1443968, 1996.
+
+\bibitem[{Marangoni and Mantovani(2013)}]{marangoni-mantovani2013}
+Marangoni, Y.~R. and Mantovani, M.~S.: Geophysical signatures of the alkaline
+  intrusions bordering the Paraná Basin, Journal of South American Earth
+  Sciences, 41, 83--98, doi:10.1016/j.jsames.2012.08.004, 2013.
+
+\bibitem[{Medeiros and Silva(1995)}]{medeiros-silva1995}
+Medeiros, W.~E. and Silva, J. B.~C.: Simultaneous estimation of total
+  magnetization direction and 3-D spatial orientation, Geophysics, 60,
+  1365--1377, doi:10.1190/1.1443872, 1995.
+
+\bibitem[{Melo et~al.(2013)Melo, Barbosa, Uieda, Oliveira~Jr., and
+  Silva}]{melo-etal2013}
+Melo, F., Barbosa, V., Uieda, L., Oliveira~Jr., V., and Silva, J.: Estimating
+  the nature and the horizontal and vertical positions of 3D magnetic sources
+  using Euler deconvolution, Geophysics, 78, J87--J98,
+  doi:10.1190/geo2012-0515.1, 2013.
+
+\bibitem[{Menke(1989)}]{menke1989}
+Menke, W.: Geophysical Data Analysis: Discrete Inverse Theory (International
+  Geophysics), Academic Press, 1989.
+
+\bibitem[{Nabighian(1972)}]{nabighian1972}
+Nabighian, M.: The analytic signal of two-dimensional magnetic bodies with
+  polygonal cross- section: its properties and use for automated anomaly
+  interpretation, Geophysics, 37, 507--517, doi:10.1190/1.1440276, 1972.
+
+\bibitem[{Nabighian(1974)}]{nabighian1974}
+Nabighian, M.: Additional comments on the analytic signal of two-dimensional
+  magnetic bodies with polygonal cross-section, Geophysics, 39, 85--92,
+  doi:10.1190/1.1440416, 1974.
+
+\bibitem[{Nabighian(1984)}]{nabighian1984}
+Nabighian, M.: Toward a three-dimensional automatic interpretation of potential
+  field data via generalized Hilbert transforms: Fundamental relations,
+  Geophysics, 49, 780--786, doi:10.1190/1.1441706, 1984.
+
+\bibitem[{Nabighian et~al.(2005)Nabighian, Grauch, Hansen, LaFehr, Li, Peirce,
+  Phillips, and Ruder}]{nabighian-etal2005}
+Nabighian, M., Grauch, V., Hansen, R., LaFehr, T., Li, Y., Peirce, J.,
+  Phillips, J., and Ruder, M.: The historical development of the magnetic
+  method in exploration, Geophysics, 70, 33ND--61ND, doi:10.1190/1.2133784,
+  2005.
+
+\bibitem[{Oliveira~Jr. et~al.(2013)Oliveira~Jr., Barbosa, and
+  Uieda}]{oliveirajr-etal2013}
+Oliveira~Jr., V.~C., Barbosa, V. C.~F., and Uieda, L.: Polynomial equivalent
+  layer, Geophysics, 78, G1--G13, doi:10.1190/geo2012-0196.1, 2013.
+
+\bibitem[{Parker et~al.(1987)Parker, Shure, and Hildebrand}]{parker-etal1987}
+Parker, R.~L., Shure, L., and Hildebrand, J.~A.: The application of inverse
+  theory to seamount magnetism, rgeo, 25, 17--40, doi:10.1029/RG025i001p00017,
+  1987.
+
+\bibitem[{Phillips(2005)}]{phillips2005}
+Phillips, J.~D.: Can we estimate total magnetization directions from
+  aeromagnetic data using Helbig's integrals?, Earth, Planets and Space, 57,
+  681--689, 2005.
+
+\bibitem[{Pilkington(1997)}]{pilkington1997}
+Pilkington, M.: 3-D magnetic imaging using conjugate gradients, Geophysics, 62,
+  1132--1142, doi:10.1190/1.1444214, 1997.
+
+\bibitem[{Portniaguine and Zhdanov(1999)}]{portniaguine-zhdanov1999}
+Portniaguine, O. and Zhdanov, M.~S.: Focusing geophysical inversion images,
+  Geophysics, 64, 874--887, doi:10.1190/1.1444596, 1999.
+
+\bibitem[{Portniaguine and Zhdanov(2002)}]{portniaguine-zhdanov2002}
+Portniaguine, O. and Zhdanov, M.~S.: 3-D magnetic inversion with data
+  compression and image focusing, Geophysics, 67, 1532--1541,
+  doi:10.1190/1.1512749, 2002.
+
+\bibitem[{Reid et~al.(1990)Reid, Allsop, Granser, Millett, and
+  Somerton}]{reid-etal1990}
+Reid, A., Allsop, J., Granser, H., Millett, A., and Somerton, I.: Magnetic
+  interpretation in three dimensions using Euler deconvolution, Geophysics, 55,
+  80--91, doi:10.1190/1.1442774, 1990.
+
+\bibitem[{Reid et~al.(2014)Reid, Ebbing, and Webb}]{reid-etal2014}
+Reid, A.~B., Ebbing, J., and Webb, S.~J.: Avoidable Euler Errors – the use
+  and abuse of Euler deconvolution applied to potential fields, Geophysical
+  Prospecting, doi:10.1111/1365-2478.12119, 2014.
+
+\bibitem[{Roest and Pilkington(1993)}]{roest-pilkington1993}
+Roest, W.~R. and Pilkington, M.: Identifying remanent magnetization effects in
+  magnetic data, Geophysics, 58, 653--659, doi:10.1190/1.1443449, 1993.
+
+\bibitem[{Scales et~al.(1988)Scales, Gerztenkorn, and Treitel}]{scales_1988}
+Scales, J.~A., Gerztenkorn, A., and Treitel, S.: Fast Lp Solution of Large,
+  Sparse, Linear Systems: Application to Seismic Travel Time Tomography, J.
+  Comp. Phys., 75, 314--333, doi:10.1016/0021-9991(88)90115-5, 1988.
+
+\bibitem[{Sgarbi and Gaspar(2002)}]{sgarbi2002}
+Sgarbi, P. B.~A. and Gaspar, J.~C.: Geochemistry of Santo Antônio da Barra
+  Kamafugites, Goiás, Brazil, Journal of South American Earth Sciences, 14,
+  889--901, doi:10.1016/S0895-9811(01)00079-7, 2002.
+
+\bibitem[{Silva and Barbosa(2003)}]{silva-barbosa2003}
+Silva, J. and Barbosa, V.: 3D Euler deconvolution: Theoretical basis for
+  automatically selecting good solutions, Geophysics, 68, 1962--1968,
+  doi:10.1190/1.1635050, 2003.
+
+\bibitem[{Silva(1986)}]{silva1986}
+Silva, J. B.~C.: Reduction to the pole as an inverse problem and its
+  application to low-latitude anomalies, Geophysics, 51, 369--382,
+  doi:10.1190/1.1442096, 1986.
+
+\bibitem[{Telford et~al.(1990)Telford, Geldart, and Sheriff}]{telford-etal1990}
+Telford, W.~M., Geldart, L.~P., and Sheriff, R.~E.: Applied Geophysics,
+  Cambridge University Press, 1990.
+
+\bibitem[{Thompson(1982)}]{thompson1982}
+Thompson, D.: EULDPH: A new technique for making computer-assisted depth
+  estimates from magnetic data, Geophysics, 47, 31--37, doi:10.1190/1.1441278,
+  1982.
+
+\bibitem[{Tontini and Pedersen(2008)}]{tontini-pedersen2008}
+Tontini, F.~C. and Pedersen, L.~B.: Interpreting magnetic data by integral
+  moments, Geophysical Journal International, 174, 815--824,
+  doi:10.1111/j.1365-246X.2008.03872.x, 2008.
+
+\bibitem[{Twomey(1977)}]{twomey1977}
+Twomey, S.: Introduction to the Mathematics of Inversion in Remote Sensing and
+  Indirect Measurements, Dover Publications, Inc., 1977.
+
+\bibitem[{Uieda et~al.(2014)Uieda, Oliveira~Jr., and Barbosa}]{uieda-etal2014}
+Uieda, L., Oliveira~Jr., V.~C., and Barbosa, V. C.~F.: Geophysical tutorial:
+  Euler deconvolution of potential-field data, The Leading Edge, 33, 448--450,
+  doi:10.1190/tle33040448.1, 2014.
+
+\end{thebibliography}

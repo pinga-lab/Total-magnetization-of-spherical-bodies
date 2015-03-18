@@ -911,7 +911,7 @@ In this section, we present the performance of our method in recovering
 the magnetization direction of synthetic sources simulating complex 
 geological scenarios.
 
-\subsubsection*{Significantly overlapping anomalies}
+\subsubsection{Significantly overlapping anomalies}
 
 Figure \ref{fig:overlapping-prisms} shows two synthetic sources
 simulating uniformly magnetized bodies embedded in nonmagnetic 
@@ -979,7 +979,7 @@ non-spherical sources producing significantly overlapping anomalies.
 %and $3${\degree} in inclination. These results suggest that the least-squares
 %estimate is more sensitive to interfering anomalies than the robust estimate.
 
-\subsubsection*{Igneous intrusion within a sedimentary basin}
+\subsubsection{Igneous intrusion within a sedimentary basin}
 
 TEXT
 
@@ -1348,24 +1348,24 @@ $\tilde{\sigma}_\mathrm{I}$ &$0.00939$ \\
 \label{fig:robust-shape-results}
 \end{figure}
 
-\begin{figure}[t]
-\includegraphics[width=70mm]{Figures/npgd-2014-0069-f07}
-\caption{Robustness against errors in the centre location. The blue
-  and red dots represent, respectively, the magnetization direction of
-  a~simulated spherical body obtained with the least-squares
-  $\hat{\vec{h}}$ (Eq.~\ref{eq:h_hat}) and robust $\tilde{\vec{h}}$
-  (Eqs.~\ref{eq:iteration-L1} and \ref{eq:ri}) estimates. The
-  estimated declinations and inclinations were obtained by presuming
-    different positions for the centre of the source along the $x$, $y$ and
-$z$~axis. Along each axis, the magnetization direction was
-  estimated by considering $21$ different centres regularly spaced in
-  a~range of 2000\,\unit{m} on a~line passing through the right
-  coordinates of the centre of the simulated spherical body (vertical
-  dashed lines). The continuous black lines represent the true
-  declinations (or inclinations). The dashed lines represent the true
-  declination (or inclination) $\pm 5${\degree}.}
-\label{fig:robust-center-results}
-\end{figure}
+%\begin{figure}[t]
+%\includegraphics[width=70mm]{Figures/npgd-2014-0069-f07}
+%\caption{Robustness against errors in the centre location. The blue
+%  and red dots represent, respectively, the magnetization direction of
+%  a~simulated spherical body obtained with the least-squares
+%  $\hat{\vec{h}}$ (Eq.~\ref{eq:h_hat}) and robust $\tilde{\vec{h}}$
+%  (Eqs.~\ref{eq:iteration-L1} and \ref{eq:ri}) estimates. The
+%  estimated declinations and inclinations were obtained by presuming
+%    different positions for the centre of the source along the $x$, $y$ and
+%$z$~axis. Along each axis, the magnetization direction was
+%  estimated by considering $21$ different centres regularly spaced in
+%  a~range of 2000\,\unit{m} on a~line passing through the right
+%  coordinates of the centre of the simulated spherical body (vertical
+%  dashed lines). The continuous black lines represent the true
+%  declinations (or inclinations). The dashed lines represent the true
+%  declination (or inclination) $\pm 5${\degree}.}
+%\label{fig:robust-center-results}
+%\end{figure}
 
 %Figuras novas ==>
 
@@ -1382,6 +1382,7 @@ direction (pinpointed black dots).}
 \label{fig:overlapping-prisms}
 \end{figure*}
 
+
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f09}
 \caption{Significantly overlapping anomalies. Noise-corrupted 
@@ -1391,6 +1392,7 @@ calculated on a plane with constant vertical coordinate equal to
 -10\,\unit{m}.}
 \label{fig:overlapping-prisms-data}
 \end{figure*}
+
 
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f10}
@@ -1407,9 +1409,10 @@ plot has vertical exaggeration.}
 \caption{Igneous intrusion. 3D view of the intrusion (red prisms)
 and its estimated location (black point), which was obtained from
 Euler Deconvolution by using a structural index equal to 3. Notice 
-that the Euler solution falls outside the intrusion}
+that the Euler solution falls outside the intrusion.}
 \label{fig:intrusion-euler}
 \end{figure*}
+
 
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f12}
@@ -1444,7 +1447,7 @@ on a plane with constant vertical coordinate equal to -80\,\unit{m}. }
     aeromagnetic survey are shown in black. The magnetic data are in nT and the
     coordinates are in UTM on the SAD-69 datum, with central meridian
     $51${\degree}\,W. The origins of the east and north coordinates are 500 and
-    10\,000\,\unit{km}, respectively. } 
+    10\,000\,\unit{km}, respectively.} 
 \label{fig:TFA-Diorama}
 \end{figure*}
 
@@ -1464,20 +1467,23 @@ on a plane with constant vertical coordinate equal to -80\,\unit{m}. }
 \label{fig:TFA-Diorama-RTP}
 \end{figure}
 
+\clearpage
 
 \begin{figure*}[t]
-\includegraphics[width=120mm]{Figures/npgd-2014-0069-f16}
-\caption{Application to field data on the Goi\'{a}s Alkaline Province
-  (GAP), Brazil. Total-field anomaly observed over the Montes Claros
-  de Goi\'{a}s alkaline complex
-  (Fig.~\ref{fig:geology-study-area}). The flight lines of the
-  aeromagnetic survey are shown in black. The magnetic data are in nT
-  and the coordinates are in UTM on the SAD-69 datum, with central
-  meridian $51${\degree}\,W. The origins of the east and north
-  coordinates are $500$\,\unit{km} and $10\,000$\,\unit{km},
-  respectively. }
+  \includegraphics[width=120mm]{Figures/npgd-2014-0069-f16}
+  \caption{Application to field data on the Goi\'{a}s Alkaline Province
+    (GAP), Brazil. Total-field anomaly observed over the Montes Claros
+    de Goi\'{a}s alkaline complex
+    (Fig.~\ref{fig:geology-study-area}). The flight lines of the
+    aeromagnetic survey are shown in black. The magnetic data are in nT
+    and the coordinates are in UTM on the SAD-69 datum, with central
+    meridian $51${\degree}\,W. The origins of the east and north
+    coordinates are $500$\,\unit{km} and $10\,000$\,\unit{km},
+    respectively. }
 \label{fig:TFA-MCG}
 \end{figure*}
+
+\clearpage
 
 \begin{figure}[t]
 \includegraphics[width=80mm]{Figures/npgd-2014-0069-f17}
@@ -1493,6 +1499,7 @@ on a plane with constant vertical coordinate equal to -80\,\unit{m}. }
   0.01049${\degree}) estimates. }
 \label{fig:TFA-MCG-RTP}
 \end{figure}
+
 
 \end{document}
 
