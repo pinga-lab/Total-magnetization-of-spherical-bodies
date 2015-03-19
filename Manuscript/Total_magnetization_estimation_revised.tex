@@ -952,32 +952,10 @@ calculate the uncertainties using the propagation of covariance
 deviation of the errors is equal to the true one. The
 results (Table~\ref{tab:overlapping-prisms-results}) show the good
 performance of our method in estimating the magnetization directions of
-non-spherical sources producing significantly overlapping anomalies. 
-
-%Even in the case of the prism
-%that violates the premise assumed by our method that the bodies can be
-%approximated by spheres, the estimates are very close to the true ones with
-%a small uncertainties. We can attribute this good performance of our method
-%to three factors: (i) the absence of interfering signals produced, for
-%example, by multiple magnetic sources, (ii) the simulated prism is a cube
-%that seems a sphere-like body; and (iii) the use of the correct locations of
-%the centres of the simulated bodies. The following tests will show how these
-%factors affect the results obtained by using the least-squares and robust
-%estimates.
-%
-%We repeated the numerical test presented in the previous section (Sect.~3.1),
-%but using the contaminated total-field anomaly shown in
-%Fig.~\ref{fig:synt1-data}b. The results are shown in
-%Table~\ref{tab:synt1-with-inter-anomaly}. As we can see, the results obtained
-%with the least-squares estimate are very affected by the interfering
-%anomalies if compared with that ones obtained by using the robust estimate.
-%By comparing the true values of inclination $I$ and declination $D$ with that
-%ones obtained with the least-squares estimate, the differences reach
-%approximately $14${\degree} in declination and $9${\degree} in inclination.
-%On the other hand, the differences between the results obtained with the
-%robust estimate and the true values reach only $2${\degree} in declination
-%and $3${\degree} in inclination. These results suggest that the least-squares
-%estimate is more sensitive to interfering anomalies than the robust estimate.
+non-spherical sources producing significantly overlapping anomalies.
+Despite being a more complex test than that one presented in section 3.2,
+this test also shows the better performance of the robust estimate
+against the least-squares estimate.
 
 \subsubsection{Igneous intrusion within a sedimentary basin}
 
@@ -1193,7 +1171,7 @@ $\tilde{I}$ &$-21.75674$ &($0.00027$) &$33.40926$ &($0.01648$) \\
 \label{tab:synt1-with-inter-anomaly}
 \end{table}
 
-%Tabelas novas ==>
+%New tables ==>
 
 \begin{table}[t]
 \caption{Test with synthetic data (Fig. \ref{fig:overlapping-prisms-data})
@@ -1249,7 +1227,7 @@ $\tilde{I}$ &$39.99470$ &($0.00939$) \\
 \label{tab:intrusion-results}
 \end{table}
 
-%<== Tabelas novas
+%<== New tables
 
 \begin{figure}[t]
 \includegraphics[width=90mm]{Figures/npgd-2014-0069-f01}
@@ -1361,7 +1339,7 @@ $z$~axis. Along each axis, the magnetization direction was
 \label{fig:robust-center-results}
 \end{figure}
 
-%Figuras novas ==>
+%New figures ==>
 
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f08}
@@ -1411,15 +1389,28 @@ that the Euler solution falls outside the intrusion.}
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f12}
 \caption{Igneous intrusion. Noise-corrupted total-field anomaly
-produced by the synthetic intrusion shown in Fig. \ref{fig:intrusion-euler}
+produced by the synthetic bodies shown in Fig. \ref{fig:intrusion-profile}
 on a plane with constant vertical coordinate equal to -80\,\unit{m}. }
 \label{fig:intrusion-data}
 \end{figure*}
 
-%<== Figuras novas
+\begin{figure}[t]
+  \includegraphics[width=70mm]{Figures/npgd-2014-0069-f13}
+  \caption{Igneous intrusion. The upper panel shows the true
+    reduced-to-the-pole anomaly produced by the synthetic bodies
+    shown in Fig. \ref{fig:intrusion-profile}. The lower panel
+    shows the reduced-to-the-pole anomaly obtained from the
+    noise-corrupted total-field anomaly shown in Fig. \ref{fig:intrusion-data}.
+    The reduction to the pole was done by using the robust estimates
+    of declination $\tilde{D}$ and inclination $\tilde{I}$ shown
+    in Tab. \ref{tab:intrusion-results}.}
+\label{fig:intrusion-RTP}
+\end{figure}
+
+%<== New figures
 
 \begin{figure*}[t]
-\includegraphics[width=120mm]{Figures/npgd-2014-0069-f13}
+\includegraphics[width=120mm]{Figures/npgd-2014-0069-f14}
 \caption{Application to field data on the Goi\'{a}s Alkaline Province
   (GAP), Brazil. Simplified geological map of the study area, which is
   represented by a~red dot in the inset map of Brazil. The inset also
@@ -1433,8 +1424,10 @@ on a plane with constant vertical coordinate equal to -80\,\unit{m}. }
 \label{fig:geology-study-area}
 \end{figure*}
 
+\clearpage
+
 \begin{figure*}[t]
-  \includegraphics[width=120mm]{Figures/npgd-2014-0069-f14}
+  \includegraphics[width=120mm]{Figures/npgd-2014-0069-f15}
   \caption{Application to field data on the Goi\'{a}s Alkaline Province (GAP),
     Brazil. Total-field anomaly observed over the area delimited by the red
     rectangle in Fig.~\ref{fig:geology-study-area}. The flight lines of the
@@ -1448,7 +1441,7 @@ on a plane with constant vertical coordinate equal to -80\,\unit{m}. }
 \clearpage
 
 \begin{figure}[t]
-  \includegraphics[width=70mm]{Figures/npgd-2014-0069-f15}
+  \includegraphics[width=70mm]{Figures/npgd-2014-0069-f16}
   \caption{Application to field data on the Goi\'{a}s Alkaline
     Province (GAP), Brazil. Observed total-field anomaly
     (Fig.~\ref{fig:TFA-Diorama}) reduced to the pole. The upper and
@@ -1465,7 +1458,7 @@ on a plane with constant vertical coordinate equal to -80\,\unit{m}. }
 \clearpage
 
 \begin{figure*}[t]
-  \includegraphics[width=120mm]{Figures/npgd-2014-0069-f16}
+  \includegraphics[width=120mm]{Figures/npgd-2014-0069-f17}
   \caption{Application to field data on the Goi\'{a}s Alkaline Province
     (GAP), Brazil. Total-field anomaly observed over the Montes Claros
     de Goi\'{a}s alkaline complex
@@ -1481,7 +1474,7 @@ on a plane with constant vertical coordinate equal to -80\,\unit{m}. }
 \clearpage
 
 \begin{figure}[t]
-\includegraphics[width=80mm]{Figures/npgd-2014-0069-f17}
+\includegraphics[width=80mm]{Figures/npgd-2014-0069-f18}
 \caption{Application to field data on the Goi\'{a}s Alkaline Province
   (GAP), Brazil. Observed total-field anomaly (Fig.~\ref{fig:TFA-MCG})
   reduced to the pole. The upper and lower panels show the RTP

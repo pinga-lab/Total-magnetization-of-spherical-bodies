@@ -1,7 +1,7 @@
 %% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
 %DIF LATEXDIFF DIFFERENCE FILE
-%DIF DEL Total_magnetization_estimation.tex           Tue Dec  9 21:46:14 2014
-%DIF ADD Total_magnetization_estimation_revised.tex   Thu Mar 19 11:43:31 2015
+%DIF DEL Total_magnetization_estimation.tex           Fri Dec  5 15:34:22 2014
+%DIF ADD Total_magnetization_estimation_revised.tex   Thu Mar 19 17:32:46 2015
 
 \documentclass[journal abbreviation, npg]{copernicus}
 %DIF < 
@@ -985,36 +985,14 @@ robust estimate $\tilde{\vec{h}}$ (Eqs.~\ref{eq:iteration-L1} and
 declinations and inclinations (Eqs.~\ref{eq:Dj} and \ref{eq:Ij}). Finally, we
 calculate the uncertainties using the propagation of covariance
 (Eqs.~\ref{eq:cov-h-hat}--\ref{eq:H-h-tilde}) and assuming that the standard
-deviation of the errors is equal to the true one ($\sigma = 5$}\,\DIFadd{nT). The
+deviation of the errors is equal to the true one. The
 results (Table~\ref{tab:overlapping-prisms-results}) show the good
 performance of our method in estimating the magnetization directions of
-non-spherical sources producing significantly overlapping anomalies. 
+non-spherical sources producing significantly overlapping anomalies.
+Despite being a more complex test than that one presented in section 3.2,
+this test also shows the better performance of the robust estimate
+against the least-squares estimate.
 }
-
-%DIF > Even in the case of the prism
-%DIF > that violates the premise assumed by our method that the bodies can be
-%DIF > approximated by spheres, the estimates are very close to the true ones with
-%DIF > a small uncertainties. We can attribute this good performance of our method
-%DIF > to three factors: (i) the absence of interfering signals produced, for
-%DIF > example, by multiple magnetic sources, (ii) the simulated prism is a cube
-%DIF > that seems a sphere-like body; and (iii) the use of the correct locations of
-%DIF > the centres of the simulated bodies. The following tests will show how these
-%DIF > factors affect the results obtained by using the least-squares and robust
-%DIF > estimates.
-%DIF > 
-%DIF > We repeated the numerical test presented in the previous section (Sect.~3.1),
-%DIF > but using the contaminated total-field anomaly shown in
-%DIF > Fig.~\ref{fig:synt1-data}b. The results are shown in
-%DIF > Table~\ref{tab:synt1-with-inter-anomaly}. As we can see, the results obtained
-%DIF > with the least-squares estimate are very affected by the interfering
-%DIF > anomalies if compared with that ones obtained by using the robust estimate.
-%DIF > By comparing the true values of inclination $I$ and declination $D$ with that
-%DIF > ones obtained with the least-squares estimate, the differences reach
-%DIF > approximately $14${\degree} in declination and $9${\degree} in inclination.
-%DIF > On the other hand, the differences between the results obtained with the
-%DIF > robust estimate and the true values reach only $2${\degree} in declination
-%DIF > and $3${\degree} in inclination. These results suggest that the least-squares
-%DIF > estimate is more sensitive to interfering anomalies than the robust estimate.
 
 \subsubsection{\DIFadd{Igneous intrusion within a sedimentary basin}}
 
@@ -1163,15 +1141,17 @@ inversion and would need some a~priori information.
   The authors thank the government of the state of Goi\'{a}s, Brazil,
   for permission to use the real aeromagnetic data set. D.~P.~Sales is
   particularly grateful to CPRM for permission to work in this
-  research.  V.~C.~F.~Barbosa was supported by a~fellowship from CNPQ
-  (Conselho Nacional de Desenvolvimento e Tecnol\'{o}gico) and
+  research.  V.~C.~F.~Barbosa was supported by a~fellowship from \DIFdelbegin \DIFdel{CNPQ
+  }\DIFdelend \DIFaddbegin \DIFadd{CNPq
+  }\DIFaddend (Conselho Nacional de Desenvolvimento e Tecnol\'{o}gico) and
   L.~Uieda was supported by a~scholarship from CAPES
   (Coordena\c{c}\~{a}o de Aperfei\c{c}oamento de Pessoal de N\'{\i}vel
   Superior). Additional support for the authors was provided by FAPERJ
   (Funda\c{c}\~{a}o Carlos Chagas Filho de Amparo \`{a} Pesquisa do
-  Estado do Rio de Janeiro) under contracts: E-26/103.175/2011 and
-  E-26/111.152/2014.
-\end{acknowledgements}
+  Estado do Rio de Janeiro) under contracts \DIFdelbegin \DIFdel{: }\DIFdelend E-26/103.175/2011 and
+  E-26/111.152/\DIFdelbegin \DIFdel{2014.
+}\DIFdelend \DIFaddbegin \DIFadd{2014 and CNPq under contract 445752/2014-9.
+}\DIFaddend \end{acknowledgements}
 
 % The bibliography
 \bibliographystyle{copernicus}
@@ -1183,7 +1163,8 @@ inversion and would need some a~priori information.
 \caption{Test with the synthetic data (Fig.~\ref{fig:synt1-data}a) produced
 by a~sphere and a~rectangular prism. Comparison between the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
-uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ are calculated by
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ \DIFaddbeginFL \DIFaddFL{(shown between 
+parenthesis) }\DIFaddendFL are calculated by
 using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree ({\degree}). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
 distinguish the quantities computed by using, respectively, the least-squares
@@ -1195,19 +1176,20 @@ $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}
 &Sphere & \DIFdelbeginFL \DIFdelFL{Prism }\DIFdelendFL \DIFaddbeginFL &\DIFaddFL{Prism }& \DIFaddendFL \\
 \middlehline
 $D$ &$-10.00000$ & \DIFaddbeginFL \DIFaddFL{-- }&\DIFaddendFL $-40.00000$ \DIFaddbeginFL & \DIFaddFL{-- }\DIFaddendFL \\
-$\hat{D}$ &$-10.07141$ &\DIFdelbeginFL \DIFdelFL{$-40.63733$ }%DIFDELCMD < \\
+$\hat{D}$ &$-10.07141$ &\DIFaddbeginFL \DIFaddFL{($0.00001$) }&\DIFaddendFL $-40.63733$ \DIFdelbeginFL %DIFDELCMD < \\
 %DIFDELCMD < %%%
-\DIFdelFL{$\hat{\sigma}_\mathrm{D}$ }%DIFDELCMD < &%%%
-\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL $0.00000$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL &\DIFaddbeginFL \DIFaddFL{$-40.63733$ }&\DIFaddFL{(}\DIFaddendFL $0.00113$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL \\
+\DIFdelFL{$\hat{\sigma}_\mathrm{D}$ }\DIFdelendFL &\DIFdelbeginFL \DIFdelFL{$0.00000$ }%DIFDELCMD < &%%%
+\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL $0.00113$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL \\
 $\tilde{D}$ &$-10.03229$ &\DIFdelbeginFL \DIFdelFL{$-40.24585$ }%DIFDELCMD < \\
 %DIFDELCMD < %%%
 \DIFdelFL{$\tilde{\sigma}_\mathrm{D}$ }%DIFDELCMD < &%%%
 \DIFdelendFL \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL $0.00130$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL &\DIFaddbeginFL \DIFaddFL{$-40.24585$ }&\DIFaddFL{(}\DIFaddendFL $0.03601$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL \\
-$I$ &$-20.00000$ & \DIFaddbeginFL \DIFaddFL{-- }&\DIFaddendFL $30.00000$ \DIFaddbeginFL & \DIFaddFL{-- }\DIFaddendFL \\
-$\hat{I}$ &$-19.99437$ &\DIFdelbeginFL \DIFdelFL{$31.04075$  }%DIFDELCMD < \\
+\DIFaddbeginFL \middlehline
+\DIFaddendFL $I$ &$-20.00000$ & \DIFaddbeginFL \DIFaddFL{-- }&\DIFaddendFL $30.00000$ \DIFaddbeginFL & \DIFaddFL{-- }\DIFaddendFL \\
+$\hat{I}$ &$-19.99437$ &\DIFaddbeginFL \DIFaddFL{($0.00001$) }&\DIFaddendFL $31.04075$ \DIFdelbeginFL %DIFDELCMD < \\
 %DIFDELCMD < %%%
-\DIFdelFL{$\hat{\sigma}_\mathrm{I}$ }%DIFDELCMD < &%%%
-\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL $0.00000$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL &\DIFaddbeginFL \DIFaddFL{$31.04075$ }&\DIFaddFL{(}\DIFaddendFL $0.00068$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL \\
+\DIFdelFL{$\hat{\sigma}_\mathrm{I}$ }\DIFdelendFL &\DIFdelbeginFL \DIFdelFL{$0.00000$ }%DIFDELCMD < &%%%
+\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL $0.00068$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL \\
 $\tilde{I}$ &$-20.01263$ &\DIFdelbeginFL \DIFdelFL{$30.60551$ }%DIFDELCMD < \\
 %DIFDELCMD < %%%
 \DIFdelFL{$\tilde{\sigma}_\mathrm{I}$ }%DIFDELCMD < &%%%
@@ -1221,7 +1203,8 @@ $\tilde{I}$ &$-20.01263$ &\DIFdelbeginFL \DIFdelFL{$30.60551$ }%DIFDELCMD < \\
 \caption{Test with the synthetic data (Fig.~\ref{fig:synt1-data}b) produced
 by a~sphere and a~rectangular prism. Comparison between the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
-uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ are calculated by
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ \DIFaddbeginFL \DIFaddFL{(shown between 
+parenthesis) }\DIFaddendFL are calculated by
 using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree ({\degree}). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
 distinguish the quantities computed by using, respectively, the least-squares
@@ -1233,19 +1216,20 @@ $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}
 &Sphere & \DIFdelbeginFL \DIFdelFL{Prism }\DIFdelendFL \DIFaddbeginFL &\DIFaddFL{Prism }& \DIFaddendFL \\
 \middlehline
 $D$ &$-10.00000$ & \DIFaddbeginFL \DIFaddFL{-- }&\DIFaddendFL $-40.00000$ \DIFaddbeginFL & \DIFaddFL{-- }\DIFaddendFL \\
-$\hat{D}$ &$-4.28547$ &\DIFdelbeginFL \DIFdelFL{$-23.63607$ }%DIFDELCMD < \\
+$\hat{D}$ &$-4.28547$ &\DIFaddbeginFL \DIFaddFL{($0.00001$) }&\DIFaddendFL $-23.63607$  \DIFdelbeginFL %DIFDELCMD < \\
 %DIFDELCMD < %%%
-\DIFdelFL{$\hat{\sigma}_\mathrm{D}$ }%DIFDELCMD < &%%%
-\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL $0.00000$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL &\DIFaddbeginFL \DIFaddFL{$-23.63607$  }&\DIFaddFL{(}\DIFaddendFL $0.00130$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL \\
+\DIFdelFL{$\hat{\sigma}_\mathrm{D}$ }\DIFdelendFL &\DIFdelbeginFL \DIFdelFL{$0.00000$ }%DIFDELCMD < &%%%
+\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL $0.00130$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL \\
 $\tilde{D}$ &$-8.73648$ &\DIFdelbeginFL \DIFdelFL{$-39.37397$ }%DIFDELCMD < \\
 %DIFDELCMD < %%%
 \DIFdelFL{$\tilde{\sigma}_\mathrm{D}$ }%DIFDELCMD < &%%%
 \DIFdelendFL \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL $0.00135$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL &\DIFaddbeginFL \DIFaddFL{$-39.37397$ }&\DIFaddFL{(}\DIFaddendFL $0.03679$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL \\
-$I$ &$-20.00000$ & \DIFaddbeginFL \DIFaddFL{-- }&\DIFaddendFL $30.00000$ \DIFaddbeginFL & \DIFaddFL{-- }\DIFaddendFL \\
-$\hat{I}$ &$-25.11757$ &\DIFdelbeginFL \DIFdelFL{$39.08012$  }%DIFDELCMD < \\
+\DIFaddbeginFL \middlehline
+\DIFaddendFL $I$ &$-20.00000$ & \DIFaddbeginFL \DIFaddFL{-- }&\DIFaddendFL $30.00000$ \DIFaddbeginFL & \DIFaddFL{-- }\DIFaddendFL \\
+$\hat{I}$ &$-25.11757$ &\DIFaddbeginFL \DIFaddFL{($0.00001$) }&\DIFaddendFL $39.08012$  \DIFdelbeginFL %DIFDELCMD < \\
 %DIFDELCMD < %%%
-\DIFdelFL{$\hat{\sigma}_\mathrm{I}$ }%DIFDELCMD < &%%%
-\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL $0.00000$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL &\DIFaddbeginFL \DIFaddFL{$39.08012$  }&\DIFaddFL{(}\DIFaddendFL $0.00064$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL \\
+\DIFdelFL{$\hat{\sigma}_\mathrm{I}$ }\DIFdelendFL &\DIFdelbeginFL \DIFdelFL{$0.00000$ }%DIFDELCMD < &%%%
+\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL $0.00064$\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL \\
 $\tilde{I}$ &$-21.75674$ &\DIFdelbeginFL \DIFdelFL{$33.40926$ }%DIFDELCMD < \\
 %DIFDELCMD < %%%
 \DIFdelFL{$\tilde{\sigma}_\mathrm{I}$ }%DIFDELCMD < &%%%
@@ -1255,7 +1239,7 @@ $\tilde{I}$ &$-21.75674$ &\DIFdelbeginFL \DIFdelFL{$33.40926$ }%DIFDELCMD < \\
 \label{tab:synt1-with-inter-anomaly}
 \end{table}
 
-%DIF > Tabelas novas ==>
+%DIF > New tables ==>
 \DIFaddbegin 
 
 \begin{table}[t]
@@ -1263,7 +1247,8 @@ $\tilde{I}$ &$-21.75674$ &\DIFdelbeginFL \DIFdelFL{$33.40926$ }%DIFDELCMD < \\
 representing two significantly overlapping anomalies. Comparison between 
 the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
-uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ are calculated by
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ (shown between 
+parenthesis) are calculated by
 using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree (}{\degree}\DIFaddFL{). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
 distinguish the quantities computed by using, respectively, the least-squares
@@ -1275,6 +1260,7 @@ $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}}
 \DIFaddFL{$D$ }&\DIFaddFL{$-23.41322$ }& \DIFaddFL{-- }&\DIFaddFL{$23.41322$ }& \DIFaddFL{-- }\\
 \DIFaddFL{$\hat{D}$ }&\DIFaddFL{$-31.45370$ }&\DIFaddFL{($0.00008$) }&\DIFaddFL{$30.67233$ }&\DIFaddFL{($0.00875$) }\\
 \DIFaddFL{$\tilde{D}$ }&\DIFaddFL{$-26.57707$ }&\DIFaddFL{($0.01778$) }&\DIFaddFL{$25.25037$ }&\DIFaddFL{($0.13333$) }\\
+\middlehline
 \DIFaddFL{$I$ }&\DIFaddFL{$-7.54509$ }& \DIFaddFL{-- }&\DIFaddFL{$-7.54509$ }& \DIFaddFL{-- }\\
 \DIFaddFL{$\hat{I}$ }&\DIFaddFL{$-9.23914$ }&\DIFaddFL{($0.00004$) }&\DIFaddFL{$-9.06131$ }&\DIFaddFL{($0.00628$) }\\
 \DIFaddFL{$\tilde{I}$ }&\DIFaddFL{$-7.98897$ }&\DIFaddFL{($0.00408$) }&\DIFaddFL{$-11.05456$ }&\DIFaddFL{($0.06386$) }\\
@@ -1288,7 +1274,8 @@ $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}}
 produced by a complex geological scenario. Comparison between 
 the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
-uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ are calculated by
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ (shown between 
+parenthesis) are calculated by
 using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree (}{\degree}\DIFaddFL{). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
 distinguish the quantities computed by using, respectively, the least-squares
@@ -1300,6 +1287,7 @@ $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}}
 \DIFaddFL{$D$ }&\DIFaddFL{$157.50000$ }& \DIFaddFL{--}\\
 \DIFaddFL{$\hat{D}$ }&\DIFaddFL{$167.39501$ }&\DIFaddFL{($0.00060$) }\\
 \DIFaddFL{$\tilde{D}$ }&\DIFaddFL{$164.19461$ }&\DIFaddFL{($0.02669$) }\\
+\middlehline
 \DIFaddFL{$I$ }&\DIFaddFL{$39.80000$ }& \DIFaddFL{-- }\\
 \DIFaddFL{$\hat{I}$ }&\DIFaddFL{$37.33816$ }&\DIFaddFL{($0.00035$) }\\
 \DIFaddFL{$\tilde{I}$ }&\DIFaddFL{$39.99470$ }&\DIFaddFL{($0.00939$) }\\
@@ -1308,7 +1296,7 @@ $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}}
 \label{tab:intrusion-results}
 \end{table}
 
-%DIF > <== Tabelas novas
+%DIF > <== New tables
 
 \DIFaddend \begin{figure}[t]
 \includegraphics[width=90mm]{Figures/npgd-2014-0069-f01}
@@ -1401,52 +1389,26 @@ $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}}
 \label{fig:robust-shape-results}
 \end{figure}
 
-\DIFdelbegin %DIFDELCMD < \begin{figure}[t]
-%DIFDELCMD < \includegraphics[width=70mm]{Figures/npgd-2014-0069-f07}
-%DIFDELCMD < %%%
-%DIFDELCMD < \caption{%
-{%DIFAUXCMD
-\DIFdelFL{Robustness against errors in the centre location. The blue
+\begin{figure}[t]
+\includegraphics[width=70mm]{Figures/npgd-2014-0069-f07}
+\caption{Robustness against errors in the centre location. The blue
   and red dots represent, respectively, the magnetization direction of
   a~simulated spherical body obtained with the least-squares
   $\hat{\vec{h}}$ (Eq.~\ref{eq:h_hat}) and robust $\tilde{\vec{h}}$
   (Eqs.~\ref{eq:iteration-L1} and \ref{eq:ri}) estimates. The
   estimated declinations and inclinations were obtained by presuming
-different positions for the centre of the source along the $x$, $y$ and
+    different positions for the centre of the source along the $x$, $y$ and
 $z$~axis. Along each axis, the magnetization direction was
   estimated by considering $21$ different centres regularly spaced in
-  a~range of 2000}%DIFDELCMD < \,\unit{m} %%%
-\DIFdelFL{on a~line passing through the right
+  a~range of 2000\,\unit{m} on a~line passing through the right
   coordinates of the centre of the simulated spherical body (vertical
   dashed lines). The continuous black lines represent the true
   declinations (or inclinations). The dashed lines represent the true
-  declination (or inclination) $\pm 5$}%DIFDELCMD < {\degree}%%%
-\DIFdelFL{.}}
-%DIFAUXCMD
-%DIFDELCMD < \label{fig:robust-center-results}
-%DIFDELCMD < \end{figure}
-%DIFDELCMD < 
-%%%
-\DIFdelend %DIF > \begin{figure}[t]
-%DIF > \includegraphics[width=70mm]{Figures/npgd-2014-0069-f07}
-%DIF > \caption{Robustness against errors in the centre location. The blue
-%DIF >   and red dots represent, respectively, the magnetization direction of
-%DIF >   a~simulated spherical body obtained with the least-squares
-%DIF >   $\hat{\vec{h}}$ (Eq.~\ref{eq:h_hat}) and robust $\tilde{\vec{h}}$
-%DIF >   (Eqs.~\ref{eq:iteration-L1} and \ref{eq:ri}) estimates. The
-%DIF >   estimated declinations and inclinations were obtained by presuming
-%DIF >     different positions for the centre of the source along the $x$, $y$ and
-%DIF > $z$~axis. Along each axis, the magnetization direction was
-%DIF >   estimated by considering $21$ different centres regularly spaced in
-%DIF >   a~range of 2000\,\unit{m} on a~line passing through the right
-%DIF >   coordinates of the centre of the simulated spherical body (vertical
-%DIF >   dashed lines). The continuous black lines represent the true
-%DIF >   declinations (or inclinations). The dashed lines represent the true
-%DIF >   declination (or inclination) $\pm 5${\degree}.}
-%DIF > \label{fig:robust-center-results}
-%DIF > \end{figure}
+  declination (or inclination) $\pm 5${\degree}.}
+\label{fig:robust-center-results}
+\end{figure}
 
-%DIF > Figuras novas ==>
+%DIF > New figures ==>
 \DIFaddbegin 
 
 \DIFaddend \begin{figure*}[t]
@@ -1512,15 +1474,28 @@ that the Euler solution falls outside the intrusion.}}
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f12}
 \caption{\DIFaddFL{Igneous intrusion. Noise-corrupted total-field anomaly
-produced by the synthetic intrusion shown in Fig. \ref{fig:intrusion-euler}
+produced by the synthetic bodies shown in Fig. \ref{fig:intrusion-profile}
 on a plane with constant vertical coordinate equal to -80}\,\unit{m}\DIFaddFL{. }}
 \label{fig:intrusion-data}
 \end{figure*}
 
-%DIF > <== Figuras novas
+\begin{figure}[t]
+  \includegraphics[width=70mm]{Figures/npgd-2014-0069-f13}
+  \caption{\DIFaddFL{Igneous intrusion. The upper panel shows the true
+    reduced-to-the-pole anomaly produced by the synthetic bodies
+    shown in Fig. \ref{fig:intrusion-profile}. The lower panel
+    shows the reduced-to-the-pole anomaly obtained from the
+    noise-corrupted total-field anomaly shown in Fig. \ref{fig:intrusion-data}.
+    The reduction to the pole was done by using the robust estimates
+    of declination $\tilde{D}$ and inclination $\tilde{I}$ shown
+    in Tab. \ref{tab:intrusion-results}.}}
+\label{fig:intrusion-RTP}
+\end{figure}
+
+%DIF > <== New figures
 
 \begin{figure*}[t]
-\includegraphics[width=120mm]{Figures/npgd-2014-0069-f13}
+\includegraphics[width=120mm]{Figures/npgd-2014-0069-f14}
 \caption{\DIFaddFL{Application to field data on the Goi}\'{a}\DIFaddFL{s Alkaline Province
   (GAP), Brazil. Simplified geological map of the study area, which is
   represented by a~red dot in the inset map of Brazil. The inset also
@@ -1534,8 +1509,10 @@ on a plane with constant vertical coordinate equal to -80}\,\unit{m}\DIFaddFL{. 
 \label{fig:geology-study-area}
 \end{figure*}
 
+\clearpage
+
 \begin{figure*}[t]
-  \includegraphics[width=120mm]{Figures/npgd-2014-0069-f14}
+  \includegraphics[width=120mm]{Figures/npgd-2014-0069-f15}
   \DIFaddendFL \caption{Application to field data on the Goi\'{a}s Alkaline Province (GAP),
     Brazil. Total-field anomaly observed over the area delimited by the red
     rectangle in Fig.~\ref{fig:geology-study-area}. The flight lines of the
@@ -1546,11 +1523,12 @@ on a plane with constant vertical coordinate equal to -80}\,\unit{m}\DIFaddFL{. 
 \label{fig:TFA-Diorama}
 \end{figure*}
 
+\DIFaddbegin \clearpage
 
-\begin{figure}[t]
+\DIFaddend \begin{figure}[t]
   \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=70mm]{Figures/npgd-2014-0069-f10}
 %DIFDELCMD <   %%%
-\DIFdelendFL \DIFaddbeginFL \includegraphics[width=70mm]{Figures/npgd-2014-0069-f15}
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=70mm]{Figures/npgd-2014-0069-f16}
   \DIFaddendFL \caption{Application to field data on the Goi\'{a}s Alkaline
     Province (GAP), Brazil. Observed total-field anomaly
     (Fig.~\ref{fig:TFA-Diorama}) reduced to the pole. The upper and
@@ -1569,7 +1547,7 @@ on a plane with constant vertical coordinate equal to -80}\,\unit{m}\DIFaddFL{. 
 \DIFaddend \begin{figure*}[t]
   \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=120mm]{Figures/npgd-2014-0069-f11}
 %DIFDELCMD < %%%
-\DIFdelendFL \DIFaddbeginFL \includegraphics[width=120mm]{Figures/npgd-2014-0069-f16}
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=120mm]{Figures/npgd-2014-0069-f17}
   \DIFaddendFL \caption{Application to field data on the Goi\'{a}s Alkaline Province
     (GAP), Brazil. Total-field anomaly observed over the Montes Claros
     de Goi\'{a}s alkaline complex
@@ -1587,7 +1565,7 @@ on a plane with constant vertical coordinate equal to -80}\,\unit{m}\DIFaddFL{. 
 \DIFaddend \begin{figure}[t]
 \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=80mm]{Figures/npgd-2014-0069-f12}
 %DIFDELCMD < %%%
-\DIFdelendFL \DIFaddbeginFL \includegraphics[width=80mm]{Figures/npgd-2014-0069-f17}
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=80mm]{Figures/npgd-2014-0069-f18}
 \DIFaddendFL \caption{Application to field data on the Goi\'{a}s Alkaline Province
   (GAP), Brazil. Observed total-field anomaly (Fig.~\ref{fig:TFA-MCG})
   reduced to the pole. The upper and lower panels show the RTP
