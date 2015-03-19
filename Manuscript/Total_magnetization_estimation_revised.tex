@@ -949,7 +949,7 @@ robust estimate $\tilde{\vec{h}}$ (Eqs.~\ref{eq:iteration-L1} and
 declinations and inclinations (Eqs.~\ref{eq:Dj} and \ref{eq:Ij}). Finally, we
 calculate the uncertainties using the propagation of covariance
 (Eqs.~\ref{eq:cov-h-hat}--\ref{eq:H-h-tilde}) and assuming that the standard
-deviation of the errors is equal to the true one ($\sigma = 5$\,nT). The
+deviation of the errors is equal to the true one. The
 results (Table~\ref{tab:overlapping-prisms-results}) show the good
 performance of our method in estimating the magnetization directions of
 non-spherical sources producing significantly overlapping anomalies. 
@@ -1125,14 +1125,14 @@ inversion and would need some a~priori information.
   The authors thank the government of the state of Goi\'{a}s, Brazil,
   for permission to use the real aeromagnetic data set. D.~P.~Sales is
   particularly grateful to CPRM for permission to work in this
-  research.  V.~C.~F.~Barbosa was supported by a~fellowship from CNPQ
+  research.  V.~C.~F.~Barbosa was supported by a~fellowship from CNPq
   (Conselho Nacional de Desenvolvimento e Tecnol\'{o}gico) and
   L.~Uieda was supported by a~scholarship from CAPES
   (Coordena\c{c}\~{a}o de Aperfei\c{c}oamento de Pessoal de N\'{\i}vel
   Superior). Additional support for the authors was provided by FAPERJ
   (Funda\c{c}\~{a}o Carlos Chagas Filho de Amparo \`{a} Pesquisa do
-  Estado do Rio de Janeiro) under contracts: E-26/103.175/2011 and
-  E-26/111.152/2014.
+  Estado do Rio de Janeiro) under contracts E-26/103.175/2011 and
+  E-26/111.152/2014 and CNPq under contract 445752/2014-9.
 \end{acknowledgements}
 
 % The bibliography
@@ -1145,7 +1145,8 @@ inversion and would need some a~priori information.
 \caption{Test with the synthetic data (Fig.~\ref{fig:synt1-data}a) produced
 by a~sphere and a~rectangular prism. Comparison between the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
-uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ are calculated by
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ (shown between 
+parenthesis) are calculated by
 using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree ({\degree}). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
 distinguish the quantities computed by using, respectively, the least-squares
@@ -1155,10 +1156,11 @@ $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}
 &Sphere & &Prism & \\
 \middlehline
 $D$ &$-10.00000$ & -- &$-40.00000$ & -- \\
-$\hat{D}$ &$-10.07141$ &($0.00000$) &$-40.63733$ &($0.00113$) \\
+$\hat{D}$ &$-10.07141$ &($0.00001$) &$-40.63733$ &($0.00113$) \\
 $\tilde{D}$ &$-10.03229$ &($0.00130$) &$-40.24585$ &($0.03601$) \\
+\middlehline
 $I$ &$-20.00000$ & -- &$30.00000$ & -- \\
-$\hat{I}$ &$-19.99437$ &($0.00000$) &$31.04075$ &($0.00068$) \\
+$\hat{I}$ &$-19.99437$ &($0.00001$) &$31.04075$ &($0.00068$) \\
 $\tilde{I}$ &$-20.01263$ &($0.00042$) &$30.60551$ &($0.02047$) \\
 \bottomhline
 \end{tabular}
@@ -1169,7 +1171,8 @@ $\tilde{I}$ &$-20.01263$ &($0.00042$) &$30.60551$ &($0.02047$) \\
 \caption{Test with the synthetic data (Fig.~\ref{fig:synt1-data}b) produced
 by a~sphere and a~rectangular prism. Comparison between the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
-uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ are calculated by
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ (shown between 
+parenthesis) are calculated by
 using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree ({\degree}). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
 distinguish the quantities computed by using, respectively, the least-squares
@@ -1179,10 +1182,11 @@ $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}
 &Sphere & &Prism & \\
 \middlehline
 $D$ &$-10.00000$ & -- &$-40.00000$ & -- \\
-$\hat{D}$ &$-4.28547$ &($0.00000$) &$-23.63607$  &($0.00130$) \\
+$\hat{D}$ &$-4.28547$ &($0.00001$) &$-23.63607$  &($0.00130$) \\
 $\tilde{D}$ &$-8.73648$ &($0.00135$) &$-39.37397$ &($0.03679$) \\
+\middlehline
 $I$ &$-20.00000$ & -- &$30.00000$ & -- \\
-$\hat{I}$ &$-25.11757$ &($0.00000$) &$39.08012$  &($0.00064$) \\
+$\hat{I}$ &$-25.11757$ &($0.00001$) &$39.08012$  &($0.00064$) \\
 $\tilde{I}$ &$-21.75674$ &($0.00027$) &$33.40926$ &($0.01648$) \\
 \bottomhline
 \end{tabular}
@@ -1196,7 +1200,8 @@ $\tilde{I}$ &$-21.75674$ &($0.00027$) &$33.40926$ &($0.01648$) \\
 representing two significantly overlapping anomalies. Comparison between 
 the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
-uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ are calculated by
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ (shown between 
+parenthesis) are calculated by
 using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree ({\degree}). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
 distinguish the quantities computed by using, respectively, the least-squares
@@ -1208,6 +1213,7 @@ $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}
 $D$ &$-23.41322$ & -- &$23.41322$ & -- \\
 $\hat{D}$ &$-31.45370$ &($0.00008$) &$30.67233$ &($0.00875$) \\
 $\tilde{D}$ &$-26.57707$ &($0.01778$) &$25.25037$ &($0.13333$) \\
+\middlehline
 $I$ &$-7.54509$ & -- &$-7.54509$ & -- \\
 $\hat{I}$ &$-9.23914$ &($0.00004$) &$-9.06131$ &($0.00628$) \\
 $\tilde{I}$ &$-7.98897$ &($0.00408$) &$-11.05456$ &($0.06386$) \\
@@ -1221,7 +1227,8 @@ $\tilde{I}$ &$-7.98897$ &($0.00408$) &$-11.05456$ &($0.06386$) \\
 produced by a complex geological scenario. Comparison between 
 the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
-uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ are calculated by
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ (shown between 
+parenthesis) are calculated by
 using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree ({\degree}). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
 distinguish the quantities computed by using, respectively, the least-squares
@@ -1233,6 +1240,7 @@ $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}
 $D$ &$157.50000$ & --\\
 $\hat{D}$ &$167.39501$ &($0.00060$) \\
 $\tilde{D}$ &$164.19461$ &($0.02669$) \\
+\middlehline
 $I$ &$39.80000$ & -- \\
 $\hat{I}$ &$37.33816$ &($0.00035$) \\
 $\tilde{I}$ &$39.99470$ &($0.00939$) \\
@@ -1334,24 +1342,24 @@ $\tilde{I}$ &$39.99470$ &($0.00939$) \\
 \label{fig:robust-shape-results}
 \end{figure}
 
-%\begin{figure}[t]
-%\includegraphics[width=70mm]{Figures/npgd-2014-0069-f07}
-%\caption{Robustness against errors in the centre location. The blue
-%  and red dots represent, respectively, the magnetization direction of
-%  a~simulated spherical body obtained with the least-squares
-%  $\hat{\vec{h}}$ (Eq.~\ref{eq:h_hat}) and robust $\tilde{\vec{h}}$
-%  (Eqs.~\ref{eq:iteration-L1} and \ref{eq:ri}) estimates. The
-%  estimated declinations and inclinations were obtained by presuming
-%    different positions for the centre of the source along the $x$, $y$ and
-%$z$~axis. Along each axis, the magnetization direction was
-%  estimated by considering $21$ different centres regularly spaced in
-%  a~range of 2000\,\unit{m} on a~line passing through the right
-%  coordinates of the centre of the simulated spherical body (vertical
-%  dashed lines). The continuous black lines represent the true
-%  declinations (or inclinations). The dashed lines represent the true
-%  declination (or inclination) $\pm 5${\degree}.}
-%\label{fig:robust-center-results}
-%\end{figure}
+\begin{figure}[t]
+\includegraphics[width=70mm]{Figures/npgd-2014-0069-f07}
+\caption{Robustness against errors in the centre location. The blue
+  and red dots represent, respectively, the magnetization direction of
+  a~simulated spherical body obtained with the least-squares
+  $\hat{\vec{h}}$ (Eq.~\ref{eq:h_hat}) and robust $\tilde{\vec{h}}$
+  (Eqs.~\ref{eq:iteration-L1} and \ref{eq:ri}) estimates. The
+  estimated declinations and inclinations were obtained by presuming
+    different positions for the centre of the source along the $x$, $y$ and
+$z$~axis. Along each axis, the magnetization direction was
+  estimated by considering $21$ different centres regularly spaced in
+  a~range of 2000\,\unit{m} on a~line passing through the right
+  coordinates of the centre of the simulated spherical body (vertical
+  dashed lines). The continuous black lines represent the true
+  declinations (or inclinations). The dashed lines represent the true
+  declination (or inclination) $\pm 5${\degree}.}
+\label{fig:robust-center-results}
+\end{figure}
 
 %Figuras novas ==>
 
@@ -1437,6 +1445,7 @@ on a plane with constant vertical coordinate equal to -80\,\unit{m}. }
 \label{fig:TFA-Diorama}
 \end{figure*}
 
+\clearpage
 
 \begin{figure}[t]
   \includegraphics[width=70mm]{Figures/npgd-2014-0069-f15}
