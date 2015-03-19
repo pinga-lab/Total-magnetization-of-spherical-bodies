@@ -34,7 +34,8 @@
 \begin{abstract}
   We have developed a~fast total-field anomaly inversion to estimate
   the magnetization direction of multiple sources with approximately
-  spherical shape and known centres. Our method can be applied to
+  spherical shape and known centres. Our method is an overdetermined
+  inverse problem that can be applied to
   interpret multiple sources with different magnetization
   directions. It neither requires the prior computation of any
   transformation like reduction to the pole nor the use of regularly
@@ -57,7 +58,7 @@
   reduced-to-the-pole anomalies, even for other region of the GAP, in
   the alkaline complex of Montes Claros de Goi\'{a}s. These results show 
   that the non-outcropping sources near from the alkaline complex of 
-  Diorama have almost the same magnetization direction of that as the 
+  Diorama have almost the same magnetization direction of that
   ones in the alkaline complex of Montes Claros de Goi\'{a}s, strongly 
   suggesting that these sources have been emplaced in the crust almost 
   within the same geological time interval.
@@ -215,9 +216,9 @@ element $\Delta T^\mathrm{o}_{i}$, $i = 1, \ldots, N$, is the total-field
 anomaly measured at the position ($x_{i}$, $y_{i}$, $z_{i}$) (black dots in
 Fig.~\ref{fig:geometric-aspects}). In this Cartesian coordinate system, $x$
 points to the geographic north, $y$ points to east and $z$ points downward.
-In general, the total-field anomaly is produced by a magnetized
-susceptibility distribution which is anomalous with respect to the mean
-susceptibility of the crust. Mathematically, $\Delta T^\mathrm{o}_{i}$ can be
+In general, the total-field anomaly is produced by a distribution of 
+magnetization which is anomalous with respect to the mean induced magnetization
+of the crust. Mathematically, $\Delta T^\mathrm{o}_{i}$ can be
 written as
 \begin{align}
  &
@@ -405,7 +406,7 @@ notation as
 \end{align}
 where $\vec{d}(\vec{h})$ is the $N$-dimensional predicted data vector, whose
 $i$th element is $d_{i}(\vec{h})$ (Eq.~\ref{eq:aiTh}), and $\mathbf{A}$ is
-a $N \times 3L$ matrix that can be partitioned as
+a $N \times 3L$ matrix $\left(N > 3L\right)$ that can be partitioned as
 \begin{align}
  &
 \mathbf{A} =
@@ -419,10 +420,7 @@ a $N \times 3L$ matrix that can be partitioned as
 \label{eq:sensibility-matrix}
 \end{align}
 being $\vec{a}_{i}$, $i = 1, \ldots, N$, the $3L$-dimensional vector
-defined in Eq. (\ref{eq:ai}).
-
-
-
+defined in Eq.~(\ref{eq:ai}).
 
 \subsection{Inverse problem}
 
@@ -431,7 +429,8 @@ $\vec{\Delta T}^\mathrm{o}$ can be approximated by a set of $L$ uniformly
 magnetized spheres with known coordinates $(xc_{j}, yc_{j}, zc_{j})$, $j = 1,
 \ldots, L$, of their centres. We also assume that the direction of the
 constant geomagnetic field $\vec{F}_{0}$ (Eq.~\ref{eq:unit-vector}) is known.
-Under these hypotheses, we formulate a linear inverse problem of estimating
+Under these hypotheses, we formulate an overdetermined linear inverse problem 
+of estimating
 the parameter vector $\vec{h}$ (Eq.~\ref{eq:h}) from $\vec{\Delta
 T}^\mathrm{o}$. The problem of estimating a parameter vector $\vec{h}$
 (Eq.~\ref{eq:h}) containing the magnetization vectors $\vec{m}^{j}$
@@ -442,7 +441,7 @@ done by minimizing the goal function
 \Psi(\vec{h}) = \frac{1}{N}[\vec{\Delta T}^\mathrm{o} - \vec{d}(\vec{h})]^{\mathrm{T}}[\vec{\Delta T}^\mathrm{o} - \vec{d}(\vec{h})] .
 \label{eq:goal-function-L2}
 \end{align}
-Differentiating Eq. (\ref{eq:goal-function-L2}) with respect to
+Differentiating Eq.~(\ref{eq:goal-function-L2}) with respect to
 $\vec{h}$ and equating the result to the null vector, we obtain the
 normal equation for the least-squares estimate $\hat{\vec{h}}$, i. e.,
 \begin{align}
@@ -469,8 +468,8 @@ minimizing the goal function
 \left\vert \Delta T^\mathrm{o}_{i} - d_{i}(\vec{h}) \right\vert .
 \label{eq:goal-function-L1}
 \end{align}
-Different from Eq. (\ref{eq:goal-function-L2}), the parameter vector
-$\vec{h}$ minimizing the Eq. (\ref{eq:goal-function-L1}) cannot be
+Different from Eq.~(\ref{eq:goal-function-L2}), the parameter vector
+$\vec{h}$ minimizing the Eq.~(\ref{eq:goal-function-L1}) cannot be
 obtained by solving a linear system. One practical way is the
 Iteratively Reweighted Least Squares algorithm \citep{scales_1988,aster-etal2005}. In this algorithm, at each iteration $k$, the
 following linear system is solved:
@@ -492,7 +491,7 @@ iterative process begins (iteration $k = 0$) with the least-squares estimate
 $\tilde{\vec{h}}^{0} = \hat{\vec{h}}$ (Eq.~\ref{eq:h_hat}). With this initial
 approximation $\tilde{\vec{h}}^{0}$, we calculate the matrix $\mathbf{R}^{0}$
 (Eq.~\ref{eq:ri}). By using the matrix $\mathbf{R}^{0}$, we solve the linear
-system given by Eq. (\ref{eq:iteration-L1}) for obtaining the estimate
+system given by Eq.~(\ref{eq:iteration-L1}) for obtaining the estimate
 $\tilde{\vec{h}}^{1}$. By using the updated estimate $\tilde{\vec{h}}^{1}$,
 we calculate the matrix $\mathbf{R}^{1}$ (Eq.~\ref{eq:ri}), solve the linear
 system (Eq.~\ref{eq:iteration-L1}) for obtaining the updated estimate
@@ -502,11 +501,12 @@ estimate and is an approximation of the parameter vector minimizing the
 function $\Gamma(\vec{h})$ (Eq.~\ref{eq:goal-function-L1}).
 
 Both $\hat{\vec{h}}$ (least-squares estimate) and $\tilde{\vec{h}}$ (robust
-estimate) are estimates of the parameter vector $\vec{h}$ (Eq.~\ref{eq:h}),
+estimate) are estimates of the Cartesian coordinates of the parameter vector 
+$\vec{h}$ (Eq.~\ref{eq:h}),
 which is represented as a function of the vectors $\vec{h}^{j}$, $j = 1,
 \ldots, L$ (Eq.~\ref{eq:hj}) and the magnetization vectors $\vec{m}^{j}$, $j
-= 1, \ldots, L$ (Eq.~\ref{eq:mag-vector-j}). The magnetization vectors are
-represented in Cartesian coordinates, however they are commonly represented
+= 1, \ldots, L$ (Eq.~\ref{eq:mag-vector-j}). However, magnetization vectors
+are commonly represented
 in terms of its intensity, declination and inclination. Therefore, for
 convenience, we will represent the vectors $\vec{h}^{j}$ (Eq.~\ref{eq:hj}) in
 spherical coordinates as follows
@@ -540,12 +540,12 @@ and
 I_{j} = \arctan \left(\frac{hz_{j}}{\sqrt{hx_{j}^{2} + hy_{j}^{2}}} \right).
 \label{eq:Ij}
 \end{align}
-
-Note that, according to Eq. (\ref{eq:hj}), the declinations $D_{j}$
+Note that, according to Eq.~(\ref{eq:hj}), the declinations $D_{j}$
 (Eq.~\ref{eq:Dj}) and inclinations $I_{j}$ (Eq.~\ref{eq:Ij}), $j = 1, \ldots,
 L$, are equal to that ones of the magnetization vectors $\vec{m}^{j}$, $j =
 1, \ldots, L$ (Eq.~\ref{eq:mag-vector-j}). After obtaining the least-squares
-estimate $\hat{\vec{h}}$ or the robust estimate $\tilde{\vec{h}}$, we
+estimate $\hat{\vec{h}}$ or the robust estimate $\tilde{\vec{h}}$ in Cartesian
+coordinates, we
 calculate the declinations $\hat{D}_{j}$ or $\tilde{D}_{j}$ (Eq.~\ref{eq:Dj})
 and inclinations $\hat{I}_{j}$ or $\tilde{I}_{j}$ (Eq.~\ref{eq:Ij}), $j = 1,
 \ldots, L$, of the total magnetization vector of all spheres. We use a caret
@@ -748,7 +748,10 @@ interfering anomalies. These interfering anomalies are characterized
 by mid-wavelength components which mostly affect the positive signals
 of the original total-field anomaly (Fig.~\ref{fig:synt1-data}a),
 resulting in non-dipolar total-field anomalies
-(Fig.~\ref{fig:synt1-data}b). Notice that this test violates the
+(Fig.~\ref{fig:synt1-data}b). The interfering anomalies reach
+approximately $33 \%$ of the positive amplitude of the original
+total-field anomaly shown in Fig.~\ref{fig:synt1-data}a. 
+Notice that this test violates the
 premise assumed by our method that the total-field anomalies are
 caused by dipolar bodies (spheres). Although these interfering
 anomalies are different from random Gaussian noise or outliers marked
@@ -902,6 +905,62 @@ a~suitable technique for providing the centre of the source to be used by our
 method as prior information to form the matrix given in Eq.
 (\ref{eq:sensibility-matrix}).
 
+\subsection{Complex tests}
+
+In this section, we present the performance of our method in recovering
+the magnetization direction of synthetic sources simulating complex 
+geological scenarios.
+
+\subsubsection{Significantly overlapping anomalies}
+
+Figure \ref{fig:overlapping-prisms} shows two synthetic sources
+simulating uniformly magnetized bodies embedded in nonmagnetic 
+host rocks. Both sources are rectangular prisms with 
+horizontal dimensions equal to 80\,\unit{m} and 20\,\unit{m} along
+the $x$ and $y$ directions, respectively, vertical dimension
+equal to 70\,\unit{m} and depth of the top at $z = 10$\,\unit{m}
+(red prisms in Fig. \ref{fig:overlapping-prisms}).
+One source has its centre at $xc = 0$\,\unit{m}, $yc = -30$\,\unit{m}
+and $zc = 45$\,\unit{m} while the other one has its centre shifted
+60\,\unit{m} in the positive $y$ direction (pinpointed black dots
+in Fig. \ref{fig:overlapping-prisms}). Both sources
+have a Koenigsberger ratio equal to $3$ and the same induced 
+magnetization with intensity $3$\,\unit{A\,m^{-1}}, declination 
+$0${\degree} and inclination $-30${\degree}. The remanent 
+magnetization of the sources has the same inclination equal to 
+$0${\degree}, but different declinations equal to $30${\degree}
+(eastern source) and $-30${\degree} (western source). The total field
+anomaly produced by these synthetic bodies (Fig. 
+\ref{fig:overlapping-prisms-data}) was calculated at $N = 2\,601$
+regularly spaced points $(x_{i}, y_{i}, z_{i})$, $i = 1, \ldots, N$, on 
+the plane with constant vertical coordinate $z=-10$\,\unit{m}, extending 
+from -200 to 200\,\unit{m} in both $x$ and $y$ directions. The 
+pseudorandom Gaussian noise added has a zero mean and a standard deviation 
+equal to $2\,\%$ of the peak-to-peak amplitude of the noise-free total-field
+anomaly. This synthetic test is similar to that one presented by
+\citet{lelievre-oldenburg2009}.
+
+By assigning the correct positions of the centres of the simulated bodies, we
+invert the noise-corrupted total-field anomaly (Fig. 
+\ref{fig:overlapping-prisms-data}) to obtain the least-squares estimate 
+$\hat{\vec{h}}$ (Eq.~\ref{eq:h_hat}) and
+robust estimate $\tilde{\vec{h}}$ (Eqs.~\ref{eq:iteration-L1} and
+\ref{eq:ri}). Next, we use these estimates to calculate the estimated
+declinations and inclinations (Eqs.~\ref{eq:Dj} and \ref{eq:Ij}). Finally, we
+calculate the uncertainties using the propagation of covariance
+(Eqs.~\ref{eq:cov-h-hat}--\ref{eq:H-h-tilde}) and assuming that the standard
+deviation of the errors is equal to the true one. The
+results (Table~\ref{tab:overlapping-prisms-results}) show the good
+performance of our method in estimating the magnetization directions of
+non-spherical sources producing significantly overlapping anomalies.
+Despite being a more complex test than that one presented in section 3.2,
+this test also shows the better performance of the robust estimate
+against the least-squares estimate.
+
+\subsubsection{Igneous intrusion within a sedimentary basin}
+
+TEXT
+
 \section{Application to field data}
 
 In Goi\'{a}s state, central region of Brazil, there are occurrences of
@@ -1044,43 +1103,43 @@ inversion and would need some a~priori information.
   The authors thank the government of the state of Goi\'{a}s, Brazil,
   for permission to use the real aeromagnetic data set. D.~P.~Sales is
   particularly grateful to CPRM for permission to work in this
-  research.  V.~C.~F.~Barbosa was supported by a~fellowship from CNPQ
+  research.  V.~C.~F.~Barbosa was supported by a~fellowship from CNPq
   (Conselho Nacional de Desenvolvimento e Tecnol\'{o}gico) and
   L.~Uieda was supported by a~scholarship from CAPES
   (Coordena\c{c}\~{a}o de Aperfei\c{c}oamento de Pessoal de N\'{\i}vel
   Superior). Additional support for the authors was provided by FAPERJ
   (Funda\c{c}\~{a}o Carlos Chagas Filho de Amparo \`{a} Pesquisa do
-  Estado do Rio de Janeiro) under contracts: E-26/103.175/2011 and
-  E-26/111.152/2014.
+  Estado do Rio de Janeiro) under contracts E-26/103.175/2011 and
+  E-26/111.152/2014 and CNPq under contract 445752/2014-9.
 \end{acknowledgements}
 
 % The bibliography
 \bibliographystyle{copernicus}
 \bibliography{bib-file}
 
+\clearpage
+
 \begin{table}[t]
 \caption{Test with the synthetic data (Fig.~\ref{fig:synt1-data}a) produced
 by a~sphere and a~rectangular prism. Comparison between the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
-uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ are calculated by
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ (shown between 
+parenthesis) are calculated by
 using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree ({\degree}). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
 distinguish the quantities computed by using, respectively, the least-squares
 $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}
-\begin{tabular}{crr}
+\begin{tabular}{crcrc}
 \tophline
-&Sphere &Prism \\
+&Sphere & &Prism & \\
 \middlehline
-$D$ &$-10.00000$ &$-40.00000$ \\
-$\hat{D}$ &$-10.07141$ &$-40.63733$ \\
-$\hat{\sigma}_\mathrm{D}$ &$0.00000$ &$0.00113$  \\
-$\tilde{D}$ &$-10.03229$ &$-40.24585$ \\
-$\tilde{\sigma}_\mathrm{D}$ &$0.00130$ &$0.03601$ \\
-$I$ &$-20.00000$ &$30.00000$ \\
-$\hat{I}$ &$-19.99437$ &$31.04075$  \\
-$\hat{\sigma}_\mathrm{I}$ &$0.00000$ &$0.00068$  \\
-$\tilde{I}$ &$-20.01263$ &$30.60551$ \\
-$\tilde{\sigma}_\mathrm{I}$ &$0.00042$ &$0.02047$ \\
+$D$ &$-10.00000$ & -- &$-40.00000$ & -- \\
+$\hat{D}$ &$-10.07141$ &($0.00001$) &$-40.63733$ &($0.00113$) \\
+$\tilde{D}$ &$-10.03229$ &($0.00130$) &$-40.24585$ &($0.03601$) \\
+\middlehline
+$I$ &$-20.00000$ & -- &$30.00000$ & -- \\
+$\hat{I}$ &$-19.99437$ &($0.00001$) &$31.04075$ &($0.00068$) \\
+$\tilde{I}$ &$-20.01263$ &($0.00042$) &$30.60551$ &($0.02047$) \\
 \bottomhline
 \end{tabular}
 \label{tab:synt1-without-inter-anomaly}
@@ -1090,33 +1149,85 @@ $\tilde{\sigma}_\mathrm{I}$ &$0.00042$ &$0.02047$ \\
 \caption{Test with the synthetic data (Fig.~\ref{fig:synt1-data}b) produced
 by a~sphere and a~rectangular prism. Comparison between the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
-uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ are calculated by
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ (shown between 
+parenthesis) are calculated by
 using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree ({\degree}). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
 distinguish the quantities computed by using, respectively, the least-squares
 $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}
-\begin{tabular}{crr}
+\begin{tabular}{crcrc}
 \tophline
-&Sphere &Prism \\
+&Sphere & &Prism & \\
 \middlehline
-$D$ &$-10.00000$ &$-40.00000$ \\
-$\hat{D}$ &$-4.28547$ &$-23.63607$ \\
-$\hat{\sigma}_\mathrm{D}$ &$0.00000$ &$0.00130$  \\
-$\tilde{D}$ &$-8.73648$ &$-39.37397$ \\
-$\tilde{\sigma}_\mathrm{D}$ &$0.00135$ &$0.03679$ \\
-$I$ &$-20.00000$ &$30.00000$ \\
-$\hat{I}$ &$-25.11757$ &$39.08012$  \\
-$\hat{\sigma}_\mathrm{I}$ &$0.00000$ &$0.00064$  \\
-$\tilde{I}$ &$-21.75674$ &$33.40926$ \\
-$\tilde{\sigma}_\mathrm{I}$ &$0.00027$ &$0.01648$ \\
+$D$ &$-10.00000$ & -- &$-40.00000$ & -- \\
+$\hat{D}$ &$-4.28547$ &($0.00001$) &$-23.63607$  &($0.00130$) \\
+$\tilde{D}$ &$-8.73648$ &($0.00135$) &$-39.37397$ &($0.03679$) \\
+\middlehline
+$I$ &$-20.00000$ & -- &$30.00000$ & -- \\
+$\hat{I}$ &$-25.11757$ &($0.00001$) &$39.08012$  &($0.00064$) \\
+$\tilde{I}$ &$-21.75674$ &($0.00027$) &$33.40926$ &($0.01648$) \\
 \bottomhline
 \end{tabular}
 \label{tab:synt1-with-inter-anomaly}
 \end{table}
 
+%New tables ==>
 
+\begin{table}[t]
+\caption{Test with synthetic data (Fig. \ref{fig:overlapping-prisms-data})
+representing two significantly overlapping anomalies. Comparison between 
+the estimated and
+true values of the magnetization declination $D$ and inclination $I$. The
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ (shown between 
+parenthesis) are calculated by
+using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
+degree ({\degree}). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
+distinguish the quantities computed by using, respectively, the least-squares
+$\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}
+\begin{tabular}{crcrc}
+\tophline
+&Eastern prism & & Western prism & \\
+\middlehline
+$D$ &$-23.41322$ & -- &$23.41322$ & -- \\
+$\hat{D}$ &$-31.45370$ &($0.00008$) &$30.67233$ &($0.00875$) \\
+$\tilde{D}$ &$-26.57707$ &($0.01778$) &$25.25037$ &($0.13333$) \\
+\middlehline
+$I$ &$-7.54509$ & -- &$-7.54509$ & -- \\
+$\hat{I}$ &$-9.23914$ &($0.00004$) &$-9.06131$ &($0.00628$) \\
+$\tilde{I}$ &$-7.98897$ &($0.00408$) &$-11.05456$ &($0.06386$) \\
+\bottomhline
+\end{tabular}
+\label{tab:overlapping-prisms-results}
+\end{table}
 
+\begin{table}[t]
+\caption{Test with synthetic data (Fig. \ref{fig:intrusion-data})
+produced by a complex geological scenario. Comparison between 
+the estimated and
+true values of the magnetization declination $D$ and inclination $I$. The
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ (shown between 
+parenthesis) are calculated by
+using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
+degree ({\degree}). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
+distinguish the quantities computed by using, respectively, the least-squares
+$\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}
+\begin{tabular}{crc}
+\tophline
+&Synthetic intrusion \\
+\middlehline
+$D$ &$157.50000$ & --\\
+$\hat{D}$ &$167.39501$ &($0.00060$) \\
+$\tilde{D}$ &$164.19461$ &($0.02669$) \\
+\middlehline
+$I$ &$39.80000$ & -- \\
+$\hat{I}$ &$37.33816$ &($0.00035$) \\
+$\tilde{I}$ &$39.99470$ &($0.00939$) \\
+\bottomhline
+\end{tabular}
+\label{tab:intrusion-results}
+\end{table}
 
+%<== New tables
 
 \begin{figure}[t]
 \includegraphics[width=90mm]{Figures/npgd-2014-0069-f01}
@@ -1190,8 +1301,6 @@ $\tilde{\sigma}_\mathrm{I}$ &$0.00027$ &$0.01648$ \\
 \end{figure*}
 
 
-
-
 \begin{figure}[t]
 \includegraphics[width=80mm]{Figures/npgd-2014-0069-f06}
 \caption{Robustness against non-spherical sources. The blue and red
@@ -1219,7 +1328,7 @@ $\tilde{\sigma}_\mathrm{I}$ &$0.00027$ &$0.01648$ \\
   $\hat{\vec{h}}$ (Eq.~\ref{eq:h_hat}) and robust $\tilde{\vec{h}}$
   (Eqs.~\ref{eq:iteration-L1} and \ref{eq:ri}) estimates. The
   estimated declinations and inclinations were obtained by presuming
-different positions for the centre of the source along the $x$, $y$ and
+    different positions for the centre of the source along the $x$, $y$ and
 $z$~axis. Along each axis, the magnetization direction was
   estimated by considering $21$ different centres regularly spaced in
   a~range of 2000\,\unit{m} on a~line passing through the right
@@ -1230,10 +1339,78 @@ $z$~axis. Along each axis, the magnetization direction was
 \label{fig:robust-center-results}
 \end{figure}
 
-
+%New figures ==>
 
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f08}
+\caption{Significantly overlapping anomalies. Synthetic prisms
+(in red) with side lengths
+equal to 80\,\unit{m}, 20\,\unit{m} and 70\,\unit{m} along
+the $x$, $y$ and $z$ directions, respectively. Both prisms have a depth
+of the top at $z = 10$\,\unit{m}. The eastern prism has its centre at 
+$xc = 0$\,\unit{m}, $yc = -30$\,\unit{m} and $zc = 45$\,\unit{m} while
+western prism has its centre shifted 60\,\unit{m} in the positive $y$ 
+direction (pinpointed black dots).}
+\label{fig:overlapping-prisms}
+\end{figure*}
+
+
+\begin{figure*}[t]
+\includegraphics[width=120mm]{Figures/npgd-2014-0069-f09}
+\caption{Significantly overlapping anomalies. Noise-corrupted 
+total-field anomaly produced by the synthetic bodies shown in 
+Fig. \ref{fig:overlapping-prisms}. The data are in nT and were
+calculated on a plane with constant vertical coordinate equal to
+-10\,\unit{m}.}
+\label{fig:overlapping-prisms-data}
+\end{figure*}
+
+
+\begin{figure*}[t]
+\includegraphics[width=120mm]{Figures/npgd-2014-0069-f10}
+\caption{Igneous intrusion. Vertical profile showing the 
+nonmagnetic sedimentary package (in grey), the igneous intrusion
+(in red) and the basement (in white). The basement is magnetized by 
+induction and the intrusion has a strong reversed magnetization. The
+plot has vertical exaggeration.}
+\label{fig:intrusion-profile}
+\end{figure*}
+
+\begin{figure*}[t]
+\includegraphics[width=120mm]{Figures/npgd-2014-0069-f11}
+\caption{Igneous intrusion. 3D view of the intrusion (red prisms)
+and its estimated location (black point), which was obtained from
+Euler Deconvolution by using a structural index equal to 3. Notice 
+that the Euler solution falls outside the intrusion.}
+\label{fig:intrusion-euler}
+\end{figure*}
+
+
+\begin{figure*}[t]
+\includegraphics[width=120mm]{Figures/npgd-2014-0069-f12}
+\caption{Igneous intrusion. Noise-corrupted total-field anomaly
+produced by the synthetic bodies shown in Fig. \ref{fig:intrusion-profile}
+on a plane with constant vertical coordinate equal to -80\,\unit{m}. }
+\label{fig:intrusion-data}
+\end{figure*}
+
+\begin{figure}[t]
+  \includegraphics[width=70mm]{Figures/npgd-2014-0069-f13}
+  \caption{Igneous intrusion. The upper panel shows the true
+    reduced-to-the-pole anomaly produced by the synthetic bodies
+    shown in Fig. \ref{fig:intrusion-profile}. The lower panel
+    shows the reduced-to-the-pole anomaly obtained from the
+    noise-corrupted total-field anomaly shown in Fig. \ref{fig:intrusion-data}.
+    The reduction to the pole was done by using the robust estimates
+    of declination $\tilde{D}$ and inclination $\tilde{I}$ shown
+    in Tab. \ref{tab:intrusion-results}.}
+\label{fig:intrusion-RTP}
+\end{figure}
+
+%<== New figures
+
+\begin{figure*}[t]
+\includegraphics[width=120mm]{Figures/npgd-2014-0069-f14}
 \caption{Application to field data on the Goi\'{a}s Alkaline Province
   (GAP), Brazil. Simplified geological map of the study area, which is
   represented by a~red dot in the inset map of Brazil. The inset also
@@ -1243,26 +1420,28 @@ $z$~axis. Along each axis, the magnetization direction was
   coordinates are referred to the WGS84 datum. The numbers indicate
   the main alkaline complexes in this region: 1 -- Montes Claros de
   Goi\'{a}s, 2 -- Diorama, 3 -- C\'{o}rrego dos Bois, 4 -- Morro do
-  Macaco and 5 -- Fazenda Buriti.}
+  Macaco and 5 -- Fazenda Buriti. }
 \label{fig:geology-study-area}
 \end{figure*}
 
-
-
+\clearpage
 
 \begin{figure*}[t]
-\includegraphics[width=120mm]{Figures/npgd-2014-0069-f09}
-\caption{Application to field data on the Goi\'{a}s Alkaline Province (GAP),
-Brazil. Total-field anomaly observed over the area delimited by the red
-rectangle in Fig.~\ref{fig:geology-study-area}. The flight lines of the
-aeromagnetic survey are shown in black. The magnetic data are in nT and the
-coordinates are in UTM on the SAD-69 datum, with central meridian
-$51${\degree}\,W. The origins of the east and north coordinates are 500 and
-10\,000\,\unit{km}, respectively.} \label{fig:TFA-Diorama}
+  \includegraphics[width=120mm]{Figures/npgd-2014-0069-f15}
+  \caption{Application to field data on the Goi\'{a}s Alkaline Province (GAP),
+    Brazil. Total-field anomaly observed over the area delimited by the red
+    rectangle in Fig.~\ref{fig:geology-study-area}. The flight lines of the
+    aeromagnetic survey are shown in black. The magnetic data are in nT and the
+    coordinates are in UTM on the SAD-69 datum, with central meridian
+    $51${\degree}\,W. The origins of the east and north coordinates are 500 and
+    10\,000\,\unit{km}, respectively.} 
+\label{fig:TFA-Diorama}
 \end{figure*}
 
+\clearpage
+
 \begin{figure}[t]
-  \includegraphics[width=70mm]{Figures/npgd-2014-0069-f10}
+  \includegraphics[width=70mm]{Figures/npgd-2014-0069-f16}
   \caption{Application to field data on the Goi\'{a}s Alkaline
     Province (GAP), Brazil. Observed total-field anomaly
     (Fig.~\ref{fig:TFA-Diorama}) reduced to the pole. The upper and
@@ -1272,26 +1451,30 @@ $51${\degree}\,W. The origins of the east and north coordinates are 500 and
     0.00013${\degree} and declination $\hat{D} = -16.22821{\degree}
     \pm 0.00050${\degree}) and robust (inclination $\tilde{I} =
     -71.41751{\degree} \pm 0.00182${\degree} and declination
-    $\tilde{D} = -23.39541{\degree} \pm 0.01049${\degree}) estimates.}
+    $\tilde{D} = -23.39541{\degree} \pm 0.01049${\degree}) estimates. }
 \label{fig:TFA-Diorama-RTP}
 \end{figure}
 
+\clearpage
+
 \begin{figure*}[t]
-\includegraphics[width=120mm]{Figures/npgd-2014-0069-f11}
-\caption{Application to field data on the Goi\'{a}s Alkaline Province
-  (GAP), Brazil. Total-field anomaly observed over the Montes Claros
-  de Goi\'{a}s alkaline complex
-  (Fig.~\ref{fig:geology-study-area}). The flight lines of the
-  aeromagnetic survey are shown in black. The magnetic data are in nT
-  and the coordinates are in UTM on the SAD-69 datum, with central
-  meridian $51${\degree}\,W. The origins of the east and north
-  coordinates are $500$\,\unit{km} and $10\,000$\,\unit{km},
-  respectively.}
+  \includegraphics[width=120mm]{Figures/npgd-2014-0069-f17}
+  \caption{Application to field data on the Goi\'{a}s Alkaline Province
+    (GAP), Brazil. Total-field anomaly observed over the Montes Claros
+    de Goi\'{a}s alkaline complex
+    (Fig.~\ref{fig:geology-study-area}). The flight lines of the
+    aeromagnetic survey are shown in black. The magnetic data are in nT
+    and the coordinates are in UTM on the SAD-69 datum, with central
+    meridian $51${\degree}\,W. The origins of the east and north
+    coordinates are $500$\,\unit{km} and $10\,000$\,\unit{km},
+    respectively. }
 \label{fig:TFA-MCG}
 \end{figure*}
 
+\clearpage
+
 \begin{figure}[t]
-\includegraphics[width=80mm]{Figures/npgd-2014-0069-f12}
+\includegraphics[width=80mm]{Figures/npgd-2014-0069-f18}
 \caption{Application to field data on the Goi\'{a}s Alkaline Province
   (GAP), Brazil. Observed total-field anomaly (Fig.~\ref{fig:TFA-MCG})
   reduced to the pole. The upper and lower panels show the RTP
@@ -1301,9 +1484,10 @@ $51${\degree}\,W. The origins of the east and north coordinates are 500 and
   $\hat{D} = -16.22821{\degree} \pm 0.00050${\degree}) and robust
   (inclination $\tilde{I} = -71.41751{\degree} \pm 0.00182${\degree}
   and declination $\tilde{D} = -23.39541{\degree} \pm
-  0.01049${\degree}) estimates.}
+  0.01049${\degree}) estimates. }
 \label{fig:TFA-MCG-RTP}
 \end{figure}
+
 
 \end{document}
 

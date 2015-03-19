@@ -1,1 +1,10 @@
 .ipynb_checkpoints
+
+# Tex files 
+.aux
+.bbl
+.synctex.gz
+.txt
+.blg
+.log
+
