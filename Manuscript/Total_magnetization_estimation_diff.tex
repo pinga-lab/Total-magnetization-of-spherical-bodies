@@ -1,7 +1,7 @@
 %% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
 %DIF LATEXDIFF DIFFERENCE FILE
-%DIF DEL Total_magnetization_estimation.tex           Fri Dec  5 15:34:22 2014
-%DIF ADD Total_magnetization_estimation_revised.tex   Thu Mar 19 17:32:46 2015
+%DIF DEL Total_magnetization_estimation.tex           Thu Mar 19 19:46:17 2015
+%DIF ADD Total_magnetization_estimation_revised.tex   Thu Mar 19 22:05:28 2015
 
 \documentclass[journal abbreviation, npg]{copernicus}
 %DIF < 
@@ -996,7 +996,49 @@ against the least-squares estimate.
 
 \subsubsection{\DIFadd{Igneous intrusion within a sedimentary basin}}
 
-\DIFadd{TEXT
+\DIFadd{Figure \ref{fig:intrusion-profile} shows a synthetic 
+igneous intrusion formed by a sill which is fed by a vertical pipe
+(red prisms). This intrusion has a depth of the top at 200}\,\unit{m}
+\DIFadd{and is embedded in nonmagnetic sediments (grey prisms). The sediments
+are overlaying a basement (represented in white) 
+which is magnetized by induction (with intensity $0.1$}\,\unit{A\,m^{-1}}\DIFadd{)
+and generates a regional anomaly (not shown). The sedimentary 
+package and basement are semi-infinite along the $x$ axis. The simulated geomagnetic 
+field has inclination $-39.8$}{\degree} \DIFadd{and declination $-22.5$}{\degree}\DIFadd{. 
+The synthetic intrusion has a reversed magnetization with inclination 
+$I = 39.8$}{\degree}\DIFadd{, declination $D = 157.5$}{\degree} \DIFadd{and intensity
+$6$}\,\unit{A\,m^{-1}}\DIFadd{. In this example, the total-field anomaly produced
+by the intrusion overlaps the one produced by the basement. The total-field
+anomaly produced by both the intrusion and the basement was calculated
+on a $100 \times 100$ regular grid ($N = 10\,000$), which varies from
+0 to 10}\,\unit{km} \DIFadd{and from 45 to 55}\,\unit{km} \DIFadd{in $x$ and $y$ directions,
+respectively, on a plane with constant vertical coordinate -800}\,\unit{m}\DIFadd{. 
+Figure \ref{fig:intrusion-data} shows this total-field anomaly contaminated
+with a pseudo-random Gaussian noise of zero mean and standard deviation 
+equal to 2}\,\DIFadd{nT.
+}
+
+\DIFadd{We applied our method to estimate the magnetization direction of the synthetic
+intrusion shown Fig. \ref{fig:intrusion-profile} from the noise-corrupted 
+total-field anomaly shown in Fig. \ref{fig:intrusion-data}. The position of 
+the synthetic intrusion was estimated by Euler Deconvolution. The synthetic
+intrusion is not an ideal source and does not have a characteristic structural
+index. In this case, we (wrongly) presumed that the noise-corrupted total-field 
+anomaly is produced by an spherical body and use a structural index equal to 3.
+Figure \ref{fig:intrusion-euler} shows that the estimated location (black point) 
+obtained by Euler Deconvolution is placed outside the synthetic intrusion 
+(red prisms). Even using this poor estimation of the location of the source, 
+our method obtained estimated declinations ($\hat{D}$ and $\tilde{D}$) and
+inclinations ($\hat{I}$ and $\tilde{I}$) close to the true values 
+(Tab. \ref{tab:intrusion-results}). In practical situations, however, the quality 
+of the estimated magnetization direction may be accessed by using the reduction
+to the pole. Figure \ref{fig:intrusion-RTP} shows that the reduction to the pole 
+calculated with the robust estimate of the magnetization direction 
+(Tab. \ref{tab:intrusion-results}) obtained by our method leads to a predominantly
+positive anomaly, which is very close to the true one. This result illustrates
+the robustness of our method when applied to retrieve the magnetization 
+direction of a complex source whose centre is poorly estimated by Euler
+Deconvolution.
 }
 
 \DIFaddend \section{Application to field data}
@@ -1455,7 +1497,9 @@ calculated on a plane with constant vertical coordinate equal to
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f10}
 \caption{\DIFaddFL{Igneous intrusion. Vertical profile showing the 
 nonmagnetic sedimentary package (in grey), the igneous intrusion
-(in red) and the basement (in white). The basement is magnetized by 
+(in red) and the basement (in white). The sedimentary 
+package and basement are semi-infinite along the $x$ axis. 
+The basement is magnetized by 
 induction and the intrusion has a strong reversed magnetization. The
 plot has vertical exaggeration.}}
 \label{fig:intrusion-profile}
@@ -1463,20 +1507,19 @@ plot has vertical exaggeration.}}
 
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f11}
+\caption{\DIFaddFL{Igneous intrusion. Noise-corrupted total-field anomaly
+produced by the synthetic bodies shown in Fig. \ref{fig:intrusion-profile}
+on a plane with constant vertical coordinate equal to -800}\,\unit{m}\DIFaddFL{. }}
+\label{fig:intrusion-data}
+\end{figure*}
+
+\begin{figure*}[t]
+\includegraphics[width=120mm]{Figures/npgd-2014-0069-f12}
 \caption{\DIFaddFL{Igneous intrusion. 3D view of the intrusion (red prisms)
 and its estimated location (black point), which was obtained from
 Euler Deconvolution by using a structural index equal to 3. Notice 
 that the Euler solution falls outside the intrusion.}}
 \label{fig:intrusion-euler}
-\end{figure*}
-
-
-\begin{figure*}[t]
-\includegraphics[width=120mm]{Figures/npgd-2014-0069-f12}
-\caption{\DIFaddFL{Igneous intrusion. Noise-corrupted total-field anomaly
-produced by the synthetic bodies shown in Fig. \ref{fig:intrusion-profile}
-on a plane with constant vertical coordinate equal to -80}\,\unit{m}\DIFaddFL{. }}
-\label{fig:intrusion-data}
 \end{figure*}
 
 \begin{figure}[t]
@@ -1486,7 +1529,9 @@ on a plane with constant vertical coordinate equal to -80}\,\unit{m}\DIFaddFL{. 
     shown in Fig. \ref{fig:intrusion-profile}. The lower panel
     shows the reduced-to-the-pole anomaly obtained from the
     noise-corrupted total-field anomaly shown in Fig. \ref{fig:intrusion-data}.
-    The reduction to the pole was done by using the robust estimates
+    These anomalies were calculated at the same points of the
+    total-field anomaly shown in Fig. \ref{fig:intrusion-data}.
+    The reduction to the pole was calculated by using the robust estimates
     of declination $\tilde{D}$ and inclination $\tilde{I}$ shown
     in Tab. \ref{tab:intrusion-results}.}}
 \label{fig:intrusion-RTP}
