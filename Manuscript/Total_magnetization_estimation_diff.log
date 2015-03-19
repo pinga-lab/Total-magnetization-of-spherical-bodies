@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.17)  18 MAR 2015 20:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.17)  19 MAR 2015 08:47
 entering extended mode
 **Total_magnetization_estimation_diff.tex
 
@@ -942,30 +942,40 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1190.
 
-Overfull \hbox (47.61186pt too wide) in paragraph at lines 1207--1232
+Overfull \hbox (47.61186pt too wide) in paragraph at lines 1193--1218
  []$[]$ 
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 1274--1274
+Overfull \hbox (47.61186pt too wide) in paragraph at lines 1231--1256
+ []$[]$ 
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 1270--1270
 []\OT1/ptm/b/n/9 Table 3. []|   []   |   []   |   []   |   []   |   []   |   []
    |   []   |   []
  []
 
 
-Underfull \hbox (badness 2452) in paragraph at lines 1274--1274
+Underfull \hbox (badness 2452) in paragraph at lines 1270--1270
 |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Overfull \hbox (11.67412pt too wide) in paragraph at lines 1271--1284
+ []$[]$ 
  []
 
 <Figures/npgd-2014-0069-f01.png, id=52, 241.8636pt x 241.8636pt>
 File: Figures/npgd-2014-0069-f01.png Graphic file (type png)
 
 <use Figures/npgd-2014-0069-f01.png>
-Package pdftex.def Info: Figures/npgd-2014-0069-f01.png used on input line 1326
+Package pdftex.def Info: Figures/npgd-2014-0069-f01.png used on input line 1314
 .
 (pdftex.def)             Requested size: 256.0748pt x 256.0937pt.
 
-Overfull \hbox (14.22638pt too wide) in paragraph at lines 1326--1335
+Overfull \hbox (14.22638pt too wide) in paragraph at lines 1314--1323
  [][] 
  []
 
@@ -973,7 +983,7 @@ Overfull \hbox (14.22638pt too wide) in paragraph at lines 1326--1335
 File: Figures/npgd-2014-0069-f02.png Graphic file (type png)
 
 <use Figures/npgd-2014-0069-f02.png>
-Package pdftex.def Info: Figures/npgd-2014-0069-f02.png used on input line 1340
+Package pdftex.def Info: Figures/npgd-2014-0069-f02.png used on input line 1328
 .
 (pdftex.def)             Requested size: 227.62204pt x 227.62491pt.
 
@@ -981,7 +991,7 @@ Package pdftex.def Info: Figures/npgd-2014-0069-f02.png used on input line 1340
 File: Figures/npgd-2014-0069-f03.pdf Graphic file (type pdf)
 
 <use Figures/npgd-2014-0069-f03.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f03.pdf used on input line 1350
+Package pdftex.def Info: Figures/npgd-2014-0069-f03.pdf used on input line 1338
 .
 (pdftex.def)             Requested size: 142.26378pt x 225.0351pt.
 
@@ -989,7 +999,7 @@ Package pdftex.def Info: Figures/npgd-2014-0069-f03.pdf used on input line 1350
 File: Figures/npgd-2014-0069-f04.png Graphic file (type png)
 
 <use Figures/npgd-2014-0069-f04.png>
-Package pdftex.def Info: Figures/npgd-2014-0069-f04.png used on input line 1362
+Package pdftex.def Info: Figures/npgd-2014-0069-f04.png used on input line 1350
 .
 (pdftex.def)             Requested size: 193.47873pt x 284.53517pt.
 
@@ -997,7 +1007,7 @@ Package pdftex.def Info: Figures/npgd-2014-0069-f04.png used on input line 1362
 File: Figures/npgd-2014-0069-f05.pdf Graphic file (type pdf)
 
 <use Figures/npgd-2014-0069-f05.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f05.pdf used on input line 1379
+Package pdftex.def Info: Figures/npgd-2014-0069-f05.pdf used on input line 1367
 .
 (pdftex.def)             Requested size: 312.9803pt x 267.7137pt.
 
@@ -1005,11 +1015,11 @@ Package pdftex.def Info: Figures/npgd-2014-0069-f05.pdf used on input line 1379
 File: Figures/npgd-2014-0069-f06.pdf Graphic file (type pdf)
 
 <use Figures/npgd-2014-0069-f06.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f06.pdf used on input line 1398
+Package pdftex.def Info: Figures/npgd-2014-0069-f06.pdf used on input line 1386
 .
 (pdftex.def)             Requested size: 227.62204pt x 283.80922pt.
 
-Underfull \hbox (badness 1005) in paragraph at lines 1430--1460
+Underfull \hbox (badness 1005) in paragraph at lines 1418--1448
 []|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
  []
 
@@ -1017,7 +1027,7 @@ Underfull \hbox (badness 1005) in paragraph at lines 1430--1460
 File: Figures/npgd-2014-0069-f08.png Graphic file (type png)
 
 <use Figures/npgd-2014-0069-f08.png>
-Package pdftex.def Info: Figures/npgd-2014-0069-f08.png used on input line 1465
+Package pdftex.def Info: Figures/npgd-2014-0069-f08.png used on input line 1453
 .
 (pdftex.def)             Requested size: 341.43306pt x 237.72473pt.
 
@@ -1025,7 +1035,7 @@ Package pdftex.def Info: Figures/npgd-2014-0069-f08.png used on input line 1465
 File: Figures/npgd-2014-0069-f09.pdf Graphic file (type pdf)
 
 <use Figures/npgd-2014-0069-f09.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f09.pdf used on input line 1494
+Package pdftex.def Info: Figures/npgd-2014-0069-f09.pdf used on input line 1482
 .
 (pdftex.def)             Requested size: 341.43306pt x 282.22949pt.
 
@@ -1033,7 +1043,7 @@ Package pdftex.def Info: Figures/npgd-2014-0069-f09.pdf used on input line 1494
 File: Figures/npgd-2014-0069-f10.png Graphic file (type png)
 
 <use Figures/npgd-2014-0069-f10.png>
-Package pdftex.def Info: Figures/npgd-2014-0069-f10.png used on input line 1505
+Package pdftex.def Info: Figures/npgd-2014-0069-f10.png used on input line 1493
 .
 (pdftex.def)             Requested size: 341.43306pt x 67.00677pt.
 
@@ -1041,7 +1051,7 @@ Package pdftex.def Info: Figures/npgd-2014-0069-f10.png used on input line 1505
 File: Figures/npgd-2014-0069-f11.png Graphic file (type png)
 
 <use Figures/npgd-2014-0069-f11.png>
-Package pdftex.def Info: Figures/npgd-2014-0069-f11.png used on input line 1515
+Package pdftex.def Info: Figures/npgd-2014-0069-f11.png used on input line 1503
 .
 (pdftex.def)             Requested size: 341.43306pt x 195.04526pt.
 
@@ -1049,7 +1059,7 @@ Package pdftex.def Info: Figures/npgd-2014-0069-f11.png used on input line 1515
 File: Figures/npgd-2014-0069-f12.pdf Graphic file (type pdf)
 
 <use Figures/npgd-2014-0069-f12.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f12.pdf used on input line 1525
+Package pdftex.def Info: Figures/npgd-2014-0069-f12.pdf used on input line 1513
 .
 (pdftex.def)             Requested size: 341.43306pt x 294.38368pt.
 
@@ -1057,7 +1067,7 @@ Package pdftex.def Info: Figures/npgd-2014-0069-f12.pdf used on input line 1525
 File: Figures/npgd-2014-0069-f13.png Graphic file (type png)
 
 <use Figures/npgd-2014-0069-f13.png>
-Package pdftex.def Info: Figures/npgd-2014-0069-f13.png used on input line 1535
+Package pdftex.def Info: Figures/npgd-2014-0069-f13.png used on input line 1523
 .
 (pdftex.def)             Requested size: 341.43306pt x 264.77016pt.
 
@@ -1065,7 +1075,7 @@ Package pdftex.def Info: Figures/npgd-2014-0069-f13.png used on input line 1535
 File: Figures/npgd-2014-0069-f14.pdf Graphic file (type pdf)
 
 <use Figures/npgd-2014-0069-f14.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f14.pdf used on input line 1550
+Package pdftex.def Info: Figures/npgd-2014-0069-f14.pdf used on input line 1538
 .
 (pdftex.def)             Requested size: 341.43306pt x 231.7747pt.
 
@@ -1073,7 +1083,7 @@ Package pdftex.def Info: Figures/npgd-2014-0069-f14.pdf used on input line 1550
 File: Figures/npgd-2014-0069-f15.pdf Graphic file (type pdf)
 
 <use Figures/npgd-2014-0069-f15.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f15.pdf used on input line 1565
+Package pdftex.def Info: Figures/npgd-2014-0069-f15.pdf used on input line 1553
 .
 (pdftex.def)             Requested size: 199.16928pt x 274.97165pt.
  [12
@@ -1110,7 +1120,7 @@ pt/Figures/npgd-2014-0069-f15.pdf>]
 File: Figures/npgd-2014-0069-f16.pdf Graphic file (type pdf)
 
 <use Figures/npgd-2014-0069-f16.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f16.pdf used on input line 1584
+Package pdftex.def Info: Figures/npgd-2014-0069-f16.pdf used on input line 1572
 .
 (pdftex.def)             Requested size: 341.43306pt x 200.21335pt.
  [22 <C:/Users/Vanderlei/Documents/Total-magnetization-of-spherical-bodies/Manu
@@ -1119,7 +1129,7 @@ script/Figures/npgd-2014-0069-f16.pdf>]
 File: Figures/npgd-2014-0069-f17.pdf Graphic file (type pdf)
 
 <use Figures/npgd-2014-0069-f17.pdf>
-Package pdftex.def Info: Figures/npgd-2014-0069-f17.pdf used on input line 1602
+Package pdftex.def Info: Figures/npgd-2014-0069-f17.pdf used on input line 1590
 .
 (pdftex.def)             Requested size: 227.62204pt x 286.77495pt.
  [23
@@ -1139,7 +1149,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  4491 strings out of 493921
  58454 string characters out of 3147269
- 242370 words of memory out of 3000000
+ 248163 words of memory out of 3000000
  7660 multiletter control sequences out of 15000+200000
  29444 words of font info for 71 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1166,7 +1176,7 @@ es/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
 imes/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on Total_magnetization_estimation_diff.pdf (23 pages, 4046581 by
+Output written on Total_magnetization_estimation_diff.pdf (23 pages, 4046830 by
 tes).
 PDF statistics:
  2193 PDF objects out of 2487 (max. 8388607)
