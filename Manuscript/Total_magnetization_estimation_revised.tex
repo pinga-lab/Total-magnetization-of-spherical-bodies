@@ -936,7 +936,7 @@ In this section, we present the performance of our method in recovering
 the magnetization direction of synthetic sources simulating complex
 geological scenarios.
 
-\subsubsection{Significantly overlapping anomalies}
+\subsubsection{Strong-interfering anomalies}
 
 Figure \ref{fig:overlapping-prisms} shows two synthetic sources
 simulating uniformly magnetized bodies embedded in nonmagnetic
@@ -962,7 +962,7 @@ the plane with constant vertical coordinate $z=-10$\,\unit{m}, extending
 from -200 to 200\,\unit{m} in both $x$ and $y$ directions. The
 pseudorandom Gaussian noise added has a zero mean and a standard deviation
 equal to $2\,\%$ of the peak-to-peak amplitude of the noise-free total-field
-anomaly. This synthetic test is similar to that one presented by
+anomaly. This synthetic test was inspired by a test shown in
 \citet{lelievre-oldenburg2009}.
 
 By assigning the correct positions of the centres of the simulated bodies, we
@@ -973,14 +973,13 @@ robust estimate $\tilde{\vec{h}}$ (Eqs.~\ref{eq:iteration-L1} and
 \ref{eq:ri}). Next, we use these estimates to calculate the estimated
 declinations and inclinations (Eqs.~\ref{eq:Dj} and \ref{eq:Ij}). Finally, we
 calculate the uncertainties using the propagation of covariance
-(Eqs.~\ref{eq:cov-h-hat}--\ref{eq:H-h-tilde}) and assuming that the standard
+(Eqs.~\ref{eq:cov-h-hat}--\ref{eq:H-h-tilde}) by assuming that the standard
 deviation of the errors is equal to the true one. The
 results (Table~\ref{tab:overlapping-prisms-results}) show the good
 performance of our method in estimating the magnetization directions of
-non-spherical sources producing significantly overlapping anomalies.
-Despite being a more complex test than that one presented in section 3.2,
-this test also shows the better performance of the robust estimate
-against the least-squares estimate.
+non-spherical sources producing strong-interfering anomalies.
+This test also shows the better performance of the robust estimate
+as compared with the least-squares estimate.
 
 \subsubsection{Igneous intrusion within a sedimentary basin}
 
@@ -1241,7 +1240,7 @@ $\tilde{I}$ &$-21.75674$ &($0.00027$) &$33.40926$ &($0.01648$) \\
 
 \begin{table}[t]
 \caption{Test with synthetic data (Fig. \ref{fig:overlapping-prisms-data})
-representing two significantly overlapping anomalies. Comparison between
+showing strong-interfering anomalies. Comparison between
 the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
 uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ (shown between
@@ -1409,7 +1408,7 @@ $z$~axis. Along each axis, the magnetization direction was
 
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f08}
-\caption{Significantly overlapping anomalies. Synthetic prisms
+\caption{Strong-interfering anomalies. Synthetic prisms
 (in red) with side lengths
 equal to 80\,\unit{m}, 20\,\unit{m} and 70\,\unit{m} along
 the $x$, $y$ and $z$ directions, respectively. Both prisms have a depth
@@ -1423,7 +1422,7 @@ direction (pinpointed black dots).}
 
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f09}
-\caption{Significantly overlapping anomalies. Noise-corrupted
+\caption{Strong-interfering anomalies. Noise-corrupted
 total-field anomaly produced by the synthetic bodies shown in
 Fig. \ref{fig:overlapping-prisms}. The data are in nT and were
 calculated on a plane with constant vertical coordinate equal to
@@ -1448,15 +1447,17 @@ plot has vertical exaggeration.}
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f11}
 \caption{Igneous intrusion. Noise-corrupted total-field anomaly
 produced by the synthetic bodies shown in Fig. \ref{fig:intrusion-profile}
-on a plane with constant vertical coordinate equal to -800\,\unit{m}. }
+on a plane with constant vertical coordinate equal to -800\,\unit{m}.
+The data are in nT.}
 \label{fig:intrusion-data}
 \end{figure*}
 
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f12}
 \caption{Igneous intrusion. 3D view of the intrusion (red prisms)
-and its estimated location (black point), which was obtained from
-Euler Deconvolution by using a structural index equal to 3. Notice
+and its estimated location (black point), which was obtained
+by applying the
+Euler Deconvolution with a structural index equal to 3. Notice
 that the Euler solution falls outside the intrusion.}
 \label{fig:intrusion-euler}
 \end{figure*}
@@ -1482,7 +1483,7 @@ that the Euler solution falls outside the intrusion.}
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f14}
 \caption{Application to field data on the Goi\'{a}s Alkaline Province
   (GAP), Brazil. Simplified geological map of the study area, which is
-  represented by a~red dot in the inset map of Brazil. The inset also
+  shown as a~red dot in the inset map of Brazil. The inset also
   shows the Goi\'{a}s (dark grey area) and Minas Gerais (light grey
   area) states. The total-field anomaly over the area delimited by the
   red rectangle is shown in Fig.~\ref{fig:TFA-Diorama}. The

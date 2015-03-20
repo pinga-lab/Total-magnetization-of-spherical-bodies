@@ -1,7 +1,7 @@
 %% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL Total_magnetization_estimation.tex           Thu Mar 19 19:46:17 2015
-%DIF ADD Total_magnetization_estimation_revised.tex   Thu Mar 19 22:05:28 2015
+%DIF ADD Total_magnetization_estimation_revised.tex   Fri Mar 20 02:03:44 2015
 
 \documentclass[journal abbreviation, npg]{copernicus}
 %DIF < 
@@ -725,7 +725,42 @@ the uncertainties ($\hat{\sigma}$ and $\tilde{\sigma}$) computed by
 using, respectively, the least-squares $\hat{\vec{h}}$ and the robust
 $\tilde{\vec{h}}$ estimates.
 
-\section{Application to synthetic data}
+
+\DIFaddbegin \subsection{\DIFadd{Software implementation}}
+
+\DIFadd{The inversion method described above
+is implemented in version 0.3 of
+the open-source Python language library
+Fatiando a Terra}\footnote{\DIFadd{
+http://www.fatiando.org/}}\footnote{\DIFadd{http://dx.doi.org/10.5281/zenodo.16205}}\DIFadd{.
+We used }\emph{\DIFadd{matplotlib}} \DIFadd{\mbox{%DIFAUXCMD
+\citep{Hunter2007}
+}%DIFAUXCMD
+for graphs and maps
+and }\emph{\DIFadd{Mayavi}} \DIFadd{\mbox{%DIFAUXCMD
+\citep{Ramachandran2011}
+}%DIFAUXCMD
+for 3D figures.
+The results and figures from the application to synthetic and real data
+were produced in IPython notebooks
+\mbox{%DIFAUXCMD
+\citep{Perez2007}
+}%DIFAUXCMD
+.
+The notebooks contain explanatory text as well as
+the source code used
+to generate the synthetic data, run the inversions, and produce figures.
+The IPython notebooks
+and instructions for installing the required software
+and reproducing our results are
+available as online supplementary material}\footnote{\DIFadd{
+https://github.com/pinga-lab/Total-magnetization-of-spherical-bodies}}\footnote{\DIFadd{
+http://dx.doi.org/10.5281/zenodo.16191}}\DIFadd{.
+}
+
+
+
+\DIFaddend \section{Application to synthetic data}
 
 \subsection{Validation test}
 
@@ -781,7 +816,7 @@ of the original total-field anomaly (Fig.~\ref{fig:synt1-data}a),
 resulting in non-dipolar total-field anomalies
 (Fig.~\ref{fig:synt1-data}b). \DIFaddbegin \DIFadd{The interfering anomalies reach
 approximately $33 \%$ of the positive amplitude of the original
-total-field anomaly shown in Fig.~\ref{fig:synt1-data}a. 
+total-field anomaly shown in Fig.~\ref{fig:synt1-data}a.
 }\DIFaddend Notice that this test violates the
 premise assumed by our method that the total-field anomalies are
 caused by dipolar bodies (spheres). Although these interfering
@@ -939,15 +974,15 @@ method as prior information to form the matrix given in Eq.
 \DIFaddbegin \subsection{\DIFadd{Complex tests}}
 
 \DIFadd{In this section, we present the performance of our method in recovering
-the magnetization direction of synthetic sources simulating complex 
+the magnetization direction of synthetic sources simulating complex
 geological scenarios.
 }
 
-\subsubsection{\DIFadd{Significantly overlapping anomalies}}
+\subsubsection{\DIFadd{Strong-interfering anomalies}}
 
 \DIFadd{Figure \ref{fig:overlapping-prisms} shows two synthetic sources
-simulating uniformly magnetized bodies embedded in nonmagnetic 
-host rocks. Both sources are rectangular prisms with 
+simulating uniformly magnetized bodies embedded in nonmagnetic
+host rocks. Both sources are rectangular prisms with
 horizontal dimensions equal to 80}\,\unit{m} \DIFadd{and 20}\,\unit{m} \DIFadd{along
 the $x$ and $y$ directions, respectively, vertical dimension
 equal to 70}\,\unit{m} \DIFadd{and depth of the top at $z = 10$}\,\unit{m}
@@ -956,20 +991,20 @@ One source has its centre at $xc = 0$}\,\unit{m}\DIFadd{, $yc = -30$}\,\unit{m}
 \DIFadd{and $zc = 45$}\,\unit{m} \DIFadd{while the other one has its centre shifted
 60}\,\unit{m} \DIFadd{in the positive $y$ direction (pinpointed black dots
 in Fig. \ref{fig:overlapping-prisms}). Both sources
-have a Koenigsberger ratio equal to $3$ and the same induced 
-magnetization with intensity $3$}\,\unit{A\,m^{-1}}\DIFadd{, declination 
-$0$}{\degree} \DIFadd{and inclination $-30$}{\degree}\DIFadd{. The remanent 
-magnetization of the sources has the same inclination equal to 
+have a Koenigsberger ratio equal to $3$ and the same induced
+magnetization with intensity $3$}\,\unit{A\,m^{-1}}\DIFadd{, declination
+$0$}{\degree} \DIFadd{and inclination $-30$}{\degree}\DIFadd{. The remanent
+magnetization of the sources has the same inclination equal to
 $0$}{\degree}\DIFadd{, but different declinations equal to $30$}{\degree}
 \DIFadd{(eastern source) and $-30$}{\degree} \DIFadd{(western source). The total field
-anomaly produced by these synthetic bodies (Fig. 
+anomaly produced by these synthetic bodies (Fig.
 \ref{fig:overlapping-prisms-data}) was calculated at $N = 2\,601$
-regularly spaced points $(x_{i}, y_{i}, z_{i})$, $i = 1, \ldots, N$, on 
-the plane with constant vertical coordinate $z=-10$}\,\unit{m}\DIFadd{, extending 
-from -200 to 200}\,\unit{m} \DIFadd{in both $x$ and $y$ directions. The 
-pseudorandom Gaussian noise added has a zero mean and a standard deviation 
+regularly spaced points $(x_{i}, y_{i}, z_{i})$, $i = 1, \ldots, N$, on
+the plane with constant vertical coordinate $z=-10$}\,\unit{m}\DIFadd{, extending
+from -200 to 200}\,\unit{m} \DIFadd{in both $x$ and $y$ directions. The
+pseudorandom Gaussian noise added has a zero mean and a standard deviation
 equal to $2\,\%$ of the peak-to-peak amplitude of the noise-free total-field
-anomaly. This synthetic test is similar to that one presented by
+anomaly. This synthetic test was inspired by a test shown in
 \mbox{%DIFAUXCMD
 \citet{lelievre-oldenburg2009}
 }%DIFAUXCMD
@@ -977,21 +1012,20 @@ anomaly. This synthetic test is similar to that one presented by
 }
 
 \DIFadd{By assigning the correct positions of the centres of the simulated bodies, we
-invert the noise-corrupted total-field anomaly (Fig. 
-\ref{fig:overlapping-prisms-data}) to obtain the least-squares estimate 
+invert the noise-corrupted total-field anomaly (Fig.
+\ref{fig:overlapping-prisms-data}) to obtain the least-squares estimate
 $\hat{\vec{h}}$ (Eq.~\ref{eq:h_hat}) and
 robust estimate $\tilde{\vec{h}}$ (Eqs.~\ref{eq:iteration-L1} and
 \ref{eq:ri}). Next, we use these estimates to calculate the estimated
 declinations and inclinations (Eqs.~\ref{eq:Dj} and \ref{eq:Ij}). Finally, we
 calculate the uncertainties using the propagation of covariance
-(Eqs.~\ref{eq:cov-h-hat}--\ref{eq:H-h-tilde}) and assuming that the standard
+(Eqs.~\ref{eq:cov-h-hat}--\ref{eq:H-h-tilde}) by assuming that the standard
 deviation of the errors is equal to the true one. The
 results (Table~\ref{tab:overlapping-prisms-results}) show the good
 performance of our method in estimating the magnetization directions of
-non-spherical sources producing significantly overlapping anomalies.
-Despite being a more complex test than that one presented in section 3.2,
-this test also shows the better performance of the robust estimate
-against the least-squares estimate.
+non-spherical sources producing strong-interfering anomalies.
+This test also shows the better performance of the robust estimate
+as compared with the least-squares estimate.
 }
 
 \subsubsection{\DIFadd{Igneous intrusion within a sedimentary basin}}
@@ -1205,7 +1239,7 @@ inversion and would need some a~priori information.
 \caption{Test with the synthetic data (Fig.~\ref{fig:synt1-data}a) produced
 by a~sphere and a~rectangular prism. Comparison between the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
-uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ \DIFaddbeginFL \DIFaddFL{(shown between 
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ \DIFaddbeginFL \DIFaddFL{(shown between
 parenthesis) }\DIFaddendFL are calculated by
 using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree ({\degree}). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
@@ -1245,7 +1279,7 @@ $\tilde{I}$ &$-20.01263$ &\DIFdelbeginFL \DIFdelFL{$30.60551$ }%DIFDELCMD < \\
 \caption{Test with the synthetic data (Fig.~\ref{fig:synt1-data}b) produced
 by a~sphere and a~rectangular prism. Comparison between the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
-uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ \DIFaddbeginFL \DIFaddFL{(shown between 
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ \DIFaddbeginFL \DIFaddFL{(shown between
 parenthesis) }\DIFaddendFL are calculated by
 using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree ({\degree}). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
@@ -1286,10 +1320,10 @@ $\tilde{I}$ &$-21.75674$ &\DIFdelbeginFL \DIFdelFL{$33.40926$ }%DIFDELCMD < \\
 
 \begin{table}[t]
 \caption{\DIFaddFL{Test with synthetic data (Fig. \ref{fig:overlapping-prisms-data})
-representing two significantly overlapping anomalies. Comparison between 
+showing strong-interfering anomalies. Comparison between
 the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
-uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ (shown between 
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ (shown between
 parenthesis) are calculated by
 using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree (}{\degree}\DIFaddFL{). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
@@ -1313,10 +1347,10 @@ $\hat{\vec{h}}$ and robust $\tilde{\vec{h}}$ estimates.}}
 
 \begin{table}[t]
 \caption{\DIFaddFL{Test with synthetic data (Fig. \ref{fig:intrusion-data})
-produced by a complex geological scenario. Comparison between 
+produced by a complex geological scenario. Comparison between
 the estimated and
 true values of the magnetization declination $D$ and inclination $I$. The
-uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ (shown between 
+uncertainties $\sigma_\mathrm{D}$ and $\sigma_\mathrm{I}$ (shown between
 parenthesis) are calculated by
 using Eqs. (\ref{eq:sigmaDj}) and (\ref{eq:sigmaIj}). All values are in
 degree (}{\degree}\DIFaddFL{). We use a~caret ($^{\wedge}$) and a~tilde ($^{\sim}$) to
@@ -1457,16 +1491,16 @@ $z$~axis. Along each axis, the magnetization direction was
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f08}
 \caption{\DIFdelbeginFL \DIFdelFL{Application to field data on the Goi}%DIFDELCMD < \'{a}%%%
 \DIFdelFL{s Alkaline Province
-  }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Significantly overlapping anomalies. Synthetic prisms
+  }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Strong-interfering anomalies. Synthetic prisms
 }\DIFaddendFL (\DIFdelbeginFL \DIFdelFL{GAP}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{in red}\DIFaddendFL ) \DIFaddbeginFL \DIFaddFL{with side lengths
 equal to 80}\,\unit{m}\DIFaddendFL , \DIFdelbeginFL \DIFdelFL{Brazil. Simplified geological map of }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{20}\,\unit{m} \DIFaddFL{and 70}\,\unit{m} \DIFaddFL{along
 }\DIFaddendFL the \DIFdelbeginFL \DIFdelFL{study area}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$x$}\DIFaddendFL , \DIFdelbeginFL \DIFdelFL{which is
   represented by }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$y$ and $z$ directions, respectively. Both prisms have }\DIFaddendFL a \DIFdelbeginFL \DIFdelFL{~red dot in the inset map }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{depth
 }\DIFaddendFL of \DIFdelbeginFL \DIFdelFL{Brazil}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{the top at $z = 10$}\,\unit{m}\DIFaddendFL . The \DIFdelbeginFL \DIFdelFL{inset also
-  shows }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{eastern prism has its centre at 
+  shows }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{eastern prism has its centre at
 $xc = 0$}\,\unit{m}\DIFaddFL{, $yc = -30$}\,\unit{m} \DIFaddFL{and $zc = 45$}\,\unit{m} \DIFaddFL{while
 western prism has its centre shifted 60}\,\unit{m} \DIFaddFL{in }\DIFaddendFL the \DIFdelbeginFL \DIFdelFL{Goi}%DIFDELCMD < \'{a}%%%
-\DIFdelFL{s }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{positive $y$ 
+\DIFdelFL{s }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{positive $y$
 direction }\DIFaddendFL (\DIFdelbeginFL \DIFdelFL{dark grey area}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{pinpointed black dots}\DIFaddendFL )\DIFdelbeginFL \DIFdelFL{and Minas Gerais (light grey
   area) states}\DIFdelendFL .\DIFdelbeginFL \DIFdelFL{The total-field anomaly over the area delimited by the
   red rectangle is shown in Fig.~\ref{fig:TFA-Diorama}. The
@@ -1484,8 +1518,8 @@ direction }\DIFaddendFL (\DIFdelbeginFL \DIFdelFL{dark grey area}\DIFdelendFL \D
 
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f09}
-\DIFaddbeginFL \caption{\DIFaddFL{Significantly overlapping anomalies. Noise-corrupted 
-total-field anomaly produced by the synthetic bodies shown in 
+\DIFaddbeginFL \caption{\DIFaddFL{Strong-interfering anomalies. Noise-corrupted
+total-field anomaly produced by the synthetic bodies shown in
 Fig. \ref{fig:overlapping-prisms}. The data are in nT and were
 calculated on a plane with constant vertical coordinate equal to
 -10}\,\unit{m}\DIFaddFL{.}}
@@ -1495,7 +1529,7 @@ calculated on a plane with constant vertical coordinate equal to
 
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f10}
-\caption{\DIFaddFL{Igneous intrusion. Vertical profile showing the 
+\caption{\DIFaddFL{Igneous intrusion. Vertical profile showing the
 nonmagnetic sedimentary package (in grey), the igneous intrusion
 (in red) and the basement (in white). The sedimentary 
 package and basement are semi-infinite along the $x$ axis. 
@@ -1509,15 +1543,17 @@ plot has vertical exaggeration.}}
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f11}
 \caption{\DIFaddFL{Igneous intrusion. Noise-corrupted total-field anomaly
 produced by the synthetic bodies shown in Fig. \ref{fig:intrusion-profile}
-on a plane with constant vertical coordinate equal to -800}\,\unit{m}\DIFaddFL{. }}
+on a plane with constant vertical coordinate equal to -800}\,\unit{m}\DIFaddFL{.
+The data are in nT.}}
 \label{fig:intrusion-data}
 \end{figure*}
 
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f12}
 \caption{\DIFaddFL{Igneous intrusion. 3D view of the intrusion (red prisms)
-and its estimated location (black point), which was obtained from
-Euler Deconvolution by using a structural index equal to 3. Notice 
+and its estimated location (black point), which was obtained
+by applying the
+Euler Deconvolution with a structural index equal to 3. Notice
 that the Euler solution falls outside the intrusion.}}
 \label{fig:intrusion-euler}
 \end{figure*}
@@ -1543,7 +1579,7 @@ that the Euler solution falls outside the intrusion.}}
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f14}
 \caption{\DIFaddFL{Application to field data on the Goi}\'{a}\DIFaddFL{s Alkaline Province
   (GAP), Brazil. Simplified geological map of the study area, which is
-  represented by a~red dot in the inset map of Brazil. The inset also
+  shown as a~red dot in the inset map of Brazil. The inset also
   shows the Goi}\'{a}\DIFaddFL{s (dark grey area) and Minas Gerais (light grey
   area) states. The total-field anomaly over the area delimited by the
   red rectangle is shown in Fig.~\ref{fig:TFA-Diorama}. The
@@ -1564,7 +1600,7 @@ that the Euler solution falls outside the intrusion.}}
     aeromagnetic survey are shown in black. The magnetic data are in nT and the
     coordinates are in UTM on the SAD-69 datum, with central meridian
     $51${\degree}\,W. The origins of the east and north coordinates are 500 and
-    10\,000\,\unit{km}, respectively.} 
+    10\,000\,\unit{km}, respectively.}
 \label{fig:TFA-Diorama}
 \end{figure*}
 
