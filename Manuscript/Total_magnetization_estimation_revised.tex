@@ -35,8 +35,8 @@
   We have developed a~fast total-field anomaly inversion to estimate
   the magnetization direction of multiple sources with approximately
   spherical shape and known centres. Our method is an overdetermined
-  inverse problem that can be applied to
-  interpret multiple sources with different magnetization
+  inverse problem that can be applied to interpret multiple sources 
+  with different but homogeneous magnetization
   directions. It neither requires the prior computation of any
   transformation like reduction to the pole nor the use of regularly
   spaced data on a~horizontal grid. The method contains flexibility to
@@ -96,9 +96,8 @@ data, the result is a~scalar quantity denominated total-field anomaly. By
 using the total-field
 anomalies, the geophysicist can characterize the magnetic sources in
 subsurface and then better defining exploration targets
-\citep{telford-etal1990,blakely1996}.
-
-Several widely used techniques for interpreting total-field 
+\citep{telford-etal1990,blakely1996}. Several widely used techniques 
+for interpreting total-field 
 anomalies require the correct knowledge of the magnetization 
 direction of the sources. Among these techniques we emphasize 
 the reduction to pole \citep{baranov1957,baranov-naudy1964,silva1986}, 
@@ -109,11 +108,14 @@ methods for estimating the distribution of the magnetization-intensity
 contrasts in the subsurface also require the knowledge of the correct 
 magnetization direction \citep{li-oldenburg1996, pilkington1997,
 portniaguine-zhdanov1999, portniaguine-zhdanov2002, barbosa-silva2006}.
+Several methods for determining the magnetization direction of
+the sources have been developed due to its great importance in
+interpreting total-field anomalies. Recently, \citet{clark2014} presented an 
+outstanding and comprehensive review of methods that determine the remanent 
+and total magnetizations of magnetic sources. Here, we present only that 
+ones related to our work.
 
-Due to the great importance of the magnetization direction of the 
-sources in interpreting total-field anomalies, several methods for 
-determining the magnetization direction of
-the sources have been developed. These methods can be divided into two
+We divide the methods for retrieving the magnetization direction into two
 groups. The first one comprises methods that do not impose strong constraints
 on the shape of the sources. \citet{fedi-etal1994}, for example, accomplished
 successive RTP's in the wavenumber domain by using different tentative
@@ -187,9 +189,13 @@ total-field anomaly produced by multiple sources with approximately spherical
 shape to estimate their magnetization directions. We assume sources with
 known centre, which can be provided by Euler deconvolution, for example. The
 proposed method is part of the group of methods imposing assumptions about
-the shape of the magnetic sources. It can be applied for interpreting
-multiple sources with different magnetization directions. It does not require
-the use of regularly spaced data on a horizontal grid and contains
+the shape of the magnetic sources. This assumptions about the underlying 
+sources is able to reduce the nonuniqueness of the problem to a point that 
+regularization or constraints are not required. Our method can be applied 
+for estimating the average magnetization direction of
+multiple sources. It neither requires that all sources have the same 
+magnetization direction nor the use of regularly spaced data on a horizontal
+grid. Besides, our method also contains
 flexibility to be implemented in two different numerical approaches. The
 first one minimizes an L2-norm, resulting in a linear inverse problem to
 obtain a least-squares estimate. The second approach comprises the iterative
@@ -471,7 +477,9 @@ minimizing the goal function
 Different from Eq.~(\ref{eq:goal-function-L2}), the parameter vector
 $\vec{h}$ minimizing the Eq.~(\ref{eq:goal-function-L1}) cannot be
 obtained by solving a linear system. One practical way is the
-Iteratively Reweighted Least Squares algorithm \citep{scales_1988,aster-etal2005}. In this algorithm, at each iteration $k$, the
+Iteratively Reweighted Least Squares algorithm 
+\citep{scales_1988,farquharson-oldenburg1998,aster-etal2005}. 
+In this algorithm, at each iteration $k$, the
 following linear system is solved:
 \begin{align}
  &
@@ -983,11 +991,13 @@ as compared with the least-squares estimate.
 
 \subsubsection{Igneous intrusion within a sedimentary basin}
 
-Figure \ref{fig:intrusion-profile} shows a synthetic 
-igneous intrusion formed by a sill which is fed by a vertical pipe
-(red prisms). This intrusion has a depth of the top at 200\,\unit{m}
-and is embedded in nonmagnetic sediments (grey prisms). The sediments
-are overlaying a basement (represented in white) 
+Figure \ref{fig:intrusion-profile} shows a 2D schematic 
+representation of a synthetic geological setting where an
+igneous intrusion (red prisms) is embedded in a nonmagetic 
+sedimentary pack (grey area). The igneous intrusion is made 
+up of a sill which is fed by a vertical pipe and its top is 200m 
+deep. The sediments
+are overlaying a basement (white area) 
 which is magnetized by induction (with intensity $0.1$\,\unit{A\,m^{-1}})
 and generates a regional anomaly (not shown). The sedimentary 
 package and basement are semi-infinite along the $x$ axis. The simulated geomagnetic 
@@ -1001,19 +1011,20 @@ on a $100 \times 100$ regular grid ($N = 10\,000$), which varies from
 0 to 10\,\unit{km} and from 45 to 55\,\unit{km} in $x$ and $y$ directions,
 respectively, on a plane with constant vertical coordinate -800\,\unit{m}. 
 Figure \ref{fig:intrusion-data} shows this total-field anomaly contaminated
-with a pseudo-random Gaussian noise of zero mean and standard deviation 
+with a pseudo-random Gaussian noise with zero mean and standard deviation 
 equal to 2\,nT.
 
-We applied our method to estimate the magnetization direction of the synthetic
-intrusion shown Fig. \ref{fig:intrusion-profile} from the noise-corrupted 
-total-field anomaly shown in Fig. \ref{fig:intrusion-data}. The position of 
-the synthetic intrusion was estimated by Euler Deconvolution. The synthetic
+We applied our method to the total-field anomaly shown in 
+Fig. \ref{fig:intrusion-data} aiming at estimating the magnetization 
+direction of the simulated intrusion (Fig. \ref{fig:intrusion-profile}).
+The position of 
+the synthetic intrusion was estimated by Euler deconvolution. The synthetic
 intrusion is not an ideal source and does not have a characteristic structural
 index. In this case, we (wrongly) presumed that the noise-corrupted total-field 
 anomaly is produced by an spherical body and use a structural index equal to 3.
 Figure \ref{fig:intrusion-euler} shows that the estimated location (black point) 
-obtained by Euler Deconvolution is placed outside the synthetic intrusion 
-(red prisms). Even using this poor estimation of the location of the source, 
+obtained by Euler deconvolution is placed outside the synthetic intrusion 
+(red prisms). Even using this poor estimate of the location of the source, 
 our method obtained estimated declinations ($\hat{D}$ and $\tilde{D}$) and
 inclinations ($\hat{I}$ and $\tilde{I}$) close to the true values 
 (Tab. \ref{tab:intrusion-results}). In practical situations, however, the quality 
@@ -1024,7 +1035,7 @@ calculated with the robust estimate of the magnetization direction
 positive anomaly, which is very close to the true one. This result illustrates
 the robustness of our method when applied to retrieve the magnetization 
 direction of a complex source whose centre is poorly estimated by Euler
-Deconvolution.
+deconvolution.
 
 \section{Application to field data}
 
@@ -1089,9 +1100,12 @@ declinations, we used them to reduce the observed total-field anomaly
 shows that the estimated magnetization directions obtained with the
 least-squares and robust estimates lead to very confident RTP anomalies,
 since the dipolar characteristic of observed total-field anomaly
-(Fig.~\ref{fig:TFA-Diorama}) is almost completely suppressed. We also used
-this estimated magnetization directions for reducing another total-field
-anomaly (Fig.~\ref{fig:TFA-MCG}) to the pole. This total-field anomaly is
+(Fig.~\ref{fig:TFA-Diorama}) is almost completely suppressed. 
+
+By using the estimated magnetization directions obtained from the 
+simple dipolar total-field anomaly shown in Fig. \ref{fig:TFA-Diorama}, 
+we reduced to the pole another complex non-dipolar total-field anomaly
+(Fig. \ref{fig:TFA-MCG}). This total-field anomaly is
 located over the Montes Claros de Goi\'{a}s alkaline complex
 (Fig.~\ref{fig:geology-study-area}), which is near from the alkaline complex
 of Diorama. Figure~\ref{fig:TFA-MCG-RTP} shows that this estimated
@@ -1101,15 +1115,18 @@ of the sources in the alkaline complex of Montes Claros de Goi\'{a}s are very
 close to that ones estimated from the total-field anomaly
 (Fig.~\ref{fig:TFA-Diorama}) near from the alkaline complex of Diorama,
 suggesting that these sources emplaced at depth within almost the same
-geological time interval.
+geological time interval. Notice that in this field-data application, the 
+result obtained from inverting a small piece of the data set shed a light 
+on this complex geological setting. 
 
 \conclusions We present a~computationally effective method for estimating the
 magnetization direction of multiple sources with approximately spherical
 shapes by inverting the total-field anomaly produced by them. Our method
 assumes that the sources have uniform magnetization and that the positions of
 their centres are known. Prior knowledge about the source sizes is not
-required. Our method can be applied for interpreting multiple sources with
-different magnetization directions. Besides, it can be directly applied to
+required. Our method can be applied for determining the average magnetization
+direction within multiple sources with different magnetization directions. 
+Besides, it can be directly applied to
 interpret irregularly spaced total-field anomaly data measured on uneven
 surfaces and requires no prior transformation like reduction to the pole,
 total gradient or total magnitude anomalies. The method also contains
@@ -1433,9 +1450,10 @@ calculated on a plane with constant vertical coordinate equal to
 
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f10}
-\caption{Igneous intrusion. Vertical profile showing the
-nonmagnetic sedimentary package (in grey), the igneous intrusion
-(in red) and the basement (in white). The sedimentary 
+\caption{Igneous intrusion. 2D schematic representation of a
+synthetic geologic setting composed of a nonmagnetic sedimentary 
+package (in grey), an igneous intrusion
+(in red) and a basement (in white). The sedimentary 
 package and basement are semi-infinite along the $x$ axis. 
 The basement is magnetized by 
 induction and the intrusion has a strong reversed magnetization. The
@@ -1446,18 +1464,17 @@ plot has vertical exaggeration.}
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f11}
 \caption{Igneous intrusion. Noise-corrupted total-field anomaly
-produced by the synthetic bodies shown in Fig. \ref{fig:intrusion-profile}
-on a plane with constant vertical coordinate equal to -800\,\unit{m}.
-The data are in nT.}
+produced by the synthetic bodies shown schematically in Fig. 
+\ref{fig:intrusion-profile}. The data are in nT.}
 \label{fig:intrusion-data}
 \end{figure*}
 
 \begin{figure*}[t]
 \includegraphics[width=120mm]{Figures/npgd-2014-0069-f12}
 \caption{Igneous intrusion. 3D view of the intrusion (red prisms)
-and its estimated location (black point), which was obtained
-by applying the
-Euler Deconvolution with a structural index equal to 3. Notice
+and the estimate of the intrusion position by
+using Euler deconvolution (black point) with a structural 
+index equal to 3. Notice
 that the Euler solution falls outside the intrusion.}
 \label{fig:intrusion-euler}
 \end{figure*}
