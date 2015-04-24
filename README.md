@@ -42,7 +42,7 @@ geologically meaningful magnetization directions. The results
 obtained for a region of the GAP, near to the alkaline complex 
 of Diorama, suggest the presence of non-outcropping sources 
 marked by strong remanent magnetization with inclination and 
-declination close to −70.35 and −19.81°, respectively. This 
+declination close to −70.35° and −19.81°, respectively. This 
 estimated magnetization direction leads to predominantly 
 positive reduced-to-the-pole anomalies, even for other region 
 of the GAP, in the alkaline complex of Montes Claros de Goiás. 
