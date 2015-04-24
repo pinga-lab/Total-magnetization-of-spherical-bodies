@@ -1,6 +1,6 @@
 # Estimation of the total magnetization direction of approximately spherical bodies
 
-[Vanderlei C. Oliveira Jr.](http://fatiando.org/people/oliveira-jr/)<sup>1</sup>,
+[Vanderlei C. Oliveira Jr.](http://www.pinga-lab.org/people/oliveira-jr.html)<sup>1</sup>,
 Daiana P. Sales<sup>1</sup>,
 [Valéria C. F. Barbosa](http://lattes.cnpq.br/0391036221142471)<sup>1</sup>,
 [Leonardo Uieda](http://www.leouieda.com/)<sup>1,2</sup>
@@ -14,38 +14,44 @@ and data for the article
 bodies"
 submitted to the journal Nonlinear Processes in Geophysics.
 
-The original submission and open peer-review of this article can be found at:
-http://dx.doi.org/10.5194/npgd-1-1465-2014
+The final version, as well as the original submission and open peer-review of 
+this article can be found at:
+http://dx.doi.org/10.5194/npg-22-215-2015
 
 The repository is archived in Zenodo: http://dx.doi.org/10.5281/zenodo.16191
 
 ## Abstract
 
-We have developed a fast total-field anomaly inversion to estimate the
-magnetization direction of multiple sources with approximately spherical
-shape and known centres. Our method can be applied to interpret multiple
-sources with different magnetization directions. It neither requires the
-prior computation of any transformation like reduction to the pole nor the
-use of regularly spaced data on a horizontal grid. The method contains
-flexibility to be implemented as a linear or non-linear inverse problem,
-which results, respectively, in a least-squares or robust estimates of the
-components of the magnetization vector of the sources. Applications to
-synthetic data show the robustness of our method against interfering
-anomalies and errors in the location of the sources' centre. Besides, we
-show the feasibility of applying the upward continuation to interpret
-non-spherical sources. Applications to field data over the Goiás Alkaline
-Province (GAP), Brazil, show the good performance of our method in estimating
-geological meaningful magnetization directions. The results obtained for a
-region of the GAP, near from the alkaline complex of Diorama, suggest the
-presence of non-outcropping sources marked by strong remanent magnetization
-with inclination and declination close to -70.35<sup>o</sup> and -19.81<sup>o</sup>,
-respectively. This estimated magnetization direction leads to predominantly positive
-reduced-to-the-pole anomalies, even for other region of the GAP, in the
-alkaline complex of Montes Claros de Goiás. These results show that the
-non-outcropping sources near from the alkaline complex of Diorama have almost
-the same magnetization direction of that ones in the alkaline complex of
-Montes Claros de Goiás, strongly suggesting that these sources have emplaced
-the crust almost within the same geological time interval.
+We have developed a fast total-field anomaly inversion to estimate the 
+magnetization direction of multiple sources with approximately spherical 
+shapes and known centres. Our method is an overdetermined inverse problem 
+that can be applied to interpret multiple sources with different but 
+homogeneous magnetization directions. It requires neither the prior 
+computation of any transformation-like reduction to the pole nor the 
+use of regularly spaced data on a horizontal grid. The method contains 
+flexibility to be implemented as a linear or non-linear inverse 
+problem, which results, respectively, in a least-squares or robust 
+estimate of the components of the magnetization vector of the sources. 
+Applications to synthetic data show the robustness of our method 
+against interfering anomalies and errors in the location of the 
+sources' centre. Besides, we show the feasibility of applying the 
+upward continuation to interpret non-spherical sources. 
+Applications to field data over the Goiás alkaline province (GAP),
+Brazil, show the good performance of our method in estimating 
+geologically meaningful magnetization directions. The results 
+obtained for a region of the GAP, near to the alkaline complex 
+of Diorama, suggest the presence of non-outcropping sources 
+marked by strong remanent magnetization with inclination and 
+declination close to −70.35 and −19.81°, respectively. This 
+estimated magnetization direction leads to predominantly 
+positive reduced-to-the-pole anomalies, even for other region 
+of the GAP, in the alkaline complex of Montes Claros de Goiás. 
+These results show that the non-outcropping sources near to the 
+alkaline complex of Diorama have almost the same magnetization 
+direction of those ones in the alkaline complex of Montes Claros 
+de Goiás, strongly suggesting that these sources have been 
+emplaced in the crust within almost the same geological time 
+interval.
 
 ## Reproducing the results
 
